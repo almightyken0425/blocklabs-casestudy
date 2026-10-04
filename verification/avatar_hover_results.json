@@ -1,0 +1,72 @@
+{
+  "checked_at": "2026-10-04T14:13:23.697Z",
+  "browser": "Chrome via Playwright",
+  "base": "http://127.0.0.1:8767/mahjong-game-standalone.html",
+  "source_sha256": {
+    "prototype/social.js": "08b65e53403bfd355eef6abed3ddc1445afacd1f5731b3b41ea83f1aa910be1c",
+    "prototype/social.css": "00b7d45aba6c8cbb8c27d5aebf0b2a86b012545bd325880e36b8408ed48013ea",
+    "mahjong-game-standalone.html": "4c2b486e70b31ac9aa49c9632f93b0ee5250a6230e59f89d79703285c4246809"
+  },
+  "results": [
+    {
+      "name": "Avatar selection applies immediately and locked avatars preserve selection",
+      "passed": true
+    },
+    {
+      "name": "Emotes update unique recents and throwables travel to the selected seat",
+      "passed": true
+    },
+    {
+      "name": "Chat rejects blank input, sends, replies, tags and respects bubble settings",
+      "passed": true
+    },
+    {
+      "name": "Membership changes unlock assets and synchronize every own avatar",
+      "passed": true
+    },
+    {
+      "name": "Recents keep ten unique emotes in last-used order",
+      "passed": true
+    },
+    {
+      "name": "Chat mute options filter incoming events but preserve own messages",
+      "passed": true
+    },
+    {
+      "name": "Quick messages send directly, copy works, errors preserve the draft",
+      "passed": true
+    },
+    {
+      "name": "Three-player and waiting tables expose only occupied targets",
+      "passed": true
+    },
+    {
+      "name": "Throwables reach the selected seat and stop when a participant leaves",
+      "passed": true
+    },
+    {
+      "name": "Reduced motion and failed animation loads retain a usable preview",
+      "passed": true
+    },
+    {
+      "name": "Mobile controls stay inside the table and keep chat operable",
+      "passed": true
+    },
+    {
+      "name": "Avatar hover cancels on exit and disabled throwables do not open or play",
+      "passed": true
+    },
+    {
+      "name": "Both avatar areas open the matching picker and list profile buttons preserve winds",
+      "passed": true
+    },
+    {
+      "name": "Hover menus remain usable across the gap and support keyboard and touch entry",
+      "passed": true
+    },
+    {
+      "name": "Emoji sound loads its mapped clip and stops requesting clips when muted",
+      "passed": true
+    }
+  ]
+}

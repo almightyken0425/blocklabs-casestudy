@@ -1,0 +1,42 @@
+{
+  "checked_at": "2026-10-04T10:03:51.123Z",
+  "method": "Chrome via Playwright, isolated browser context",
+  "base": "http://127.0.0.1:8767/mahjong-game-standalone.html",
+  "source_sha256": {
+    "prototype/social.js": "c252cca46ba335e9b45ecc4e567fc7ac891c0503cce8aa611a003e7cc8fabd34",
+    "prototype/social.css": "3f513c052297bfaee8c6aec600595b3e4ef576545404f4be1490ca9553d765c0"
+  },
+  "assigned": [
+    {
+      "player": 0,
+      "src": "coinpoker_assets/rings/unity/ring_skill_score_silver_897.png",
+      "name": "Silver"
+    },
+    {
+      "player": 1,
+      "src": "coinpoker_assets/rings/electron/aic-avatar-ring.0989b1e4.webp",
+      "name": "AIC"
+    },
+    {
+      "player": 2,
+      "src": "coinpoker_assets/rings/unity/livering_1107.png",
+      "name": "Live"
+    },
+    {
+      "player": 3,
+      "src": "coinpoker_assets/rings/unity/3bet_border_1439.png",
+      "name": "3-Bet"
+    }
+  ],
+  "checks": [
+    "Four distinct rings loaded and matched across table, player rows and Profile",
+    "Avatar change, settings preview and chat retain assigned ring",
+    "Mobile player list shows all four assigned rings",
+    "All five ring assets load"
+  ],
+  "screenshots": [
+    "rings_desktop.png",
+    "rings_profile.png",
+    "rings_mobile.png"
+  ]
+}
