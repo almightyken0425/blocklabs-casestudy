@@ -1,0 +1,48 @@
+{
+  "note": "Emote red evidence also includes a test-locator issue later corrected to use the visible Settings button. The initial missing emote behavior was separately observed before implementation.",
+  "increments": [
+    {
+      "feature": "avatar",
+      "results": [
+        {
+          "name": "Avatar selection applies immediately and locked avatars preserve selection",
+          "passed": false,
+          "error": "locator.click: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Change your avatar', exact: true }).first()\u001b[22m\n"
+        }
+      ]
+    },
+    {
+      "feature": "emotes",
+      "results": [
+        {
+          "name": "Avatar selection applies immediately and locked avatars preserve selection",
+          "passed": true
+        },
+        {
+          "name": "Emotes update unique recents and throwables travel to the selected seat",
+          "passed": false,
+          "error": "locator.click: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Play Dode to Moon', exact: true })\u001b[22m\n"
+        }
+      ]
+    },
+    {
+      "feature": "chat",
+      "results": [
+        {
+          "name": "Avatar selection applies immediately and locked avatars preserve selection",
+          "passed": true
+        },
+        {
+          "name": "Emotes update unique recents and throwables travel to the selected seat",
+          "passed": false,
+          "error": "locator.evaluate: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Social settings', exact: true })\u001b[22m\n"
+        },
+        {
+          "name": "Chat rejects blank input, sends, replies, tags and respects bubble settings",
+          "passed": false,
+          "error": "locator.fill: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('textbox', { name: 'Chat message', exact: true })\u001b[22m\n"
+        }
+      ]
+    }
+  ]
+}

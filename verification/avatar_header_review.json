@@ -1,0 +1,60 @@
+{
+  "checked_date": "2026-10-04",
+  "base": "http://127.0.0.1:8767/mahjong-game-standalone.html",
+  "method": "Codex in-app browser via cua_repl; accessibility state, DOM state and screenshots",
+  "source_sha256": {
+    "prototype/social.js": "d1cdbcbae97ede328e7c6f507e4cf6e34a6ee7511a3ef16361c337fca0cd268e",
+    "prototype/social.css": "6a85f8c686421b90bd8bda64676e0acadb31cfeae30f4c1598c5b4d31d114df1",
+    "mahjong-game-standalone.html": "4c2b486e70b31ac9aa49c9632f93b0ee5250a6230e59f89d79703285c4246809"
+  },
+  "checks": [
+    {
+      "name": "Desktop header Settings opens Avatars",
+      "passed": true
+    },
+    {
+      "name": "Available avatar applies immediately",
+      "passed": true
+    },
+    {
+      "name": "Locked avatar shows membership prompt and preserves selection",
+      "passed": true
+    },
+    {
+      "name": "Own avatar opens player profile",
+      "passed": true
+    },
+    {
+      "name": "390x844 uses top-right Settings and four bottom actions",
+      "passed": true
+    },
+    {
+      "name": "Mobile Settings dialog fits viewport",
+      "passed": true,
+      "bounds": {
+        "x": 14,
+        "y": 33.8515625,
+        "width": 362,
+        "height": 776.296875
+      }
+    }
+  ],
+  "automatic_suite": {
+    "status": "not_run",
+    "reason": "Chrome launch failed before any test case executed"
+  },
+  "cleanup": "Restored avatar 1 selected before verification, reset viewport, closed created review tab.",
+  "screenshots": [
+    "avatar_header_desktop.jpg",
+    "avatar_header_mobile.jpg"
+  ],
+  "integration_verification": {
+    "checked_at": "2026-10-04T09:33:13.875Z",
+    "method": "Chrome via Playwright in an isolated browser context",
+    "result_file": "social_prototype_results.json",
+    "status": "passed",
+    "passed_tests": 13,
+    "source_sha256_matches_review": true,
+    "visual_review": "Desktop and mobile screenshots inspected again during integration."
+  }
+}

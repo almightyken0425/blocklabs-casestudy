@@ -1,0 +1,117 @@
+{
+  "checked_at": "2026-10-04T10:38:44.480Z",
+  "base": "http://127.0.0.1:8767/mahjong-game-standalone.html",
+  "method": "Chrome via Playwright in an isolated browser context",
+  "source_sha256": {
+    "prototype/social.js": "c252cca46ba335e9b45ecc4e567fc7ac891c0503cce8aa611a003e7cc8fabd34",
+    "prototype/social.css": "e3c29119dd56ed61352b3af553f5907b33ec858e74619aed0da5f01ea568de43",
+    "mahjong-game-standalone.html": "4c2b486e70b31ac9aa49c9632f93b0ee5250a6230e59f89d79703285c4246809"
+  },
+  "seats": [
+    {
+      "id": 0,
+      "avatar": {
+        "x": 140,
+        "y": 902.203125,
+        "width": 130,
+        "height": 75.59375,
+        "top": 902.203125,
+        "right": 270,
+        "bottom": 977.796875,
+        "left": 140
+      },
+      "hand": {
+        "x": 465.75,
+        "y": 645.75,
+        "width": 234,
+        "height": 108,
+        "top": 645.75,
+        "right": 699.75,
+        "bottom": 753.75,
+        "left": 465.75
+      }
+    },
+    {
+      "id": 1,
+      "avatar": {
+        "x": 935,
+        "y": 720.203125,
+        "width": 130,
+        "height": 75.59375,
+        "top": 720.203125,
+        "right": 1065,
+        "bottom": 795.796875,
+        "left": 935
+      },
+      "hand": {
+        "x": 984.375,
+        "y": 146.25,
+        "width": 31.5,
+        "height": 509.625,
+        "top": 146.25,
+        "right": 1015.875,
+        "bottom": 655.875,
+        "left": 984.375
+      }
+    },
+    {
+      "id": 2,
+      "avatar": {
+        "x": 750,
+        "y": 72.203125,
+        "width": 130,
+        "height": 75.59375,
+        "top": 72.203125,
+        "right": 880,
+        "bottom": 147.796875,
+        "left": 750
+      },
+      "hand": {
+        "x": 225,
+        "y": 87.75,
+        "width": 509.625,
+        "height": 31.5,
+        "top": 87.75,
+        "right": 734.625,
+        "bottom": 119.25,
+        "left": 225
+      }
+    },
+    {
+      "id": 3,
+      "avatar": {
+        "x": 69,
+        "y": 180.203125,
+        "width": 130,
+        "height": 75.59375,
+        "top": 180.203125,
+        "right": 199,
+        "bottom": 255.796875,
+        "left": 69
+      },
+      "hand": {
+        "x": 118.125,
+        "y": 304.875,
+        "width": 31.5,
+        "height": 509.625,
+        "top": 304.875,
+        "right": 149.625,
+        "bottom": 814.5,
+        "left": 118.125
+      }
+    }
+  ],
+  "checks": [
+    "All four avatars are to the player-relative left of their hand with at least 12px clearance",
+    "Top player chat bubble stays inside viewport",
+    "Four discard rows at every seat do not overlap avatars",
+    "Three-player table retains three seats and hides absent hand",
+    "Mobile table scales without horizontal overflow"
+  ],
+  "screenshots": [
+    "seat_layout_desktop.png",
+    "seat_layout_discards.png",
+    "seat_layout_three_players.png",
+    "seat_layout_mobile.png"
+  ]
+}

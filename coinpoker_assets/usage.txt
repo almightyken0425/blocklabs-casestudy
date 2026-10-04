@@ -19,7 +19,8 @@ viewer：本地瀏覽頁程式、動畫資料包裝與 Lottie 播放器。
 動畫資料包裝只供瀏覽頁使用。製作原型時請使用 emotes、throwables、archive 內的原始 JSON。
 14 段對應音效放在 emotes/audio，保留原始音訊內容並解碼為 WAV。
 聊天互動預覽是依客戶端結構重建的本地示範，不連接 CoinPoker 聊天服務。
-目前尚未把素材整合到 mahjong-game-standalone.html。
+三項社交互動已整合到 mahjong-game-standalone.html。
+原型啟動、操作與移植取捨見 ../prototype/README.md。
 
 來源範圍
 已安裝的 CoinPoker 1.27.0 與客戶端設定指定的公開頭像 CDN。
