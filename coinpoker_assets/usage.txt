@@ -1,0 +1,43 @@
+CoinPoker 素材庫
+
+在此資料夾開啟終端機，執行：
+python3 tools/serve_gallery.py
+接著在瀏覽器開啟 http://127.0.0.1:8766/
+若連接埠已使用，可加上 --port 8767。
+
+內容
+avatars：51 張頭像，35 張一般分類，16 張專屬設定素材。
+rings：26 個外框與相關狀態圖像，保留 Unity 與 Electron 版本。
+emotes：41 個表情動畫與縮圖，其中 36 個列於客戶端預設設定。
+throwables：21 個投擲動畫與縮圖，其中 17 個列於客戶端預設設定。
+archive：42 個其他內建動畫，未列於已找到的表情及投擲選單。
+chat：38 個聊天圖像、原始元件結構、英文與中文文案、行為摘要。
+catalog：來源、編號對照、設定與 SHA-256。
+verification：實際畫面與驗證結果。
+viewer：本地瀏覽頁程式、動畫資料包裝與 Lottie 播放器。
+
+動畫資料包裝只供瀏覽頁使用。製作原型時請使用 emotes、throwables、archive 內的原始 JSON。
+14 段對應音效放在 emotes/audio，保留原始音訊內容並解碼為 WAV。
+聊天互動預覽是依客戶端結構重建的本地示範，不連接 CoinPoker 聊天服務。
+目前尚未把素材整合到 mahjong-game-standalone.html。
+
+來源範圍
+已安裝的 CoinPoker 1.27.0 與客戶端設定指定的公開頭像 CDN。
+素材及預設設定無法單獨證明線上功能的啟用狀態或帳號資格。
+遊戲素材保留原來源。viewer/vendor/lottie_license.txt 僅適用於 Lottie 播放程式。
+
+驗證
+本地 HTTP 預覽已經實際操作及截圖。
+104 個動畫完成五個時間點的渲染檢查，177 個圖片檔與 14 段 WAV 完成載入檢查。
+Pepe Cycle 使用 SVG 驗證通過，瀏覽頁所有動畫也使用 SVG 播放。
+聊天收合、傳送、空白防送、回覆與快速訊息已操作確認。
+桌面與 390 像素窄螢幕排版已檢查。
+瀏覽器工具限制了 file: 網址，因此未直接驗證雙擊 HTML 的開啟方式。上述 HTTP 方式已驗證。
+
+分類與用途查核
+頭像依設定頁的 3-BET CLUB、WORLD CUP、ANIMAL、ANIME、HALLOWEEN、NOBLE、ROYAL 排列。
+表情依 Dogs、Penguin、Donkey、Chips、Skull、Pepe 分組。
+頭像外框沿用本次決定，由 CoinPoker API 與玩家狀態決定。
+投擲入口需要玩家入座。滑鼠移到對手座位時，可依設定顯示投擲按鈕。
+其他 42 份素材已追到共用播放器，但尚未確認目前選單入口及伺服器觸發情境。
+完整依據見 catalog/usage_research.json 與 catalog/interaction_evidence.json。

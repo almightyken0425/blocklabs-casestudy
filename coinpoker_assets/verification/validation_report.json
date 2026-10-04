@@ -1,0 +1,4686 @@
+{
+  "checked_at": "2026-10-03T08:13:53.019Z",
+  "renderer": "lottie-web 5.13.0 canvas, SVG fallback",
+  "animations": [
+    {
+      "id": 0,
+      "name": "1-emoji-lottie",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 40,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 24139,
+          "hash": 124281670
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 24155,
+          "hash": 1735779292
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 30625,
+          "hash": 2188584805
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 25188,
+          "hash": 862663412
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 24017,
+          "hash": 1190758196
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "2-emoji-lottie",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 120,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 14176,
+          "hash": 1373437955
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 16177,
+          "hash": 1357644686
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 17280,
+          "hash": 3121989904
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 16302,
+          "hash": 1894241515
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 16191,
+          "hash": 1404832034
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "3-emoji-lottie",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 45,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 34447,
+          "hash": 578569369
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 34436,
+          "hash": 1137937035
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 34234,
+          "hash": 2511750970
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 35537,
+          "hash": 3237459944
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 34567,
+          "hash": 3593440402
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "4-emoji-lottie",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 40,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 25042,
+          "hash": 4082774523
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 25613,
+          "hash": 3902715183
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 25080,
+          "hash": 914536988
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 24639,
+          "hash": 1338331063
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 25081,
+          "hash": 3852790278
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "5-emoji-lottie",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 60,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 33678,
+          "hash": 621344527
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 33803,
+          "hash": 2766196435
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 34019,
+          "hash": 1537568523
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 33938,
+          "hash": 2208592194
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 33919,
+          "hash": 295271637
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "6-emoji-lottie",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 240,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 19181,
+          "hash": 2254192874
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 18601,
+          "hash": 1186908299
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 19090,
+          "hash": 1144266805
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 19201,
+          "hash": 2963932042
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 19312,
+          "hash": 3275280120
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "7-emoji-lottie",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 100,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 18634,
+          "hash": 4199810885
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 20126,
+          "hash": 495553804
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 16761,
+          "hash": 2060705510
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 16576,
+          "hash": 3486293664
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 16723,
+          "hash": 284129006
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "8-emoji-lottie",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 80,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 21572,
+          "hash": 3377877192
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 23967,
+          "hash": 2097221682
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 29937,
+          "hash": 3194246967
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 28235,
+          "hash": 1335224726
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 28540,
+          "hash": 3578316556
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "9-emoji-lottie",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 120,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 19797,
+          "hash": 3332789650
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 21552,
+          "hash": 1056703469
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 29123,
+          "hash": 3495266809
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 29850,
+          "hash": 1033930937
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 19773,
+          "hash": 3553101509
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "10-emoji-lottie",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 50,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 15944,
+          "hash": 2158392145
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 14194,
+          "hash": 3028855842
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 14749,
+          "hash": 2694291553
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 18150,
+          "hash": 3661342342
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 16547,
+          "hash": 1874834542
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "11-emoji-lottie",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 120,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 27585,
+          "hash": 12604958
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 25849,
+          "hash": 1229021955
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 26921,
+          "hash": 1178899656
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 29419,
+          "hash": 2013050073
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 27958,
+          "hash": 4066003857
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "12-emoji-lottie",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 90,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 23828,
+          "hash": 1091337362
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 26628,
+          "hash": 301217681
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 29927,
+          "hash": 1053559174
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 26640,
+          "hash": 1996384804
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 24713,
+          "hash": 4010685814
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "13-emoji-lottie",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 60,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 21144,
+          "hash": 524086688
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 22032,
+          "hash": 2412251185
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 21684,
+          "hash": 1145519265
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 21935,
+          "hash": 3849724746
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 21322,
+          "hash": 3385776220
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "14-emoji-lottie",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 160,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 21931,
+          "hash": 1040123613
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 21515,
+          "hash": 3929027700
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 22027,
+          "hash": 1432284960
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 22264,
+          "hash": 2330925558
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 22119,
+          "hash": 3481367032
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "15-emoji-lottie",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 120,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 13702,
+          "hash": 2390814017
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 13568,
+          "hash": 340611649
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 18593,
+          "hash": 375968486
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 22377,
+          "hash": 913268451
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 22487,
+          "hash": 626448369
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "17-emoji-lottie",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 120,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 20818,
+          "hash": 2429144560
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 24380,
+          "hash": 324460309
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 23829,
+          "hash": 2485661031
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 23970,
+          "hash": 1178576113
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 21227,
+          "hash": 2342100348
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "18-emoji-lottie",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 160,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 29724,
+          "hash": 3062917185
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 28226,
+          "hash": 983521939
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 30945,
+          "hash": 2830456345
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 33451,
+          "hash": 1914643093
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 29947,
+          "hash": 1198749845
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "108-emoji-lottie",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 180,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 21562,
+          "hash": 4019342787
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 21461,
+          "hash": 316271912
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 21541,
+          "hash": 4001351160
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 21590,
+          "hash": 755572532
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 21536,
+          "hash": 796718077
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "20-emoji-lottie",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 80,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 24714,
+          "hash": 1871978548
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 28469,
+          "hash": 2175369356
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 31514,
+          "hash": 3187466000
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 30741,
+          "hash": 502461148
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 31333,
+          "hash": 1713573481
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "21-emoji-lottie",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 110,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 14994,
+          "hash": 925437482
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 15087,
+          "hash": 3272884117
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 23798,
+          "hash": 46457991
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 22182,
+          "hash": 2159661552
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 21824,
+          "hash": 4193916674
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "22-emoji-lottie",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 83,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 18075,
+          "hash": 385264094
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 19357,
+          "hash": 2721312333
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 19985,
+          "hash": 4289913721
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 21320,
+          "hash": 417776375
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 19596,
+          "hash": 1793929474
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "name": "23-emoji-lottie",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 123,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 20966,
+          "hash": 3414373502
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 18870,
+          "hash": 3956226011
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 19750,
+          "hash": 1112678199
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 21828,
+          "hash": 3689434431
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 22223,
+          "hash": 882376081
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "name": "24-emoji-lottie",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 90,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 23654,
+          "hash": 879105385
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 22778,
+          "hash": 3019875806
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 37426,
+          "hash": 2910800626
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 21457,
+          "hash": 2790668862
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 21457,
+          "hash": 2086972041
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "name": "25-emoji-lottie",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 131,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 29294,
+          "hash": 3436775443
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 29952,
+          "hash": 75927819
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 30210,
+          "hash": 1803961128
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 29592,
+          "hash": 274946933
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 29495,
+          "hash": 1230194739
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "name": "26-emoji-lottie",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 120,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 17500,
+          "hash": 111494971
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 16078,
+          "hash": 1210216565
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 23866,
+          "hash": 3669686429
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 26066,
+          "hash": 3257547319
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 24958,
+          "hash": 530392117
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "name": "27-emoji-lottie",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 120,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 23945,
+          "hash": 2262248282
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 25316,
+          "hash": 4139780459
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 23038,
+          "hash": 14216529
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 23047,
+          "hash": 1703724153
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 24056,
+          "hash": 2835521825
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "name": "31-emoji-lottie",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 157,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 20233,
+          "hash": 732928877
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 31715,
+          "hash": 2930111210
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 32004,
+          "hash": 1910693403
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 28834,
+          "hash": 2787178456
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 26450,
+          "hash": 4072574079
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "name": "32-emoji-lottie",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 80,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 24571,
+          "hash": 1497255647
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 28682,
+          "hash": 1943099587
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 30987,
+          "hash": 339651315
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 30770,
+          "hash": 3360908254
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 30879,
+          "hash": 1737688841
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "name": "33-emoji-lottie",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 211,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 12494,
+          "hash": 3236429173
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 15233,
+          "hash": 1901525234
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 15247,
+          "hash": 47975542
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 15294,
+          "hash": 460339804
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 15335,
+          "hash": 229069346
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "name": "39-emoji-lottie",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 120,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 30476,
+          "hash": 171229636
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 30560,
+          "hash": 1703515363
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 30136,
+          "hash": 2224460467
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 30277,
+          "hash": 3502241018
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 30609,
+          "hash": 428655799
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "name": "40-emoji-lottie",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 240,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 19274,
+          "hash": 4136933844
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 19838,
+          "hash": 1744733722
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 28211,
+          "hash": 3840418080
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 28151,
+          "hash": 2516922895
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 27912,
+          "hash": 824815342
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "name": "38-emoji-lottie",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 241,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 20891,
+          "hash": 4012316008
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 22834,
+          "hash": 2696866155
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 27586,
+          "hash": 3623621688
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 27611,
+          "hash": 3711328636
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 27684,
+          "hash": 856502666
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "name": "41-emoji-lottie",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 72,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 25930,
+          "hash": 899345452
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 27665,
+          "hash": 1587828967
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 28259,
+          "hash": 621527484
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 28673,
+          "hash": 3102350808
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 26079,
+          "hash": 3234244654
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "name": "42-emoji-lottie",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 70,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 29899,
+          "hash": 2416593969
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 35668,
+          "hash": 235233084
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 29426,
+          "hash": 3177734764
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 25939,
+          "hash": 1012342289
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 26090,
+          "hash": 3795133052
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "name": "43-emoji-lottie",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 149,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 25929,
+          "hash": 3880195331
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 27602,
+          "hash": 3659804347
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 27052,
+          "hash": 4238238267
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 28452,
+          "hash": 3427406496
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 26086,
+          "hash": 387206956
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "name": "44-emoji-lottie",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 180,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 25929,
+          "hash": 3880195331
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 33039,
+          "hash": 9020927
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 33156,
+          "hash": 2470996634
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 33365,
+          "hash": 3543094601
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 26086,
+          "hash": 974815052
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "name": "45-emoji-lottie",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 60,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 25929,
+          "hash": 3880195331
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 27713,
+          "hash": 3244102016
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 27797,
+          "hash": 2372601930
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 29432,
+          "hash": 2593201200
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 26086,
+          "hash": 2499009902
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "name": "46-emoji-lottie",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 179,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 25929,
+          "hash": 3880195331
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 30962,
+          "hash": 893349001
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 31178,
+          "hash": 3118479679
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 31192,
+          "hash": 161196119
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 31192,
+          "hash": 161196119
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "name": "47-emoji-lottie",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 180,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 25929,
+          "hash": 3880195331
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 34470,
+          "hash": 3418818209
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 34869,
+          "hash": 562336974
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 34726,
+          "hash": 646507108
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 26086,
+          "hash": 974815052
+        }
+      ]
+    },
+    {
+      "id": 54,
+      "name": "54-emoji-lottie",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 180,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 23306,
+          "hash": 1905617046
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 26942,
+          "hash": 518323360
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 28283,
+          "hash": 327917569
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 29856,
+          "hash": 746417063
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 27966,
+          "hash": 2078293595
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "name": "55-emoji-lottie",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 180,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 34368,
+          "hash": 1303092187
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 35000,
+          "hash": 881421472
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 35100,
+          "hash": 3781276755
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 34846,
+          "hash": 2512082634
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 35217,
+          "hash": 1407186359
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "name": "Chip4",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 121,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 2855,
+          "hash": 1244442556
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 4145,
+          "hash": 1794049552
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 4467,
+          "hash": 3156805173
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 3012,
+          "hash": 3627645288
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 2825,
+          "hash": 3533132448
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "name": "Chip5",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 90,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 1598,
+          "hash": 731937431
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 1799,
+          "hash": 2277604259
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 1857,
+          "hash": 3782688920
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 1609,
+          "hash": 417300721
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 1565,
+          "hash": 2123825881
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "name": "Chip1",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 247,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 2866,
+          "hash": 1545846851
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 3069,
+          "hash": 2196465281
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 3797,
+          "hash": 1721672181
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 4405,
+          "hash": 43483837
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 2775,
+          "hash": 4066374301
+        }
+      ]
+    },
+    {
+      "id": 51,
+      "name": "Chip2",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 130,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 2291,
+          "hash": 917401422
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 4199,
+          "hash": 1947335767
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 2319,
+          "hash": 2880240512
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 4604,
+          "hash": 3292228577
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 2319,
+          "hash": 2880240512
+        }
+      ]
+    },
+    {
+      "id": 52,
+      "name": "Chip3",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 76,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 2353,
+          "hash": 180258633
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 3109,
+          "hash": 762791451
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 3996,
+          "hash": 3256593981
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 3294,
+          "hash": 2769288850
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 2397,
+          "hash": 1415485220
+        }
+      ]
+    },
+    {
+      "id": 53,
+      "name": "Chip6",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 80,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 3021,
+          "hash": 3847476837
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 3348,
+          "hash": 2639166669
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 3053,
+          "hash": 2622978895
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 3413,
+          "hash": 4039589862
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 3061,
+          "hash": 475657603
+        }
+      ]
+    },
+    {
+      "id": 1001,
+      "name": "aic-skull-mad-laugh",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 240,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 13653,
+          "hash": 3622402339
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 17589,
+          "hash": 641293184
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 18796,
+          "hash": 3629042475
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 28250,
+          "hash": 3911185452
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 23348,
+          "hash": 2127557934
+        }
+      ]
+    },
+    {
+      "id": 1002,
+      "name": "aic-skull-love",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 120,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 15722,
+          "hash": 3330452237
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 22854,
+          "hash": 3126523691
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 25297,
+          "hash": 2629955821
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 21443,
+          "hash": 2698606272
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 15829,
+          "hash": 2389110621
+        }
+      ]
+    },
+    {
+      "id": 1003,
+      "name": "aic-skull-thumbs-up",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 180,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 15722,
+          "hash": 3330452237
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 23012,
+          "hash": 831441731
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 23009,
+          "hash": 360793606
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 22837,
+          "hash": 896788544
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 15829,
+          "hash": 2389110621
+        }
+      ]
+    },
+    {
+      "id": 1004,
+      "name": "aic-skull-sorry",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 200,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 15722,
+          "hash": 3330452237
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 39289,
+          "hash": 1102396126
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 38887,
+          "hash": 3864783787
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 32069,
+          "hash": 15696502
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 15845,
+          "hash": 409536894
+        }
+      ]
+    },
+    {
+      "id": 1005,
+      "name": "aic-skull-you-are-dead",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 119,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 15722,
+          "hash": 3330452237
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 20837,
+          "hash": 1760724541
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 17132,
+          "hash": 1720467553
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 17055,
+          "hash": 56986575
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 15869,
+          "hash": 2338563527
+        }
+      ]
+    },
+    {
+      "id": 1006,
+      "name": "aic-skull-money",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 184,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 15722,
+          "hash": 3330452237
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 18229,
+          "hash": 3230203417
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 17437,
+          "hash": 3167176695
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 18338,
+          "hash": 1564467963
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 15829,
+          "hash": 2389110621
+        }
+      ]
+    },
+    {
+      "id": 1007,
+      "name": "SkullClap",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 73,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 18276,
+          "hash": 2705673775
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 18362,
+          "hash": 4281120558
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 18522,
+          "hash": 2022716232
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 18522,
+          "hash": 2860420287
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 18438,
+          "hash": 2173400333
+        }
+      ]
+    },
+    {
+      "id": 1008,
+      "name": "aic-skull-blast",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 77,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 8098,
+          "hash": 28025895
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 7863,
+          "hash": 1142947917
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 24962,
+          "hash": 2799641735
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 21957,
+          "hash": 384539057
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 8208,
+          "hash": 710275135
+        }
+      ]
+    },
+    {
+      "id": 119,
+      "name": "Shoe_Hit",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 30,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 11275,
+          "hash": 3748419971
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 12549,
+          "hash": 444163652
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 14694,
+          "hash": 3432736047
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 12043,
+          "hash": 3520069310
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 13071,
+          "hash": 2797077881
+        }
+      ]
+    },
+    {
+      "id": 117,
+      "name": "BluffCatch",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 180,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 13409,
+          "hash": 2507105543
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 16111,
+          "hash": 1885144336
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 26159,
+          "hash": 116639903
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 26120,
+          "hash": 2196196399
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 1961,
+          "hash": 1707553814
+        }
+      ]
+    },
+    {
+      "id": 118,
+      "name": "118-emoji-lottie",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 119,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 10619,
+          "hash": 950169280
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 8320,
+          "hash": 3798842656
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 12020,
+          "hash": 272403008
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 24603,
+          "hash": 3859384708
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 0,
+          "hash": 4125924805
+        }
+      ]
+    },
+    {
+      "id": 116,
+      "name": "DrawingDead",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 201,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 47056,
+          "hash": 2159428173
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 47056,
+          "hash": 3979197267
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 47246,
+          "hash": 3041678174
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 48446,
+          "hash": 3916909413
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 48418,
+          "hash": 286578741
+        }
+      ]
+    },
+    {
+      "id": 115,
+      "name": "FoxRunningCold",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 241,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 20891,
+          "hash": 336967228
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 22834,
+          "hash": 2898282123
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 27586,
+          "hash": 1415207446
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 27611,
+          "hash": 1872270644
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 27684,
+          "hash": 1035766184
+        }
+      ]
+    },
+    {
+      "id": 113,
+      "name": "113-emoji-lottie",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 178,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 18624,
+          "hash": 39104498
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 24985,
+          "hash": 1025101989
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 25616,
+          "hash": 2125268504
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 23645,
+          "hash": 3890675999
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 23287,
+          "hash": 2214457704
+        }
+      ]
+    },
+    {
+      "id": 112,
+      "name": "Shit_Bee",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 140,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 21420,
+          "hash": 2208620738
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 43147,
+          "hash": 4042508532
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 35133,
+          "hash": 29793904
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 29794,
+          "hash": 116093657
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 21395,
+          "hash": 1944399189
+        }
+      ]
+    },
+    {
+      "id": 100,
+      "name": "100-emoji-lottie",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 180,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 25984,
+          "hash": 3394028315
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 23352,
+          "hash": 1136358711
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 22640,
+          "hash": 3460663184
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 26393,
+          "hash": 3598568799
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 25712,
+          "hash": 1072616345
+        }
+      ]
+    },
+    {
+      "id": 101,
+      "name": "101-emoji-lottie",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 123,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 5519,
+          "hash": 3851908666
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 14112,
+          "hash": 1240658040
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 10873,
+          "hash": 3478629897
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 6312,
+          "hash": 1647575159
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 402,
+          "hash": 600082700
+        }
+      ]
+    },
+    {
+      "id": 102,
+      "name": "Banana",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 122,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 11405,
+          "hash": 3258376070
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 19494,
+          "hash": 3101603281
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 21215,
+          "hash": 2091682153
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 23210,
+          "hash": 1335625620
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 24310,
+          "hash": 2210937538
+        }
+      ]
+    },
+    {
+      "id": 103,
+      "name": "Cheers",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 180,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 7864,
+          "hash": 3792671545
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 17477,
+          "hash": 977041091
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 25120,
+          "hash": 1686851336
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 23034,
+          "hash": 3486434724
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 22743,
+          "hash": 350033230
+        }
+      ]
+    },
+    {
+      "id": 104,
+      "name": "104-emoji-lottie",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 180,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 23138,
+          "hash": 2452726976
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 15273,
+          "hash": 1844235794
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 14365,
+          "hash": 2214820793
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 13200,
+          "hash": 2776494146
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 0,
+          "hash": 4125924805
+        }
+      ]
+    },
+    {
+      "id": 105,
+      "name": "105-emoji-lottie",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 180,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 18071,
+          "hash": 3630442138
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 17042,
+          "hash": 108517515
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 151,
+          "hash": 3327044240
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 17842,
+          "hash": 25587189
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 18045,
+          "hash": 463589270
+        }
+      ]
+    },
+    {
+      "id": 106,
+      "name": "106-emoji-lottie",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 180,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 6265,
+          "hash": 2409645779
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 6265,
+          "hash": 2409645779
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 23164,
+          "hash": 1082937147
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 31203,
+          "hash": 2692794184
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 6310,
+          "hash": 1155698531
+        }
+      ]
+    },
+    {
+      "id": 107,
+      "name": "NiceHand",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 180,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 21838,
+          "hash": 1987904935
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 22314,
+          "hash": 2791332468
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 23357,
+          "hash": 1390876271
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 20686,
+          "hash": 2377402682
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 21584,
+          "hash": 1261219864
+        }
+      ]
+    },
+    {
+      "id": 108,
+      "name": "Shark-beat-fish",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 40,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 21562,
+          "hash": 1842815892
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 21371,
+          "hash": 643402106
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 21686,
+          "hash": 2394895863
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 23020,
+          "hash": 1206059712
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 21770,
+          "hash": 3959366675
+        }
+      ]
+    },
+    {
+      "id": 109,
+      "name": "109-emoji-lottie",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 180,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 16531,
+          "hash": 1040149367
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 23180,
+          "hash": 71793094
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 17179,
+          "hash": 2135637084
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 30116,
+          "hash": 2250745542
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 30182,
+          "hash": 3845085562
+        }
+      ]
+    },
+    {
+      "id": 110,
+      "name": "110-emoji-lottie",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 130,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 20128,
+          "hash": 3586139414
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 25974,
+          "hash": 3719035565
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 31600,
+          "hash": 531224812
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 7572,
+          "hash": 3365170061
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 0,
+          "hash": 4125924805
+        }
+      ]
+    },
+    {
+      "id": 111,
+      "name": "111-emoji-lottie",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 180,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 9504,
+          "hash": 632405172
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 10625,
+          "hash": 628787608
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 18422,
+          "hash": 2546747287
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 971,
+          "hash": 538067219
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 0,
+          "hash": 4125924805
+        }
+      ]
+    },
+    {
+      "id": 120,
+      "name": "emoji_lottie_120",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 240,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 16710,
+          "hash": 4291265703
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 9943,
+          "hash": 2204787751
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 19032,
+          "hash": 286573695
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 29230,
+          "hash": 3385285360
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 0,
+          "hash": 4125924805
+        }
+      ]
+    },
+    {
+      "id": 121,
+      "name": "emoji_lottie_121",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 240,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 22267,
+          "hash": 282727970
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 24878,
+          "hash": 2156437175
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 41947,
+          "hash": 1984283739
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 42202,
+          "hash": 2181188339
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 41490,
+          "hash": 205270907
+        }
+      ]
+    },
+    {
+      "id": 3000,
+      "name": "Air-Horn",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 189,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 9039,
+          "hash": 3340832181
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 9131,
+          "hash": 3247457977
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 8887,
+          "hash": 827410310
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 8663,
+          "hash": 1691657398
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 0,
+          "hash": 4125924805
+        }
+      ]
+    },
+    {
+      "id": 3001,
+      "name": "Fan-Hands",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 274,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 9298,
+          "hash": 4087382823
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 28058,
+          "hash": 3327758492
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 27380,
+          "hash": 3922042196
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 27700,
+          "hash": 3945307923
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 25320,
+          "hash": 2637476826
+        }
+      ]
+    },
+    {
+      "id": 3002,
+      "name": "Football-Hit",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 62,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 2392,
+          "hash": 363557902
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 24389,
+          "hash": 71584446
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 23230,
+          "hash": 987831179
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 23195,
+          "hash": 82491199
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 0,
+          "hash": 4125924805
+        }
+      ]
+    },
+    {
+      "id": 3003,
+      "name": "Football-Catch",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 120,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 10059,
+          "hash": 3050905984
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 25917,
+          "hash": 1664554200
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 14394,
+          "hash": 1629358683
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 14394,
+          "hash": 1629358683
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 14394,
+          "hash": 1596327777
+        }
+      ]
+    },
+    {
+      "id": 3006,
+      "name": "Whistle-Hands",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 240,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 15647,
+          "hash": 1863322330
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 24932,
+          "hash": 903984771
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 24650,
+          "hash": 1338500120
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 15718,
+          "hash": 1492273185
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 15653,
+          "hash": 2603109170
+        }
+      ]
+    },
+    {
+      "id": 4001,
+      "name": "Water-Gun",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 240,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 22106,
+          "hash": 2714881787
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 6994,
+          "hash": 3817519064
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 15856,
+          "hash": 3911294348
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 15551,
+          "hash": 1978083520
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 729,
+          "hash": 1375441902
+        }
+      ]
+    },
+    {
+      "id": 4002,
+      "name": "Donkey-Call",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 240,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 29143,
+          "hash": 2191761320
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 30054,
+          "hash": 271734115
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 30536,
+          "hash": 169937727
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 27220,
+          "hash": 3545145579
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 26778,
+          "hash": 3636816388
+        }
+      ]
+    },
+    {
+      "id": 4003,
+      "name": "Ace-Shredder",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 304,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 16994,
+          "hash": 2481447636
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 22603,
+          "hash": 1228088385
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 17767,
+          "hash": 3172350079
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 19812,
+          "hash": 3135873167
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 19704,
+          "hash": 321499881
+        }
+      ]
+    },
+    {
+      "id": 4004,
+      "name": "Fish",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 203,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 7472,
+          "hash": 304535689
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 9114,
+          "hash": 2865074850
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 0,
+          "hash": 4125924805
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 9293,
+          "hash": 1852048411
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 97,
+          "hash": 4151586864
+        }
+      ]
+    },
+    {
+      "id": 5001,
+      "name": "5001-Pepe-NE",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 252,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 28029,
+          "hash": 1816962977
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 28566,
+          "hash": 571917113
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 36808,
+          "hash": 3206702865
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 36875,
+          "hash": 4186957166
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 36897,
+          "hash": 3460204163
+        }
+      ]
+    },
+    {
+      "id": 5002,
+      "name": "5002-Pepe-Cycle",
+      "renderer": "svg",
+      "ok": true,
+      "frames": 257,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 6932,
+          "hash": 2369653352
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 6771,
+          "hash": 3863512425
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 0,
+          "hash": 4125924805
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 0,
+          "hash": 4125924805
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 0,
+          "hash": 4125924805
+        }
+      ]
+    },
+    {
+      "id": 5003,
+      "name": "5003-Pepe-Boss",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 187,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 22534,
+          "hash": 3915718677
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 27928,
+          "hash": 452332949
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 43389,
+          "hash": 2270742925
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 43299,
+          "hash": 1987039079
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 43299,
+          "hash": 3932537652
+        }
+      ]
+    },
+    {
+      "id": 5004,
+      "name": "5004-Pepe-Dodge-Bullets",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 181,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 23752,
+          "hash": 2223254580
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 23755,
+          "hash": 488302856
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 39159,
+          "hash": 3346544473
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 43889,
+          "hash": 3060527616
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 43885,
+          "hash": 4089728757
+        }
+      ]
+    },
+    {
+      "id": 5005,
+      "name": "5005-Pepe-NLT",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 120,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 30257,
+          "hash": 380779687
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 34336,
+          "hash": 1589977606
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 42730,
+          "hash": 3123706841
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 42807,
+          "hash": 1878003761
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 42834,
+          "hash": 3310929564
+        }
+      ]
+    },
+    {
+      "id": 2001,
+      "name": "aic-khallas",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 144,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 22946,
+          "hash": 695878850
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 23719,
+          "hash": 4169274526
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 22640,
+          "hash": 2854452700
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 29588,
+          "hash": 2633824058
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 29572,
+          "hash": 3396232156
+        }
+      ]
+    },
+    {
+      "id": 2003,
+      "name": "aic-shark",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 158,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 9758,
+          "hash": 1602857306
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 4828,
+          "hash": 478112065
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 10836,
+          "hash": 3476919126
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 14202,
+          "hash": 2771827438
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 0,
+          "hash": 4125924805
+        }
+      ]
+    },
+    {
+      "id": 2002,
+      "name": "aic-om-2",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 212,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 27191,
+          "hash": 1367435663
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 30361,
+          "hash": 1519812362
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 27542,
+          "hash": 2943423379
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 26881,
+          "hash": 2686236834
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 26806,
+          "hash": 3572691860
+        }
+      ]
+    },
+    {
+      "id": 2004,
+      "name": "aic-donkey-call",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 240,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 29143,
+          "hash": 4224569187
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 30054,
+          "hash": 1720709534
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 30536,
+          "hash": 645172942
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 27220,
+          "hash": 2511921843
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 26778,
+          "hash": 3771602528
+        }
+      ]
+    },
+    {
+      "id": 56,
+      "name": "emoji_lottie_56",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 120,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 30703,
+          "hash": 3706141027
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 31591,
+          "hash": 3576149660
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 31382,
+          "hash": 998395694
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 31745,
+          "hash": 1199366018
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 30907,
+          "hash": 3955370259
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "name": "emoji_lottie_57",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 256,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 19784,
+          "hash": 4226338223
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 27285,
+          "hash": 2831756235
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 26889,
+          "hash": 1148715967
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 19906,
+          "hash": 3774077445
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 19893,
+          "hash": 1340327985
+        }
+      ]
+    },
+    {
+      "id": 58,
+      "name": "emoji_lottie_58",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 180,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 0,
+          "hash": 4125924805
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 25066,
+          "hash": 4097771646
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 32778,
+          "hash": 2287873287
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 34224,
+          "hash": 1528014131
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 34302,
+          "hash": 910984054
+        }
+      ]
+    },
+    {
+      "id": 59,
+      "name": "emoji_lottie_59",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 160,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 26339,
+          "hash": 2726127280
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 27169,
+          "hash": 1967514654
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 29030,
+          "hash": 1692168187
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 34906,
+          "hash": 10139643
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 34534,
+          "hash": 3810268612
+        }
+      ]
+    },
+    {
+      "id": 60,
+      "name": "emoji_lottie_60",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 120,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 38407,
+          "hash": 284064091
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 37906,
+          "hash": 2283624368
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 40037,
+          "hash": 967676992
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 42636,
+          "hash": 663755300
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 38613,
+          "hash": 64633751
+        }
+      ]
+    },
+    {
+      "id": 61,
+      "name": "emoji_lottie_61",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 300,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 21574,
+          "hash": 1191250630
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 21718,
+          "hash": 1355827001
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 21746,
+          "hash": 2406172954
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 32100,
+          "hash": 2548163022
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 32105,
+          "hash": 870260693
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "name": "emoji_lottie_62",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 180,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 28878,
+          "hash": 226472385
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 28645,
+          "hash": 4044088460
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 29260,
+          "hash": 1982336924
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 28463,
+          "hash": 9954338
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 29110,
+          "hash": 2401032972
+        }
+      ]
+    },
+    {
+      "id": 63,
+      "name": "emoji_lottie_63",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 180,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 22498,
+          "hash": 10096829
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 30025,
+          "hash": 2143499246
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 36116,
+          "hash": 3680743903
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 38326,
+          "hash": 3720620118
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 38326,
+          "hash": 2333560700
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "name": "emoji_lottie_64",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 180,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 25072,
+          "hash": 3797922587
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 25596,
+          "hash": 1289121666
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 26443,
+          "hash": 3578810941
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 27619,
+          "hash": 1639673800
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 23704,
+          "hash": 2564713140
+        }
+      ]
+    },
+    {
+      "id": 65,
+      "name": "emoji_lottie_65",
+      "renderer": "canvas",
+      "ok": true,
+      "frames": 120,
+      "samples": [
+        {
+          "fraction": 0,
+          "visible_pixels": 27119,
+          "hash": 1616113298
+        },
+        {
+          "fraction": 0.25,
+          "visible_pixels": 38124,
+          "hash": 2715651262
+        },
+        {
+          "fraction": 0.5,
+          "visible_pixels": 38544,
+          "hash": 726689071
+        },
+        {
+          "fraction": 0.75,
+          "visible_pixels": 38359,
+          "hash": 3872859156
+        },
+        {
+          "fraction": 0.99,
+          "visible_pixels": 38180,
+          "hash": 1286889217
+        }
+      ]
+    }
+  ],
+  "images": [
+    {
+      "path": "avatars/avatar-1.webp",
+      "ok": true,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "avatars/avatar-2.webp",
+      "ok": true,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "avatars/avatar-3.webp",
+      "ok": true,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "avatars/avatar-4.webp",
+      "ok": true,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "avatars/avatar-5.webp",
+      "ok": true,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "avatars/avatar-6.webp",
+      "ok": true,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "avatars/avatar-7.webp",
+      "ok": true,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "avatars/avatar-8.webp",
+      "ok": true,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "avatars/avatar-9.webp",
+      "ok": true,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "avatars/avatar-10.webp",
+      "ok": true,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "avatars/avatar-11.webp",
+      "ok": true,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "avatars/avatar-12.webp",
+      "ok": true,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "avatars/avatar-13.webp",
+      "ok": true,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "avatars/avatar-14.webp",
+      "ok": true,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "avatars/avatar-15.webp",
+      "ok": true,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "avatars/avatar-16.webp",
+      "ok": true,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "avatars/avatar-17.webp",
+      "ok": true,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "avatars/avatar-18.webp",
+      "ok": true,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "avatars/avatar-19.webp",
+      "ok": true,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "avatars/avatar-20.webp",
+      "ok": true,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "avatars/avatar-21.webp",
+      "ok": true,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "avatars/avatar-22.webp",
+      "ok": true,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "avatars/avatar-23.webp",
+      "ok": true,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "avatars/avatar-24.webp",
+      "ok": true,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "avatars/avatar-25.webp",
+      "ok": true,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "avatars/avatar-26.webp",
+      "ok": true,
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "path": "avatars/avatar-27.webp",
+      "ok": true,
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "path": "avatars/avatar-28.webp",
+      "ok": true,
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "path": "avatars/avatar-29.webp",
+      "ok": true,
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "path": "avatars/avatar-30.webp",
+      "ok": true,
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "path": "avatars/avatar-31.webp",
+      "ok": true,
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "path": "avatars/avatar-32.webp",
+      "ok": true,
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "path": "avatars/avatar-33.webp",
+      "ok": true,
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "path": "avatars/avatar-34.webp",
+      "ok": true,
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "path": "avatars/avatar-35.webp",
+      "ok": true,
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "path": "avatars/avatar-2001.webp",
+      "ok": true,
+      "width": 1292,
+      "height": 1292
+    },
+    {
+      "path": "avatars/avatar-2002.webp",
+      "ok": true,
+      "width": 1292,
+      "height": 1292
+    },
+    {
+      "path": "avatars/avatar-2003.webp",
+      "ok": true,
+      "width": 1292,
+      "height": 1292
+    },
+    {
+      "path": "avatars/avatar-2004.webp",
+      "ok": true,
+      "width": 1292,
+      "height": 1292
+    },
+    {
+      "path": "avatars/avatar-2005.webp",
+      "ok": true,
+      "width": 1292,
+      "height": 1292
+    },
+    {
+      "path": "avatars/avatar-2006.webp",
+      "ok": true,
+      "width": 1292,
+      "height": 1292
+    },
+    {
+      "path": "avatars/avatar-2007.webp",
+      "ok": true,
+      "width": 1292,
+      "height": 1292
+    },
+    {
+      "path": "avatars/avatar-2008.webp",
+      "ok": true,
+      "width": 1292,
+      "height": 1292
+    },
+    {
+      "path": "avatars/avatar-2009.webp",
+      "ok": true,
+      "width": 1292,
+      "height": 1292
+    },
+    {
+      "path": "avatars/avatar-2010.webp",
+      "ok": true,
+      "width": 1292,
+      "height": 1292
+    },
+    {
+      "path": "avatars/avatar-2011.webp",
+      "ok": true,
+      "width": 1292,
+      "height": 1292
+    },
+    {
+      "path": "avatars/avatar-2012.webp",
+      "ok": true,
+      "width": 1292,
+      "height": 1292
+    },
+    {
+      "path": "avatars/avatar-2013.webp",
+      "ok": true,
+      "width": 1292,
+      "height": 1292
+    },
+    {
+      "path": "avatars/avatar-2014.webp",
+      "ok": true,
+      "width": 1292,
+      "height": 1292
+    },
+    {
+      "path": "avatars/avatar-2015.webp",
+      "ok": true,
+      "width": 1292,
+      "height": 1292
+    },
+    {
+      "path": "avatars/avatar-2016.webp",
+      "ok": true,
+      "width": 1292,
+      "height": 1292
+    },
+    {
+      "path": "rings/unity/ring_skill_score_silver_897.png",
+      "ok": true,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "rings/unity/avatardpcircle_1058.png",
+      "ok": true,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "rings/unity/livering_1107.png",
+      "ok": true,
+      "width": 96,
+      "height": 96
+    },
+    {
+      "path": "rings/unity/avatar_circle_gold_1174.png",
+      "ok": true,
+      "width": 131,
+      "height": 131
+    },
+    {
+      "path": "rings/unity/ring_skill_score_golden_1328.png",
+      "ok": true,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "rings/unity/3bet_border_1439.png",
+      "ok": true,
+      "width": 464,
+      "height": 464
+    },
+    {
+      "path": "rings/unity/gold_border_1487.png",
+      "ok": true,
+      "width": 200,
+      "height": 184
+    },
+    {
+      "path": "rings/unity/avatarcircle_1513.png",
+      "ok": true,
+      "width": 184,
+      "height": 184
+    },
+    {
+      "path": "rings/electron/aic-avatar-ring.0989b1e4.webp",
+      "ok": true,
+      "width": 108,
+      "height": 108
+    },
+    {
+      "path": "rings/electron/bronze-avater-ring.1ed417af.webp",
+      "ok": true,
+      "width": 372,
+      "height": 387
+    },
+    {
+      "path": "rings/electron/first-rank-avatar-ring.949ca58d.webp",
+      "ok": true,
+      "width": 582,
+      "height": 551
+    },
+    {
+      "path": "rings/electron/golden-avatar-ring.693a3f82.webp",
+      "ok": true,
+      "width": 372,
+      "height": 387
+    },
+    {
+      "path": "rings/electron/golden-ring.38a076ba.webp",
+      "ok": true,
+      "width": 336,
+      "height": 336
+    },
+    {
+      "path": "rings/electron/gopc-bronze-ring.7c112946.webp",
+      "ok": true,
+      "width": 288,
+      "height": 189
+    },
+    {
+      "path": "rings/electron/gopc-gold-ring.5fb12ad3.webp",
+      "ok": true,
+      "width": 434,
+      "height": 288
+    },
+    {
+      "path": "rings/electron/gopc-golden-ring.38a076ba.webp",
+      "ok": true,
+      "width": 336,
+      "height": 336
+    },
+    {
+      "path": "rings/electron/gopc-silver-ring.3e0566cb.webp",
+      "ok": true,
+      "width": 318,
+      "height": 210
+    },
+    {
+      "path": "rings/electron/hud-3bet-ring.38593732.png",
+      "ok": true,
+      "width": 192,
+      "height": 192
+    },
+    {
+      "path": "rings/electron/live_ring.bf16cfaa.webp",
+      "ok": true,
+      "width": 96,
+      "height": 96
+    },
+    {
+      "path": "rings/electron/normal-winner-ring.abfbd47d.webp",
+      "ok": true,
+      "width": 96,
+      "height": 96
+    },
+    {
+      "path": "rings/electron/other-blue-avatar-ring.0195a43e.webp",
+      "ok": true,
+      "width": 372,
+      "height": 387
+    },
+    {
+      "path": "rings/electron/ring-first.5962efae.webp",
+      "ok": true,
+      "width": 288,
+      "height": 288
+    },
+    {
+      "path": "rings/electron/ring-second.72ee3472.webp",
+      "ok": true,
+      "width": 264,
+      "height": 264
+    },
+    {
+      "path": "rings/electron/ring-skill-score-golden.6947761c.webp",
+      "ok": true,
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "rings/electron/ring-third.1647a180.webp",
+      "ok": true,
+      "width": 240,
+      "height": 240
+    },
+    {
+      "path": "rings/electron/silver-avatar-ring.92f38f71.webp",
+      "ok": true,
+      "width": 372,
+      "height": 387
+    },
+    {
+      "path": "chat/sprites/uisprite_887.png",
+      "ok": true,
+      "width": 32,
+      "height": 32
+    },
+    {
+      "path": "chat/sprites/background_888.png",
+      "ok": true,
+      "width": 32,
+      "height": 32
+    },
+    {
+      "path": "chat/sprites/inputfieldbackground_889.png",
+      "ok": true,
+      "width": 32,
+      "height": 32
+    },
+    {
+      "path": "chat/sprites/uimask_891.png",
+      "ok": true,
+      "width": 28,
+      "height": 28
+    },
+    {
+      "path": "chat/sprites/selectedcheck_915.png",
+      "ok": true,
+      "width": 46,
+      "height": 33
+    },
+    {
+      "path": "chat/sprites/cp_inputfield_940.png",
+      "ok": true,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "path": "chat/sprites/predefinedmsgicon_942.png",
+      "ok": true,
+      "width": 131,
+      "height": 132
+    },
+    {
+      "path": "chat/sprites/arrow_down_946.png",
+      "ok": true,
+      "width": 30,
+      "height": 30
+    },
+    {
+      "path": "chat/sprites/cp_chatmsgbutton_972.png",
+      "ok": true,
+      "width": 64,
+      "height": 57
+    },
+    {
+      "path": "chat/sprites/reply_987.png",
+      "ok": true,
+      "width": 56,
+      "height": 44
+    },
+    {
+      "path": "chat/sprites/copiedchatbg_1017.png",
+      "ok": true,
+      "width": 360,
+      "height": 43
+    },
+    {
+      "path": "chat/sprites/playerchatrect_1067.png",
+      "ok": true,
+      "width": 256,
+      "height": 80
+    },
+    {
+      "path": "chat/sprites/cp_downarrow_1071.png",
+      "ok": true,
+      "width": 136,
+      "height": 136
+    },
+    {
+      "path": "chat/sprites/close_circle_1095.png",
+      "ok": true,
+      "width": 90,
+      "height": 90
+    },
+    {
+      "path": "chat/sprites/avatar_1101.png",
+      "ok": true,
+      "width": 32,
+      "height": 32
+    },
+    {
+      "path": "chat/sprites/check_1112.png",
+      "ok": true,
+      "width": 46,
+      "height": 33
+    },
+    {
+      "path": "chat/sprites/chatbubble_1145.png",
+      "ok": true,
+      "width": 116,
+      "height": 25
+    },
+    {
+      "path": "chat/sprites/cp_arrow_1161.png",
+      "ok": true,
+      "width": 36,
+      "height": 76
+    },
+    {
+      "path": "chat/sprites/cp_rectwithborder_1167.png",
+      "ok": true,
+      "width": 128,
+      "height": 128
+    },
+    {
+      "path": "chat/sprites/cp_uparrow_1213.png",
+      "ok": true,
+      "width": 136,
+      "height": 136
+    },
+    {
+      "path": "chat/sprites/optionsdots_1236.png",
+      "ok": true,
+      "width": 14,
+      "height": 64
+    },
+    {
+      "path": "chat/sprites/copyreplybutton_1252.png",
+      "ok": true,
+      "width": 288,
+      "height": 60
+    },
+    {
+      "path": "chat/sprites/chatbubblecenter_1266.png",
+      "ok": true,
+      "width": 256,
+      "height": 81
+    },
+    {
+      "path": "chat/sprites/1x1_1339.png",
+      "ok": true,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "path": "chat/sprites/selectedicon_1358.png",
+      "ok": true,
+      "width": 40,
+      "height": 40
+    },
+    {
+      "path": "chat/sprites/arrowup_1362.png",
+      "ok": true,
+      "width": 12,
+      "height": 13
+    },
+    {
+      "path": "chat/sprites/cp_chat_error_1382.png",
+      "ok": true,
+      "width": 67,
+      "height": 67
+    },
+    {
+      "path": "chat/sprites/nochat_1434.png",
+      "ok": true,
+      "width": 280,
+      "height": 227
+    },
+    {
+      "path": "chat/sprites/copy_1447.png",
+      "ok": true,
+      "width": 53,
+      "height": 53
+    },
+    {
+      "path": "chat/sprites/cp_chatbticon_1490.png",
+      "ok": true,
+      "width": 131,
+      "height": 125
+    },
+    {
+      "path": "chat/sprites/roundedrect2_1494.png",
+      "ok": true,
+      "width": 174,
+      "height": 32
+    },
+    {
+      "path": "chat/sprites/chatbubbleside_1497.png",
+      "ok": true,
+      "width": 256,
+      "height": 81
+    },
+    {
+      "path": "chat/sprites/copy_reply_bg_1506.png",
+      "ok": true,
+      "width": 124,
+      "height": 112
+    },
+    {
+      "path": "chat/sprites/icon_1510.png",
+      "ok": true,
+      "width": 40,
+      "height": 40
+    },
+    {
+      "path": "chat/sprites/cp_selfuseremoji_1543.png",
+      "ok": true,
+      "width": 215,
+      "height": 212
+    },
+    {
+      "path": "chat/sprites/white_pixel_1633.png",
+      "ok": true,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "path": "chat/electron/chat-active.0a33fc04.svg",
+      "ok": true,
+      "width": 16,
+      "height": 16
+    },
+    {
+      "path": "chat/electron/chat.e0a31500.svg",
+      "ok": true,
+      "width": 16,
+      "height": 16
+    },
+    {
+      "path": "emotes/thumbnails/23_emoji_image_979.png",
+      "ok": true,
+      "width": 202,
+      "height": 201
+    },
+    {
+      "path": "emotes/thumbnails/24_emoji_image_1374.png",
+      "ok": true,
+      "width": 181,
+      "height": 189
+    },
+    {
+      "path": "emotes/thumbnails/25_emoji_image_1162.png",
+      "ok": true,
+      "width": 178,
+      "height": 216
+    },
+    {
+      "path": "emotes/thumbnails/26_emoji_image_1542.png",
+      "ok": true,
+      "width": 195,
+      "height": 176
+    },
+    {
+      "path": "emotes/thumbnails/27_emoji_image_896.png",
+      "ok": true,
+      "width": 202,
+      "height": 179
+    },
+    {
+      "path": "emotes/thumbnails/41_emoji_image_1319.png",
+      "ok": true,
+      "width": 166,
+      "height": 205
+    },
+    {
+      "path": "emotes/thumbnails/42_emoji_image_1343.png",
+      "ok": true,
+      "width": 141,
+      "height": 205
+    },
+    {
+      "path": "emotes/thumbnails/43_emoji_image_1470.png",
+      "ok": true,
+      "width": 166,
+      "height": 210
+    },
+    {
+      "path": "emotes/thumbnails/44_emoji_image_989.png",
+      "ok": true,
+      "width": 200,
+      "height": 205
+    },
+    {
+      "path": "emotes/thumbnails/45_emoji_image_1321.png",
+      "ok": true,
+      "width": 190,
+      "height": 209
+    },
+    {
+      "path": "emotes/thumbnails/46_emoji_image_1284.png",
+      "ok": true,
+      "width": 209,
+      "height": 203
+    },
+    {
+      "path": "emotes/thumbnails/47_emoji_image_3x_1587.png",
+      "ok": true,
+      "width": 204,
+      "height": 205
+    },
+    {
+      "path": "emotes/thumbnails/chip4_1196.png",
+      "ok": true,
+      "width": 234,
+      "height": 100
+    },
+    {
+      "path": "emotes/thumbnails/chip5_1616.png",
+      "ok": true,
+      "width": 225,
+      "height": 168
+    },
+    {
+      "path": "emotes/thumbnails/chip1_1040.png",
+      "ok": true,
+      "width": 243,
+      "height": 222
+    },
+    {
+      "path": "emotes/thumbnails/chip2_1311.png",
+      "ok": true,
+      "width": 156,
+      "height": 242
+    },
+    {
+      "path": "emotes/thumbnails/chip3_1286.png",
+      "ok": true,
+      "width": 183,
+      "height": 232
+    },
+    {
+      "path": "emotes/thumbnails/chip6_1582.png",
+      "ok": true,
+      "width": 244,
+      "height": 88
+    },
+    {
+      "path": "emotes/thumbnails/skull_mad_laugh_1630.png",
+      "ok": true,
+      "width": 132,
+      "height": 192
+    },
+    {
+      "path": "emotes/thumbnails/skull_love_1512.png",
+      "ok": true,
+      "width": 222,
+      "height": 192
+    },
+    {
+      "path": "emotes/thumbnails/skull_thumbs_up_1194.png",
+      "ok": true,
+      "width": 211,
+      "height": 212
+    },
+    {
+      "path": "emotes/thumbnails/skull_sorry_1283.png",
+      "ok": true,
+      "width": 195,
+      "height": 244
+    },
+    {
+      "path": "emotes/thumbnails/skull_you_are_dead_1569.png",
+      "ok": true,
+      "width": 165,
+      "height": 181
+    },
+    {
+      "path": "emotes/thumbnails/skull_money_1026.png",
+      "ok": true,
+      "width": 159,
+      "height": 202
+    },
+    {
+      "path": "emotes/thumbnails/skull_clap_1601.png",
+      "ok": true,
+      "width": 156,
+      "height": 229
+    },
+    {
+      "path": "emotes/thumbnails/skull_blast_1639.png",
+      "ok": true,
+      "width": 180,
+      "height": 216
+    },
+    {
+      "path": "throwables/thumbnails/shoe_hit_1377.png",
+      "ok": true,
+      "width": 240,
+      "height": 248
+    },
+    {
+      "path": "throwables/thumbnails/bluff_catch_1383.png",
+      "ok": true,
+      "width": 198,
+      "height": 248
+    },
+    {
+      "path": "throwables/thumbnails/drawingdead_1087.png",
+      "ok": true,
+      "width": 184,
+      "height": 208
+    },
+    {
+      "path": "throwables/thumbnails/foxrunning_cold_1472.png",
+      "ok": true,
+      "width": 238,
+      "height": 244
+    },
+    {
+      "path": "throwables/thumbnails/shitbee_1566.png",
+      "ok": true,
+      "width": 210,
+      "height": 214
+    },
+    {
+      "path": "throwables/thumbnails/banana_1207.png",
+      "ok": true,
+      "width": 165,
+      "height": 194
+    },
+    {
+      "path": "throwables/thumbnails/cheers_1397.png",
+      "ok": true,
+      "width": 166,
+      "height": 209
+    },
+    {
+      "path": "throwables/thumbnails/bomb_929.png",
+      "ok": true,
+      "width": 181,
+      "height": 216
+    },
+    {
+      "path": "throwables/thumbnails/nicehand_1237.png",
+      "ok": true,
+      "width": 190,
+      "height": 218
+    },
+    {
+      "path": "throwables/thumbnails/sharkbeatfish_943.png",
+      "ok": true,
+      "width": 171,
+      "height": 218
+    },
+    {
+      "path": "throwables/thumbnails/boxing_1430.png",
+      "ok": true,
+      "width": 247,
+      "height": 121
+    },
+    {
+      "path": "throwables/thumbnails/good_luck_1522.png",
+      "ok": true,
+      "width": 244,
+      "height": 240
+    },
+    {
+      "path": "throwables/thumbnails/air_horn_1046.png",
+      "ok": true,
+      "width": 230,
+      "height": 248
+    },
+    {
+      "path": "throwables/thumbnails/fan_hands_1599.png",
+      "ok": true,
+      "width": 252,
+      "height": 223
+    },
+    {
+      "path": "throwables/thumbnails/football_hit_1217.png",
+      "ok": true,
+      "width": 217,
+      "height": 218
+    },
+    {
+      "path": "throwables/thumbnails/football_catch_994.png",
+      "ok": true,
+      "width": 228,
+      "height": 252
+    },
+    {
+      "path": "throwables/thumbnails/whistle_hands_1636.png",
+      "ok": true,
+      "width": 206,
+      "height": 255
+    },
+    {
+      "path": "throwables/thumbnails/water_gun_1462.png",
+      "ok": true,
+      "width": 472,
+      "height": 461
+    },
+    {
+      "path": "throwables/thumbnails/donkey_call_1122.png",
+      "ok": true,
+      "width": 475,
+      "height": 511
+    },
+    {
+      "path": "throwables/thumbnails/ace_shredder_1059.png",
+      "ok": true,
+      "width": 508,
+      "height": 477
+    },
+    {
+      "path": "throwables/thumbnails/fish_1150.png",
+      "ok": true,
+      "width": 494,
+      "height": 359
+    },
+    {
+      "path": "emotes/thumbnails/pepe_ne_5001_1365.png",
+      "ok": true,
+      "width": 471,
+      "height": 414
+    },
+    {
+      "path": "emotes/thumbnails/pepe_cycle_5002_1292.png",
+      "ok": true,
+      "width": 340,
+      "height": 470
+    },
+    {
+      "path": "emotes/thumbnails/pepe_boss_5003_1547.png",
+      "ok": true,
+      "width": 452,
+      "height": 357
+    },
+    {
+      "path": "emotes/thumbnails/pepe_dodge_bullets_5004_1114.png",
+      "ok": true,
+      "width": 309,
+      "height": 467
+    },
+    {
+      "path": "emotes/thumbnails/pepe_nlt_5005_1452.png",
+      "ok": true,
+      "width": 402,
+      "height": 460
+    },
+    {
+      "path": "emotes/thumbnails/emoji_lottie_56_1037.png",
+      "ok": true,
+      "width": 210,
+      "height": 237
+    },
+    {
+      "path": "emotes/thumbnails/emoji_lottie_57_1425.png",
+      "ok": true,
+      "width": 164,
+      "height": 244
+    },
+    {
+      "path": "emotes/thumbnails/emoji_lottie_58_1115.png",
+      "ok": true,
+      "width": 215,
+      "height": 225
+    },
+    {
+      "path": "emotes/thumbnails/emoji_lottie_59_1348.png",
+      "ok": true,
+      "width": 229,
+      "height": 248
+    },
+    {
+      "path": "emotes/thumbnails/emoji_lottie_60_1276.png",
+      "ok": true,
+      "width": 229,
+      "height": 256
+    },
+    {
+      "path": "emotes/thumbnails/emoji_lottie_61_1417.png",
+      "ok": true,
+      "width": 247,
+      "height": 224
+    },
+    {
+      "path": "emotes/thumbnails/emoji_lottie_62_941.png",
+      "ok": true,
+      "width": 191,
+      "height": 228
+    },
+    {
+      "path": "emotes/thumbnails/emoji_lottie_63_990.png",
+      "ok": true,
+      "width": 243,
+      "height": 247
+    },
+    {
+      "path": "emotes/thumbnails/emoji_lottie_64_1431.png",
+      "ok": true,
+      "width": 215,
+      "height": 230
+    },
+    {
+      "path": "emotes/thumbnails/emoji_lottie_65_938.png",
+      "ok": true,
+      "width": 251,
+      "height": 248
+    }
+  ],
+  "audio": [
+    {
+      "path": "emotes/audio/48_chip4.wav",
+      "ok": true,
+      "duration": 4.075102
+    },
+    {
+      "path": "emotes/audio/49_chip5.wav",
+      "ok": true,
+      "duration": 3.030204
+    },
+    {
+      "path": "emotes/audio/50_chip1.wav",
+      "ok": true,
+      "duration": 4.179592
+    },
+    {
+      "path": "emotes/audio/51_chip2.wav",
+      "ok": true,
+      "duration": 4.362449
+    },
+    {
+      "path": "emotes/audio/52_chip3.wav",
+      "ok": true,
+      "duration": 2.56
+    },
+    {
+      "path": "emotes/audio/53_chip6.wav",
+      "ok": true,
+      "duration": 2.742857
+    },
+    {
+      "path": "emotes/audio/1001_aic_skull_mad_laugh.wav",
+      "ok": true,
+      "duration": 4.032
+    },
+    {
+      "path": "emotes/audio/1002_aic_skull_love.wav",
+      "ok": true,
+      "duration": 1.104
+    },
+    {
+      "path": "emotes/audio/1003_aic_skull_thumbs_up.wav",
+      "ok": true,
+      "duration": 3.024
+    },
+    {
+      "path": "emotes/audio/1004_aic_skull_sorry.wav",
+      "ok": true,
+      "duration": 1.056
+    },
+    {
+      "path": "emotes/audio/1005_aic_skull_you_are_dead.wav",
+      "ok": true,
+      "duration": 2.064
+    },
+    {
+      "path": "emotes/audio/1006_aic_skull_money.wav",
+      "ok": true,
+      "duration": 3.072
+    },
+    {
+      "path": "emotes/audio/1007_skullclap.wav",
+      "ok": true,
+      "duration": 3.048
+    },
+    {
+      "path": "emotes/audio/1008_aic_skull_blast.wav",
+      "ok": true,
+      "duration": 3.24
+    }
+  ],
+  "summary": {
+    "animations": 104,
+    "animation_passes": 104,
+    "images": 177,
+    "image_passes": 177,
+    "audio": 14,
+    "audio_passes": 14
+  }
+}

@@ -1,0 +1,190 @@
+[
+  {
+    "name": "ring_skill_score_Silver",
+    "path": "rings/unity/ring_skill_score_silver_897.png",
+    "width": 256,
+    "height": 256,
+    "source": "data.unity3d",
+    "serialized_file": "sharedassets0.assets",
+    "path_id": 897,
+    "sha256": "4ee6168dbf0246f2175638dd5c9d88c6c8e0d6eaade23a2bd8b7088ac72be500"
+  },
+  {
+    "name": "AvatarDpCircle",
+    "path": "rings/unity/avatardpcircle_1058.png",
+    "width": 256,
+    "height": 256,
+    "source": "data.unity3d",
+    "serialized_file": "sharedassets0.assets",
+    "path_id": 1058,
+    "sha256": "241ab9c11105a142a5ec37c7f291fa8ac7983b6757bfb7d48aba1ade0b05e08d"
+  },
+  {
+    "name": "liveRing",
+    "path": "rings/unity/livering_1107.png",
+    "width": 96,
+    "height": 96,
+    "source": "data.unity3d",
+    "serialized_file": "sharedassets0.assets",
+    "path_id": 1107,
+    "sha256": "4e1419a96e0b338567bbd0bc09ab3e431a19db9aa8bde0df0b17c4937dea0cd7"
+  },
+  {
+    "name": "Avatar Circle Gold",
+    "path": "rings/unity/avatar_circle_gold_1174.png",
+    "width": 131,
+    "height": 131,
+    "source": "data.unity3d",
+    "serialized_file": "sharedassets0.assets",
+    "path_id": 1174,
+    "sha256": "8f2e6bdab049b75e93a8dd3e2f4b4e53092ef3c3d5f2edbb79a2ae10cfa999ef"
+  },
+  {
+    "name": "ring_skill_score_golden",
+    "path": "rings/unity/ring_skill_score_golden_1328.png",
+    "width": 256,
+    "height": 256,
+    "source": "data.unity3d",
+    "serialized_file": "sharedassets0.assets",
+    "path_id": 1328,
+    "sha256": "9ff5bb694cd268df195144867419aabd542babdc752a900efd200c95e0114aed"
+  },
+  {
+    "name": "3Bet-Border",
+    "path": "rings/unity/3bet_border_1439.png",
+    "width": 464,
+    "height": 464,
+    "source": "data.unity3d",
+    "serialized_file": "sharedassets0.assets",
+    "path_id": 1439,
+    "sha256": "c8f7c9911ee60f43159971ec97df724bd00390c023e06d9ab9fc935908da6671"
+  },
+  {
+    "name": "Gold Border",
+    "path": "rings/unity/gold_border_1487.png",
+    "width": 200,
+    "height": 184,
+    "source": "data.unity3d",
+    "serialized_file": "sharedassets0.assets",
+    "path_id": 1487,
+    "sha256": "852def3cc0d3a4ef00584e74e764302cb359fd12239a26397a192cfae1476190"
+  },
+  {
+    "name": "AvatarCircle",
+    "path": "rings/unity/avatarcircle_1513.png",
+    "width": 184,
+    "height": 184,
+    "source": "data.unity3d",
+    "serialized_file": "sharedassets0.assets",
+    "path_id": 1513,
+    "sha256": "8dc034ac9a9976d071d7182ca11c402a5a43a3e12f859f306b047bc259606a75"
+  },
+  {
+    "name": "aic-avatar-ring.0989b1e4.webp",
+    "path": "rings/electron/aic-avatar-ring.0989b1e4.webp",
+    "source": "app.asar/dist/assets/aic-avatar-ring.0989b1e4.webp",
+    "sha256": "a6b1a693ba6d601e6cdc084533878b24430317dfa655b3ebdd04d9a2e71eede0"
+  },
+  {
+    "name": "bronze-avater-ring.1ed417af.webp",
+    "path": "rings/electron/bronze-avater-ring.1ed417af.webp",
+    "source": "app.asar/dist/assets/bronze-avater-ring.1ed417af.webp",
+    "sha256": "a35ccea3aebcac159f93b72f1b29e7cd0d1ab3ee96a6b3f22bb0469234795501"
+  },
+  {
+    "name": "first-rank-avatar-ring.949ca58d.webp",
+    "path": "rings/electron/first-rank-avatar-ring.949ca58d.webp",
+    "source": "app.asar/dist/assets/first-rank-avatar-ring.949ca58d.webp",
+    "sha256": "e42537277e13392e2fee5f152091aff47b631b2ff1e0a0b98a144edaadb88779"
+  },
+  {
+    "name": "golden-avatar-ring.693a3f82.webp",
+    "path": "rings/electron/golden-avatar-ring.693a3f82.webp",
+    "source": "app.asar/dist/assets/golden-avatar-ring.693a3f82.webp",
+    "sha256": "fe4b2cdef10ef849a08b21ea8e17754ec2fc4aa83f9aabbb91366e7afe915065"
+  },
+  {
+    "name": "golden-ring.38a076ba.webp",
+    "path": "rings/electron/golden-ring.38a076ba.webp",
+    "source": "app.asar/dist/assets/golden-ring.38a076ba.webp",
+    "sha256": "87f2bdb2ba03e6f6c3557263f3f8210dca38346e83dee1a16fcd824d93d42872"
+  },
+  {
+    "name": "gopc-bronze-ring.7c112946.webp",
+    "path": "rings/electron/gopc-bronze-ring.7c112946.webp",
+    "source": "app.asar/dist/assets/gopc-bronze-ring.7c112946.webp",
+    "sha256": "c461549636c38570d6a2d7985709a659ef437be7276c39fefe25f34bc9e26cba"
+  },
+  {
+    "name": "gopc-gold-ring.5fb12ad3.webp",
+    "path": "rings/electron/gopc-gold-ring.5fb12ad3.webp",
+    "source": "app.asar/dist/assets/gopc-gold-ring.5fb12ad3.webp",
+    "sha256": "f346feee8b516ed043288b1723bfaeeb84c2beae8186ee27cbb356ededf2d720"
+  },
+  {
+    "name": "gopc-golden-ring.38a076ba.webp",
+    "path": "rings/electron/gopc-golden-ring.38a076ba.webp",
+    "source": "app.asar/dist/assets/gopc-golden-ring.38a076ba.webp",
+    "sha256": "87f2bdb2ba03e6f6c3557263f3f8210dca38346e83dee1a16fcd824d93d42872"
+  },
+  {
+    "name": "gopc-silver-ring.3e0566cb.webp",
+    "path": "rings/electron/gopc-silver-ring.3e0566cb.webp",
+    "source": "app.asar/dist/assets/gopc-silver-ring.3e0566cb.webp",
+    "sha256": "449de2aff078ef8e6134de0609d28c1b19b4da538903e3e15ef01436202ab57b"
+  },
+  {
+    "name": "hud-3bet-ring.38593732.png",
+    "path": "rings/electron/hud-3bet-ring.38593732.png",
+    "source": "app.asar/dist/assets/hud-3bet-ring.38593732.png",
+    "sha256": "f6666da8cd060ddb78a3e72f6ec47408f99711d5a818e2a308bae1963748d0d4"
+  },
+  {
+    "name": "live_ring.bf16cfaa.webp",
+    "path": "rings/electron/live_ring.bf16cfaa.webp",
+    "source": "app.asar/dist/assets/live_ring.bf16cfaa.webp",
+    "sha256": "432df32be22acd8e9d447f8117e65d9d965a3bb7dffa1e50dadd4aaf0fae70a7"
+  },
+  {
+    "name": "normal-winner-ring.abfbd47d.webp",
+    "path": "rings/electron/normal-winner-ring.abfbd47d.webp",
+    "source": "app.asar/dist/assets/normal-winner-ring.abfbd47d.webp",
+    "sha256": "75276c10667a2f65ccb9efab68b3f5b7e7dbdbf701b1a4b2dc459a25bfb70cfb"
+  },
+  {
+    "name": "other-blue-avatar-ring.0195a43e.webp",
+    "path": "rings/electron/other-blue-avatar-ring.0195a43e.webp",
+    "source": "app.asar/dist/assets/other-blue-avatar-ring.0195a43e.webp",
+    "sha256": "7a0b664a453e5f5aa2ba6abbc0fe575bcec7cc922671b75968b81b84b6c80950"
+  },
+  {
+    "name": "ring-first.5962efae.webp",
+    "path": "rings/electron/ring-first.5962efae.webp",
+    "source": "app.asar/dist/assets/ring-first.5962efae.webp",
+    "sha256": "c23493ef96983b0b3b9dc011941170b9b35f7982167e9b9d0842ad65476fb19d"
+  },
+  {
+    "name": "ring-second.72ee3472.webp",
+    "path": "rings/electron/ring-second.72ee3472.webp",
+    "source": "app.asar/dist/assets/ring-second.72ee3472.webp",
+    "sha256": "7c682907111f028b5e8f970e4b63db8d62b09b3ba3eabd9e963ec65dbfd77d28"
+  },
+  {
+    "name": "ring-skill-score-golden.6947761c.webp",
+    "path": "rings/electron/ring-skill-score-golden.6947761c.webp",
+    "source": "app.asar/dist/assets/ring-skill-score-golden.6947761c.webp",
+    "sha256": "fec13ada2ce6c01fde63a2e179f31f705f48e2810f4337c4e5c4ed764da439da"
+  },
+  {
+    "name": "ring-third.1647a180.webp",
+    "path": "rings/electron/ring-third.1647a180.webp",
+    "source": "app.asar/dist/assets/ring-third.1647a180.webp",
+    "sha256": "28ed89f6cc8c3d8bbca2edb060344a745707b5e61856d0c1a361bd81556e96ef"
+  },
+  {
+    "name": "silver-avatar-ring.92f38f71.webp",
+    "path": "rings/electron/silver-avatar-ring.92f38f71.webp",
+    "source": "app.asar/dist/assets/silver-avatar-ring.92f38f71.webp",
+    "sha256": "189ce8603541ed70c1524712540589f413125926d77d980444dffa2f1772c770"
+  }
+]

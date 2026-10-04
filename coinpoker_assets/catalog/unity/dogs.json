@@ -1,0 +1,74 @@
+{
+  "EmojiVisualDataList": [
+    {
+      "ThumbnailSprite": {
+        "m_FileID": 0,
+        "m_PathID": 1037
+      },
+      "Id": 56
+    },
+    {
+      "ThumbnailSprite": {
+        "m_FileID": 0,
+        "m_PathID": 1425
+      },
+      "Id": 57
+    },
+    {
+      "ThumbnailSprite": {
+        "m_FileID": 0,
+        "m_PathID": 1115
+      },
+      "Id": 58
+    },
+    {
+      "ThumbnailSprite": {
+        "m_FileID": 0,
+        "m_PathID": 1348
+      },
+      "Id": 59
+    },
+    {
+      "ThumbnailSprite": {
+        "m_FileID": 0,
+        "m_PathID": 1276
+      },
+      "Id": 60
+    },
+    {
+      "ThumbnailSprite": {
+        "m_FileID": 0,
+        "m_PathID": 1417
+      },
+      "Id": 61
+    },
+    {
+      "ThumbnailSprite": {
+        "m_FileID": 0,
+        "m_PathID": 941
+      },
+      "Id": 62
+    },
+    {
+      "ThumbnailSprite": {
+        "m_FileID": 0,
+        "m_PathID": 990
+      },
+      "Id": 63
+    },
+    {
+      "ThumbnailSprite": {
+        "m_FileID": 0,
+        "m_PathID": 1431
+      },
+      "Id": 64
+    },
+    {
+      "ThumbnailSprite": {
+        "m_FileID": 0,
+        "m_PathID": 938
+      },
+      "Id": 65
+    }
+  ]
+}

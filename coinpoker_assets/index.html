@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CoinPoker 素材庫</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="viewer/gallery.css?v=4">
+  <script defer src="viewer/vendor/lottie.min.js"></script>
+  <script defer src="viewer/asset_data.js?v=6"></script>
+  <script defer src="viewer/gallery.js?v=5"></script>
+</head>
+<body>
+  <header>
+    <div class="eyebrow">COINPOKER / CLIENT 1.27.0</div>
+    <h1>從牌桌裡，取出的素材。</h1>
+    <p>頭像、外框、動畫與聊天元件。點選素材可放大、播放或開啟原始檔。</p>
+    <div id="stats" class="stats"></div>
+  </header>
+  <nav aria-label="素材分類" id="tabs"></nav>
+  <main>
+    <section class="collection">
+      <div class="filters">
+        <label class="search">搜尋名稱或編號<input id="search" type="search" placeholder="例如 56、wolf、gold"></label>
+        <label>分類<select id="group" aria-label="分類"><option value="">全部</option></select></label>
+      </div>
+      <p id="scope" class="scope"></p>
+      <section id="context" class="context" hidden aria-label="用途與來源說明"></section>
+      <div id="chat_demo" hidden>
+        <div class="demo_intro"><h2>聊天互動預覽</h2><p>依客戶端結構重建的本地示範。訊息僅留在這個頁面。</p><button id="toggle_chat" aria-expanded="true" aria-controls="chat_panel">收起聊天</button></div>
+        <section id="chat_panel" class="chat_panel" aria-label="聊天示範">
+          <div class="chat_title"><strong>Table chat</strong><span>本地示範</span></div>
+          <div id="chat_history" class="chat_history" tabindex="0" aria-label="可捲動的聊天歷史"></div>
+          <div id="reply_preview" hidden></div>
+          <form id="chat_form"><label class="sr_only" for="chat_input">輸入聊天訊息</label><input id="chat_input" placeholder="Type here.." autocomplete="off"><button id="send_chat" type="submit" disabled>傳送</button></form>
+          <div id="quick_phrases" class="quick_phrases"></div>
+          <div id="chat_status" class="muted" role="status"></div>
+        </section>
+        <details><summary>已確認的原始行為與來源</summary><ul id="chat_facts"></ul><a href="chat/behavior.json">行為整理</a> · <a href="chat/scene_structure.json">原始場景結構</a></details>
+        <h2 class="asset_heading">原始聊天元件</h2>
+      </div>
+      <div id="grid" class="groups"></div>
+      <p id="empty" hidden>沒有符合的素材，請換一個名稱或分類。</p>
+    </section>
+    <aside class="inspector" aria-label="素材預覽">
+      <div class="preview_head"><span id="preview_kind">素材預覽</span><span id="preview_id"></span></div>
+      <div id="preview" class="preview checker"></div>
+      <h2 id="preview_name">選擇一份素材</h2>
+      <p id="preview_info" class="muted">點選左側項目，即可查看。</p>
+      <p id="item_usage" class="item_usage" hidden></p>
+      <div id="playback" hidden>
+        <div class="play_buttons"><button id="replay">重新播放</button><button id="pause">暫停</button><label><input type="checkbox" id="loop"> 循環</label></div>
+        <label class="timeline">動畫進度<input type="range" id="scrub" min="0" max="100" step="0.1" value="0"></label>
+      </div>
+      <div id="audio_wrap"></div>
+      <p id="preview_status" role="status"></p>
+      <a id="original" class="original" hidden target="_blank" rel="noopener">開啟原始檔 ↗</a>
+      <p class="source_note" id="source_note"></p>
+    </aside>
+  </main>
+  <footer>
+    <p>素材來源為已安裝的 CoinPoker 1.27.0 與客戶端設定指定的公開 CDN。內建清單與素材不代表帳號已解鎖，也不代表目前線上全部啟用。</p>
+    <p><a href="catalog/manifest.json">來源清單與 SHA-256</a> · <a href="catalog/animation_mapping.json">動畫編號對照</a> · <a href="viewer/vendor/provenance.json">播放程式來源</a></p>
+    <details id="validation"><summary>素材驗證</summary><p>逐一解碼圖片、音效，並渲染每個動畫的 5 個時間點。檢查是否有非透明內容與畫面變化。</p><button id="validate">檢查所有素材</button><p id="validation_status" role="status">尚未執行</p><a id="validation_download" hidden download="validation_report.json">下載檢查結果</a><pre id="validation_json" hidden></pre><div id="testbed"></div></details>
+  </footer>
+</body>
+</html>

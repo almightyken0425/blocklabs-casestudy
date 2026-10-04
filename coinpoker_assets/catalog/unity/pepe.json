@@ -1,0 +1,39 @@
+{
+  "EmojiVisualDataList": [
+    {
+      "ThumbnailSprite": {
+        "m_FileID": 0,
+        "m_PathID": 1365
+      },
+      "Id": 5001
+    },
+    {
+      "ThumbnailSprite": {
+        "m_FileID": 0,
+        "m_PathID": 1292
+      },
+      "Id": 5002
+    },
+    {
+      "ThumbnailSprite": {
+        "m_FileID": 0,
+        "m_PathID": 1547
+      },
+      "Id": 5003
+    },
+    {
+      "ThumbnailSprite": {
+        "m_FileID": 0,
+        "m_PathID": 1114
+      },
+      "Id": 5004
+    },
+    {
+      "ThumbnailSprite": {
+        "m_FileID": 0,
+        "m_PathID": 1452
+      },
+      "Id": 5005
+    }
+  ]
+}

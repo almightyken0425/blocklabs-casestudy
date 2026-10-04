@@ -1,0 +1,77 @@
+{
+  "throwableAssets": [
+    {
+      "id": 3000,
+      "isActive": true
+    },
+    {
+      "id": 3001,
+      "isActive": true
+    },
+    {
+      "id": 3002,
+      "isActive": true
+    },
+    {
+      "id": 3003,
+      "isActive": true
+    },
+    {
+      "id": 3006,
+      "isActive": true
+    },
+    {
+      "id": 117,
+      "isActive": true
+    },
+    {
+      "id": 112,
+      "isActive": true
+    },
+    {
+      "id": 115,
+      "isActive": true
+    },
+    {
+      "id": 116,
+      "isActive": true
+    },
+    {
+      "id": 102,
+      "isActive": true
+    },
+    {
+      "id": 103,
+      "isActive": true
+    },
+    {
+      "id": 104,
+      "isActive": true
+    },
+    {
+      "id": 107,
+      "isActive": true
+    },
+    {
+      "id": 108,
+      "isActive": true
+    },
+    {
+      "id": 119,
+      "isActive": true
+    },
+    {
+      "id": 120,
+      "isActive": true
+    },
+    {
+      "id": 121,
+      "isActive": true
+    }
+  ],
+  "throwablesEnableFlag": {
+    "111": false,
+    "117": true,
+    "118": true
+  }
+}

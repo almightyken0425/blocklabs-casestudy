@@ -1,0 +1,218 @@
+{
+  "checked_at": "2026-10-03",
+  "app_version": "1.27.0",
+  "avatar_groups": [
+    {
+      "key": "3-Bet Club configuration",
+      "title": "3-BET CLUB",
+      "label": "3-Bet Club 專屬",
+      "count": 16,
+      "note": "已在設定頁看到此分類與鎖頭，解鎖資格依平台帳號狀態。"
+    },
+    {
+      "key": "World Cup",
+      "title": "WORLD CUP",
+      "label": "世界盃",
+      "count": 10,
+      "note": "分類與順序已與 CoinPoker 設定頁核對。"
+    },
+    {
+      "key": "ANIMAL",
+      "title": "ANIMAL",
+      "label": "動物",
+      "count": 5,
+      "note": "分類與順序已與 CoinPoker 設定頁核對。"
+    },
+    {
+      "key": "ANIME",
+      "title": "ANIME",
+      "label": "動漫",
+      "count": 5,
+      "note": "分類與順序已與 CoinPoker 設定頁核對。"
+    },
+    {
+      "key": "HALLOWEEN",
+      "title": "HALLOWEEN",
+      "label": "萬聖節",
+      "count": 5,
+      "note": "分類與順序已與 CoinPoker 設定頁核對。"
+    },
+    {
+      "key": "NOBLE",
+      "title": "NOBLE",
+      "label": "貴族",
+      "count": 5,
+      "note": "分類與順序已與 CoinPoker 設定頁核對。"
+    },
+    {
+      "key": "ROYAL",
+      "title": "ROYAL",
+      "label": "皇室",
+      "count": 5,
+      "note": "分類與順序已與 CoinPoker 設定頁核對。"
+    }
+  ],
+  "emote_groups": [
+    {
+      "key": "Dogs",
+      "title": "Dogs",
+      "label": "狗",
+      "count": 10,
+      "note": "原始表情分類，列於客戶端預設設定。"
+    },
+    {
+      "key": "Penguin",
+      "title": "Penguin",
+      "label": "企鵝",
+      "count": 7,
+      "note": "原始表情分類，列於客戶端預設設定。"
+    },
+    {
+      "key": "Donkey",
+      "title": "Donkey",
+      "label": "驢子",
+      "count": 5,
+      "note": "原始表情分類，列於客戶端預設設定。"
+    },
+    {
+      "key": "Chips",
+      "title": "Chips",
+      "label": "籌碼",
+      "count": 6,
+      "note": "原始表情分類，列於客戶端預設設定。"
+    },
+    {
+      "key": "Skull",
+      "title": "Skull",
+      "label": "骷髏",
+      "count": 8,
+      "note": "原始表情分類，列於客戶端預設設定。"
+    },
+    {
+      "key": "Pepe",
+      "title": "Pepe",
+      "label": "Pepe",
+      "count": 5,
+      "note": "原始資源有此分類。程式另檢查 AIC 功能開關，實際顯示與解鎖依平台設定。"
+    }
+  ],
+  "avatar_group_evidence": [
+    "CoinPoker Settings > Avatars 的畫面與可及性樹",
+    "catalog/avatarConfig.json",
+    "catalog/threeBetConfig.json"
+  ],
+  "emote_group_evidence": [
+    "catalog/emojisConfig.json",
+    "catalog/unity/*.json",
+    "EmojiPanelComponent.InitializeEmojiPanel"
+  ],
+  "recents_note": "Recents 是最近使用清單，上限 10 個，會重複引用既有表情，不另算一類素材。",
+  "ring_policy": {
+    "source": "使用者本次指定的原型方向",
+    "mode": "由 CoinPoker API 與玩家狀態決定外框，前端依回傳資料呈現。",
+    "unknown": "實際 API 端點、欄位與授權規則尚未提供。"
+  },
+  "throwables": {
+    "meaning": "投擲效果是指定另一位玩家為對象的桌上互動動畫，例如水槍、香蕉、炸彈與足球。一般表情則顯示在發送者的座位附近。",
+    "steps": [
+      "玩家已入座時，將滑鼠移到對手的頭像或座位區域。",
+      "若開啟 Show throwables on hover，停留約 0.25 秒會顯示按鈕。",
+      "點對手座位旁的投擲圖示，再選一個效果。"
+    ],
+    "spectator_note": "PlayerComponent.OnPointerEnter 先檢查 CurrentPlayerSeated。觀戰時不會沿這條入口顯示投擲按鈕。",
+    "current_settings": {
+      "path": "Settings → Game Settings",
+      "show_throwables_on_hover": true,
+      "disable_throwables_entirely": false,
+      "evidence": "verification/throwable_settings.jpg"
+    },
+    "settings_help": [
+      "Show throwables on hover 開啟時滑鼠移入才顯示按鈕，關閉時持續顯示按鈕。",
+      "Disables throwables entirely 可關閉投擲互動，實際設定頁說明為不顯示他人的效果，也不讓他人對你投擲。"
+    ],
+    "eligibility_note": "部分效果仍會受平台設定與會員資格限制。此輪只查看設定與程式，沒有入座或發送投擲。",
+    "evidence": [
+      "PlayerComponent.OnPointerEnter",
+      "PlayerComponent.HandleHoveOnOpnt",
+      "PlayerEmojiButtonComponent.ToggleEmojiOrThrowableButton",
+      "ThrowablePopupComponent.OnThrowableItemButtonClicked"
+    ]
+  },
+  "archive": {
+    "count": 42,
+    "ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      30,
+      31,
+      32,
+      38,
+      39,
+      40,
+      54,
+      55,
+      118,
+      113,
+      100,
+      101,
+      105,
+      106,
+      109,
+      110,
+      111,
+      2001,
+      2003,
+      2002,
+      2004
+    ],
+    "conclusion": "這 42 份屬於共用表情／投擲播放資料，仍有編號對照，但未確認目前選單入口與觸發情境。",
+    "confirmed": [
+      "42 個 ID 都存在於 EmojiMapping.EmojiMap。",
+      "42 個 ID 均未列於已擷取的表情／投擲選單資料與預設設定。",
+      "收到 EmojiBean 時，依 seatId 與 smilyId 在指定座位播放。",
+      "收到 ThrowableBean 時，依 fromSeatId、toSeatId 與 objectId 從一個座位播放到另一個座位。"
+    ],
+    "unknown": "僅靠現有客戶端，無法確認伺服器是否仍會送出這些 ID，也無法確定是否為舊版保留、未上架或其他情境使用。",
+    "case_study_guidance": "原型先以已確認選單中的表情與投擲素材為主，這 42 份保留供參考，不自行賦予牌局觸發條件。",
+    "groups": [
+      {
+        "key": "unlisted_general",
+        "title": "一般編號素材",
+        "label": "0–55 系列",
+        "note": "保留播放對照，但沒有找到目前選單入口。"
+      },
+      {
+        "key": "unlisted_100",
+        "title": "100 系列素材",
+        "label": "100–118 系列",
+        "note": "部分內容呈現物件效果。未確認它們在現行產品中的使用入口。"
+      },
+      {
+        "key": "unlisted_aic",
+        "title": "AIC 命名素材",
+        "label": "2001–2004 系列",
+        "note": "原始檔名含 aic。檔名無法證明目前會員可用或仍有入口。"
+      }
+    ]
+  },
+  "evidence_file": "catalog/interaction_evidence.json"
+}
