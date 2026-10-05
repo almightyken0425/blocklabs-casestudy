@@ -1,0 +1,63 @@
+{
+  "checked_at": "2026-10-04T10:54:01.514Z",
+  "base": "http://127.0.0.1:8767/mahjong-game-standalone.html",
+  "method": "Chrome via Playwright, isolated context; rendered bounds, interactions and screenshots",
+  "source_sha256": {
+    "prototype/social.js": "8cba321d66ee57cdafb6c12430b6d903aed71baf912d6e9e18c800ad48c0997d",
+    "prototype/social.css": "2b46953e971b94d2726581b5693e3cf78d10ed6ab3c09e871975938b899a8331",
+    "mahjong-game-standalone.html": "4c2b486e70b31ac9aa49c9632f93b0ee5250a6230e59f89d79703285c4246809"
+  },
+  "checks": [
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 720
+      },
+      "passed": true,
+      "scope": "Toolbar, chat send/close, settings and emote picker inside table; desktop chat clear of hand"
+    },
+    {
+      "viewport": {
+        "width": 900,
+        "height": 1300
+      },
+      "passed": true,
+      "scope": "Toolbar, chat send/close, settings and emote picker inside table; desktop chat clear of hand"
+    },
+    {
+      "viewport": {
+        "width": 2880,
+        "height": 1800
+      },
+      "passed": true,
+      "scope": "Toolbar, chat send/close, settings and emote picker inside table; desktop chat clear of hand"
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "passed": true,
+      "scope": "Toolbar, chat send/close, settings and emote picker inside table; desktop chat clear of hand"
+    },
+    {
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "passed": true,
+      "scope": "Toolbar, chat send/close, settings and emote picker inside table; desktop chat clear of hand"
+    },
+    {
+      "passed": true,
+      "scope": "Open chat stays inside table after resize"
+    }
+  ],
+  "screenshots": [
+    "table_bounds_desktop.png",
+    "table_bounds_chat.png",
+    "table_bounds_mobile.png",
+    "table_bounds_mobile_chat.png",
+    "table_bounds_mobile_settings.png"
+  ]
+}

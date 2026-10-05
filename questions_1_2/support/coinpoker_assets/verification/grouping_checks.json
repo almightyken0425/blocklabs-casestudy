@@ -1,0 +1,33 @@
+{
+  "url": "http://127.0.0.1:8766/",
+  "avatar_categories": {
+    "3-BET CLUB": 16,
+    "WORLD CUP": 10,
+    "ANIMAL": 5,
+    "ANIME": 5,
+    "HALLOWEEN": 5,
+    "NOBLE": 5,
+    "ROYAL": 5
+  },
+  "emote_categories": {
+    "Dogs": 10,
+    "Penguin": 7,
+    "Donkey": 5,
+    "Chips": 6,
+    "Skull": 8,
+    "Pepe": 5
+  },
+  "passed": [
+    "Native CoinPoker avatar category labels and ordering observed",
+    "Native throwables settings observed without changing values",
+    "Avatar row horizontal scroll",
+    "Avatar category filter and selection",
+    "Emote category filter and SVG playback",
+    "Ring API assumption displayed",
+    "Throwables access steps and screenshot linked",
+    "42 unlisted animation IDs crosschecked against configured and serialized menus",
+    "Desktop 1280px and mobile 390px have no document horizontal overflow"
+  ],
+  "source_evidence": "catalog/interaction_evidence.json",
+  "asset_validation": "Raw image, animation and audio files are unchanged. See validation_report.json from extraction validation."
+}

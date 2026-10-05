@@ -1,0 +1,9324 @@
+{
+  "ChatContent": {
+    "OnEnable": [
+      {
+        "offset": 12,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 13,
+        "op": "ldfld",
+        "operand": "copyButton"
+      },
+      {
+        "offset": 18,
+        "op": "callvirt",
+        "operand": "get_onClick"
+      },
+      {
+        "offset": 23,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 24,
+        "op": "ldftn",
+        "operand": "OnCopyButtonClick"
+      },
+      {
+        "offset": 30,
+        "op": "newobj",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 35,
+        "op": "callvirt",
+        "operand": "AddListener"
+      },
+      {
+        "offset": 40,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 41,
+        "op": "ldfld",
+        "operand": "replyButton"
+      },
+      {
+        "offset": 46,
+        "op": "callvirt",
+        "operand": "get_onClick"
+      },
+      {
+        "offset": 51,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 52,
+        "op": "ldftn",
+        "operand": "OnReplyButtonClick"
+      },
+      {
+        "offset": 58,
+        "op": "newobj",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 63,
+        "op": "callvirt",
+        "operand": "AddListener"
+      },
+      {
+        "offset": 68,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 69,
+        "op": "ldfld",
+        "operand": "hoverButton"
+      },
+      {
+        "offset": 74,
+        "op": "callvirt",
+        "operand": "get_onClick"
+      },
+      {
+        "offset": 79,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 80,
+        "op": "ldftn",
+        "operand": "onHoverButtonClick"
+      },
+      {
+        "offset": 86,
+        "op": "newobj",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 91,
+        "op": "callvirt",
+        "operand": "AddListener"
+      },
+      {
+        "offset": 96,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "OnDisable": [
+      {
+        "offset": 12,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 13,
+        "op": "ldfld",
+        "operand": "copyButton"
+      },
+      {
+        "offset": 18,
+        "op": "callvirt",
+        "operand": "get_onClick"
+      },
+      {
+        "offset": 23,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 24,
+        "op": "ldftn",
+        "operand": "OnCopyButtonClick"
+      },
+      {
+        "offset": 30,
+        "op": "newobj",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 35,
+        "op": "callvirt",
+        "operand": "RemoveListener"
+      },
+      {
+        "offset": 40,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 41,
+        "op": "ldfld",
+        "operand": "replyButton"
+      },
+      {
+        "offset": 46,
+        "op": "callvirt",
+        "operand": "get_onClick"
+      },
+      {
+        "offset": 51,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 52,
+        "op": "ldftn",
+        "operand": "OnReplyButtonClick"
+      },
+      {
+        "offset": 58,
+        "op": "newobj",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 63,
+        "op": "callvirt",
+        "operand": "RemoveListener"
+      },
+      {
+        "offset": 68,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 69,
+        "op": "ldfld",
+        "operand": "hoverButton"
+      },
+      {
+        "offset": 74,
+        "op": "callvirt",
+        "operand": "get_onClick"
+      },
+      {
+        "offset": 79,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 80,
+        "op": "ldftn",
+        "operand": "onHoverButtonClick"
+      },
+      {
+        "offset": 86,
+        "op": "newobj",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 91,
+        "op": "callvirt",
+        "operand": "RemoveListener"
+      },
+      {
+        "offset": 96,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "OnCopyButtonClick": [
+      {
+        "offset": 1,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 2,
+        "op": "call",
+        "operand": "PlayButtonTapSound"
+      },
+      {
+        "offset": 7,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 8,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 9,
+        "op": "ldfld",
+        "operand": "userChatText"
+      },
+      {
+        "offset": 14,
+        "op": "callvirt",
+        "operand": "get_text"
+      },
+      {
+        "offset": 19,
+        "op": "call",
+        "operand": "CopyTextToClipboard"
+      },
+      {
+        "offset": 24,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 25,
+        "op": "ldfld",
+        "operand": "copyReplyPanel"
+      },
+      {
+        "offset": 30,
+        "op": "ldc.i4.0",
+        "operand": null
+      },
+      {
+        "offset": 31,
+        "op": "callvirt",
+        "operand": "SetActive"
+      },
+      {
+        "offset": 36,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "OnReplyButtonClick": [
+      {
+        "offset": 1,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 2,
+        "op": "call",
+        "operand": "PlayButtonTapSound"
+      },
+      {
+        "offset": 7,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 8,
+        "op": "ldfld",
+        "operand": "chatPanelComponent"
+      },
+      {
+        "offset": 13,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 14,
+        "op": "ldfld",
+        "operand": "userNameText"
+      },
+      {
+        "offset": 19,
+        "op": "callvirt",
+        "operand": "get_text"
+      },
+      {
+        "offset": 24,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 25,
+        "op": "ldfld",
+        "operand": "userChatText"
+      },
+      {
+        "offset": 30,
+        "op": "callvirt",
+        "operand": "get_text"
+      },
+      {
+        "offset": 35,
+        "op": "callvirt",
+        "operand": "showCopiedTextPanel"
+      },
+      {
+        "offset": 40,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 41,
+        "op": "ldfld",
+        "operand": "copyReplyPanel"
+      },
+      {
+        "offset": 46,
+        "op": "ldc.i4.0",
+        "operand": null
+      },
+      {
+        "offset": 47,
+        "op": "callvirt",
+        "operand": "SetActive"
+      },
+      {
+        "offset": 52,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "PointerEntered": [
+      {
+        "offset": 1,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 2,
+        "op": "ldfld",
+        "operand": "copyReplyPanel"
+      },
+      {
+        "offset": 7,
+        "op": "ldc.i4.0",
+        "operand": null
+      },
+      {
+        "offset": 8,
+        "op": "callvirt",
+        "operand": "SetActive"
+      },
+      {
+        "offset": 13,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 14,
+        "op": "ldfld",
+        "operand": "hoverButton"
+      },
+      {
+        "offset": 19,
+        "op": "callvirt",
+        "operand": "get_gameObject"
+      },
+      {
+        "offset": 24,
+        "op": "ldc.i4.1",
+        "operand": null
+      },
+      {
+        "offset": 25,
+        "op": "callvirt",
+        "operand": "SetActive"
+      },
+      {
+        "offset": 30,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "PointerExited": [
+      {
+        "offset": 1,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 2,
+        "op": "ldfld",
+        "operand": "hoverButton"
+      },
+      {
+        "offset": 7,
+        "op": "callvirt",
+        "operand": "get_gameObject"
+      },
+      {
+        "offset": 12,
+        "op": "ldc.i4.0",
+        "operand": null
+      },
+      {
+        "offset": 13,
+        "op": "callvirt",
+        "operand": "SetActive"
+      },
+      {
+        "offset": 18,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 19,
+        "op": "ldfld",
+        "operand": "copyReplyPanel"
+      },
+      {
+        "offset": 24,
+        "op": "ldc.i4.0",
+        "operand": null
+      },
+      {
+        "offset": 25,
+        "op": "callvirt",
+        "operand": "SetActive"
+      },
+      {
+        "offset": 30,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "CopyTextToClipboard": [
+      {
+        "offset": 1,
+        "op": "newobj",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 6,
+        "op": "dup",
+        "operand": null
+      },
+      {
+        "offset": 7,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 8,
+        "op": "callvirt",
+        "operand": "set_text"
+      },
+      {
+        "offset": 13,
+        "op": "dup",
+        "operand": null
+      },
+      {
+        "offset": 14,
+        "op": "callvirt",
+        "operand": "SelectAll"
+      },
+      {
+        "offset": 19,
+        "op": "callvirt",
+        "operand": "Copy"
+      },
+      {
+        "offset": 24,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "onHoverButtonClick": [
+      {
+        "offset": 1,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 2,
+        "op": "call",
+        "operand": "PlayButtonTapSound"
+      },
+      {
+        "offset": 7,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 8,
+        "op": "ldfld",
+        "operand": "copyReplyPanel"
+      },
+      {
+        "offset": 13,
+        "op": "ldc.i4.1",
+        "operand": null
+      },
+      {
+        "offset": 14,
+        "op": "callvirt",
+        "operand": "SetActive"
+      },
+      {
+        "offset": 19,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "HideCopyReplyPanel": [
+      {
+        "offset": 1,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 2,
+        "op": "ldfld",
+        "operand": "copyReplyPanel"
+      },
+      {
+        "offset": 7,
+        "op": "ldc.i4.0",
+        "operand": null
+      },
+      {
+        "offset": 8,
+        "op": "callvirt",
+        "operand": "SetActive"
+      },
+      {
+        "offset": 13,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 14,
+        "op": "ldfld",
+        "operand": "hoverButton"
+      },
+      {
+        "offset": 19,
+        "op": "callvirt",
+        "operand": "get_gameObject"
+      },
+      {
+        "offset": 24,
+        "op": "ldc.i4.0",
+        "operand": null
+      },
+      {
+        "offset": 25,
+        "op": "callvirt",
+        "operand": "SetActive"
+      },
+      {
+        "offset": 30,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "SetMessage": [
+      {
+        "offset": 12,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 13,
+        "op": "ldfld",
+        "operand": "userNameText"
+      },
+      {
+        "offset": 18,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 19,
+        "op": "callvirt",
+        "operand": "get_userName"
+      },
+      {
+        "offset": 24,
+        "op": "callvirt",
+        "operand": "set_text"
+      },
+      {
+        "offset": 29,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 30,
+        "op": "ldfld",
+        "operand": "userChatText"
+      },
+      {
+        "offset": 35,
+        "op": "ldc.i4.0",
+        "operand": null
+      },
+      {
+        "offset": 36,
+        "op": "call",
+        "operand": "SetTMP_FontAssetForLanguage"
+      },
+      {
+        "offset": 41,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 42,
+        "op": "ldfld",
+        "operand": "userChatText"
+      },
+      {
+        "offset": 47,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 48,
+        "op": "callvirt",
+        "operand": "get_message"
+      },
+      {
+        "offset": 53,
+        "op": "callvirt",
+        "operand": "set_text"
+      },
+      {
+        "offset": 58,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 59,
+        "op": "ldfld",
+        "operand": "userChatTime"
+      },
+      {
+        "offset": 64,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 65,
+        "op": "callvirt",
+        "operand": "get_initTimeStamp"
+      },
+      {
+        "offset": 70,
+        "op": "ldc.i4.0",
+        "operand": null
+      },
+      {
+        "offset": 71,
+        "op": "call",
+        "operand": "ConvertTimestampToLocalTime"
+      },
+      {
+        "offset": 76,
+        "op": "callvirt",
+        "operand": "set_text"
+      },
+      {
+        "offset": 81,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 82,
+        "op": "callvirt",
+        "operand": "get_avatarNumber"
+      },
+      {
+        "offset": 87,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 88,
+        "op": "ldftn",
+        "operand": "<SetMessage>b__19_0"
+      },
+      {
+        "offset": 94,
+        "op": "newobj",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 99,
+        "op": "call",
+        "operand": "GetAvatar"
+      },
+      {
+        "offset": 104,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "SetCopiedMessage": [
+      {
+        "offset": 12,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 13,
+        "op": "ldfld",
+        "operand": "copiedChat"
+      },
+      {
+        "offset": 18,
+        "op": "ldc.i4.0",
+        "operand": null
+      },
+      {
+        "offset": 19,
+        "op": "callvirt",
+        "operand": "GetChild"
+      },
+      {
+        "offset": 24,
+        "op": "callvirt",
+        "operand": "token(0x2B00002F)"
+      },
+      {
+        "offset": 29,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 30,
+        "op": "callvirt",
+        "operand": "set_text"
+      },
+      {
+        "offset": 35,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 36,
+        "op": "ldfld",
+        "operand": "copiedChat"
+      },
+      {
+        "offset": 41,
+        "op": "ldc.i4.1",
+        "operand": null
+      },
+      {
+        "offset": 42,
+        "op": "callvirt",
+        "operand": "GetChild"
+      },
+      {
+        "offset": 47,
+        "op": "callvirt",
+        "operand": "token(0x2B00002F)"
+      },
+      {
+        "offset": 52,
+        "op": "ldarg.2",
+        "operand": null
+      },
+      {
+        "offset": 53,
+        "op": "callvirt",
+        "operand": "set_text"
+      },
+      {
+        "offset": 58,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 59,
+        "op": "ldfld",
+        "operand": "copiedChat"
+      },
+      {
+        "offset": 64,
+        "op": "callvirt",
+        "operand": "get_gameObject"
+      },
+      {
+        "offset": 69,
+        "op": "ldc.i4.1",
+        "operand": null
+      },
+      {
+        "offset": 70,
+        "op": "callvirt",
+        "operand": "SetActive"
+      },
+      {
+        "offset": 75,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "PlayButtonTapSound": [
+      {
+        "offset": 1,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    ".ctor": [
+      {
+        "offset": 1,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 2,
+        "op": "call",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 7,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "<SetMessage>b__19_0": [
+      {
+        "offset": 1,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 2,
+        "op": "call",
+        "operand": "op_Implicit"
+      },
+      {
+        "offset": 7,
+        "op": "brtrue.s",
+        "operand": "10"
+      },
+      {
+        "offset": 9,
+        "op": "ret",
+        "operand": null
+      },
+      {
+        "offset": 10,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 11,
+        "op": "ldfld",
+        "operand": "userAvatarImage"
+      },
+      {
+        "offset": 16,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 17,
+        "op": "callvirt",
+        "operand": "set_sprite"
+      },
+      {
+        "offset": 22,
+        "op": "ret",
+        "operand": null
+      }
+    ]
+  },
+  "ChatPanelComponent": {
+    "get_UserNamesComponent": [
+      {
+        "offset": 1,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 2,
+        "op": "ldfld",
+        "operand": "userNamesComponent"
+      },
+      {
+        "offset": 7,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "Awake": [
+      {
+        "offset": 1,
+        "op": "ldsfld",
+        "operand": "OnTableCenterActivity"
+      },
+      {
+        "offset": 6,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 7,
+        "op": "ldftn",
+        "operand": "OnTableCenterActivity"
+      },
+      {
+        "offset": 13,
+        "op": "newobj",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 18,
+        "op": "call",
+        "operand": "Combine"
+      },
+      {
+        "offset": 23,
+        "op": "castclass",
+        "operand": "Action"
+      },
+      {
+        "offset": 28,
+        "op": "stsfld",
+        "operand": "OnTableCenterActivity"
+      },
+      {
+        "offset": 33,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "OnDestroy": [
+      {
+        "offset": 1,
+        "op": "ldsfld",
+        "operand": "OnTableCenterActivity"
+      },
+      {
+        "offset": 6,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 7,
+        "op": "ldftn",
+        "operand": "OnTableCenterActivity"
+      },
+      {
+        "offset": 13,
+        "op": "newobj",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 18,
+        "op": "call",
+        "operand": "Remove"
+      },
+      {
+        "offset": 23,
+        "op": "castclass",
+        "operand": "Action"
+      },
+      {
+        "offset": 28,
+        "op": "stsfld",
+        "operand": "OnTableCenterActivity"
+      },
+      {
+        "offset": 33,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "OnTableCenterActivity": [
+      {
+        "offset": 1,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 2,
+        "op": "ldc.i4.0",
+        "operand": null
+      },
+      {
+        "offset": 3,
+        "op": "call",
+        "operand": "HideChatPanel"
+      },
+      {
+        "offset": 8,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "Update": [
+      {
+        "offset": 1,
+        "op": "ldc.i4.s",
+        "operand": "13"
+      },
+      {
+        "offset": 3,
+        "op": "call",
+        "operand": "GetKeyDown"
+      },
+      {
+        "offset": 8,
+        "op": "brfalse.s",
+        "operand": "16"
+      },
+      {
+        "offset": 10,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 11,
+        "op": "call",
+        "operand": "OnMessageEnter"
+      },
+      {
+        "offset": 16,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "OnEnable": [
+      {
+        "offset": 12,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 13,
+        "op": "ldfld",
+        "operand": "messageEnterButton"
+      },
+      {
+        "offset": 18,
+        "op": "callvirt",
+        "operand": "get_onClick"
+      },
+      {
+        "offset": 23,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 24,
+        "op": "ldftn",
+        "operand": "OnMessageEnter"
+      },
+      {
+        "offset": 30,
+        "op": "newobj",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 35,
+        "op": "callvirt",
+        "operand": "AddListener"
+      },
+      {
+        "offset": 40,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 41,
+        "op": "ldfld",
+        "operand": "copiedPanelCloseButton"
+      },
+      {
+        "offset": 46,
+        "op": "callvirt",
+        "operand": "get_onClick"
+      },
+      {
+        "offset": 51,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 52,
+        "op": "ldftn",
+        "operand": "hideCopiedTextPanel"
+      },
+      {
+        "offset": 58,
+        "op": "newobj",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 63,
+        "op": "callvirt",
+        "operand": "AddListener"
+      },
+      {
+        "offset": 68,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 69,
+        "op": "ldfld",
+        "operand": "chatHistoryScroll"
+      },
+      {
+        "offset": 74,
+        "op": "ldc.r4",
+        "operand": "0.0"
+      },
+      {
+        "offset": 79,
+        "op": "ldc.r4",
+        "operand": "0.0"
+      },
+      {
+        "offset": 84,
+        "op": "newobj",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 89,
+        "op": "callvirt",
+        "operand": "set_normalizedPosition"
+      },
+      {
+        "offset": 94,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "OnDisable": [
+      {
+        "offset": 1,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 2,
+        "op": "ldfld",
+        "operand": "messageEnterButton"
+      },
+      {
+        "offset": 7,
+        "op": "callvirt",
+        "operand": "get_onClick"
+      },
+      {
+        "offset": 12,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 13,
+        "op": "ldftn",
+        "operand": "OnMessageEnter"
+      },
+      {
+        "offset": 19,
+        "op": "newobj",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 24,
+        "op": "callvirt",
+        "operand": "RemoveListener"
+      },
+      {
+        "offset": 29,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 30,
+        "op": "ldfld",
+        "operand": "copiedPanelCloseButton"
+      },
+      {
+        "offset": 35,
+        "op": "callvirt",
+        "operand": "get_onClick"
+      },
+      {
+        "offset": 40,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 41,
+        "op": "ldftn",
+        "operand": "hideCopiedTextPanel"
+      },
+      {
+        "offset": 47,
+        "op": "newobj",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 52,
+        "op": "callvirt",
+        "operand": "RemoveListener"
+      },
+      {
+        "offset": 57,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "OnMessageEnter": [
+      {
+        "offset": 12,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 13,
+        "op": "call",
+        "operand": "PlayButtonTapSound"
+      },
+      {
+        "offset": 18,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 19,
+        "op": "ldfld",
+        "operand": "messageInputField"
+      },
+      {
+        "offset": 24,
+        "op": "callvirt",
+        "operand": "get_text"
+      },
+      {
+        "offset": 29,
+        "op": "stloc.0",
+        "operand": null
+      },
+      {
+        "offset": 30,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 31,
+        "op": "call",
+        "operand": "BringChatInputInFocus"
+      },
+      {
+        "offset": 36,
+        "op": "ldloc.0",
+        "operand": null
+      },
+      {
+        "offset": 37,
+        "op": "call",
+        "operand": "IsNullOrWhiteSpace"
+      },
+      {
+        "offset": 42,
+        "op": "brtrue.s",
+        "operand": "136"
+      },
+      {
+        "offset": 44,
+        "op": "newobj",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 49,
+        "op": "dup",
+        "operand": null
+      },
+      {
+        "offset": 50,
+        "op": "ldloc.0",
+        "operand": null
+      },
+      {
+        "offset": 51,
+        "op": "callvirt",
+        "operand": "set_message"
+      },
+      {
+        "offset": 56,
+        "op": "dup",
+        "operand": null
+      },
+      {
+        "offset": 57,
+        "op": "ldstr",
+        "operand": "TEXT"
+      },
+      {
+        "offset": 62,
+        "op": "callvirt",
+        "operand": "set_type"
+      },
+      {
+        "offset": 67,
+        "op": "dup",
+        "operand": null
+      },
+      {
+        "offset": 68,
+        "op": "ldstr",
+        "operand": "TEXT"
+      },
+      {
+        "offset": 73,
+        "op": "callvirt",
+        "operand": "set_replyToMessageType"
+      },
+      {
+        "offset": 78,
+        "op": "dup",
+        "operand": null
+      },
+      {
+        "offset": 79,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 80,
+        "op": "ldfld",
+        "operand": "copiedUser"
+      },
+      {
+        "offset": 85,
+        "op": "callvirt",
+        "operand": "set_replyToUsername"
+      },
+      {
+        "offset": 90,
+        "op": "dup",
+        "operand": null
+      },
+      {
+        "offset": 91,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 92,
+        "op": "ldfld",
+        "operand": "copiedMsg"
+      },
+      {
+        "offset": 97,
+        "op": "callvirt",
+        "operand": "set_replyToMessage"
+      },
+      {
+        "offset": 102,
+        "op": "dup",
+        "operand": null
+      },
+      {
+        "offset": 103,
+        "op": "ldstr",
+        "operand": ""
+      },
+      {
+        "offset": 108,
+        "op": "callvirt",
+        "operand": "set_voiceMessage"
+      },
+      {
+        "offset": 113,
+        "op": "dup",
+        "operand": null
+      },
+      {
+        "offset": 114,
+        "op": "ldc.i4.0",
+        "operand": null
+      },
+      {
+        "offset": 115,
+        "op": "callvirt",
+        "operand": "set_voiceDuration"
+      },
+      {
+        "offset": 120,
+        "op": "ldloc.0",
+        "operand": null
+      },
+      {
+        "offset": 121,
+        "op": "newobj",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 126,
+        "op": "call",
+        "operand": "GameChatMessageSent"
+      },
+      {
+        "offset": 131,
+        "op": "call",
+        "operand": "ChatRequest"
+      },
+      {
+        "offset": 136,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "BringChatInputInFocus": [
+      {
+        "offset": 1,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 2,
+        "op": "ldstr",
+        "operand": "FocusInput"
+      },
+      {
+        "offset": 7,
+        "op": "ldc.r4",
+        "operand": "0.05000000074505806"
+      },
+      {
+        "offset": 12,
+        "op": "call",
+        "operand": "Invoke"
+      },
+      {
+        "offset": 17,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "FocusInput": [
+      {
+        "offset": 1,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 2,
+        "op": "ldfld",
+        "operand": "messageInputField"
+      },
+      {
+        "offset": 7,
+        "op": "callvirt",
+        "operand": "ActivateInputField"
+      },
+      {
+        "offset": 12,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 13,
+        "op": "ldfld",
+        "operand": "messageInputField"
+      },
+      {
+        "offset": 18,
+        "op": "callvirt",
+        "operand": "Select"
+      },
+      {
+        "offset": 23,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "writePredefinedMsgs": [
+      {
+        "offset": 12,
+        "op": "newobj",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 17,
+        "op": "dup",
+        "operand": null
+      },
+      {
+        "offset": 18,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 19,
+        "op": "callvirt",
+        "operand": "set_message"
+      },
+      {
+        "offset": 24,
+        "op": "dup",
+        "operand": null
+      },
+      {
+        "offset": 25,
+        "op": "ldstr",
+        "operand": "TEXT"
+      },
+      {
+        "offset": 30,
+        "op": "callvirt",
+        "operand": "set_type"
+      },
+      {
+        "offset": 35,
+        "op": "dup",
+        "operand": null
+      },
+      {
+        "offset": 36,
+        "op": "ldstr",
+        "operand": "TEXT"
+      },
+      {
+        "offset": 41,
+        "op": "callvirt",
+        "operand": "set_replyToMessageType"
+      },
+      {
+        "offset": 46,
+        "op": "dup",
+        "operand": null
+      },
+      {
+        "offset": 47,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 48,
+        "op": "ldfld",
+        "operand": "copiedUser"
+      },
+      {
+        "offset": 53,
+        "op": "callvirt",
+        "operand": "set_replyToUsername"
+      },
+      {
+        "offset": 58,
+        "op": "dup",
+        "operand": null
+      },
+      {
+        "offset": 59,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 60,
+        "op": "ldfld",
+        "operand": "copiedMsg"
+      },
+      {
+        "offset": 65,
+        "op": "callvirt",
+        "operand": "set_replyToMessage"
+      },
+      {
+        "offset": 70,
+        "op": "dup",
+        "operand": null
+      },
+      {
+        "offset": 71,
+        "op": "ldstr",
+        "operand": ""
+      },
+      {
+        "offset": 76,
+        "op": "callvirt",
+        "operand": "set_voiceMessage"
+      },
+      {
+        "offset": 81,
+        "op": "dup",
+        "operand": null
+      },
+      {
+        "offset": 82,
+        "op": "ldc.i4.0",
+        "operand": null
+      },
+      {
+        "offset": 83,
+        "op": "callvirt",
+        "operand": "set_voiceDuration"
+      },
+      {
+        "offset": 88,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 89,
+        "op": "newobj",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 94,
+        "op": "call",
+        "operand": "GameChatTemplateSent"
+      },
+      {
+        "offset": 99,
+        "op": "call",
+        "operand": "ChatRequest"
+      },
+      {
+        "offset": 104,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 105,
+        "op": "call",
+        "operand": "BringChatInputInFocus"
+      },
+      {
+        "offset": 110,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "WriteMessageToPanel": [
+      {
+        "offset": 12,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 13,
+        "op": "callvirt",
+        "operand": "get_messageId"
+      },
+      {
+        "offset": 18,
+        "op": "stloc.0",
+        "operand": null
+      },
+      {
+        "offset": 19,
+        "op": "ldc.i4.s",
+        "operand": "21"
+      },
+      {
+        "offset": 21,
+        "op": "stloc.1",
+        "operand": null
+      },
+      {
+        "offset": 22,
+        "op": "ldloca.s",
+        "operand": "local(0x0000)"
+      },
+      {
+        "offset": 24,
+        "op": "call",
+        "operand": "GetValueOrDefault"
+      },
+      {
+        "offset": 29,
+        "op": "ldloc.1",
+        "operand": null
+      },
+      {
+        "offset": 30,
+        "op": "ceq",
+        "operand": null
+      },
+      {
+        "offset": 32,
+        "op": "ldloca.s",
+        "operand": "local(0x0000)"
+      },
+      {
+        "offset": 34,
+        "op": "call",
+        "operand": "get_HasValue"
+      },
+      {
+        "offset": 39,
+        "op": "and",
+        "operand": null
+      },
+      {
+        "offset": 40,
+        "op": "brtrue.s",
+        "operand": "105"
+      },
+      {
+        "offset": 42,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 43,
+        "op": "callvirt",
+        "operand": "get_messageId"
+      },
+      {
+        "offset": 48,
+        "op": "stloc.0",
+        "operand": null
+      },
+      {
+        "offset": 49,
+        "op": "ldc.i4.s",
+        "operand": "22"
+      },
+      {
+        "offset": 51,
+        "op": "stloc.1",
+        "operand": null
+      },
+      {
+        "offset": 52,
+        "op": "ldloca.s",
+        "operand": "local(0x0000)"
+      },
+      {
+        "offset": 54,
+        "op": "call",
+        "operand": "GetValueOrDefault"
+      },
+      {
+        "offset": 59,
+        "op": "ldloc.1",
+        "operand": null
+      },
+      {
+        "offset": 60,
+        "op": "ceq",
+        "operand": null
+      },
+      {
+        "offset": 62,
+        "op": "ldloca.s",
+        "operand": "local(0x0000)"
+      },
+      {
+        "offset": 64,
+        "op": "call",
+        "operand": "get_HasValue"
+      },
+      {
+        "offset": 69,
+        "op": "and",
+        "operand": null
+      },
+      {
+        "offset": 70,
+        "op": "brtrue.s",
+        "operand": "105"
+      },
+      {
+        "offset": 72,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 73,
+        "op": "callvirt",
+        "operand": "get_errorCode"
+      },
+      {
+        "offset": 78,
+        "op": "stloc.0",
+        "operand": null
+      },
+      {
+        "offset": 79,
+        "op": "ldc.i4",
+        "operand": "6011"
+      },
+      {
+        "offset": 84,
+        "op": "stloc.1",
+        "operand": null
+      },
+      {
+        "offset": 85,
+        "op": "ldloca.s",
+        "operand": "local(0x0000)"
+      },
+      {
+        "offset": 87,
+        "op": "call",
+        "operand": "GetValueOrDefault"
+      },
+      {
+        "offset": 92,
+        "op": "ldloc.1",
+        "operand": null
+      },
+      {
+        "offset": 93,
+        "op": "ceq",
+        "operand": null
+      },
+      {
+        "offset": 95,
+        "op": "ldloca.s",
+        "operand": "local(0x0000)"
+      },
+      {
+        "offset": 97,
+        "op": "call",
+        "operand": "get_HasValue"
+      },
+      {
+        "offset": 102,
+        "op": "and",
+        "operand": null
+      },
+      {
+        "offset": 103,
+        "op": "brfalse.s",
+        "operand": "187"
+      },
+      {
+        "offset": 105,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 106,
+        "op": "callvirt",
+        "operand": "get_locId"
+      },
+      {
+        "offset": 111,
+        "op": "stloc.0",
+        "operand": null
+      },
+      {
+        "offset": 112,
+        "op": "ldloca.s",
+        "operand": "local(0x0000)"
+      },
+      {
+        "offset": 114,
+        "op": "call",
+        "operand": "get_HasValue"
+      },
+      {
+        "offset": 119,
+        "op": "brfalse.s",
+        "operand": "173"
+      },
+      {
+        "offset": 121,
+        "op": "ldsfld",
+        "operand": "GameTableMessage"
+      },
+      {
+        "offset": 126,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 127,
+        "op": "callvirt",
+        "operand": "get_locId"
+      },
+      {
+        "offset": 132,
+        "op": "stloc.0",
+        "operand": null
+      },
+      {
+        "offset": 133,
+        "op": "ldloca.s",
+        "operand": "local(0x0000)"
+      },
+      {
+        "offset": 135,
+        "op": "call",
+        "operand": "get_Value"
+      },
+      {
+        "offset": 140,
+        "op": "ldloca.s",
+        "operand": "local(0x0002)"
+      },
+      {
+        "offset": 142,
+        "op": "callvirt",
+        "operand": "TryGetValue"
+      },
+      {
+        "offset": 147,
+        "op": "brfalse.s",
+        "operand": "173"
+      },
+      {
+        "offset": 149,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 150,
+        "op": "ldloc.2",
+        "operand": null
+      },
+      {
+        "offset": 151,
+        "op": "ldstr",
+        "operand": ""
+      },
+      {
+        "offset": 156,
+        "op": "call",
+        "operand": "token(0x2B000006)"
+      },
+      {
+        "offset": 161,
+        "op": "call",
+        "operand": "GetTranslatedValue"
+      },
+      {
+        "offset": 166,
+        "op": "call",
+        "operand": "WriteErrorMessage"
+      },
+      {
+        "offset": 171,
+        "op": "br.s",
+        "operand": "194"
+      },
+      {
+        "offset": 173,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 174,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 175,
+        "op": "callvirt",
+        "operand": "get_message"
+      },
+      {
+        "offset": 180,
+        "op": "call",
+        "operand": "WriteErrorMessage"
+      },
+      {
+        "offset": 185,
+        "op": "br.s",
+        "operand": "194"
+      },
+      {
+        "offset": 187,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 188,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 189,
+        "op": "call",
+        "operand": "WriteUserMessage"
+      },
+      {
+        "offset": 194,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 195,
+        "op": "call",
+        "operand": "hideCopiedTextPanel"
+      },
+      {
+        "offset": 200,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 201,
+        "op": "ldstr",
+        "operand": "ScrollMsgToTop"
+      },
+      {
+        "offset": 206,
+        "op": "ldc.r4",
+        "operand": "0.05000000074505806"
+      },
+      {
+        "offset": 211,
+        "op": "call",
+        "operand": "Invoke"
+      },
+      {
+        "offset": 216,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "WriteUserMessage": [
+      {
+        "offset": 12,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 13,
+        "op": "callvirt",
+        "operand": "get_userName"
+      },
+      {
+        "offset": 18,
+        "op": "ldsfld",
+        "operand": "UserName"
+      },
+      {
+        "offset": 23,
+        "op": "call",
+        "operand": "op_Equality"
+      },
+      {
+        "offset": 28,
+        "op": "brtrue.s",
+        "operand": "51"
+      },
+      {
+        "offset": 30,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 31,
+        "op": "callvirt",
+        "operand": "get_userName"
+      },
+      {
+        "offset": 36,
+        "op": "ldstr",
+        "operand": "You"
+      },
+      {
+        "offset": 41,
+        "op": "call",
+        "operand": "op_Equality"
+      },
+      {
+        "offset": 46,
+        "op": "ldc.i4.0",
+        "operand": null
+      },
+      {
+        "offset": 47,
+        "op": "ceq",
+        "operand": null
+      },
+      {
+        "offset": 49,
+        "op": "br.s",
+        "operand": "52"
+      },
+      {
+        "offset": 51,
+        "op": "ldc.i4.0",
+        "operand": null
+      },
+      {
+        "offset": 52,
+        "op": "dup",
+        "operand": null
+      },
+      {
+        "offset": 53,
+        "op": "brtrue.s",
+        "operand": "63"
+      },
+      {
+        "offset": 55,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 56,
+        "op": "ldfld",
+        "operand": "chatContentPrefab"
+      },
+      {
+        "offset": 61,
+        "op": "br.s",
+        "operand": "69"
+      },
+      {
+        "offset": 63,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 64,
+        "op": "ldfld",
+        "operand": "othersChatContentPrefab"
+      },
+      {
+        "offset": 69,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 70,
+        "op": "ldfld",
+        "operand": "chatContentParent"
+      },
+      {
+        "offset": 75,
+        "op": "call",
+        "operand": "token(0x2B000002)"
+      },
+      {
+        "offset": 80,
+        "op": "stloc.0",
+        "operand": null
+      },
+      {
+        "offset": 81,
+        "op": "ldloc.0",
+        "operand": null
+      },
+      {
+        "offset": 82,
+        "op": "callvirt",
+        "operand": "token(0x2B000030)"
+      },
+      {
+        "offset": 87,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 88,
+        "op": "callvirt",
+        "operand": "SetMessage"
+      },
+      {
+        "offset": 93,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 94,
+        "op": "callvirt",
+        "operand": "get_replyToMessage"
+      },
+      {
+        "offset": 99,
+        "op": "call",
+        "operand": "IsNullOrEmpty"
+      },
+      {
+        "offset": 104,
+        "op": "brtrue.s",
+        "operand": "129"
+      },
+      {
+        "offset": 106,
+        "op": "ldloc.0",
+        "operand": null
+      },
+      {
+        "offset": 107,
+        "op": "callvirt",
+        "operand": "token(0x2B000030)"
+      },
+      {
+        "offset": 112,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 113,
+        "op": "callvirt",
+        "operand": "get_replyToUsername"
+      },
+      {
+        "offset": 118,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 119,
+        "op": "callvirt",
+        "operand": "get_replyToMessage"
+      },
+      {
+        "offset": 124,
+        "op": "callvirt",
+        "operand": "SetCopiedMessage"
+      },
+      {
+        "offset": 129,
+        "op": "ldloc.0",
+        "operand": null
+      },
+      {
+        "offset": 130,
+        "op": "ldc.i4.1",
+        "operand": null
+      },
+      {
+        "offset": 131,
+        "op": "callvirt",
+        "operand": "SetActive"
+      },
+      {
+        "offset": 136,
+        "op": "brtrue.s",
+        "operand": "154"
+      },
+      {
+        "offset": 138,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 139,
+        "op": "ldfld",
+        "operand": "messageInputField"
+      },
+      {
+        "offset": 144,
+        "op": "ldsfld",
+        "operand": "Empty"
+      },
+      {
+        "offset": 149,
+        "op": "callvirt",
+        "operand": "set_text"
+      },
+      {
+        "offset": 154,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 155,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 156,
+        "op": "ldfld",
+        "operand": "runTimeChatCount"
+      },
+      {
+        "offset": 161,
+        "op": "ldc.i4.1",
+        "operand": null
+      },
+      {
+        "offset": 162,
+        "op": "add",
+        "operand": null
+      },
+      {
+        "offset": 163,
+        "op": "stfld",
+        "operand": "runTimeChatCount"
+      },
+      {
+        "offset": 168,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 169,
+        "op": "call",
+        "operand": "RefreshEmptyState"
+      },
+      {
+        "offset": 174,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "WriteErrorMessage": [
+      {
+        "offset": 12,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 13,
+        "op": "ldfld",
+        "operand": "errorContentPrefab"
+      },
+      {
+        "offset": 18,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 19,
+        "op": "ldfld",
+        "operand": "chatContentParent"
+      },
+      {
+        "offset": 24,
+        "op": "call",
+        "operand": "token(0x2B000002)"
+      },
+      {
+        "offset": 29,
+        "op": "stloc.0",
+        "operand": null
+      },
+      {
+        "offset": 30,
+        "op": "ldloc.0",
+        "operand": null
+      },
+      {
+        "offset": 31,
+        "op": "callvirt",
+        "operand": "token(0x2B000031)"
+      },
+      {
+        "offset": 36,
+        "op": "dup",
+        "operand": null
+      },
+      {
+        "offset": 37,
+        "op": "ldc.i4.0",
+        "operand": null
+      },
+      {
+        "offset": 38,
+        "op": "call",
+        "operand": "SetTMP_FontAssetForLanguage"
+      },
+      {
+        "offset": 43,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 44,
+        "op": "ldc.i4.1",
+        "operand": null
+      },
+      {
+        "offset": 45,
+        "op": "callvirt",
+        "operand": "SetText"
+      },
+      {
+        "offset": 50,
+        "op": "ldloc.0",
+        "operand": null
+      },
+      {
+        "offset": 51,
+        "op": "ldc.i4.1",
+        "operand": null
+      },
+      {
+        "offset": 52,
+        "op": "callvirt",
+        "operand": "SetActive"
+      },
+      {
+        "offset": 57,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 58,
+        "op": "ldfld",
+        "operand": "errorChats"
+      },
+      {
+        "offset": 63,
+        "op": "ldloc.0",
+        "operand": null
+      },
+      {
+        "offset": 64,
+        "op": "callvirt",
+        "operand": "Add"
+      },
+      {
+        "offset": 69,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 70,
+        "op": "ldfld",
+        "operand": "messageInputField"
+      },
+      {
+        "offset": 75,
+        "op": "ldsfld",
+        "operand": "Empty"
+      },
+      {
+        "offset": 80,
+        "op": "callvirt",
+        "operand": "set_text"
+      },
+      {
+        "offset": 85,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 86,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 87,
+        "op": "ldfld",
+        "operand": "runTimeChatCount"
+      },
+      {
+        "offset": 92,
+        "op": "ldc.i4.1",
+        "operand": null
+      },
+      {
+        "offset": 93,
+        "op": "add",
+        "operand": null
+      },
+      {
+        "offset": 94,
+        "op": "stfld",
+        "operand": "runTimeChatCount"
+      },
+      {
+        "offset": 99,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 100,
+        "op": "call",
+        "operand": "RefreshEmptyState"
+      },
+      {
+        "offset": 105,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "ToggleChatBG": [
+      {
+        "offset": 12,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 13,
+        "op": "brfalse.s",
+        "operand": "46"
+      },
+      {
+        "offset": 15,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 16,
+        "op": "ldfld",
+        "operand": "chatBGRectTransform"
+      },
+      {
+        "offset": 21,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 22,
+        "op": "ldfld",
+        "operand": "openPanelPosition"
+      },
+      {
+        "offset": 27,
+        "op": "ldc.r4",
+        "operand": "0.15000000596046448"
+      },
+      {
+        "offset": 32,
+        "op": "ldc.i4.0",
+        "operand": null
+      },
+      {
+        "offset": 33,
+        "op": "call",
+        "operand": "DOAnchorPosX"
+      },
+      {
+        "offset": 38,
+        "op": "ldc.i4.1",
+        "operand": null
+      },
+      {
+        "offset": 39,
+        "op": "call",
+        "operand": "token(0x2B000011)"
+      },
+      {
+        "offset": 44,
+        "op": "pop",
+        "operand": null
+      },
+      {
+        "offset": 45,
+        "op": "ret",
+        "operand": null
+      },
+      {
+        "offset": 46,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 47,
+        "op": "ldfld",
+        "operand": "chatBGRectTransform"
+      },
+      {
+        "offset": 52,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 53,
+        "op": "ldfld",
+        "operand": "closePanelPosition"
+      },
+      {
+        "offset": 58,
+        "op": "ldc.r4",
+        "operand": "0.10000000149011612"
+      },
+      {
+        "offset": 63,
+        "op": "ldc.i4.0",
+        "operand": null
+      },
+      {
+        "offset": 64,
+        "op": "call",
+        "operand": "DOAnchorPosX"
+      },
+      {
+        "offset": 69,
+        "op": "ldc.i4.1",
+        "operand": null
+      },
+      {
+        "offset": 70,
+        "op": "call",
+        "operand": "token(0x2B000011)"
+      },
+      {
+        "offset": 75,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 76,
+        "op": "ldftn",
+        "operand": "<ToggleChatBG>b__39_0"
+      },
+      {
+        "offset": 82,
+        "op": "newobj",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 87,
+        "op": "call",
+        "operand": "token(0x2B000012)"
+      },
+      {
+        "offset": 92,
+        "op": "pop",
+        "operand": null
+      },
+      {
+        "offset": 93,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "ScrollMsgToTop": [
+      {
+        "offset": 1,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 2,
+        "op": "ldfld",
+        "operand": "chatHistoryScroll"
+      },
+      {
+        "offset": 7,
+        "op": "call",
+        "operand": "get_zero"
+      },
+      {
+        "offset": 12,
+        "op": "callvirt",
+        "operand": "set_normalizedPosition"
+      },
+      {
+        "offset": 17,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "ShowChatPanel": [
+      {
+        "offset": 12,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 13,
+        "op": "call",
+        "operand": "hideCopiedTextPanel"
+      },
+      {
+        "offset": 18,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 19,
+        "op": "ldfld",
+        "operand": "predefinedMsgComponent"
+      },
+      {
+        "offset": 24,
+        "op": "callvirt",
+        "operand": "HidePanel"
+      },
+      {
+        "offset": 29,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 30,
+        "op": "ldfld",
+        "operand": "otherOptionsComponent"
+      },
+      {
+        "offset": 35,
+        "op": "callvirt",
+        "operand": "HidePanel"
+      },
+      {
+        "offset": 40,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 41,
+        "op": "ldfld",
+        "operand": "userNamesComponent"
+      },
+      {
+        "offset": 46,
+        "op": "callvirt",
+        "operand": "HidePanel"
+      },
+      {
+        "offset": 51,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 52,
+        "op": "call",
+        "operand": "get_gameObject"
+      },
+      {
+        "offset": 57,
+        "op": "ldc.i4.1",
+        "operand": null
+      },
+      {
+        "offset": 58,
+        "op": "callvirt",
+        "operand": "SetActive"
+      },
+      {
+        "offset": 63,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 64,
+        "op": "ldc.i4.1",
+        "operand": null
+      },
+      {
+        "offset": 65,
+        "op": "call",
+        "operand": "ToggleChatBG"
+      },
+      {
+        "offset": 70,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 71,
+        "op": "ldfld",
+        "operand": "predefinedMsgComponent"
+      },
+      {
+        "offset": 76,
+        "op": "ldc.i4.1",
+        "operand": null
+      },
+      {
+        "offset": 77,
+        "op": "callvirt",
+        "operand": "ToggleButtonPanel"
+      },
+      {
+        "offset": 82,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 83,
+        "op": "ldstr",
+        "operand": "ScrollMsgToTop"
+      },
+      {
+        "offset": 88,
+        "op": "ldc.r4",
+        "operand": "0.05000000074505806"
+      },
+      {
+        "offset": 93,
+        "op": "call",
+        "operand": "Invoke"
+      },
+      {
+        "offset": 98,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 99,
+        "op": "call",
+        "operand": "RefreshEmptyState"
+      },
+      {
+        "offset": 104,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 105,
+        "op": "call",
+        "operand": "BringChatInputInFocus"
+      },
+      {
+        "offset": 110,
+        "op": "ldc.i4.1",
+        "operand": null
+      },
+      {
+        "offset": 111,
+        "op": "call",
+        "operand": "UpdatePanelState"
+      },
+      {
+        "offset": 116,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "HideChatPanel": [
+      {
+        "offset": 12,
+        "op": "ldstr",
+        "operand": ""
+      },
+      {
+        "offset": 17,
+        "op": "newobj",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 22,
+        "op": "call",
+        "operand": "GameChatTemplateCollapse"
+      },
+      {
+        "offset": 27,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 28,
+        "op": "call",
+        "operand": "hideCopiedTextPanel"
+      },
+      {
+        "offset": 33,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 34,
+        "op": "ldfld",
+        "operand": "predefinedMsgComponent"
+      },
+      {
+        "offset": 39,
+        "op": "callvirt",
+        "operand": "HidePanel"
+      },
+      {
+        "offset": 44,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 45,
+        "op": "ldfld",
+        "operand": "otherOptionsComponent"
+      },
+      {
+        "offset": 50,
+        "op": "callvirt",
+        "operand": "HidePanel"
+      },
+      {
+        "offset": 55,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 56,
+        "op": "ldfld",
+        "operand": "userNamesComponent"
+      },
+      {
+        "offset": 61,
+        "op": "callvirt",
+        "operand": "HidePanel"
+      },
+      {
+        "offset": 66,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 67,
+        "op": "ldc.i4.0",
+        "operand": null
+      },
+      {
+        "offset": 68,
+        "op": "call",
+        "operand": "ToggleChatBG"
+      },
+      {
+        "offset": 73,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 74,
+        "op": "brfalse.s",
+        "operand": "82"
+      },
+      {
+        "offset": 76,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 77,
+        "op": "call",
+        "operand": "PlayButtonTapSound"
+      },
+      {
+        "offset": 82,
+        "op": "ldc.i4.0",
+        "operand": null
+      },
+      {
+        "offset": 83,
+        "op": "call",
+        "operand": "UpdatePanelState"
+      },
+      {
+        "offset": 88,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "RemoveErrorMessages": [
+      {
+        "offset": 12,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 13,
+        "op": "ldfld",
+        "operand": "errorChats"
+      },
+      {
+        "offset": 18,
+        "op": "brtrue.s",
+        "operand": "21"
+      },
+      {
+        "offset": 20,
+        "op": "ret",
+        "operand": null
+      },
+      {
+        "offset": 21,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 22,
+        "op": "ldfld",
+        "operand": "errorChats"
+      },
+      {
+        "offset": 27,
+        "op": "callvirt",
+        "operand": "GetEnumerator"
+      },
+      {
+        "offset": 32,
+        "op": "stloc.0",
+        "operand": null
+      },
+      {
+        "offset": 33,
+        "op": "br.s",
+        "operand": "47"
+      },
+      {
+        "offset": 35,
+        "op": "ldloca.s",
+        "operand": "local(0x0000)"
+      },
+      {
+        "offset": 37,
+        "op": "call",
+        "operand": "get_Current"
+      },
+      {
+        "offset": 42,
+        "op": "call",
+        "operand": "Destroy"
+      },
+      {
+        "offset": 47,
+        "op": "ldloca.s",
+        "operand": "local(0x0000)"
+      },
+      {
+        "offset": 49,
+        "op": "call",
+        "operand": "MoveNext"
+      },
+      {
+        "offset": 54,
+        "op": "brtrue.s",
+        "operand": "35"
+      },
+      {
+        "offset": 56,
+        "op": "leave.s",
+        "operand": "72"
+      },
+      {
+        "offset": 58,
+        "op": "ldloca.s",
+        "operand": "local(0x0000)"
+      },
+      {
+        "offset": 60,
+        "op": "constrained.",
+        "operand": "token(0x1B000090)"
+      },
+      {
+        "offset": 66,
+        "op": "callvirt",
+        "operand": "Dispose"
+      },
+      {
+        "offset": 71,
+        "op": "endfinally",
+        "operand": null
+      },
+      {
+        "offset": 72,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 73,
+        "op": "ldfld",
+        "operand": "errorChats"
+      },
+      {
+        "offset": 78,
+        "op": "callvirt",
+        "operand": "Clear"
+      },
+      {
+        "offset": 83,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 84,
+        "op": "call",
+        "operand": "RefreshEmptyState"
+      },
+      {
+        "offset": 89,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "showCopiedTextPanel": [
+      {
+        "offset": 12,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 13,
+        "op": "ldfld",
+        "operand": "copiedMsgPanelUser"
+      },
+      {
+        "offset": 18,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 19,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 20,
+        "op": "dup",
+        "operand": null
+      },
+      {
+        "offset": 21,
+        "op": "stloc.0",
+        "operand": null
+      },
+      {
+        "offset": 22,
+        "op": "stfld",
+        "operand": "copiedUser"
+      },
+      {
+        "offset": 27,
+        "op": "ldloc.0",
+        "operand": null
+      },
+      {
+        "offset": 28,
+        "op": "callvirt",
+        "operand": "set_text"
+      },
+      {
+        "offset": 33,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 34,
+        "op": "ldfld",
+        "operand": "copiedMsgPanelMsg"
+      },
+      {
+        "offset": 39,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 40,
+        "op": "ldarg.2",
+        "operand": null
+      },
+      {
+        "offset": 41,
+        "op": "dup",
+        "operand": null
+      },
+      {
+        "offset": 42,
+        "op": "stloc.0",
+        "operand": null
+      },
+      {
+        "offset": 43,
+        "op": "stfld",
+        "operand": "copiedMsg"
+      },
+      {
+        "offset": 48,
+        "op": "ldloc.0",
+        "operand": null
+      },
+      {
+        "offset": 49,
+        "op": "callvirt",
+        "operand": "set_text"
+      },
+      {
+        "offset": 54,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 55,
+        "op": "ldfld",
+        "operand": "copiedMsgPanel"
+      },
+      {
+        "offset": 60,
+        "op": "callvirt",
+        "operand": "get_gameObject"
+      },
+      {
+        "offset": 65,
+        "op": "ldc.i4.1",
+        "operand": null
+      },
+      {
+        "offset": 66,
+        "op": "callvirt",
+        "operand": "SetActive"
+      },
+      {
+        "offset": 71,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 72,
+        "op": "ldfld",
+        "operand": "predefinedMsgComponent"
+      },
+      {
+        "offset": 77,
+        "op": "ldc.i4.0",
+        "operand": null
+      },
+      {
+        "offset": 78,
+        "op": "callvirt",
+        "operand": "ToggleButtonPanel"
+      },
+      {
+        "offset": 83,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 84,
+        "op": "call",
+        "operand": "BringChatInputInFocus"
+      },
+      {
+        "offset": 89,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "hideCopiedTextPanel": [
+      {
+        "offset": 1,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 2,
+        "op": "ldstr",
+        "operand": ""
+      },
+      {
+        "offset": 7,
+        "op": "stfld",
+        "operand": "copiedUser"
+      },
+      {
+        "offset": 12,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 13,
+        "op": "ldstr",
+        "operand": ""
+      },
+      {
+        "offset": 18,
+        "op": "stfld",
+        "operand": "copiedMsg"
+      },
+      {
+        "offset": 23,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 24,
+        "op": "ldfld",
+        "operand": "copiedMsgPanel"
+      },
+      {
+        "offset": 29,
+        "op": "callvirt",
+        "operand": "get_gameObject"
+      },
+      {
+        "offset": 34,
+        "op": "ldc.i4.0",
+        "operand": null
+      },
+      {
+        "offset": 35,
+        "op": "callvirt",
+        "operand": "SetActive"
+      },
+      {
+        "offset": 40,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 41,
+        "op": "ldfld",
+        "operand": "predefinedMsgComponent"
+      },
+      {
+        "offset": 46,
+        "op": "ldc.i4.1",
+        "operand": null
+      },
+      {
+        "offset": 47,
+        "op": "callvirt",
+        "operand": "ToggleButtonPanel"
+      },
+      {
+        "offset": 52,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "IsCopiedPanelActive": [
+      {
+        "offset": 1,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 2,
+        "op": "ldfld",
+        "operand": "copiedMsgPanel"
+      },
+      {
+        "offset": 7,
+        "op": "callvirt",
+        "operand": "get_gameObject"
+      },
+      {
+        "offset": 12,
+        "op": "callvirt",
+        "operand": "get_activeInHierarchy"
+      },
+      {
+        "offset": 17,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "PlayButtonTapSound": [
+      {
+        "offset": 1,
+        "op": "call",
+        "operand": "get_Instance"
+      },
+      {
+        "offset": 6,
+        "op": "callvirt",
+        "operand": "PlayButtonTapSound"
+      },
+      {
+        "offset": 11,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "TagToUser": [
+      {
+        "offset": 12,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 13,
+        "op": "ldfld",
+        "operand": "userNamesComponent"
+      },
+      {
+        "offset": 18,
+        "op": "callvirt",
+        "operand": "TogglePanel"
+      },
+      {
+        "offset": 23,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 24,
+        "op": "ldfld",
+        "operand": "messageInputField"
+      },
+      {
+        "offset": 29,
+        "op": "ldstr",
+        "operand": "@"
+      },
+      {
+        "offset": 34,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 35,
+        "op": "ldstr",
+        "operand": " "
+      },
+      {
+        "offset": 40,
+        "op": "call",
+        "operand": "Concat"
+      },
+      {
+        "offset": 45,
+        "op": "callvirt",
+        "operand": "set_text"
+      },
+      {
+        "offset": 50,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 51,
+        "op": "ldfld",
+        "operand": "messageInputField"
+      },
+      {
+        "offset": 56,
+        "op": "callvirt",
+        "operand": "ActivateInputField"
+      },
+      {
+        "offset": 61,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 62,
+        "op": "ldfld",
+        "operand": "messageInputField"
+      },
+      {
+        "offset": 67,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 68,
+        "op": "callvirt",
+        "operand": "get_Length"
+      },
+      {
+        "offset": 73,
+        "op": "ldc.i4.3",
+        "operand": null
+      },
+      {
+        "offset": 74,
+        "op": "add",
+        "operand": null
+      },
+      {
+        "offset": 75,
+        "op": "callvirt",
+        "operand": "set_caretPosition"
+      },
+      {
+        "offset": 80,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "RefreshEmptyState": [
+      {
+        "offset": 1,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 2,
+        "op": "ldfld",
+        "operand": "emptyStatePanel"
+      },
+      {
+        "offset": 7,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 8,
+        "op": "ldfld",
+        "operand": "runTimeChatCount"
+      },
+      {
+        "offset": 13,
+        "op": "ldc.i4.0",
+        "operand": null
+      },
+      {
+        "offset": 14,
+        "op": "cgt",
+        "operand": null
+      },
+      {
+        "offset": 16,
+        "op": "ldc.i4.0",
+        "operand": null
+      },
+      {
+        "offset": 17,
+        "op": "ceq",
+        "operand": null
+      },
+      {
+        "offset": 19,
+        "op": "callvirt",
+        "operand": "SetActive"
+      },
+      {
+        "offset": 24,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    ".ctor": [
+      {
+        "offset": 1,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 2,
+        "op": "newobj",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 7,
+        "op": "stfld",
+        "operand": "errorChats"
+      },
+      {
+        "offset": 12,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 13,
+        "op": "call",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 18,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "<ToggleChatBG>b__39_0": [
+      {
+        "offset": 1,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 2,
+        "op": "call",
+        "operand": "get_gameObject"
+      },
+      {
+        "offset": 7,
+        "op": "ldc.i4.0",
+        "operand": null
+      },
+      {
+        "offset": 8,
+        "op": "callvirt",
+        "operand": "SetActive"
+      },
+      {
+        "offset": 13,
+        "op": "ret",
+        "operand": null
+      }
+    ]
+  },
+  "OtherOptionsComponent": {
+    "OnEnable": [
+      {
+        "offset": 1,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 2,
+        "op": "call",
+        "operand": "FetchChatSettingsFromUserPrefs"
+      },
+      {
+        "offset": 7,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 8,
+        "op": "call",
+        "operand": "UpdateToggleFromChatSettings"
+      },
+      {
+        "offset": 13,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 14,
+        "op": "call",
+        "operand": "SubscribeToggleEvents"
+      },
+      {
+        "offset": 19,
+        "op": "ldsfld",
+        "operand": "OnUserPrefDataChanged"
+      },
+      {
+        "offset": 24,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 25,
+        "op": "ldftn",
+        "operand": "UpdateChatSettingsFromPrefs"
+      },
+      {
+        "offset": 31,
+        "op": "newobj",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 36,
+        "op": "call",
+        "operand": "Combine"
+      },
+      {
+        "offset": 41,
+        "op": "castclass",
+        "operand": "Action"
+      },
+      {
+        "offset": 46,
+        "op": "stsfld",
+        "operand": "OnUserPrefDataChanged"
+      },
+      {
+        "offset": 51,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "FetchChatSettingsFromUserPrefs": [
+      {
+        "offset": 12,
+        "op": "ldsfld",
+        "operand": "UserName"
+      },
+      {
+        "offset": 17,
+        "op": "call",
+        "operand": "GetUserPrefData"
+      },
+      {
+        "offset": 22,
+        "op": "stloc.0",
+        "operand": null
+      },
+      {
+        "offset": 23,
+        "op": "ldloc.0",
+        "operand": null
+      },
+      {
+        "offset": 24,
+        "op": "brfalse.s",
+        "operand": "39"
+      },
+      {
+        "offset": 26,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 27,
+        "op": "ldloc.0",
+        "operand": null
+      },
+      {
+        "offset": 28,
+        "op": "ldfld",
+        "operand": "chatSettings"
+      },
+      {
+        "offset": 33,
+        "op": "stfld",
+        "operand": "chatSettings"
+      },
+      {
+        "offset": 38,
+        "op": "ret",
+        "operand": null
+      },
+      {
+        "offset": 39,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 40,
+        "op": "ldflda",
+        "operand": "chatSettings"
+      },
+      {
+        "offset": 45,
+        "op": "initobj",
+        "operand": "ChatSettings"
+      },
+      {
+        "offset": 51,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "OnDisable": [
+      {
+        "offset": 1,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 2,
+        "op": "call",
+        "operand": "UnsubscribeToggleEvents"
+      },
+      {
+        "offset": 7,
+        "op": "ldsfld",
+        "operand": "OnUserPrefDataChanged"
+      },
+      {
+        "offset": 12,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 13,
+        "op": "ldftn",
+        "operand": "UpdateChatSettingsFromPrefs"
+      },
+      {
+        "offset": 19,
+        "op": "newobj",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 24,
+        "op": "call",
+        "operand": "Remove"
+      },
+      {
+        "offset": 29,
+        "op": "castclass",
+        "operand": "Action"
+      },
+      {
+        "offset": 34,
+        "op": "stsfld",
+        "operand": "OnUserPrefDataChanged"
+      },
+      {
+        "offset": 39,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "SubscribeToggleEvents": [
+      {
+        "offset": 12,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 13,
+        "op": "ldfld",
+        "operand": "MuteSpectator"
+      },
+      {
+        "offset": 18,
+        "op": "ldfld",
+        "operand": "onValueChanged"
+      },
+      {
+        "offset": 23,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 24,
+        "op": "ldftn",
+        "operand": "OnMuteSpectatorChat"
+      },
+      {
+        "offset": 30,
+        "op": "newobj",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 35,
+        "op": "callvirt",
+        "operand": "AddListener"
+      },
+      {
+        "offset": 40,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 41,
+        "op": "ldfld",
+        "operand": "HideChatBubbles"
+      },
+      {
+        "offset": 46,
+        "op": "ldfld",
+        "operand": "onValueChanged"
+      },
+      {
+        "offset": 51,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 52,
+        "op": "ldftn",
+        "operand": "OnHideChatBubbles"
+      },
+      {
+        "offset": 58,
+        "op": "newobj",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 63,
+        "op": "callvirt",
+        "operand": "AddListener"
+      },
+      {
+        "offset": 68,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 69,
+        "op": "ldfld",
+        "operand": "MuteAllChats"
+      },
+      {
+        "offset": 74,
+        "op": "ldfld",
+        "operand": "onValueChanged"
+      },
+      {
+        "offset": 79,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 80,
+        "op": "ldftn",
+        "operand": "OnMuteAllChats"
+      },
+      {
+        "offset": 86,
+        "op": "newobj",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 91,
+        "op": "callvirt",
+        "operand": "AddListener"
+      },
+      {
+        "offset": 96,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "UnsubscribeToggleEvents": [
+      {
+        "offset": 12,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 13,
+        "op": "ldfld",
+        "operand": "MuteSpectator"
+      },
+      {
+        "offset": 18,
+        "op": "ldfld",
+        "operand": "onValueChanged"
+      },
+      {
+        "offset": 23,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 24,
+        "op": "ldftn",
+        "operand": "OnMuteSpectatorChat"
+      },
+      {
+        "offset": 30,
+        "op": "newobj",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 35,
+        "op": "callvirt",
+        "operand": "RemoveListener"
+      },
+      {
+        "offset": 40,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 41,
+        "op": "ldfld",
+        "operand": "HideChatBubbles"
+      },
+      {
+        "offset": 46,
+        "op": "ldfld",
+        "operand": "onValueChanged"
+      },
+      {
+        "offset": 51,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 52,
+        "op": "ldftn",
+        "operand": "OnHideChatBubbles"
+      },
+      {
+        "offset": 58,
+        "op": "newobj",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 63,
+        "op": "callvirt",
+        "operand": "RemoveListener"
+      },
+      {
+        "offset": 68,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 69,
+        "op": "ldfld",
+        "operand": "MuteAllChats"
+      },
+      {
+        "offset": 74,
+        "op": "ldfld",
+        "operand": "onValueChanged"
+      },
+      {
+        "offset": 79,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 80,
+        "op": "ldftn",
+        "operand": "OnMuteAllChats"
+      },
+      {
+        "offset": 86,
+        "op": "newobj",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 91,
+        "op": "callvirt",
+        "operand": "RemoveListener"
+      },
+      {
+        "offset": 96,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "UpdateChatSettingsFromPrefs": [
+      {
+        "offset": 12,
+        "op": "call",
+        "operand": "get_CurrentUserPrefData"
+      },
+      {
+        "offset": 17,
+        "op": "stloc.0",
+        "operand": null
+      },
+      {
+        "offset": 18,
+        "op": "ldloc.0",
+        "operand": null
+      },
+      {
+        "offset": 19,
+        "op": "brfalse.s",
+        "operand": "51"
+      },
+      {
+        "offset": 21,
+        "op": "ldloc.0",
+        "operand": null
+      },
+      {
+        "offset": 22,
+        "op": "ldflda",
+        "operand": "chatSettings"
+      },
+      {
+        "offset": 27,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 28,
+        "op": "ldfld",
+        "operand": "chatSettings"
+      },
+      {
+        "offset": 33,
+        "op": "box",
+        "operand": "ChatSettings"
+      },
+      {
+        "offset": 38,
+        "op": "constrained.",
+        "operand": "ChatSettings"
+      },
+      {
+        "offset": 44,
+        "op": "callvirt",
+        "operand": "Equals"
+      },
+      {
+        "offset": 49,
+        "op": "brfalse.s",
+        "operand": "52"
+      },
+      {
+        "offset": 51,
+        "op": "ret",
+        "operand": null
+      },
+      {
+        "offset": 52,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 53,
+        "op": "ldloc.0",
+        "operand": null
+      },
+      {
+        "offset": 54,
+        "op": "ldfld",
+        "operand": "chatSettings"
+      },
+      {
+        "offset": 59,
+        "op": "stfld",
+        "operand": "chatSettings"
+      },
+      {
+        "offset": 64,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 65,
+        "op": "call",
+        "operand": "UnsubscribeToggleEvents"
+      },
+      {
+        "offset": 70,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 71,
+        "op": "call",
+        "operand": "UpdateToggleFromChatSettings"
+      },
+      {
+        "offset": 76,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 77,
+        "op": "call",
+        "operand": "SubscribeToggleEvents"
+      },
+      {
+        "offset": 82,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "UpdateToggleFromChatSettings": [
+      {
+        "offset": 12,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 13,
+        "op": "ldfld",
+        "operand": "MuteSpectator"
+      },
+      {
+        "offset": 18,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 19,
+        "op": "ldflda",
+        "operand": "chatSettings"
+      },
+      {
+        "offset": 24,
+        "op": "ldfld",
+        "operand": "muteSpectator"
+      },
+      {
+        "offset": 29,
+        "op": "callvirt",
+        "operand": "set_isOn"
+      },
+      {
+        "offset": 34,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 35,
+        "op": "ldfld",
+        "operand": "HideChatBubbles"
+      },
+      {
+        "offset": 40,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 41,
+        "op": "ldflda",
+        "operand": "chatSettings"
+      },
+      {
+        "offset": 46,
+        "op": "ldfld",
+        "operand": "hideChatBubbles"
+      },
+      {
+        "offset": 51,
+        "op": "callvirt",
+        "operand": "set_isOn"
+      },
+      {
+        "offset": 56,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 57,
+        "op": "ldfld",
+        "operand": "MuteAllChats"
+      },
+      {
+        "offset": 62,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 63,
+        "op": "ldflda",
+        "operand": "chatSettings"
+      },
+      {
+        "offset": 68,
+        "op": "ldfld",
+        "operand": "muteAllChats"
+      },
+      {
+        "offset": 73,
+        "op": "callvirt",
+        "operand": "set_isOn"
+      },
+      {
+        "offset": 78,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "Update": [
+      {
+        "offset": 12,
+        "op": "ldc.i4.0",
+        "operand": null
+      },
+      {
+        "offset": 13,
+        "op": "call",
+        "operand": "GetMouseButtonUp"
+      },
+      {
+        "offset": 18,
+        "op": "brfalse.s",
+        "operand": "51"
+      },
+      {
+        "offset": 20,
+        "op": "call",
+        "operand": "get_mousePosition"
+      },
+      {
+        "offset": 25,
+        "op": "call",
+        "operand": "op_Implicit"
+      },
+      {
+        "offset": 30,
+        "op": "stloc.0",
+        "operand": null
+      },
+      {
+        "offset": 31,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 32,
+        "op": "ldfld",
+        "operand": "panelRectTransform"
+      },
+      {
+        "offset": 37,
+        "op": "ldloc.0",
+        "operand": null
+      },
+      {
+        "offset": 38,
+        "op": "call",
+        "operand": "RectangleContainsScreenPoint"
+      },
+      {
+        "offset": 43,
+        "op": "brtrue.s",
+        "operand": "51"
+      },
+      {
+        "offset": 45,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 46,
+        "op": "call",
+        "operand": "HidePanel"
+      },
+      {
+        "offset": 51,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "TogglePanel": [
+      {
+        "offset": 1,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 2,
+        "op": "call",
+        "operand": "PlayButtonTapSound"
+      },
+      {
+        "offset": 7,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 8,
+        "op": "ldfld",
+        "operand": "predefinedMsgComponent"
+      },
+      {
+        "offset": 13,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 14,
+        "op": "call",
+        "operand": "get_gameObject"
+      },
+      {
+        "offset": 19,
+        "op": "callvirt",
+        "operand": "get_activeInHierarchy"
+      },
+      {
+        "offset": 24,
+        "op": "callvirt",
+        "operand": "ToggleButtonPanel"
+      },
+      {
+        "offset": 29,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 30,
+        "op": "call",
+        "operand": "get_gameObject"
+      },
+      {
+        "offset": 35,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 36,
+        "op": "call",
+        "operand": "get_gameObject"
+      },
+      {
+        "offset": 41,
+        "op": "callvirt",
+        "operand": "get_activeInHierarchy"
+      },
+      {
+        "offset": 46,
+        "op": "ldc.i4.0",
+        "operand": null
+      },
+      {
+        "offset": 47,
+        "op": "ceq",
+        "operand": null
+      },
+      {
+        "offset": 49,
+        "op": "callvirt",
+        "operand": "SetActive"
+      },
+      {
+        "offset": 54,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "OnMuteSpectatorChat": [
+      {
+        "offset": 1,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 2,
+        "op": "call",
+        "operand": "PlayButtonTapSound"
+      },
+      {
+        "offset": 7,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 8,
+        "op": "ldflda",
+        "operand": "chatSettings"
+      },
+      {
+        "offset": 13,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 14,
+        "op": "stfld",
+        "operand": "muteSpectator"
+      },
+      {
+        "offset": 19,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 20,
+        "op": "call",
+        "operand": "UpdateChatSettings"
+      },
+      {
+        "offset": 25,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "OnHideChatBubbles": [
+      {
+        "offset": 1,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 2,
+        "op": "call",
+        "operand": "PlayButtonTapSound"
+      },
+      {
+        "offset": 7,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 8,
+        "op": "ldflda",
+        "operand": "chatSettings"
+      },
+      {
+        "offset": 13,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 14,
+        "op": "stfld",
+        "operand": "hideChatBubbles"
+      },
+      {
+        "offset": 19,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 20,
+        "op": "call",
+        "operand": "UpdateChatSettings"
+      },
+      {
+        "offset": 25,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "OnMuteAllChats": [
+      {
+        "offset": 1,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 2,
+        "op": "call",
+        "operand": "PlayButtonTapSound"
+      },
+      {
+        "offset": 7,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 8,
+        "op": "ldflda",
+        "operand": "chatSettings"
+      },
+      {
+        "offset": 13,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 14,
+        "op": "stfld",
+        "operand": "muteAllChats"
+      },
+      {
+        "offset": 19,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 20,
+        "op": "call",
+        "operand": "UpdateChatSettings"
+      },
+      {
+        "offset": 25,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "UpdateChatSettings": [
+      {
+        "offset": 1,
+        "op": "call",
+        "operand": "get_CurrentUserPrefData"
+      },
+      {
+        "offset": 6,
+        "op": "ldfld",
+        "operand": "userName"
+      },
+      {
+        "offset": 11,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 12,
+        "op": "ldfld",
+        "operand": "chatSettings"
+      },
+      {
+        "offset": 17,
+        "op": "call",
+        "operand": "UpdateChatSettings"
+      },
+      {
+        "offset": 22,
+        "op": "call",
+        "operand": "SendChatSettingsToAllTables"
+      },
+      {
+        "offset": 27,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "IsActive": [
+      {
+        "offset": 1,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 2,
+        "op": "call",
+        "operand": "get_gameObject"
+      },
+      {
+        "offset": 7,
+        "op": "callvirt",
+        "operand": "get_activeInHierarchy"
+      },
+      {
+        "offset": 12,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "OnCancelClick": [
+      {
+        "offset": 1,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 2,
+        "op": "call",
+        "operand": "HidePanel"
+      },
+      {
+        "offset": 7,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "HidePanel": [
+      {
+        "offset": 1,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 2,
+        "op": "call",
+        "operand": "get_gameObject"
+      },
+      {
+        "offset": 7,
+        "op": "ldc.i4.0",
+        "operand": null
+      },
+      {
+        "offset": 8,
+        "op": "callvirt",
+        "operand": "SetActive"
+      },
+      {
+        "offset": 13,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 14,
+        "op": "ldfld",
+        "operand": "predefinedMsgComponent"
+      },
+      {
+        "offset": 19,
+        "op": "ldc.i4.1",
+        "operand": null
+      },
+      {
+        "offset": 20,
+        "op": "callvirt",
+        "operand": "ToggleButtonPanel"
+      },
+      {
+        "offset": 25,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "PlayButtonTapSound": [
+      {
+        "offset": 1,
+        "op": "call",
+        "operand": "get_Instance"
+      },
+      {
+        "offset": 6,
+        "op": "callvirt",
+        "operand": "PlayButtonTapSound"
+      },
+      {
+        "offset": 11,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    ".ctor": [
+      {
+        "offset": 1,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 2,
+        "op": "call",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 7,
+        "op": "ret",
+        "operand": null
+      }
+    ]
+  },
+  "PredefinedMsgComponent": {
+    "Start": [
+      {
+        "offset": 12,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 13,
+        "op": "call",
+        "operand": "get_AppStaticConfig"
+      },
+      {
+        "offset": 18,
+        "op": "dup",
+        "operand": null
+      },
+      {
+        "offset": 19,
+        "op": "brtrue.s",
+        "operand": "25"
+      },
+      {
+        "offset": 21,
+        "op": "pop",
+        "operand": null
+      },
+      {
+        "offset": 22,
+        "op": "ldnull",
+        "operand": null
+      },
+      {
+        "offset": 23,
+        "op": "br.s",
+        "operand": "54"
+      },
+      {
+        "offset": 25,
+        "op": "call",
+        "operand": "get_ChatConfig"
+      },
+      {
+        "offset": 30,
+        "op": "dup",
+        "operand": null
+      },
+      {
+        "offset": 31,
+        "op": "brtrue.s",
+        "operand": "37"
+      },
+      {
+        "offset": 33,
+        "op": "pop",
+        "operand": null
+      },
+      {
+        "offset": 34,
+        "op": "ldnull",
+        "operand": null
+      },
+      {
+        "offset": 35,
+        "op": "br.s",
+        "operand": "54"
+      },
+      {
+        "offset": 37,
+        "op": "call",
+        "operand": "get_ChatPhrases"
+      },
+      {
+        "offset": 42,
+        "op": "dup",
+        "operand": null
+      },
+      {
+        "offset": 43,
+        "op": "brtrue.s",
+        "operand": "49"
+      },
+      {
+        "offset": 45,
+        "op": "pop",
+        "operand": null
+      },
+      {
+        "offset": 46,
+        "op": "ldnull",
+        "operand": null
+      },
+      {
+        "offset": 47,
+        "op": "br.s",
+        "operand": "54"
+      },
+      {
+        "offset": 49,
+        "op": "call",
+        "operand": "ToArray"
+      },
+      {
+        "offset": 54,
+        "op": "stfld",
+        "operand": "allMessages"
+      },
+      {
+        "offset": 59,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 60,
+        "op": "ldfld",
+        "operand": "allMessages"
+      },
+      {
+        "offset": 65,
+        "op": "brfalse.s",
+        "operand": "81"
+      },
+      {
+        "offset": 67,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 68,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 69,
+        "op": "ldfld",
+        "operand": "allMessages"
+      },
+      {
+        "offset": 74,
+        "op": "call",
+        "operand": "AddAllMsgPanel"
+      },
+      {
+        "offset": 79,
+        "op": "br.s",
+        "operand": "97"
+      },
+      {
+        "offset": 81,
+        "op": "call",
+        "operand": "get_Instance"
+      },
+      {
+        "offset": 86,
+        "op": "ldstr",
+        "operand": "allMessages is null"
+      },
+      {
+        "offset": 91,
+        "op": "ldc.i4.0",
+        "operand": null
+      },
+      {
+        "offset": 92,
+        "op": "callvirt",
+        "operand": "Log"
+      },
+      {
+        "offset": 97,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 98,
+        "op": "ldfld",
+        "operand": "msgButtonsContainer"
+      },
+      {
+        "offset": 103,
+        "op": "ldnull",
+        "operand": null
+      },
+      {
+        "offset": 104,
+        "op": "call",
+        "operand": "op_Inequality"
+      },
+      {
+        "offset": 109,
+        "op": "brfalse.s",
+        "operand": "149"
+      },
+      {
+        "offset": 111,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 112,
+        "op": "call",
+        "operand": "get_transform"
+      },
+      {
+        "offset": 117,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 118,
+        "op": "ldfld",
+        "operand": "msgButtonsContainer"
+      },
+      {
+        "offset": 123,
+        "op": "callvirt",
+        "operand": "get_childCount"
+      },
+      {
+        "offset": 128,
+        "op": "ldc.i4.1",
+        "operand": null
+      },
+      {
+        "offset": 129,
+        "op": "bgt.s",
+        "operand": "138"
+      },
+      {
+        "offset": 131,
+        "op": "call",
+        "operand": "get_zero"
+      },
+      {
+        "offset": 136,
+        "op": "br.s",
+        "operand": "143"
+      },
+      {
+        "offset": 138,
+        "op": "call",
+        "operand": "get_one"
+      },
+      {
+        "offset": 143,
+        "op": "callvirt",
+        "operand": "set_localScale"
+      },
+      {
+        "offset": 148,
+        "op": "ret",
+        "operand": null
+      },
+      {
+        "offset": 149,
+        "op": "call",
+        "operand": "get_Instance"
+      },
+      {
+        "offset": 154,
+        "op": "ldstr",
+        "operand": "msgButtonsContainer is null"
+      },
+      {
+        "offset": 159,
+        "op": "ldc.i4.0",
+        "operand": null
+      },
+      {
+        "offset": 160,
+        "op": "callvirt",
+        "operand": "Log"
+      },
+      {
+        "offset": 165,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "SetMessages": [
+      {
+        "offset": 1,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 2,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 3,
+        "op": "stfld",
+        "operand": "allMessages"
+      },
+      {
+        "offset": 8,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 9,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 10,
+        "op": "ldfld",
+        "operand": "allMessages"
+      },
+      {
+        "offset": 15,
+        "op": "call",
+        "operand": "AddAllMsgPanel"
+      },
+      {
+        "offset": 20,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 21,
+        "op": "call",
+        "operand": "ShowPanel"
+      },
+      {
+        "offset": 26,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "ShowPanel": [
+      {
+        "offset": 12,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 13,
+        "op": "ldfld",
+        "operand": "panelContainer"
+      },
+      {
+        "offset": 18,
+        "op": "callvirt",
+        "operand": "get_childCount"
+      },
+      {
+        "offset": 23,
+        "op": "ldc.i4.2",
+        "operand": null
+      },
+      {
+        "offset": 24,
+        "op": "ble.s",
+        "operand": "94"
+      },
+      {
+        "offset": 26,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 27,
+        "op": "ldfld",
+        "operand": "panel"
+      },
+      {
+        "offset": 32,
+        "op": "callvirt",
+        "operand": "get_gameObject"
+      },
+      {
+        "offset": 37,
+        "op": "callvirt",
+        "operand": "get_activeInHierarchy"
+      },
+      {
+        "offset": 42,
+        "op": "brtrue.s",
+        "operand": "94"
+      },
+      {
+        "offset": 44,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 45,
+        "op": "ldfld",
+        "operand": "panel"
+      },
+      {
+        "offset": 50,
+        "op": "callvirt",
+        "operand": "get_gameObject"
+      },
+      {
+        "offset": 55,
+        "op": "ldc.i4.1",
+        "operand": null
+      },
+      {
+        "offset": 56,
+        "op": "callvirt",
+        "operand": "SetActive"
+      },
+      {
+        "offset": 61,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 62,
+        "op": "ldfld",
+        "operand": "panel"
+      },
+      {
+        "offset": 67,
+        "op": "callvirt",
+        "operand": "token(0x2B000017)"
+      },
+      {
+        "offset": 72,
+        "op": "ldc.r4",
+        "operand": "1.0"
+      },
+      {
+        "offset": 77,
+        "op": "ldc.r4",
+        "operand": "0.10000000149011612"
+      },
+      {
+        "offset": 82,
+        "op": "call",
+        "operand": "DOScaleY"
+      },
+      {
+        "offset": 87,
+        "op": "ldc.i4.1",
+        "operand": null
+      },
+      {
+        "offset": 88,
+        "op": "call",
+        "operand": "token(0x2B000023)"
+      },
+      {
+        "offset": 93,
+        "op": "pop",
+        "operand": null
+      },
+      {
+        "offset": 94,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "AddAllMsgPanel": [
+      {
+        "offset": 12,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 13,
+        "op": "brtrue.s",
+        "operand": "16"
+      },
+      {
+        "offset": 15,
+        "op": "ret",
+        "operand": null
+      },
+      {
+        "offset": 16,
+        "op": "ldc.i4.0",
+        "operand": null
+      },
+      {
+        "offset": 17,
+        "op": "stloc.0",
+        "operand": null
+      },
+      {
+        "offset": 18,
+        "op": "br.s",
+        "operand": "133"
+      },
+      {
+        "offset": 20,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 21,
+        "op": "ldfld",
+        "operand": "msgButtonPrefab"
+      },
+      {
+        "offset": 26,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 27,
+        "op": "ldfld",
+        "operand": "msgButtonsContainer"
+      },
+      {
+        "offset": 32,
+        "op": "call",
+        "operand": "token(0x2B000002)"
+      },
+      {
+        "offset": 37,
+        "op": "dup",
+        "operand": null
+      },
+      {
+        "offset": 38,
+        "op": "callvirt",
+        "operand": "token(0x2B000031)"
+      },
+      {
+        "offset": 43,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 44,
+        "op": "ldloc.0",
+        "operand": null
+      },
+      {
+        "offset": 45,
+        "op": "ldelem.ref",
+        "operand": null
+      },
+      {
+        "offset": 46,
+        "op": "call",
+        "operand": "GetAppStaticKey"
+      },
+      {
+        "offset": 51,
+        "op": "dup",
+        "operand": null
+      },
+      {
+        "offset": 52,
+        "op": "brtrue.s",
+        "operand": "60"
+      },
+      {
+        "offset": 54,
+        "op": "pop",
+        "operand": null
+      },
+      {
+        "offset": 55,
+        "op": "ldstr",
+        "operand": ""
+      },
+      {
+        "offset": 60,
+        "op": "ldloca.s",
+        "operand": "local(0x0001)"
+      },
+      {
+        "offset": 62,
+        "op": "call",
+        "operand": "TryGetAppStringKey"
+      },
+      {
+        "offset": 67,
+        "op": "pop",
+        "operand": null
+      },
+      {
+        "offset": 68,
+        "op": "ldloc.1",
+        "operand": null
+      },
+      {
+        "offset": 69,
+        "op": "ldc.i4.3",
+        "operand": null
+      },
+      {
+        "offset": 70,
+        "op": "ldc.i4.0",
+        "operand": null
+      },
+      {
+        "offset": 71,
+        "op": "call",
+        "operand": "token(0x2B000006)"
+      },
+      {
+        "offset": 76,
+        "op": "call",
+        "operand": "Translate"
+      },
+      {
+        "offset": 81,
+        "op": "ldc.i4.1",
+        "operand": null
+      },
+      {
+        "offset": 82,
+        "op": "callvirt",
+        "operand": "SetActive"
+      },
+      {
+        "offset": 87,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 88,
+        "op": "ldfld",
+        "operand": "verticalMsgButtonPrefab"
+      },
+      {
+        "offset": 93,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 94,
+        "op": "ldfld",
+        "operand": "panelContainer"
+      },
+      {
+        "offset": 99,
+        "op": "call",
+        "operand": "token(0x2B000002)"
+      },
+      {
+        "offset": 104,
+        "op": "dup",
+        "operand": null
+      },
+      {
+        "offset": 105,
+        "op": "callvirt",
+        "operand": "token(0x2B000031)"
+      },
+      {
+        "offset": 110,
+        "op": "ldloc.1",
+        "operand": null
+      },
+      {
+        "offset": 111,
+        "op": "ldc.i4.3",
+        "operand": null
+      },
+      {
+        "offset": 112,
+        "op": "ldc.i4.0",
+        "operand": null
+      },
+      {
+        "offset": 113,
+        "op": "call",
+        "operand": "token(0x2B000006)"
+      },
+      {
+        "offset": 118,
+        "op": "call",
+        "operand": "Translate"
+      },
+      {
+        "offset": 123,
+        "op": "ldc.i4.1",
+        "operand": null
+      },
+      {
+        "offset": 124,
+        "op": "callvirt",
+        "operand": "SetActive"
+      },
+      {
+        "offset": 129,
+        "op": "ldloc.0",
+        "operand": null
+      },
+      {
+        "offset": 130,
+        "op": "ldc.i4.1",
+        "operand": null
+      },
+      {
+        "offset": 131,
+        "op": "add",
+        "operand": null
+      },
+      {
+        "offset": 132,
+        "op": "stloc.0",
+        "operand": null
+      },
+      {
+        "offset": 133,
+        "op": "ldloc.0",
+        "operand": null
+      },
+      {
+        "offset": 134,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 135,
+        "op": "ldlen",
+        "operand": null
+      },
+      {
+        "offset": 136,
+        "op": "conv.i4",
+        "operand": null
+      },
+      {
+        "offset": 137,
+        "op": "blt.s",
+        "operand": "20"
+      },
+      {
+        "offset": 139,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "ToggleButtonPanel": [
+      {
+        "offset": 12,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 13,
+        "op": "call",
+        "operand": "get_gameObject"
+      },
+      {
+        "offset": 18,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 19,
+        "op": "brfalse.s",
+        "operand": "63"
+      },
+      {
+        "offset": 21,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 22,
+        "op": "ldfld",
+        "operand": "chat"
+      },
+      {
+        "offset": 27,
+        "op": "callvirt",
+        "operand": "IsCopiedPanelActive"
+      },
+      {
+        "offset": 32,
+        "op": "brtrue.s",
+        "operand": "63"
+      },
+      {
+        "offset": 34,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 35,
+        "op": "ldfld",
+        "operand": "users"
+      },
+      {
+        "offset": 40,
+        "op": "callvirt",
+        "operand": "IsActive"
+      },
+      {
+        "offset": 45,
+        "op": "brtrue.s",
+        "operand": "63"
+      },
+      {
+        "offset": 47,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 48,
+        "op": "ldfld",
+        "operand": "options"
+      },
+      {
+        "offset": 53,
+        "op": "callvirt",
+        "operand": "IsActive"
+      },
+      {
+        "offset": 58,
+        "op": "ldc.i4.0",
+        "operand": null
+      },
+      {
+        "offset": 59,
+        "op": "ceq",
+        "operand": null
+      },
+      {
+        "offset": 61,
+        "op": "br.s",
+        "operand": "64"
+      },
+      {
+        "offset": 63,
+        "op": "ldc.i4.0",
+        "operand": null
+      },
+      {
+        "offset": 64,
+        "op": "callvirt",
+        "operand": "SetActive"
+      },
+      {
+        "offset": 69,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 70,
+        "op": "brfalse.s",
+        "operand": "83"
+      },
+      {
+        "offset": 72,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 73,
+        "op": "ldfld",
+        "operand": "chat"
+      },
+      {
+        "offset": 78,
+        "op": "callvirt",
+        "operand": "BringChatInputInFocus"
+      },
+      {
+        "offset": 83,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "OnPredefinedMsgClick": [
+      {
+        "offset": 1,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 2,
+        "op": "ldfld",
+        "operand": "chat"
+      },
+      {
+        "offset": 7,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 8,
+        "op": "callvirt",
+        "operand": "get_text"
+      },
+      {
+        "offset": 13,
+        "op": "callvirt",
+        "operand": "writePredefinedMsgs"
+      },
+      {
+        "offset": 18,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 19,
+        "op": "call",
+        "operand": "HidePanel"
+      },
+      {
+        "offset": 24,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 25,
+        "op": "ldc.i4.1",
+        "operand": null
+      },
+      {
+        "offset": 26,
+        "op": "call",
+        "operand": "ToggleButtonPanel"
+      },
+      {
+        "offset": 31,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "OnCancelClick": [
+      {
+        "offset": 1,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 2,
+        "op": "call",
+        "operand": "HidePanel"
+      },
+      {
+        "offset": 7,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "HidePanel": [
+      {
+        "offset": 1,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 2,
+        "op": "ldfld",
+        "operand": "panel"
+      },
+      {
+        "offset": 7,
+        "op": "callvirt",
+        "operand": "token(0x2B000017)"
+      },
+      {
+        "offset": 12,
+        "op": "ldc.r4",
+        "operand": "0.0"
+      },
+      {
+        "offset": 17,
+        "op": "ldc.r4",
+        "operand": "0.10000000149011612"
+      },
+      {
+        "offset": 22,
+        "op": "call",
+        "operand": "DOScaleY"
+      },
+      {
+        "offset": 27,
+        "op": "ldc.i4.1",
+        "operand": null
+      },
+      {
+        "offset": 28,
+        "op": "call",
+        "operand": "token(0x2B000023)"
+      },
+      {
+        "offset": 33,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 34,
+        "op": "ldftn",
+        "operand": "<HidePanel>b__16_0"
+      },
+      {
+        "offset": 40,
+        "op": "newobj",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 45,
+        "op": "call",
+        "operand": "token(0x2B00002B)"
+      },
+      {
+        "offset": 50,
+        "op": "pop",
+        "operand": null
+      },
+      {
+        "offset": 51,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    ".ctor": [
+      {
+        "offset": 1,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 2,
+        "op": "call",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 7,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "<HidePanel>b__16_0": [
+      {
+        "offset": 1,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 2,
+        "op": "ldfld",
+        "operand": "panel"
+      },
+      {
+        "offset": 7,
+        "op": "callvirt",
+        "operand": "get_gameObject"
+      },
+      {
+        "offset": 12,
+        "op": "ldc.i4.0",
+        "operand": null
+      },
+      {
+        "offset": 13,
+        "op": "callvirt",
+        "operand": "SetActive"
+      },
+      {
+        "offset": 18,
+        "op": "ret",
+        "operand": null
+      }
+    ]
+  },
+  "EmojiPanelComponent": {
+    "Initialize": [
+      {
+        "offset": 1,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 2,
+        "op": "ldfld",
+        "operand": "isEmojiPanelAlreadyInitialized"
+      },
+      {
+        "offset": 7,
+        "op": "brtrue.s",
+        "operand": "17"
+      },
+      {
+        "offset": 9,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 10,
+        "op": "ldfld",
+        "operand": "emojiPanelInitializingCoroutine"
+      },
+      {
+        "offset": 15,
+        "op": "brfalse.s",
+        "operand": "18"
+      },
+      {
+        "offset": 17,
+        "op": "ret",
+        "operand": null
+      },
+      {
+        "offset": 18,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 19,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 20,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 21,
+        "op": "call",
+        "operand": "InitializeEmojiPanel"
+      },
+      {
+        "offset": 26,
+        "op": "call",
+        "operand": "StartCoroutine"
+      },
+      {
+        "offset": 31,
+        "op": "stfld",
+        "operand": "emojiPanelInitializingCoroutine"
+      },
+      {
+        "offset": 36,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "InitializeEmojiPanel": [
+      {
+        "offset": 1,
+        "op": "ldc.i4.0",
+        "operand": null
+      },
+      {
+        "offset": 2,
+        "op": "newobj",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 7,
+        "op": "dup",
+        "operand": null
+      },
+      {
+        "offset": 8,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 9,
+        "op": "stfld",
+        "operand": "<>4__this"
+      },
+      {
+        "offset": 14,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "SetLockedStates": [
+      {
+        "offset": 1,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 2,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 3,
+        "op": "call",
+        "operand": "SetLockedStatesCoroutine"
+      },
+      {
+        "offset": 8,
+        "op": "call",
+        "operand": "StartCoroutine"
+      },
+      {
+        "offset": 13,
+        "op": "pop",
+        "operand": null
+      },
+      {
+        "offset": 14,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "SetLockedStatesCoroutine": [
+      {
+        "offset": 1,
+        "op": "ldc.i4.0",
+        "operand": null
+      },
+      {
+        "offset": 2,
+        "op": "newobj",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 7,
+        "op": "dup",
+        "operand": null
+      },
+      {
+        "offset": 8,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 9,
+        "op": "stfld",
+        "operand": "<>4__this"
+      },
+      {
+        "offset": 14,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "SetEmojiState": [
+      {
+        "offset": 12,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 13,
+        "op": "ldfld",
+        "operand": "spawnedEmojiList"
+      },
+      {
+        "offset": 18,
+        "op": "callvirt",
+        "operand": "GetEnumerator"
+      },
+      {
+        "offset": 23,
+        "op": "stloc.0",
+        "operand": null
+      },
+      {
+        "offset": 24,
+        "op": "br.s",
+        "operand": "65"
+      },
+      {
+        "offset": 26,
+        "op": "ldloca.s",
+        "operand": "local(0x0000)"
+      },
+      {
+        "offset": 28,
+        "op": "call",
+        "operand": "get_Current"
+      },
+      {
+        "offset": 33,
+        "op": "stloc.1",
+        "operand": null
+      },
+      {
+        "offset": 34,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 35,
+        "op": "ldfld",
+        "operand": "lockedEmoji"
+      },
+      {
+        "offset": 40,
+        "op": "ldloc.1",
+        "operand": null
+      },
+      {
+        "offset": 41,
+        "op": "callvirt",
+        "operand": "get_Id"
+      },
+      {
+        "offset": 46,
+        "op": "callvirt",
+        "operand": "Contains"
+      },
+      {
+        "offset": 51,
+        "op": "stloc.2",
+        "operand": null
+      },
+      {
+        "offset": 52,
+        "op": "ldloc.1",
+        "operand": null
+      },
+      {
+        "offset": 53,
+        "op": "ldloc.2",
+        "operand": null
+      },
+      {
+        "offset": 54,
+        "op": "brtrue.s",
+        "operand": "59"
+      },
+      {
+        "offset": 56,
+        "op": "ldc.i4.0",
+        "operand": null
+      },
+      {
+        "offset": 57,
+        "op": "br.s",
+        "operand": "60"
+      },
+      {
+        "offset": 59,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 60,
+        "op": "callvirt",
+        "operand": "SetLocked"
+      },
+      {
+        "offset": 65,
+        "op": "ldloca.s",
+        "operand": "local(0x0000)"
+      },
+      {
+        "offset": 67,
+        "op": "call",
+        "operand": "MoveNext"
+      },
+      {
+        "offset": 72,
+        "op": "brtrue.s",
+        "operand": "26"
+      },
+      {
+        "offset": 74,
+        "op": "leave.s",
+        "operand": "90"
+      },
+      {
+        "offset": 76,
+        "op": "ldloca.s",
+        "operand": "local(0x0000)"
+      },
+      {
+        "offset": 78,
+        "op": "constrained.",
+        "operand": "token(0x1B0000A6)"
+      },
+      {
+        "offset": 84,
+        "op": "callvirt",
+        "operand": "Dispose"
+      },
+      {
+        "offset": 89,
+        "op": "endfinally",
+        "operand": null
+      },
+      {
+        "offset": 90,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 91,
+        "op": "ldfld",
+        "operand": "spawnedEmojiCategoryList"
+      },
+      {
+        "offset": 96,
+        "op": "callvirt",
+        "operand": "GetEnumerator"
+      },
+      {
+        "offset": 101,
+        "op": "stloc.3",
+        "operand": null
+      },
+      {
+        "offset": 102,
+        "op": "br.s",
+        "operand": "141"
+      },
+      {
+        "offset": 104,
+        "op": "ldloca.s",
+        "operand": "local(0x0003)"
+      },
+      {
+        "offset": 106,
+        "op": "call",
+        "operand": "get_Current"
+      },
+      {
+        "offset": 111,
+        "op": "stloc.s",
+        "operand": "local(0x0004)"
+      },
+      {
+        "offset": 113,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 114,
+        "op": "ldfld",
+        "operand": "lockedEmojiCategories"
+      },
+      {
+        "offset": 119,
+        "op": "ldloc.s",
+        "operand": "local(0x0004)"
+      },
+      {
+        "offset": 121,
+        "op": "callvirt",
+        "operand": "get_EmojiCategoryName"
+      },
+      {
+        "offset": 126,
+        "op": "callvirt",
+        "operand": "Contains"
+      },
+      {
+        "offset": 131,
+        "op": "brfalse.s",
+        "operand": "141"
+      },
+      {
+        "offset": 133,
+        "op": "ldloc.s",
+        "operand": "local(0x0004)"
+      },
+      {
+        "offset": 135,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 136,
+        "op": "callvirt",
+        "operand": "SetLocked"
+      },
+      {
+        "offset": 141,
+        "op": "ldloca.s",
+        "operand": "local(0x0003)"
+      },
+      {
+        "offset": 143,
+        "op": "call",
+        "operand": "MoveNext"
+      },
+      {
+        "offset": 148,
+        "op": "brtrue.s",
+        "operand": "104"
+      },
+      {
+        "offset": 150,
+        "op": "leave.s",
+        "operand": "166"
+      },
+      {
+        "offset": 152,
+        "op": "ldloca.s",
+        "operand": "local(0x0003)"
+      },
+      {
+        "offset": 154,
+        "op": "constrained.",
+        "operand": "token(0x1B0000A8)"
+      },
+      {
+        "offset": 160,
+        "op": "callvirt",
+        "operand": "Dispose"
+      },
+      {
+        "offset": 165,
+        "op": "endfinally",
+        "operand": null
+      },
+      {
+        "offset": 166,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "GetLockedState": [
+      {
+        "offset": 12,
+        "op": "ldc.i4.0",
+        "operand": null
+      },
+      {
+        "offset": 13,
+        "op": "stloc.0",
+        "operand": null
+      },
+      {
+        "offset": 14,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 15,
+        "op": "ldfld",
+        "operand": "lockedEmoji"
+      },
+      {
+        "offset": 20,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 21,
+        "op": "callvirt",
+        "operand": "Contains"
+      },
+      {
+        "offset": 26,
+        "op": "brfalse.s",
+        "operand": "36"
+      },
+      {
+        "offset": 28,
+        "op": "ldarg.2",
+        "operand": null
+      },
+      {
+        "offset": 29,
+        "op": "brtrue.s",
+        "operand": "34"
+      },
+      {
+        "offset": 31,
+        "op": "ldc.i4.1",
+        "operand": null
+      },
+      {
+        "offset": 32,
+        "op": "br.s",
+        "operand": "35"
+      },
+      {
+        "offset": 34,
+        "op": "ldc.i4.m1",
+        "operand": null
+      },
+      {
+        "offset": 35,
+        "op": "stloc.0",
+        "operand": null
+      },
+      {
+        "offset": 36,
+        "op": "ldloc.0",
+        "operand": null
+      },
+      {
+        "offset": 37,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "OnEnable": [
+      {
+        "offset": 12,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 13,
+        "op": "ldfld",
+        "operand": "playersComponent"
+      },
+      {
+        "offset": 18,
+        "op": "dup",
+        "operand": null
+      },
+      {
+        "offset": 19,
+        "op": "callvirt",
+        "operand": "get_OnSpotLightShow"
+      },
+      {
+        "offset": 24,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 25,
+        "op": "ldftn",
+        "operand": "HidePanel"
+      },
+      {
+        "offset": 31,
+        "op": "newobj",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 36,
+        "op": "call",
+        "operand": "Combine"
+      },
+      {
+        "offset": 41,
+        "op": "castclass",
+        "operand": "Action"
+      },
+      {
+        "offset": 46,
+        "op": "callvirt",
+        "operand": "set_OnSpotLightShow"
+      },
+      {
+        "offset": 51,
+        "op": "ldsfld",
+        "operand": "OnCurrentPlayerLeaveTable"
+      },
+      {
+        "offset": 56,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 57,
+        "op": "ldftn",
+        "operand": "HidePanel"
+      },
+      {
+        "offset": 63,
+        "op": "newobj",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 68,
+        "op": "call",
+        "operand": "Combine"
+      },
+      {
+        "offset": 73,
+        "op": "castclass",
+        "operand": "Action"
+      },
+      {
+        "offset": 78,
+        "op": "stsfld",
+        "operand": "OnCurrentPlayerLeaveTable"
+      },
+      {
+        "offset": 83,
+        "op": "ldsfld",
+        "operand": "OnTableCenterActivity"
+      },
+      {
+        "offset": 88,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 89,
+        "op": "ldftn",
+        "operand": "OnTableCenterActivity"
+      },
+      {
+        "offset": 95,
+        "op": "newobj",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 100,
+        "op": "call",
+        "operand": "Combine"
+      },
+      {
+        "offset": 105,
+        "op": "castclass",
+        "operand": "Action"
+      },
+      {
+        "offset": 110,
+        "op": "stsfld",
+        "operand": "OnTableCenterActivity"
+      },
+      {
+        "offset": 115,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "OnDisable": [
+      {
+        "offset": 12,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 13,
+        "op": "ldfld",
+        "operand": "playersComponent"
+      },
+      {
+        "offset": 18,
+        "op": "ldnull",
+        "operand": null
+      },
+      {
+        "offset": 19,
+        "op": "call",
+        "operand": "op_Inequality"
+      },
+      {
+        "offset": 24,
+        "op": "brfalse.s",
+        "operand": "65"
+      },
+      {
+        "offset": 26,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 27,
+        "op": "ldfld",
+        "operand": "playersComponent"
+      },
+      {
+        "offset": 32,
+        "op": "dup",
+        "operand": null
+      },
+      {
+        "offset": 33,
+        "op": "callvirt",
+        "operand": "get_OnSpotLightShow"
+      },
+      {
+        "offset": 38,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 39,
+        "op": "ldftn",
+        "operand": "HidePanel"
+      },
+      {
+        "offset": 45,
+        "op": "newobj",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 50,
+        "op": "call",
+        "operand": "Remove"
+      },
+      {
+        "offset": 55,
+        "op": "castclass",
+        "operand": "Action"
+      },
+      {
+        "offset": 60,
+        "op": "callvirt",
+        "operand": "set_OnSpotLightShow"
+      },
+      {
+        "offset": 65,
+        "op": "ldsfld",
+        "operand": "OnCurrentPlayerLeaveTable"
+      },
+      {
+        "offset": 70,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 71,
+        "op": "ldftn",
+        "operand": "HidePanel"
+      },
+      {
+        "offset": 77,
+        "op": "newobj",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 82,
+        "op": "call",
+        "operand": "Remove"
+      },
+      {
+        "offset": 87,
+        "op": "castclass",
+        "operand": "Action"
+      },
+      {
+        "offset": 92,
+        "op": "stsfld",
+        "operand": "OnCurrentPlayerLeaveTable"
+      },
+      {
+        "offset": 97,
+        "op": "ldsfld",
+        "operand": "OnTableCenterActivity"
+      },
+      {
+        "offset": 102,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 103,
+        "op": "ldftn",
+        "operand": "OnTableCenterActivity"
+      },
+      {
+        "offset": 109,
+        "op": "newobj",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 114,
+        "op": "call",
+        "operand": "Remove"
+      },
+      {
+        "offset": 119,
+        "op": "castclass",
+        "operand": "Action"
+      },
+      {
+        "offset": 124,
+        "op": "stsfld",
+        "operand": "OnTableCenterActivity"
+      },
+      {
+        "offset": 129,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "OnDestroy": [
+      {
+        "offset": 1,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "OnTableCenterActivity": [
+      {
+        "offset": 1,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 2,
+        "op": "call",
+        "operand": "HidePanel"
+      },
+      {
+        "offset": 7,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "ShowEmojiAtPosition": [
+      {
+        "offset": 1,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 2,
+        "op": "ldarg.2",
+        "operand": null
+      },
+      {
+        "offset": 3,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 4,
+        "op": "call",
+        "operand": "PlayLottie"
+      },
+      {
+        "offset": 9,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "OnClickListedEmoji": [
+      {
+        "offset": 12,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 13,
+        "op": "call",
+        "operand": "PlayButtonTapSound"
+      },
+      {
+        "offset": 18,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 19,
+        "op": "ldfld",
+        "operand": "isAICMember"
+      },
+      {
+        "offset": 24,
+        "op": "brtrue.s",
+        "operand": "150"
+      },
+      {
+        "offset": 26,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 27,
+        "op": "ldfld",
+        "operand": "lockedEmoji"
+      },
+      {
+        "offset": 32,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 33,
+        "op": "callvirt",
+        "operand": "get_Id"
+      },
+      {
+        "offset": 38,
+        "op": "callvirt",
+        "operand": "Contains"
+      },
+      {
+        "offset": 43,
+        "op": "brfalse.s",
+        "operand": "150"
+      },
+      {
+        "offset": 45,
+        "op": "call",
+        "operand": "IsShowJoinNowAIC"
+      },
+      {
+        "offset": 50,
+        "op": "dup",
+        "operand": null
+      },
+      {
+        "offset": 51,
+        "op": "brtrue.s",
+        "operand": "60"
+      },
+      {
+        "offset": 53,
+        "op": "ldc.i4",
+        "operand": "168"
+      },
+      {
+        "offset": 58,
+        "op": "br.s",
+        "operand": "65"
+      },
+      {
+        "offset": 60,
+        "op": "ldc.i4",
+        "operand": "172"
+      },
+      {
+        "offset": 65,
+        "op": "stloc.0",
+        "operand": null
+      },
+      {
+        "offset": 66,
+        "op": "brtrue.s",
+        "operand": "82"
+      },
+      {
+        "offset": 68,
+        "op": "ldnull",
+        "operand": null
+      },
+      {
+        "offset": 69,
+        "op": "ldftn",
+        "operand": "HidePopUp"
+      },
+      {
+        "offset": 75,
+        "op": "newobj",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 80,
+        "op": "br.s",
+        "operand": "113"
+      },
+      {
+        "offset": 82,
+        "op": "ldsfld",
+        "operand": "<>9__32_0"
+      },
+      {
+        "offset": 87,
+        "op": "dup",
+        "operand": null
+      },
+      {
+        "offset": 88,
+        "op": "brtrue.s",
+        "operand": "113"
+      },
+      {
+        "offset": 90,
+        "op": "pop",
+        "operand": null
+      },
+      {
+        "offset": 91,
+        "op": "ldsfld",
+        "operand": "<>9"
+      },
+      {
+        "offset": 96,
+        "op": "ldftn",
+        "operand": "<OnClickListedEmoji>b__32_0"
+      },
+      {
+        "offset": 102,
+        "op": "newobj",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 107,
+        "op": "dup",
+        "operand": null
+      },
+      {
+        "offset": 108,
+        "op": "stsfld",
+        "operand": "<>9__32_0"
+      },
+      {
+        "offset": 113,
+        "op": "stloc.1",
+        "operand": null
+      },
+      {
+        "offset": 114,
+        "op": "ldstr",
+        "operand": "emoji"
+      },
+      {
+        "offset": 119,
+        "op": "ldloc.0",
+        "operand": null
+      },
+      {
+        "offset": 120,
+        "op": "ldc.i4",
+        "operand": "720"
+      },
+      {
+        "offset": 125,
+        "op": "ldc.i4",
+        "operand": "721"
+      },
+      {
+        "offset": 130,
+        "op": "call",
+        "operand": "ShowPopUpOnLockedEmojiThrowables"
+      },
+      {
+        "offset": 135,
+        "op": "ldnull",
+        "operand": null
+      },
+      {
+        "offset": 136,
+        "op": "ldnull",
+        "operand": null
+      },
+      {
+        "offset": 137,
+        "op": "ldloc.1",
+        "operand": null
+      },
+      {
+        "offset": 138,
+        "op": "ldc.i4.0",
+        "operand": null
+      },
+      {
+        "offset": 139,
+        "op": "ldc.i4.1",
+        "operand": null
+      },
+      {
+        "offset": 140,
+        "op": "ldc.i4.1",
+        "operand": null
+      },
+      {
+        "offset": 141,
+        "op": "ldc.i4.1",
+        "operand": null
+      },
+      {
+        "offset": 142,
+        "op": "ldc.i4.0",
+        "operand": null
+      },
+      {
+        "offset": 143,
+        "op": "ldc.i4.1",
+        "operand": null
+      },
+      {
+        "offset": 144,
+        "op": "call",
+        "operand": "ShowPopUp"
+      },
+      {
+        "offset": 149,
+        "op": "ret",
+        "operand": null
+      },
+      {
+        "offset": 150,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 151,
+        "op": "callvirt",
+        "operand": "get_Id"
+      },
+      {
+        "offset": 156,
+        "op": "call",
+        "operand": "SendEmoji"
+      },
+      {
+        "offset": 161,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 162,
+        "op": "callvirt",
+        "operand": "get_Id"
+      },
+      {
+        "offset": 167,
+        "op": "stloc.2",
+        "operand": null
+      },
+      {
+        "offset": 168,
+        "op": "ldloca.s",
+        "operand": "local(0x0002)"
+      },
+      {
+        "offset": 170,
+        "op": "call",
+        "operand": "ToString"
+      },
+      {
+        "offset": 175,
+        "op": "newobj",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 180,
+        "op": "call",
+        "operand": "EmojiClicked"
+      },
+      {
+        "offset": 185,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 186,
+        "op": "ldfld",
+        "operand": "playersComponent"
+      },
+      {
+        "offset": 191,
+        "op": "callvirt",
+        "operand": "GetCurrentPlayerComponent"
+      },
+      {
+        "offset": 196,
+        "op": "ldnull",
+        "operand": null
+      },
+      {
+        "offset": 197,
+        "op": "call",
+        "operand": "op_Equality"
+      },
+      {
+        "offset": 202,
+        "op": "brfalse.s",
+        "operand": "205"
+      },
+      {
+        "offset": 204,
+        "op": "ret",
+        "operand": null
+      },
+      {
+        "offset": 205,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 206,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 207,
+        "op": "call",
+        "operand": "AddToRecents"
+      },
+      {
+        "offset": 212,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 213,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 214,
+        "op": "callvirt",
+        "operand": "get_Id"
+      },
+      {
+        "offset": 219,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 220,
+        "op": "ldfld",
+        "operand": "playersComponent"
+      },
+      {
+        "offset": 225,
+        "op": "callvirt",
+        "operand": "GetCurrentPlayerComponent"
+      },
+      {
+        "offset": 230,
+        "op": "call",
+        "operand": "PlayLottie"
+      },
+      {
+        "offset": 235,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 236,
+        "op": "call",
+        "operand": "HidePanel"
+      },
+      {
+        "offset": 241,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "AddToRecents": [
+      {
+        "offset": 12,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 13,
+        "op": "ldfld",
+        "operand": "recentlyPlayedEmojisList"
+      },
+      {
+        "offset": 18,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 19,
+        "op": "callvirt",
+        "operand": "get_Id"
+      },
+      {
+        "offset": 24,
+        "op": "ldloca.s",
+        "operand": "local(0x0000)"
+      },
+      {
+        "offset": 26,
+        "op": "callvirt",
+        "operand": "TryGetValue"
+      },
+      {
+        "offset": 31,
+        "op": "brtrue",
+        "operand": "174"
+      },
+      {
+        "offset": 36,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 37,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 38,
+        "op": "callvirt",
+        "operand": "get_Id"
+      },
+      {
+        "offset": 43,
+        "op": "call",
+        "operand": "IsAICContentAllowed"
+      },
+      {
+        "offset": 48,
+        "op": "brtrue.s",
+        "operand": "51"
+      },
+      {
+        "offset": 50,
+        "op": "ret",
+        "operand": null
+      },
+      {
+        "offset": 51,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 52,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 53,
+        "op": "callvirt",
+        "operand": "get_Id"
+      },
+      {
+        "offset": 58,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 59,
+        "op": "callvirt",
+        "operand": "get_ThumbnailSprite"
+      },
+      {
+        "offset": 64,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 65,
+        "op": "ldfld",
+        "operand": "emojisListScrollView"
+      },
+      {
+        "offset": 70,
+        "op": "ldc.i4.0",
+        "operand": null
+      },
+      {
+        "offset": 71,
+        "op": "callvirt",
+        "operand": "get_Item"
+      },
+      {
+        "offset": 76,
+        "op": "callvirt",
+        "operand": "get_transform"
+      },
+      {
+        "offset": 81,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 82,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 83,
+        "op": "callvirt",
+        "operand": "get_Id"
+      },
+      {
+        "offset": 88,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 89,
+        "op": "ldfld",
+        "operand": "isAICMember"
+      },
+      {
+        "offset": 94,
+        "op": "call",
+        "operand": "GetLockedState"
+      },
+      {
+        "offset": 99,
+        "op": "call",
+        "operand": "SpawnEmojiInList"
+      },
+      {
+        "offset": 104,
+        "op": "stloc.0",
+        "operand": null
+      },
+      {
+        "offset": 105,
+        "op": "ldloc.0",
+        "operand": null
+      },
+      {
+        "offset": 106,
+        "op": "ldnull",
+        "operand": null
+      },
+      {
+        "offset": 107,
+        "op": "call",
+        "operand": "op_Equality"
+      },
+      {
+        "offset": 112,
+        "op": "brfalse.s",
+        "operand": "115"
+      },
+      {
+        "offset": 114,
+        "op": "ret",
+        "operand": null
+      },
+      {
+        "offset": 115,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 116,
+        "op": "ldfld",
+        "operand": "recentlyPlayedEmojisList"
+      },
+      {
+        "offset": 121,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 122,
+        "op": "callvirt",
+        "operand": "get_Id"
+      },
+      {
+        "offset": 127,
+        "op": "ldloc.0",
+        "operand": null
+      },
+      {
+        "offset": 128,
+        "op": "callvirt",
+        "operand": "Add"
+      },
+      {
+        "offset": 133,
+        "op": "call",
+        "operand": "get_CurrentUserPrefData"
+      },
+      {
+        "offset": 138,
+        "op": "ldfld",
+        "operand": "RecentlyPlayedEmojisList"
+      },
+      {
+        "offset": 143,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 144,
+        "op": "callvirt",
+        "operand": "get_Id"
+      },
+      {
+        "offset": 149,
+        "op": "ldsfld",
+        "operand": "Empty"
+      },
+      {
+        "offset": 154,
+        "op": "callvirt",
+        "operand": "set_Item"
+      },
+      {
+        "offset": 159,
+        "op": "ldsfld",
+        "operand": "UserName"
+      },
+      {
+        "offset": 164,
+        "op": "call",
+        "operand": "get_CurrentUserPrefData"
+      },
+      {
+        "offset": 169,
+        "op": "call",
+        "operand": "SetUserPrefData"
+      },
+      {
+        "offset": 174,
+        "op": "ldloc.0",
+        "operand": null
+      },
+      {
+        "offset": 175,
+        "op": "callvirt",
+        "operand": "get_transform"
+      },
+      {
+        "offset": 180,
+        "op": "callvirt",
+        "operand": "SetAsFirstSibling"
+      },
+      {
+        "offset": 185,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 186,
+        "op": "ldfld",
+        "operand": "recentlyPlayedEmojisList"
+      },
+      {
+        "offset": 191,
+        "op": "callvirt",
+        "operand": "get_Count"
+      },
+      {
+        "offset": 196,
+        "op": "ldc.i4.s",
+        "operand": "10"
+      },
+      {
+        "offset": 198,
+        "op": "ble.s",
+        "operand": "317"
+      },
+      {
+        "offset": 200,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 201,
+        "op": "ldfld",
+        "operand": "emojisListScrollView"
+      },
+      {
+        "offset": 206,
+        "op": "ldc.i4.0",
+        "operand": null
+      },
+      {
+        "offset": 207,
+        "op": "callvirt",
+        "operand": "get_Item"
+      },
+      {
+        "offset": 212,
+        "op": "callvirt",
+        "operand": "get_transform"
+      },
+      {
+        "offset": 217,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 218,
+        "op": "ldfld",
+        "operand": "recentlyPlayedEmojisList"
+      },
+      {
+        "offset": 223,
+        "op": "callvirt",
+        "operand": "get_Count"
+      },
+      {
+        "offset": 228,
+        "op": "ldc.i4.1",
+        "operand": null
+      },
+      {
+        "offset": 229,
+        "op": "sub",
+        "operand": null
+      },
+      {
+        "offset": 230,
+        "op": "callvirt",
+        "operand": "GetChild"
+      },
+      {
+        "offset": 235,
+        "op": "callvirt",
+        "operand": "token(0x2B000038)"
+      },
+      {
+        "offset": 240,
+        "op": "stloc.1",
+        "operand": null
+      },
+      {
+        "offset": 241,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 242,
+        "op": "ldfld",
+        "operand": "spawnedEmojiList"
+      },
+      {
+        "offset": 247,
+        "op": "ldloc.1",
+        "operand": null
+      },
+      {
+        "offset": 248,
+        "op": "callvirt",
+        "operand": "Remove"
+      },
+      {
+        "offset": 253,
+        "op": "pop",
+        "operand": null
+      },
+      {
+        "offset": 254,
+        "op": "ldloc.1",
+        "operand": null
+      },
+      {
+        "offset": 255,
+        "op": "callvirt",
+        "operand": "get_Id"
+      },
+      {
+        "offset": 260,
+        "op": "stloc.2",
+        "operand": null
+      },
+      {
+        "offset": 261,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 262,
+        "op": "ldfld",
+        "operand": "recentlyPlayedEmojisList"
+      },
+      {
+        "offset": 267,
+        "op": "ldloc.2",
+        "operand": null
+      },
+      {
+        "offset": 268,
+        "op": "callvirt",
+        "operand": "Remove"
+      },
+      {
+        "offset": 273,
+        "op": "pop",
+        "operand": null
+      },
+      {
+        "offset": 274,
+        "op": "call",
+        "operand": "get_CurrentUserPrefData"
+      },
+      {
+        "offset": 279,
+        "op": "ldfld",
+        "operand": "RecentlyPlayedEmojisList"
+      },
+      {
+        "offset": 284,
+        "op": "ldloc.2",
+        "operand": null
+      },
+      {
+        "offset": 285,
+        "op": "callvirt",
+        "operand": "Remove"
+      },
+      {
+        "offset": 290,
+        "op": "pop",
+        "operand": null
+      },
+      {
+        "offset": 291,
+        "op": "ldsfld",
+        "operand": "UserName"
+      },
+      {
+        "offset": 296,
+        "op": "call",
+        "operand": "get_CurrentUserPrefData"
+      },
+      {
+        "offset": 301,
+        "op": "call",
+        "operand": "SetUserPrefData"
+      },
+      {
+        "offset": 306,
+        "op": "ldloc.1",
+        "operand": null
+      },
+      {
+        "offset": 307,
+        "op": "callvirt",
+        "operand": "get_gameObject"
+      },
+      {
+        "offset": 312,
+        "op": "call",
+        "operand": "Destroy"
+      },
+      {
+        "offset": 317,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "OnSelectEmojiCategory": [
+      {
+        "offset": 12,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 13,
+        "op": "callvirt",
+        "operand": "get_IsInActiveState"
+      },
+      {
+        "offset": 18,
+        "op": "brfalse.s",
+        "operand": "21"
+      },
+      {
+        "offset": 20,
+        "op": "ret",
+        "operand": null
+      },
+      {
+        "offset": 21,
+        "op": "ldc.i4.0",
+        "operand": null
+      },
+      {
+        "offset": 22,
+        "op": "stloc.0",
+        "operand": null
+      },
+      {
+        "offset": 23,
+        "op": "br.s",
+        "operand": "46"
+      },
+      {
+        "offset": 25,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 26,
+        "op": "ldfld",
+        "operand": "spawnedEmojiCategoryList"
+      },
+      {
+        "offset": 31,
+        "op": "ldloc.0",
+        "operand": null
+      },
+      {
+        "offset": 32,
+        "op": "callvirt",
+        "operand": "get_Item"
+      },
+      {
+        "offset": 37,
+        "op": "callvirt",
+        "operand": "OnDeselect"
+      },
+      {
+        "offset": 42,
+        "op": "ldloc.0",
+        "operand": null
+      },
+      {
+        "offset": 43,
+        "op": "ldc.i4.1",
+        "operand": null
+      },
+      {
+        "offset": 44,
+        "op": "add",
+        "operand": null
+      },
+      {
+        "offset": 45,
+        "op": "stloc.0",
+        "operand": null
+      },
+      {
+        "offset": 46,
+        "op": "ldloc.0",
+        "operand": null
+      },
+      {
+        "offset": 47,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 48,
+        "op": "ldfld",
+        "operand": "spawnedEmojiCategoryList"
+      },
+      {
+        "offset": 53,
+        "op": "callvirt",
+        "operand": "get_Count"
+      },
+      {
+        "offset": 58,
+        "op": "blt.s",
+        "operand": "25"
+      },
+      {
+        "offset": 60,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 61,
+        "op": "callvirt",
+        "operand": "OnSelect"
+      },
+      {
+        "offset": 66,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "TogglePanel": [
+      {
+        "offset": 1,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 2,
+        "op": "call",
+        "operand": "PlayButtonTapSound"
+      },
+      {
+        "offset": 7,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 8,
+        "op": "ldfld",
+        "operand": "emojiPanelParent"
+      },
+      {
+        "offset": 13,
+        "op": "callvirt",
+        "operand": "get_activeSelf"
+      },
+      {
+        "offset": 18,
+        "op": "brfalse.s",
+        "operand": "27"
+      },
+      {
+        "offset": 20,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 21,
+        "op": "call",
+        "operand": "HidePanel"
+      },
+      {
+        "offset": 26,
+        "op": "ret",
+        "operand": null
+      },
+      {
+        "offset": 27,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 28,
+        "op": "call",
+        "operand": "ShowPanel"
+      },
+      {
+        "offset": 33,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "ShowPanel": [
+      {
+        "offset": 12,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 13,
+        "op": "ldfld",
+        "operand": "emojiPanelParent"
+      },
+      {
+        "offset": 18,
+        "op": "ldc.i4.1",
+        "operand": null
+      },
+      {
+        "offset": 19,
+        "op": "callvirt",
+        "operand": "SetActive"
+      },
+      {
+        "offset": 24,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 25,
+        "op": "ldfld",
+        "operand": "isOpenedFor1stTime"
+      },
+      {
+        "offset": 30,
+        "op": "brfalse.s",
+        "operand": "113"
+      },
+      {
+        "offset": 32,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 33,
+        "op": "ldfld",
+        "operand": "spawnedEmojiCategoryList"
+      },
+      {
+        "offset": 38,
+        "op": "callvirt",
+        "operand": "get_Count"
+      },
+      {
+        "offset": 43,
+        "op": "ldc.i4.1",
+        "operand": null
+      },
+      {
+        "offset": 44,
+        "op": "bgt.s",
+        "operand": "49"
+      },
+      {
+        "offset": 46,
+        "op": "ldc.i4.0",
+        "operand": null
+      },
+      {
+        "offset": 47,
+        "op": "br.s",
+        "operand": "50"
+      },
+      {
+        "offset": 49,
+        "op": "ldc.i4.1",
+        "operand": null
+      },
+      {
+        "offset": 50,
+        "op": "stloc.0",
+        "operand": null
+      },
+      {
+        "offset": 51,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 52,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 53,
+        "op": "ldfld",
+        "operand": "spawnedEmojiCategoryList"
+      },
+      {
+        "offset": 58,
+        "op": "ldloc.0",
+        "operand": null
+      },
+      {
+        "offset": 59,
+        "op": "callvirt",
+        "operand": "get_Item"
+      },
+      {
+        "offset": 64,
+        "op": "call",
+        "operand": "OnSelectEmojiCategory"
+      },
+      {
+        "offset": 69,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 70,
+        "op": "ldfld",
+        "operand": "joiningPanelIconTransform"
+      },
+      {
+        "offset": 75,
+        "op": "ldc.r4",
+        "operand": "-96.5"
+      },
+      {
+        "offset": 80,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 81,
+        "op": "ldfld",
+        "operand": "joiningPanelIconTransform"
+      },
+      {
+        "offset": 86,
+        "op": "callvirt",
+        "operand": "get_anchoredPosition"
+      },
+      {
+        "offset": 91,
+        "op": "ldfld",
+        "operand": "y"
+      },
+      {
+        "offset": 96,
+        "op": "newobj",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 101,
+        "op": "callvirt",
+        "operand": "set_anchoredPosition"
+      },
+      {
+        "offset": 106,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 107,
+        "op": "ldc.i4.0",
+        "operand": null
+      },
+      {
+        "offset": 108,
+        "op": "stfld",
+        "operand": "isOpenedFor1stTime"
+      },
+      {
+        "offset": 113,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "HidePanel": [
+      {
+        "offset": 1,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 2,
+        "op": "ldfld",
+        "operand": "emojiPanelParent"
+      },
+      {
+        "offset": 7,
+        "op": "ldc.i4.0",
+        "operand": null
+      },
+      {
+        "offset": 8,
+        "op": "callvirt",
+        "operand": "SetActive"
+      },
+      {
+        "offset": 13,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "SpawnCategoryButton": [
+      {
+        "offset": 1,
+        "op": "ldc.i4.0",
+        "operand": null
+      },
+      {
+        "offset": 2,
+        "op": "newobj",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 7,
+        "op": "dup",
+        "operand": null
+      },
+      {
+        "offset": 8,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 9,
+        "op": "stfld",
+        "operand": "<>4__this"
+      },
+      {
+        "offset": 14,
+        "op": "dup",
+        "operand": null
+      },
+      {
+        "offset": 15,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 16,
+        "op": "stfld",
+        "operand": "soIndex"
+      },
+      {
+        "offset": 21,
+        "op": "dup",
+        "operand": null
+      },
+      {
+        "offset": 22,
+        "op": "ldarg.2",
+        "operand": null
+      },
+      {
+        "offset": 23,
+        "op": "stfld",
+        "operand": "categoryData"
+      },
+      {
+        "offset": 28,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "SpawnEmojiInList": [
+      {
+        "offset": 12,
+        "op": "newobj",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 17,
+        "op": "stloc.0",
+        "operand": null
+      },
+      {
+        "offset": 18,
+        "op": "ldloc.0",
+        "operand": null
+      },
+      {
+        "offset": 19,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 20,
+        "op": "stfld",
+        "operand": "<>4__this"
+      },
+      {
+        "offset": 25,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 26,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 27,
+        "op": "call",
+        "operand": "IsAICContentAllowed"
+      },
+      {
+        "offset": 32,
+        "op": "brtrue.s",
+        "operand": "36"
+      },
+      {
+        "offset": 34,
+        "op": "ldnull",
+        "operand": null
+      },
+      {
+        "offset": 35,
+        "op": "ret",
+        "operand": null
+      },
+      {
+        "offset": 36,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 37,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 38,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 39,
+        "op": "ldfld",
+        "operand": "isAICMember"
+      },
+      {
+        "offset": 44,
+        "op": "call",
+        "operand": "GetLockedState"
+      },
+      {
+        "offset": 49,
+        "op": "starg.s",
+        "operand": "argument(0x0004)"
+      },
+      {
+        "offset": 51,
+        "op": "ldloc.0",
+        "operand": null
+      },
+      {
+        "offset": 52,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 53,
+        "op": "ldfld",
+        "operand": "listedEmojiPrefab"
+      },
+      {
+        "offset": 58,
+        "op": "ldarg.3",
+        "operand": null
+      },
+      {
+        "offset": 59,
+        "op": "call",
+        "operand": "token(0x2B000039)"
+      },
+      {
+        "offset": 64,
+        "op": "stfld",
+        "operand": "spawnedEmojiImage"
+      },
+      {
+        "offset": 69,
+        "op": "ldloc.0",
+        "operand": null
+      },
+      {
+        "offset": 70,
+        "op": "ldfld",
+        "operand": "spawnedEmojiImage"
+      },
+      {
+        "offset": 75,
+        "op": "callvirt",
+        "operand": "get_EmojiImagePlaceholder"
+      },
+      {
+        "offset": 80,
+        "op": "ldarg.2",
+        "operand": null
+      },
+      {
+        "offset": 81,
+        "op": "callvirt",
+        "operand": "set_sprite"
+      },
+      {
+        "offset": 86,
+        "op": "ldloc.0",
+        "operand": null
+      },
+      {
+        "offset": 87,
+        "op": "ldfld",
+        "operand": "spawnedEmojiImage"
+      },
+      {
+        "offset": 92,
+        "op": "callvirt",
+        "operand": "token(0x2B000033)"
+      },
+      {
+        "offset": 97,
+        "op": "callvirt",
+        "operand": "get_onClick"
+      },
+      {
+        "offset": 102,
+        "op": "ldloc.0",
+        "operand": null
+      },
+      {
+        "offset": 103,
+        "op": "ldftn",
+        "operand": "<SpawnEmojiInList>b__0"
+      },
+      {
+        "offset": 109,
+        "op": "newobj",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 114,
+        "op": "callvirt",
+        "operand": "AddListener"
+      },
+      {
+        "offset": 119,
+        "op": "ldloc.0",
+        "operand": null
+      },
+      {
+        "offset": 120,
+        "op": "ldfld",
+        "operand": "spawnedEmojiImage"
+      },
+      {
+        "offset": 125,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 126,
+        "op": "ldarg.2",
+        "operand": null
+      },
+      {
+        "offset": 127,
+        "op": "ldarg.s",
+        "operand": "argument(0x0004)"
+      },
+      {
+        "offset": 129,
+        "op": "callvirt",
+        "operand": "Initialize"
+      },
+      {
+        "offset": 134,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 135,
+        "op": "ldfld",
+        "operand": "spawnedEmojiList"
+      },
+      {
+        "offset": 140,
+        "op": "ldloc.0",
+        "operand": null
+      },
+      {
+        "offset": 141,
+        "op": "ldfld",
+        "operand": "spawnedEmojiImage"
+      },
+      {
+        "offset": 146,
+        "op": "callvirt",
+        "operand": "Add"
+      },
+      {
+        "offset": 151,
+        "op": "ldloc.0",
+        "operand": null
+      },
+      {
+        "offset": 152,
+        "op": "ldfld",
+        "operand": "spawnedEmojiImage"
+      },
+      {
+        "offset": 157,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "IsAICContentAllowed": [
+      {
+        "offset": 1,
+        "op": "call",
+        "operand": "IsAICEnabled"
+      },
+      {
+        "offset": 6,
+        "op": "brtrue.s",
+        "operand": "24"
+      },
+      {
+        "offset": 8,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 9,
+        "op": "ldfld",
+        "operand": "lockedEmoji"
+      },
+      {
+        "offset": 14,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 15,
+        "op": "callvirt",
+        "operand": "Contains"
+      },
+      {
+        "offset": 20,
+        "op": "ldc.i4.0",
+        "operand": null
+      },
+      {
+        "offset": 21,
+        "op": "ceq",
+        "operand": null
+      },
+      {
+        "offset": 23,
+        "op": "ret",
+        "operand": null
+      },
+      {
+        "offset": 24,
+        "op": "ldc.i4.1",
+        "operand": null
+      },
+      {
+        "offset": 25,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "PlayLottie": [
+      {
+        "offset": 1,
+        "op": "call",
+        "operand": "get_Instance"
+      },
+      {
+        "offset": 6,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 7,
+        "op": "ldarg.2",
+        "operand": null
+      },
+      {
+        "offset": 8,
+        "op": "callvirt",
+        "operand": "get_transform"
+      },
+      {
+        "offset": 13,
+        "op": "ldarg.2",
+        "operand": null
+      },
+      {
+        "offset": 14,
+        "op": "ldfld",
+        "operand": "infoUsername"
+      },
+      {
+        "offset": 19,
+        "op": "callvirt",
+        "operand": "PlayEmoji"
+      },
+      {
+        "offset": 24,
+        "op": "pop",
+        "operand": null
+      },
+      {
+        "offset": 25,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "SetJoiningiconPosition": [
+      {
+        "offset": 12,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 13,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 14,
+        "op": "ldfld",
+        "operand": "emojiPanelBG"
+      },
+      {
+        "offset": 19,
+        "op": "call",
+        "operand": "GetPositionRelativeToGivenReference"
+      },
+      {
+        "offset": 24,
+        "op": "stloc.0",
+        "operand": null
+      },
+      {
+        "offset": 25,
+        "op": "call",
+        "operand": "get_Instance"
+      },
+      {
+        "offset": 30,
+        "op": "ldfld",
+        "operand": "enableAnimations"
+      },
+      {
+        "offset": 35,
+        "op": "brfalse.s",
+        "operand": "62"
+      },
+      {
+        "offset": 37,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 38,
+        "op": "ldfld",
+        "operand": "joiningPanelIconTransform"
+      },
+      {
+        "offset": 43,
+        "op": "ldloc.0",
+        "operand": null
+      },
+      {
+        "offset": 44,
+        "op": "ldfld",
+        "operand": "x"
+      },
+      {
+        "offset": 49,
+        "op": "ldc.r4",
+        "operand": "0.10000000149011612"
+      },
+      {
+        "offset": 54,
+        "op": "ldc.i4.0",
+        "operand": null
+      },
+      {
+        "offset": 55,
+        "op": "call",
+        "operand": "DOAnchorPosX"
+      },
+      {
+        "offset": 60,
+        "op": "pop",
+        "operand": null
+      },
+      {
+        "offset": 61,
+        "op": "ret",
+        "operand": null
+      },
+      {
+        "offset": 62,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 63,
+        "op": "ldfld",
+        "operand": "joiningPanelIconTransform"
+      },
+      {
+        "offset": 68,
+        "op": "ldloc.0",
+        "operand": null
+      },
+      {
+        "offset": 69,
+        "op": "ldfld",
+        "operand": "x"
+      },
+      {
+        "offset": 74,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 75,
+        "op": "ldfld",
+        "operand": "joiningPanelIconTransform"
+      },
+      {
+        "offset": 80,
+        "op": "callvirt",
+        "operand": "get_anchoredPosition"
+      },
+      {
+        "offset": 85,
+        "op": "ldfld",
+        "operand": "y"
+      },
+      {
+        "offset": 90,
+        "op": "newobj",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 95,
+        "op": "callvirt",
+        "operand": "set_anchoredPosition"
+      },
+      {
+        "offset": 100,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "UnlockAICContent": [
+      {
+        "offset": 1,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 2,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 3,
+        "op": "stfld",
+        "operand": "isAICMember"
+      },
+      {
+        "offset": 8,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 9,
+        "op": "call",
+        "operand": "SetLockedStates"
+      },
+      {
+        "offset": 14,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "PlayButtonTapSound": [
+      {
+        "offset": 1,
+        "op": "call",
+        "operand": "get_Instance"
+      },
+      {
+        "offset": 6,
+        "op": "callvirt",
+        "operand": "PlayButtonTapSound"
+      },
+      {
+        "offset": 11,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    ".ctor": [
+      {
+        "offset": 12,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 13,
+        "op": "newobj",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 18,
+        "op": "dup",
+        "operand": null
+      },
+      {
+        "offset": 19,
+        "op": "ldc.i4",
+        "operand": "5001"
+      },
+      {
+        "offset": 24,
+        "op": "callvirt",
+        "operand": "Add"
+      },
+      {
+        "offset": 29,
+        "op": "dup",
+        "operand": null
+      },
+      {
+        "offset": 30,
+        "op": "ldc.i4",
+        "operand": "5002"
+      },
+      {
+        "offset": 35,
+        "op": "callvirt",
+        "operand": "Add"
+      },
+      {
+        "offset": 40,
+        "op": "dup",
+        "operand": null
+      },
+      {
+        "offset": 41,
+        "op": "ldc.i4",
+        "operand": "5003"
+      },
+      {
+        "offset": 46,
+        "op": "callvirt",
+        "operand": "Add"
+      },
+      {
+        "offset": 51,
+        "op": "dup",
+        "operand": null
+      },
+      {
+        "offset": 52,
+        "op": "ldc.i4",
+        "operand": "5004"
+      },
+      {
+        "offset": 57,
+        "op": "callvirt",
+        "operand": "Add"
+      },
+      {
+        "offset": 62,
+        "op": "dup",
+        "operand": null
+      },
+      {
+        "offset": 63,
+        "op": "ldc.i4",
+        "operand": "5005"
+      },
+      {
+        "offset": 68,
+        "op": "callvirt",
+        "operand": "Add"
+      },
+      {
+        "offset": 73,
+        "op": "stfld",
+        "operand": "lockedEmoji"
+      },
+      {
+        "offset": 78,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 79,
+        "op": "newobj",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 84,
+        "op": "dup",
+        "operand": null
+      },
+      {
+        "offset": 85,
+        "op": "ldc.i4.8",
+        "operand": null
+      },
+      {
+        "offset": 86,
+        "op": "callvirt",
+        "operand": "Add"
+      },
+      {
+        "offset": 91,
+        "op": "stfld",
+        "operand": "lockedEmojiCategories"
+      },
+      {
+        "offset": 96,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 97,
+        "op": "newobj",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 102,
+        "op": "stfld",
+        "operand": "spawnedEmojiCategoryList"
+      },
+      {
+        "offset": 107,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 108,
+        "op": "newobj",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 113,
+        "op": "stfld",
+        "operand": "recentlyPlayedEmojisList"
+      },
+      {
+        "offset": 118,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 119,
+        "op": "newobj",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 124,
+        "op": "stfld",
+        "operand": "spawnedEmojiList"
+      },
+      {
+        "offset": 129,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 130,
+        "op": "call",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 135,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "<SetLockedStatesCoroutine>b__24_0": [
+      {
+        "offset": 1,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 2,
+        "op": "ldfld",
+        "operand": "isEmojiPanelAlreadyInitialized"
+      },
+      {
+        "offset": 7,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "<SpawnCategoryButton>b__38_0": [
+      {
+        "offset": 1,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 2,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 3,
+        "op": "call",
+        "operand": "OnSelectEmojiCategory"
+      },
+      {
+        "offset": 8,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 9,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 10,
+        "op": "callvirt",
+        "operand": "get_transform"
+      },
+      {
+        "offset": 15,
+        "op": "isinst",
+        "operand": "RectTransform"
+      },
+      {
+        "offset": 20,
+        "op": "call",
+        "operand": "SetJoiningiconPosition"
+      },
+      {
+        "offset": 25,
+        "op": "ret",
+        "operand": null
+      }
+    ]
+  },
+  "PlayableThrowable": {
+    "StartEmojiAnim": [
+      {
+        "offset": 12,
+        "op": "newobj",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 17,
+        "op": "stloc.0",
+        "operand": null
+      },
+      {
+        "offset": 18,
+        "op": "ldloc.0",
+        "operand": null
+      },
+      {
+        "offset": 19,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 20,
+        "op": "stfld",
+        "operand": "<>4__this"
+      },
+      {
+        "offset": 25,
+        "op": "ldloc.0",
+        "operand": null
+      },
+      {
+        "offset": 26,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 27,
+        "op": "stfld",
+        "operand": "toPlayer"
+      },
+      {
+        "offset": 32,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 33,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 34,
+        "op": "call",
+        "operand": "get_gameObject"
+      },
+      {
+        "offset": 39,
+        "op": "callvirt",
+        "operand": "token(0x2B000083)"
+      },
+      {
+        "offset": 44,
+        "op": "stfld",
+        "operand": "throwableAnimation"
+      },
+      {
+        "offset": 49,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 50,
+        "op": "ldarg.3",
+        "operand": null
+      },
+      {
+        "offset": 51,
+        "op": "stfld",
+        "operand": "textAsset"
+      },
+      {
+        "offset": 56,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 57,
+        "op": "ldfld",
+        "operand": "throwableAnimation"
+      },
+      {
+        "offset": 62,
+        "op": "ldarg.3",
+        "operand": null
+      },
+      {
+        "offset": 63,
+        "op": "callvirt",
+        "operand": "SetLottieFile"
+      },
+      {
+        "offset": 68,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 69,
+        "op": "ldfld",
+        "operand": "throwableAnimation"
+      },
+      {
+        "offset": 74,
+        "op": "ldarg.3",
+        "operand": null
+      },
+      {
+        "offset": 75,
+        "op": "callvirt",
+        "operand": "get_text"
+      },
+      {
+        "offset": 80,
+        "op": "callvirt",
+        "operand": "LoadAnimation"
+      },
+      {
+        "offset": 85,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 86,
+        "op": "call",
+        "operand": "get_gameObject"
+      },
+      {
+        "offset": 91,
+        "op": "callvirt",
+        "operand": "token(0x2B00002D)"
+      },
+      {
+        "offset": 96,
+        "op": "ldarg.2",
+        "operand": null
+      },
+      {
+        "offset": 97,
+        "op": "callvirt",
+        "operand": "token(0x2B000017)"
+      },
+      {
+        "offset": 102,
+        "op": "callvirt",
+        "operand": "get_anchoredPosition"
+      },
+      {
+        "offset": 107,
+        "op": "callvirt",
+        "operand": "set_anchoredPosition"
+      },
+      {
+        "offset": 112,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 113,
+        "op": "call",
+        "operand": "get_gameObject"
+      },
+      {
+        "offset": 118,
+        "op": "callvirt",
+        "operand": "token(0x2B00002D)"
+      },
+      {
+        "offset": 123,
+        "op": "ldloc.0",
+        "operand": null
+      },
+      {
+        "offset": 124,
+        "op": "ldfld",
+        "operand": "toPlayer"
+      },
+      {
+        "offset": 129,
+        "op": "callvirt",
+        "operand": "get_anchoredPosition"
+      },
+      {
+        "offset": 134,
+        "op": "ldc.r4",
+        "operand": "0.25"
+      },
+      {
+        "offset": 139,
+        "op": "ldc.i4.0",
+        "operand": null
+      },
+      {
+        "offset": 140,
+        "op": "call",
+        "operand": "DOAnchorPos"
+      },
+      {
+        "offset": 145,
+        "op": "ldloc.0",
+        "operand": null
+      },
+      {
+        "offset": 146,
+        "op": "ldftn",
+        "operand": "<StartEmojiAnim>b__0"
+      },
+      {
+        "offset": 152,
+        "op": "newobj",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 157,
+        "op": "call",
+        "operand": "token(0x2B000012)"
+      },
+      {
+        "offset": 162,
+        "op": "pop",
+        "operand": null
+      },
+      {
+        "offset": 163,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    "AnimFinished": [
+      {
+        "offset": 12,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 13,
+        "op": "ldfld",
+        "operand": "runCount"
+      },
+      {
+        "offset": 18,
+        "op": "ldc.i4.0",
+        "operand": null
+      },
+      {
+        "offset": 19,
+        "op": "bgt.s",
+        "operand": "93"
+      },
+      {
+        "offset": 21,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 22,
+        "op": "ldc.i4.0",
+        "operand": null
+      },
+      {
+        "offset": 23,
+        "op": "stfld",
+        "operand": "runCount"
+      },
+      {
+        "offset": 28,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 29,
+        "op": "ldfld",
+        "operand": "throwableAnimation"
+      },
+      {
+        "offset": 34,
+        "op": "dup",
+        "operand": null
+      },
+      {
+        "offset": 35,
+        "op": "ldfld",
+        "operand": "OnAnimationFinished"
+      },
+      {
+        "offset": 40,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 41,
+        "op": "ldftn",
+        "operand": "AnimFinished"
+      },
+      {
+        "offset": 47,
+        "op": "newobj",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 52,
+        "op": "call",
+        "operand": "Remove"
+      },
+      {
+        "offset": 57,
+        "op": "castclass",
+        "operand": "token(0x1B0000C0)"
+      },
+      {
+        "offset": 62,
+        "op": "stfld",
+        "operand": "OnAnimationFinished"
+      },
+      {
+        "offset": 67,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 68,
+        "op": "call",
+        "operand": "get_gameObject"
+      },
+      {
+        "offset": 73,
+        "op": "ldnull",
+        "operand": null
+      },
+      {
+        "offset": 74,
+        "op": "call",
+        "operand": "op_Inequality"
+      },
+      {
+        "offset": 79,
+        "op": "brfalse.s",
+        "operand": "138"
+      },
+      {
+        "offset": 81,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 82,
+        "op": "call",
+        "operand": "get_gameObject"
+      },
+      {
+        "offset": 87,
+        "op": "call",
+        "operand": "Destroy"
+      },
+      {
+        "offset": 92,
+        "op": "ret",
+        "operand": null
+      },
+      {
+        "offset": 93,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 94,
+        "op": "ldfld",
+        "operand": "throwableAnimation"
+      },
+      {
+        "offset": 99,
+        "op": "callvirt",
+        "operand": "RestartAnimation"
+      },
+      {
+        "offset": 104,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 105,
+        "op": "ldfld",
+        "operand": "throwableAnimation"
+      },
+      {
+        "offset": 110,
+        "op": "ldloca.s",
+        "operand": "local(0x0000)"
+      },
+      {
+        "offset": 112,
+        "op": "initobj",
+        "operand": "token(0x1B000088)"
+      },
+      {
+        "offset": 118,
+        "op": "ldloc.0",
+        "operand": null
+      },
+      {
+        "offset": 119,
+        "op": "callvirt",
+        "operand": "PlayAnimation"
+      },
+      {
+        "offset": 124,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 125,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 126,
+        "op": "ldfld",
+        "operand": "runCount"
+      },
+      {
+        "offset": 131,
+        "op": "ldc.i4.1",
+        "operand": null
+      },
+      {
+        "offset": 132,
+        "op": "sub",
+        "operand": null
+      },
+      {
+        "offset": 133,
+        "op": "stfld",
+        "operand": "runCount"
+      },
+      {
+        "offset": 138,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    ".ctor": [
+      {
+        "offset": 1,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 2,
+        "op": "call",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 7,
+        "op": "ret",
+        "operand": null
+      }
+    ]
+  },
+  "ChatHandler": {
+    "ChatRequest": [
+      {
+        "offset": 1,
+        "op": "ldstr",
+        "operand": "game.chating"
+      },
+      {
+        "offset": 6,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 7,
+        "op": "call",
+        "operand": "token(0x2B000149)"
+      },
+      {
+        "offset": 12,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    ".ctor": [
+      {
+        "offset": 1,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 2,
+        "op": "call",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 7,
+        "op": "ret",
+        "operand": null
+      }
+    ]
+  },
+  "ThrowableHandler": {
+    "SendThrowable": [
+      {
+        "offset": 12,
+        "op": "ldarg.2",
+        "operand": null
+      },
+      {
+        "offset": 13,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 14,
+        "op": "ldarg.1",
+        "operand": null
+      },
+      {
+        "offset": 15,
+        "op": "newobj",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 20,
+        "op": "stloc.0",
+        "operand": null
+      },
+      {
+        "offset": 21,
+        "op": "ldstr",
+        "operand": "game.throw_object"
+      },
+      {
+        "offset": 26,
+        "op": "ldloc.0",
+        "operand": null
+      },
+      {
+        "offset": 27,
+        "op": "call",
+        "operand": "token(0x2B000158)"
+      },
+      {
+        "offset": 32,
+        "op": "ret",
+        "operand": null
+      }
+    ],
+    ".ctor": [
+      {
+        "offset": 1,
+        "op": "ldarg.0",
+        "operand": null
+      },
+      {
+        "offset": 2,
+        "op": "call",
+        "operand": ".ctor"
+      },
+      {
+        "offset": 7,
+        "op": "ret",
+        "operand": null
+      }
+    ]
+  }
+}

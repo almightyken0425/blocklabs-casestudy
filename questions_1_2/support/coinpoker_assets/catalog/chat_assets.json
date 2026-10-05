@@ -1,0 +1,374 @@
+[
+  {
+    "name": "UISprite",
+    "path": "chat/sprites/uisprite_887.png",
+    "width": 32,
+    "height": 32,
+    "source": "data.unity3d",
+    "serialized_file": "sharedassets0.assets",
+    "path_id": 887,
+    "sha256": "9e2b539b7c88fe4464525abc282c724b964852950a0b8aa1df13414014b5f33c"
+  },
+  {
+    "name": "Background",
+    "path": "chat/sprites/background_888.png",
+    "width": 32,
+    "height": 32,
+    "source": "data.unity3d",
+    "serialized_file": "sharedassets0.assets",
+    "path_id": 888,
+    "sha256": "46e2a8c6759bf24681f9f3f6073973ca65ac95e8d1ed8b8e025137819857fb2d"
+  },
+  {
+    "name": "InputFieldBackground",
+    "path": "chat/sprites/inputfieldbackground_889.png",
+    "width": 32,
+    "height": 32,
+    "source": "data.unity3d",
+    "serialized_file": "sharedassets0.assets",
+    "path_id": 889,
+    "sha256": "37a101d10d7e8196d7c03cfbb3e0d04f93a06d9afd843ad695b73dbda17a24d3"
+  },
+  {
+    "name": "UIMask",
+    "path": "chat/sprites/uimask_891.png",
+    "width": 28,
+    "height": 28,
+    "source": "data.unity3d",
+    "serialized_file": "sharedassets0.assets",
+    "path_id": 891,
+    "sha256": "6b9a19efbdf70c33d05c0e1d927377a4bb032a87b2acd94aa9abaf4edb909969"
+  },
+  {
+    "name": "selectedCheck",
+    "path": "chat/sprites/selectedcheck_915.png",
+    "width": 46,
+    "height": 33,
+    "source": "data.unity3d",
+    "serialized_file": "sharedassets0.assets",
+    "path_id": 915,
+    "sha256": "d16e07915ef0c76bfce6139fed4b1ce01da23251237ec23a0658310e6583aeef"
+  },
+  {
+    "name": "CP_InputField",
+    "path": "chat/sprites/cp_inputfield_940.png",
+    "width": 128,
+    "height": 128,
+    "source": "data.unity3d",
+    "serialized_file": "sharedassets0.assets",
+    "path_id": 940,
+    "sha256": "e87d52fea5d9c0b49fe16dd04193bdcccb4422f912f760e380a574e4a2316520"
+  },
+  {
+    "name": "PredefinedMsgIcon",
+    "path": "chat/sprites/predefinedmsgicon_942.png",
+    "width": 131,
+    "height": 132,
+    "source": "data.unity3d",
+    "serialized_file": "sharedassets0.assets",
+    "path_id": 942,
+    "sha256": "a5516243213c04fcddfa1e863f7f6fbfa366f6f4b0bb7cbd42900e2d40fb6475"
+  },
+  {
+    "name": "Arrow Down",
+    "path": "chat/sprites/arrow_down_946.png",
+    "width": 30,
+    "height": 30,
+    "source": "data.unity3d",
+    "serialized_file": "sharedassets0.assets",
+    "path_id": 946,
+    "sha256": "e945fab7e34f294e122241d40447a62f85ca873e5a95913e2fc21e5e4e840f1a"
+  },
+  {
+    "name": "CP_ChatMsgButton",
+    "path": "chat/sprites/cp_chatmsgbutton_972.png",
+    "width": 64,
+    "height": 57,
+    "source": "data.unity3d",
+    "serialized_file": "sharedassets0.assets",
+    "path_id": 972,
+    "sha256": "8df309f06c128b2e8686002d12e55df757f73156be2d44d57cf452cfebd62865"
+  },
+  {
+    "name": "reply",
+    "path": "chat/sprites/reply_987.png",
+    "width": 56,
+    "height": 44,
+    "source": "data.unity3d",
+    "serialized_file": "sharedassets0.assets",
+    "path_id": 987,
+    "sha256": "34283443becd7643d36b298b0487abdca969e79c3a03d3af19b68448ae65647d"
+  },
+  {
+    "name": "CopiedChatBG",
+    "path": "chat/sprites/copiedchatbg_1017.png",
+    "width": 360,
+    "height": 43,
+    "source": "data.unity3d",
+    "serialized_file": "sharedassets0.assets",
+    "path_id": 1017,
+    "sha256": "7f2f2ae7871ae7e628ba5eb76105614bb8fb2b6adbd282aec8c60c90bfbdba23"
+  },
+  {
+    "name": "PlayerChatRect",
+    "path": "chat/sprites/playerchatrect_1067.png",
+    "width": 256,
+    "height": 80,
+    "source": "data.unity3d",
+    "serialized_file": "sharedassets0.assets",
+    "path_id": 1067,
+    "sha256": "10e76fb59640057784777874458e9d2ccd86dab3e0c026ab9696b9b36e37d133"
+  },
+  {
+    "name": "CP_DownArrow",
+    "path": "chat/sprites/cp_downarrow_1071.png",
+    "width": 136,
+    "height": 136,
+    "source": "data.unity3d",
+    "serialized_file": "sharedassets0.assets",
+    "path_id": 1071,
+    "sha256": "aa96d1480dfcb742fbb0b396d127c8aeacac8e30d9bc03268eb67c297f5d8746"
+  },
+  {
+    "name": "close-circle",
+    "path": "chat/sprites/close_circle_1095.png",
+    "width": 90,
+    "height": 90,
+    "source": "data.unity3d",
+    "serialized_file": "sharedassets0.assets",
+    "path_id": 1095,
+    "sha256": "20dd7a03c9403ce0115430877c213c1fbe38edfa00122e28e901158be2a315c2"
+  },
+  {
+    "name": "Avatar",
+    "path": "chat/sprites/avatar_1101.png",
+    "width": 32,
+    "height": 32,
+    "source": "data.unity3d",
+    "serialized_file": "sharedassets0.assets",
+    "path_id": 1101,
+    "sha256": "769a8071cfcf22c3c26178db6a89f38693fc91def43b0f524afa5e1266d69a48"
+  },
+  {
+    "name": "check",
+    "path": "chat/sprites/check_1112.png",
+    "width": 46,
+    "height": 33,
+    "source": "data.unity3d",
+    "serialized_file": "sharedassets0.assets",
+    "path_id": 1112,
+    "sha256": "1619e5b089a9c69c9b220cba5d6dc6b0631fedc6d4332a4b3e837e2cf678cf9e"
+  },
+  {
+    "name": "ChatBubble",
+    "path": "chat/sprites/chatbubble_1145.png",
+    "width": 116,
+    "height": 25,
+    "source": "data.unity3d",
+    "serialized_file": "sharedassets0.assets",
+    "path_id": 1145,
+    "sha256": "055ab78c9acefad99a723791bcc5a6cc720c5774bc088f75f64437cfde5b5a14"
+  },
+  {
+    "name": "CP_Arrow",
+    "path": "chat/sprites/cp_arrow_1161.png",
+    "width": 36,
+    "height": 76,
+    "source": "data.unity3d",
+    "serialized_file": "sharedassets0.assets",
+    "path_id": 1161,
+    "sha256": "f2533ddcc7005ef881424949434a7ca9a258df39ad59891990ae3e661642b9b0"
+  },
+  {
+    "name": "CP_RectWithBorder",
+    "path": "chat/sprites/cp_rectwithborder_1167.png",
+    "width": 128,
+    "height": 128,
+    "source": "data.unity3d",
+    "serialized_file": "sharedassets0.assets",
+    "path_id": 1167,
+    "sha256": "7663dbd8837331649314b387ac6cd06445b9bb7d690369337526b7e8c8a9ac55"
+  },
+  {
+    "name": "CP_UpArrow",
+    "path": "chat/sprites/cp_uparrow_1213.png",
+    "width": 136,
+    "height": 136,
+    "source": "data.unity3d",
+    "serialized_file": "sharedassets0.assets",
+    "path_id": 1213,
+    "sha256": "5169a34b6034d320fe92cf37b9898fbf5be15ed9fce2c465002ea9de1ada9688"
+  },
+  {
+    "name": "optionsDots",
+    "path": "chat/sprites/optionsdots_1236.png",
+    "width": 14,
+    "height": 64,
+    "source": "data.unity3d",
+    "serialized_file": "sharedassets0.assets",
+    "path_id": 1236,
+    "sha256": "f876cd09241fd3d90a1a6d445cd1fcdf576c20d5acd60d3812b79e0c5b69517d"
+  },
+  {
+    "name": "CopyReplyButton",
+    "path": "chat/sprites/copyreplybutton_1252.png",
+    "width": 288,
+    "height": 60,
+    "source": "data.unity3d",
+    "serialized_file": "sharedassets0.assets",
+    "path_id": 1252,
+    "sha256": "9a7b78aa3ffa86b98388a1ffbb6fde59c33757f26e85fca5d3d8008f9b39ed55"
+  },
+  {
+    "name": "ChatBubbleCenter",
+    "path": "chat/sprites/chatbubblecenter_1266.png",
+    "width": 256,
+    "height": 81,
+    "source": "data.unity3d",
+    "serialized_file": "sharedassets0.assets",
+    "path_id": 1266,
+    "sha256": "be58c052613824b54363ee2edc5eb015970f77322d6bf870f793f63872245fbe"
+  },
+  {
+    "name": "1x1",
+    "path": "chat/sprites/1x1_1339.png",
+    "width": 1,
+    "height": 1,
+    "source": "data.unity3d",
+    "serialized_file": "sharedassets0.assets",
+    "path_id": 1339,
+    "sha256": "d5a51b6aed15684ec8c123e30fe5703155359d6543b6d7b47cb5766ef44939de"
+  },
+  {
+    "name": "SelectedIcon",
+    "path": "chat/sprites/selectedicon_1358.png",
+    "width": 40,
+    "height": 40,
+    "source": "data.unity3d",
+    "serialized_file": "sharedassets0.assets",
+    "path_id": 1358,
+    "sha256": "db6abfb7889a4d689c289b7b062ad61fa311ecc22ddb4586c9013e7a4369cd2f"
+  },
+  {
+    "name": "ArrowUp",
+    "path": "chat/sprites/arrowup_1362.png",
+    "width": 12,
+    "height": 13,
+    "source": "data.unity3d",
+    "serialized_file": "sharedassets0.assets",
+    "path_id": 1362,
+    "sha256": "96a90770501bf5e02165ce8460a6a0fe39769ceae1cf497d2e62c1bec1058bb2"
+  },
+  {
+    "name": "cp-chat_error",
+    "path": "chat/sprites/cp_chat_error_1382.png",
+    "width": 67,
+    "height": 67,
+    "source": "data.unity3d",
+    "serialized_file": "sharedassets0.assets",
+    "path_id": 1382,
+    "sha256": "7d55460ac41b2b5f6a3441162386465bfd62d053b63b7b2dbf5b09c120b1c07c"
+  },
+  {
+    "name": "Nochat",
+    "path": "chat/sprites/nochat_1434.png",
+    "width": 280,
+    "height": 227,
+    "source": "data.unity3d",
+    "serialized_file": "sharedassets0.assets",
+    "path_id": 1434,
+    "sha256": "86716a45bedb6f6a54a72420accbdd0deffea22c9953ea349b5499656d3557b5"
+  },
+  {
+    "name": "copy",
+    "path": "chat/sprites/copy_1447.png",
+    "width": 53,
+    "height": 53,
+    "source": "data.unity3d",
+    "serialized_file": "sharedassets0.assets",
+    "path_id": 1447,
+    "sha256": "e7c2910057a205dff2b1ce72afd2c8286ef59e008be245d9e7b19a440e6c42e6"
+  },
+  {
+    "name": "CP_ChatBTIcon",
+    "path": "chat/sprites/cp_chatbticon_1490.png",
+    "width": 131,
+    "height": 125,
+    "source": "data.unity3d",
+    "serialized_file": "sharedassets0.assets",
+    "path_id": 1490,
+    "sha256": "0d696885ecb664c35dd40e79905456e81b1a6d993004b318c296604f6d0f3225"
+  },
+  {
+    "name": "RoundedRect2",
+    "path": "chat/sprites/roundedrect2_1494.png",
+    "width": 174,
+    "height": 32,
+    "source": "data.unity3d",
+    "serialized_file": "sharedassets0.assets",
+    "path_id": 1494,
+    "sha256": "cfeb5b6cc3ba9b341a5ee6a4c62b7a817b9549351a0734011b329bb1218279a4"
+  },
+  {
+    "name": "ChatBubbleSide",
+    "path": "chat/sprites/chatbubbleside_1497.png",
+    "width": 256,
+    "height": 81,
+    "source": "data.unity3d",
+    "serialized_file": "sharedassets0.assets",
+    "path_id": 1497,
+    "sha256": "bcb6ac3fd03e23487d37f096018ab9cdb8e8ff9685ad35d6cb0e71f30b221b9e"
+  },
+  {
+    "name": "copy_reply_bg",
+    "path": "chat/sprites/copy_reply_bg_1506.png",
+    "width": 124,
+    "height": 112,
+    "source": "data.unity3d",
+    "serialized_file": "sharedassets0.assets",
+    "path_id": 1506,
+    "sha256": "07d3dfb50c6b9599fa8c163c9ae84e3c6fe82a466ab7b40522073d240c9c45fd"
+  },
+  {
+    "name": "icon",
+    "path": "chat/sprites/icon_1510.png",
+    "width": 40,
+    "height": 40,
+    "source": "data.unity3d",
+    "serialized_file": "sharedassets0.assets",
+    "path_id": 1510,
+    "sha256": "cbffcf7cbc1da93dfd6a4b5d8d6f5a32f29a137cdf74223e4c2d9a9348d619a5"
+  },
+  {
+    "name": "CP_SelfUserEmoji",
+    "path": "chat/sprites/cp_selfuseremoji_1543.png",
+    "width": 215,
+    "height": 212,
+    "source": "data.unity3d",
+    "serialized_file": "sharedassets0.assets",
+    "path_id": 1543,
+    "sha256": "d788aa234f87ca796d2e1bbf3c6f43e0414a73d460b8892438e8bccd2c5768dc"
+  },
+  {
+    "name": "White Pixel",
+    "path": "chat/sprites/white_pixel_1633.png",
+    "width": 1,
+    "height": 1,
+    "source": "data.unity3d",
+    "serialized_file": "sharedassets0.assets",
+    "path_id": 1633,
+    "sha256": "d5a51b6aed15684ec8c123e30fe5703155359d6543b6d7b47cb5766ef44939de"
+  },
+  {
+    "name": "chat-active.0a33fc04.svg",
+    "path": "chat/electron/chat-active.0a33fc04.svg",
+    "source": "app.asar/dist/assets/chat-active.0a33fc04.svg",
+    "sha256": "7cee2f87fb9c124c54bce79c987a615a30f7dbb8ac80a7515d74c9d9236927f5"
+  },
+  {
+    "name": "chat.e0a31500.svg",
+    "path": "chat/electron/chat.e0a31500.svg",
+    "source": "app.asar/dist/assets/chat.e0a31500.svg",
+    "sha256": "e2848ec10411bcea40730548edb388efdb349fc82c0fd7af69b3996ca6cbbb0f"
+  }
+]

@@ -1,0 +1,512 @@
+[
+  {
+    "id": 1,
+    "group": "ANIMAL",
+    "source_url": "https://d26s3bt6yeixto.cloudfront.net/config/assets/Avatars/avatar-1.webp",
+    "path": "avatars/avatar-1.webp",
+    "width": 256,
+    "height": 256,
+    "sha256": "0b74995b75746ea7a6fe5373610d7b7783cb0498f849c9807b090997a39b28bc",
+    "status": "downloaded"
+  },
+  {
+    "id": 2,
+    "group": "ANIMAL",
+    "source_url": "https://d26s3bt6yeixto.cloudfront.net/config/assets/Avatars/avatar-2.webp",
+    "path": "avatars/avatar-2.webp",
+    "width": 256,
+    "height": 256,
+    "sha256": "9a8a334a02e048c2b00a3c1ed95d2bfb84f07f9870fb68faae33f2dca67025d9",
+    "status": "downloaded"
+  },
+  {
+    "id": 3,
+    "group": "ANIMAL",
+    "source_url": "https://d26s3bt6yeixto.cloudfront.net/config/assets/Avatars/avatar-3.webp",
+    "path": "avatars/avatar-3.webp",
+    "width": 256,
+    "height": 256,
+    "sha256": "b01115e7c0f2b009fed84227a30ec313f8827f4d3ba8235017fd4107414c0403",
+    "status": "downloaded"
+  },
+  {
+    "id": 4,
+    "group": "ANIMAL",
+    "source_url": "https://d26s3bt6yeixto.cloudfront.net/config/assets/Avatars/avatar-4.webp",
+    "path": "avatars/avatar-4.webp",
+    "width": 256,
+    "height": 256,
+    "sha256": "442db5994ed4103d88f0549c202dd526c21ce6203939c3380793b036181d273b",
+    "status": "downloaded"
+  },
+  {
+    "id": 5,
+    "group": "ANIMAL",
+    "source_url": "https://d26s3bt6yeixto.cloudfront.net/config/assets/Avatars/avatar-5.webp",
+    "path": "avatars/avatar-5.webp",
+    "width": 256,
+    "height": 256,
+    "sha256": "2bb842e44622c8181850269520648870abd2be4c58f9cc68d65cc605db55d8f0",
+    "status": "downloaded"
+  },
+  {
+    "id": 6,
+    "group": "ANIME",
+    "source_url": "https://d26s3bt6yeixto.cloudfront.net/config/assets/Avatars/avatar-6.webp",
+    "path": "avatars/avatar-6.webp",
+    "width": 256,
+    "height": 256,
+    "sha256": "035664dcb25258e2f641e75baef91ba4c331e542cc0b2295261a1abda3b7b140",
+    "status": "downloaded"
+  },
+  {
+    "id": 7,
+    "group": "ANIME",
+    "source_url": "https://d26s3bt6yeixto.cloudfront.net/config/assets/Avatars/avatar-7.webp",
+    "path": "avatars/avatar-7.webp",
+    "width": 256,
+    "height": 256,
+    "sha256": "91a981d6ad403ec53f01a7afa974313783bccb42f4e093d980cb14b3d2b092f7",
+    "status": "downloaded"
+  },
+  {
+    "id": 8,
+    "group": "ANIME",
+    "source_url": "https://d26s3bt6yeixto.cloudfront.net/config/assets/Avatars/avatar-8.webp",
+    "path": "avatars/avatar-8.webp",
+    "width": 256,
+    "height": 256,
+    "sha256": "af5bd7bdc7189c36b641dca54d70712f11ea78ad53f913ff78a8335714c6b4fb",
+    "status": "downloaded"
+  },
+  {
+    "id": 9,
+    "group": "ANIME",
+    "source_url": "https://d26s3bt6yeixto.cloudfront.net/config/assets/Avatars/avatar-9.webp",
+    "path": "avatars/avatar-9.webp",
+    "width": 256,
+    "height": 256,
+    "sha256": "e05e34cdce92cfb68839772b9fdd37c2fdc67ce6e223970373caa21b1486de69",
+    "status": "downloaded"
+  },
+  {
+    "id": 10,
+    "group": "ANIME",
+    "source_url": "https://d26s3bt6yeixto.cloudfront.net/config/assets/Avatars/avatar-10.webp",
+    "path": "avatars/avatar-10.webp",
+    "width": 256,
+    "height": 256,
+    "sha256": "94f77eb608076d0c4e81c8cf341415db95cc9a0b8b06b095816f63e157417d47",
+    "status": "downloaded"
+  },
+  {
+    "id": 11,
+    "group": "HALLOWEEN",
+    "source_url": "https://d26s3bt6yeixto.cloudfront.net/config/assets/Avatars/avatar-11.webp",
+    "path": "avatars/avatar-11.webp",
+    "width": 256,
+    "height": 256,
+    "sha256": "6c502702b79b7a60b29d2b7cddbfbea8082528301f56fe5911f6abf4700a94bc",
+    "status": "downloaded"
+  },
+  {
+    "id": 12,
+    "group": "HALLOWEEN",
+    "source_url": "https://d26s3bt6yeixto.cloudfront.net/config/assets/Avatars/avatar-12.webp",
+    "path": "avatars/avatar-12.webp",
+    "width": 256,
+    "height": 256,
+    "sha256": "fc1c960def977d154f393236bcd68a896feb452578d04c2a88682b0cb1daa39c",
+    "status": "downloaded"
+  },
+  {
+    "id": 13,
+    "group": "HALLOWEEN",
+    "source_url": "https://d26s3bt6yeixto.cloudfront.net/config/assets/Avatars/avatar-13.webp",
+    "path": "avatars/avatar-13.webp",
+    "width": 256,
+    "height": 256,
+    "sha256": "d2060ed886cf6f4a2fb741a2e16d593b8887a77910a24aaf33c86ea00ba734c1",
+    "status": "downloaded"
+  },
+  {
+    "id": 14,
+    "group": "HALLOWEEN",
+    "source_url": "https://d26s3bt6yeixto.cloudfront.net/config/assets/Avatars/avatar-14.webp",
+    "path": "avatars/avatar-14.webp",
+    "width": 256,
+    "height": 256,
+    "sha256": "eea157c9ae81d0f891b770eef106e59f20330ffdefedebb33895acb9b9df745b",
+    "status": "downloaded"
+  },
+  {
+    "id": 15,
+    "group": "HALLOWEEN",
+    "source_url": "https://d26s3bt6yeixto.cloudfront.net/config/assets/Avatars/avatar-15.webp",
+    "path": "avatars/avatar-15.webp",
+    "width": 256,
+    "height": 256,
+    "sha256": "bb1fb012545b086014748b23e06930e8630b301c8879dd5e622e193666226d8a",
+    "status": "downloaded"
+  },
+  {
+    "id": 16,
+    "group": "NOBLE",
+    "source_url": "https://d26s3bt6yeixto.cloudfront.net/config/assets/Avatars/avatar-16.webp",
+    "path": "avatars/avatar-16.webp",
+    "width": 256,
+    "height": 256,
+    "sha256": "b0d620ad74b6faf1dff6cb4080568494e6ab9502dc88c0feffd293d31888c3a7",
+    "status": "downloaded"
+  },
+  {
+    "id": 17,
+    "group": "NOBLE",
+    "source_url": "https://d26s3bt6yeixto.cloudfront.net/config/assets/Avatars/avatar-17.webp",
+    "path": "avatars/avatar-17.webp",
+    "width": 256,
+    "height": 256,
+    "sha256": "72d4622c9b2e51cafd2d6f6888f94d46373c977d5afb3f037c249cfd2f6cf680",
+    "status": "downloaded"
+  },
+  {
+    "id": 18,
+    "group": "NOBLE",
+    "source_url": "https://d26s3bt6yeixto.cloudfront.net/config/assets/Avatars/avatar-18.webp",
+    "path": "avatars/avatar-18.webp",
+    "width": 256,
+    "height": 256,
+    "sha256": "d144ca6d510ef98e2519de5466b095ac266253fa26908b26bfd646bd66e5f849",
+    "status": "downloaded"
+  },
+  {
+    "id": 19,
+    "group": "NOBLE",
+    "source_url": "https://d26s3bt6yeixto.cloudfront.net/config/assets/Avatars/avatar-19.webp",
+    "path": "avatars/avatar-19.webp",
+    "width": 256,
+    "height": 256,
+    "sha256": "e4c7040b2a509880e87730c48c73232eeacd5ca3b6011569b126918c73936ff1",
+    "status": "downloaded"
+  },
+  {
+    "id": 20,
+    "group": "NOBLE",
+    "source_url": "https://d26s3bt6yeixto.cloudfront.net/config/assets/Avatars/avatar-20.webp",
+    "path": "avatars/avatar-20.webp",
+    "width": 256,
+    "height": 256,
+    "sha256": "b4ea0157ad1283ae6f74513d352e55aa5f11d62dd207ed45e631051d0e34a775",
+    "status": "downloaded"
+  },
+  {
+    "id": 21,
+    "group": "ROYAL",
+    "source_url": "https://d26s3bt6yeixto.cloudfront.net/config/assets/Avatars/avatar-21.webp",
+    "path": "avatars/avatar-21.webp",
+    "width": 256,
+    "height": 256,
+    "sha256": "c7da127b4b04dc1df65d0f24ab93cc66651df2fffb22a306fa5b4e99c7c61106",
+    "status": "downloaded"
+  },
+  {
+    "id": 22,
+    "group": "ROYAL",
+    "source_url": "https://d26s3bt6yeixto.cloudfront.net/config/assets/Avatars/avatar-22.webp",
+    "path": "avatars/avatar-22.webp",
+    "width": 256,
+    "height": 256,
+    "sha256": "dc1ba4583a5bf045653f56b7bd65d2e3133039d8c6fdd929b095ca101f493f95",
+    "status": "downloaded"
+  },
+  {
+    "id": 23,
+    "group": "ROYAL",
+    "source_url": "https://d26s3bt6yeixto.cloudfront.net/config/assets/Avatars/avatar-23.webp",
+    "path": "avatars/avatar-23.webp",
+    "width": 256,
+    "height": 256,
+    "sha256": "93adbecd545504ebfeafa302cc46edf57dd3c342a7104873a1ca85915934785e",
+    "status": "downloaded"
+  },
+  {
+    "id": 24,
+    "group": "ROYAL",
+    "source_url": "https://d26s3bt6yeixto.cloudfront.net/config/assets/Avatars/avatar-24.webp",
+    "path": "avatars/avatar-24.webp",
+    "width": 256,
+    "height": 256,
+    "sha256": "26681e78e8fdf0f9151db26b884f900668b856ed277ba1f4a9ce2610261bece2",
+    "status": "downloaded"
+  },
+  {
+    "id": 25,
+    "group": "ROYAL",
+    "source_url": "https://d26s3bt6yeixto.cloudfront.net/config/assets/Avatars/avatar-25.webp",
+    "path": "avatars/avatar-25.webp",
+    "width": 256,
+    "height": 256,
+    "sha256": "d88bb1ff2df8c1d11de8c1da337a80e87d9db39e9b5b10d3ebfbbcf0860dae47",
+    "status": "downloaded"
+  },
+  {
+    "id": 26,
+    "group": "World Cup",
+    "source_url": "https://d26s3bt6yeixto.cloudfront.net/config/assets/Avatars/avatar-26.webp",
+    "path": "avatars/avatar-26.webp",
+    "width": 1024,
+    "height": 1024,
+    "sha256": "e550a7f276ce69bfe34de14c15e500bdfe512812669126f8f51993d653ca915b",
+    "status": "downloaded"
+  },
+  {
+    "id": 27,
+    "group": "World Cup",
+    "source_url": "https://d26s3bt6yeixto.cloudfront.net/config/assets/Avatars/avatar-27.webp",
+    "path": "avatars/avatar-27.webp",
+    "width": 1024,
+    "height": 1024,
+    "sha256": "9646778e144bbf7b5f0ca6498e4437bcd4745d1d2559c9a8b7b8eb64e854c6b9",
+    "status": "downloaded"
+  },
+  {
+    "id": 28,
+    "group": "World Cup",
+    "source_url": "https://d26s3bt6yeixto.cloudfront.net/config/assets/Avatars/avatar-28.webp",
+    "path": "avatars/avatar-28.webp",
+    "width": 1024,
+    "height": 1024,
+    "sha256": "b8323a77ec51c5f2b350ec259196e089daf6f9c63669de99f20effd447da0695",
+    "status": "downloaded"
+  },
+  {
+    "id": 29,
+    "group": "World Cup",
+    "source_url": "https://d26s3bt6yeixto.cloudfront.net/config/assets/Avatars/avatar-29.webp",
+    "path": "avatars/avatar-29.webp",
+    "width": 1024,
+    "height": 1024,
+    "sha256": "f85654b1bc0e3604847c03606e8f42ea9dbea852f80c16489de14d3ec43c1c20",
+    "status": "downloaded"
+  },
+  {
+    "id": 30,
+    "group": "World Cup",
+    "source_url": "https://d26s3bt6yeixto.cloudfront.net/config/assets/Avatars/avatar-30.webp",
+    "path": "avatars/avatar-30.webp",
+    "width": 1024,
+    "height": 1024,
+    "sha256": "30d14267cabcc8822e7f2bf1e1f5969eb5cb7266403a18ce5318b97c7501f866",
+    "status": "downloaded"
+  },
+  {
+    "id": 31,
+    "group": "World Cup",
+    "source_url": "https://d26s3bt6yeixto.cloudfront.net/config/assets/Avatars/avatar-31.webp",
+    "path": "avatars/avatar-31.webp",
+    "width": 1024,
+    "height": 1024,
+    "sha256": "1a25e52c2d79398eee8489f8e5c8f5467995a662984599e80f3e1a9054c56503",
+    "status": "downloaded"
+  },
+  {
+    "id": 32,
+    "group": "World Cup",
+    "source_url": "https://d26s3bt6yeixto.cloudfront.net/config/assets/Avatars/avatar-32.webp",
+    "path": "avatars/avatar-32.webp",
+    "width": 1024,
+    "height": 1024,
+    "sha256": "b17d0cc3b6843f54ba60ebf09828ce8e738a08dce578ee629666dbac6bb7053d",
+    "status": "downloaded"
+  },
+  {
+    "id": 33,
+    "group": "World Cup",
+    "source_url": "https://d26s3bt6yeixto.cloudfront.net/config/assets/Avatars/avatar-33.webp",
+    "path": "avatars/avatar-33.webp",
+    "width": 1024,
+    "height": 1024,
+    "sha256": "1bc6a906d05358b0972a3e28a6b0000b603f6e16c092a61eec2cdf22a571921b",
+    "status": "downloaded"
+  },
+  {
+    "id": 34,
+    "group": "World Cup",
+    "source_url": "https://d26s3bt6yeixto.cloudfront.net/config/assets/Avatars/avatar-34.webp",
+    "path": "avatars/avatar-34.webp",
+    "width": 1024,
+    "height": 1024,
+    "sha256": "82ea15e01eff2ea7119e04e9073535ff731aaf088196412ce0ddfeb8a330f2f7",
+    "status": "downloaded"
+  },
+  {
+    "id": 35,
+    "group": "World Cup",
+    "source_url": "https://d26s3bt6yeixto.cloudfront.net/config/assets/Avatars/avatar-35.webp",
+    "path": "avatars/avatar-35.webp",
+    "width": 1024,
+    "height": 1024,
+    "sha256": "3b4c11749b0577565f9886eac041893fa399fd2e0570cb32adf9193b15394652",
+    "status": "downloaded"
+  },
+  {
+    "id": 2001,
+    "group": "3-Bet Club configuration",
+    "source_url": "https://d26s3bt6yeixto.cloudfront.net/config/assets/Avatars/avatar-2001.webp",
+    "path": "avatars/avatar-2001.webp",
+    "width": 1292,
+    "height": 1292,
+    "sha256": "74dc6bdeed5f1bfb8e43c6780dea6d1221d020e70e4fe904bd42793ca588bf8c",
+    "status": "downloaded"
+  },
+  {
+    "id": 2002,
+    "group": "3-Bet Club configuration",
+    "source_url": "https://d26s3bt6yeixto.cloudfront.net/config/assets/Avatars/avatar-2002.webp",
+    "path": "avatars/avatar-2002.webp",
+    "width": 1292,
+    "height": 1292,
+    "sha256": "9709fbbdfb6c20fb30dac902bd0a3b89aa15e1637159f67c91f7fed14d820755",
+    "status": "downloaded"
+  },
+  {
+    "id": 2003,
+    "group": "3-Bet Club configuration",
+    "source_url": "https://d26s3bt6yeixto.cloudfront.net/config/assets/Avatars/avatar-2003.webp",
+    "path": "avatars/avatar-2003.webp",
+    "width": 1292,
+    "height": 1292,
+    "sha256": "f2a58f9916c00e2e7af429b957b68744784d63aa1a8dfeb5cab3e63baf202c63",
+    "status": "downloaded"
+  },
+  {
+    "id": 2004,
+    "group": "3-Bet Club configuration",
+    "source_url": "https://d26s3bt6yeixto.cloudfront.net/config/assets/Avatars/avatar-2004.webp",
+    "path": "avatars/avatar-2004.webp",
+    "width": 1292,
+    "height": 1292,
+    "sha256": "d2d7f69e3103e8fe5e03b312873e6b4b2d2b86da1a3fa79071719702d0be442e",
+    "status": "downloaded"
+  },
+  {
+    "id": 2005,
+    "group": "3-Bet Club configuration",
+    "source_url": "https://d26s3bt6yeixto.cloudfront.net/config/assets/Avatars/avatar-2005.webp",
+    "path": "avatars/avatar-2005.webp",
+    "width": 1292,
+    "height": 1292,
+    "sha256": "7d07edced9e1fdb4d85d532dd60a5ff2e1052377b5508227600ae2c9c4f14dfc",
+    "status": "downloaded"
+  },
+  {
+    "id": 2006,
+    "group": "3-Bet Club configuration",
+    "source_url": "https://d26s3bt6yeixto.cloudfront.net/config/assets/Avatars/avatar-2006.webp",
+    "path": "avatars/avatar-2006.webp",
+    "width": 1292,
+    "height": 1292,
+    "sha256": "2435ef4a36beb7021716b58083d862f3aaac6dc9b9cfdbc5ad0838cd52fc14b1",
+    "status": "downloaded"
+  },
+  {
+    "id": 2007,
+    "group": "3-Bet Club configuration",
+    "source_url": "https://d26s3bt6yeixto.cloudfront.net/config/assets/Avatars/avatar-2007.webp",
+    "path": "avatars/avatar-2007.webp",
+    "width": 1292,
+    "height": 1292,
+    "sha256": "3f6325a96a0cf9392868f1af2279324fc8489d981c139e518789a11c6e18b591",
+    "status": "downloaded"
+  },
+  {
+    "id": 2008,
+    "group": "3-Bet Club configuration",
+    "source_url": "https://d26s3bt6yeixto.cloudfront.net/config/assets/Avatars/avatar-2008.webp",
+    "path": "avatars/avatar-2008.webp",
+    "width": 1292,
+    "height": 1292,
+    "sha256": "967a54de2ca4266cf533bdb07ef9a230289d6aebdc3e319ca3d1610c18245019",
+    "status": "downloaded"
+  },
+  {
+    "id": 2009,
+    "group": "3-Bet Club configuration",
+    "source_url": "https://d26s3bt6yeixto.cloudfront.net/config/assets/Avatars/avatar-2009.webp",
+    "path": "avatars/avatar-2009.webp",
+    "width": 1292,
+    "height": 1292,
+    "sha256": "35e8f11b77b57e4e5c24eb7693f3f8cf4e46a37bcbf369370f945aa282c2ac81",
+    "status": "downloaded"
+  },
+  {
+    "id": 2010,
+    "group": "3-Bet Club configuration",
+    "source_url": "https://d26s3bt6yeixto.cloudfront.net/config/assets/Avatars/avatar-2010.webp",
+    "path": "avatars/avatar-2010.webp",
+    "width": 1292,
+    "height": 1292,
+    "sha256": "c244baef2364ee0ec2b6bb0bd45f3ed6046ad6c7339dce840d565015ecddebab",
+    "status": "downloaded"
+  },
+  {
+    "id": 2011,
+    "group": "3-Bet Club configuration",
+    "source_url": "https://d26s3bt6yeixto.cloudfront.net/config/assets/Avatars/avatar-2011.webp",
+    "path": "avatars/avatar-2011.webp",
+    "width": 1292,
+    "height": 1292,
+    "sha256": "6795af892f850de415e963f66f91a71aed7b00437492796a20142f91f917f4c1",
+    "status": "downloaded"
+  },
+  {
+    "id": 2012,
+    "group": "3-Bet Club configuration",
+    "source_url": "https://d26s3bt6yeixto.cloudfront.net/config/assets/Avatars/avatar-2012.webp",
+    "path": "avatars/avatar-2012.webp",
+    "width": 1292,
+    "height": 1292,
+    "sha256": "6f627c18c8566a2cd091a6b86d3e060630848c61dcf12b6ab8f4c26c88669720",
+    "status": "downloaded"
+  },
+  {
+    "id": 2013,
+    "group": "3-Bet Club configuration",
+    "source_url": "https://d26s3bt6yeixto.cloudfront.net/config/assets/Avatars/avatar-2013.webp",
+    "path": "avatars/avatar-2013.webp",
+    "width": 1292,
+    "height": 1292,
+    "sha256": "87f6e018e26d99ca7d7fe86b59308dfa294a2d0e3e115a780147ed7fcca055a4",
+    "status": "downloaded"
+  },
+  {
+    "id": 2014,
+    "group": "3-Bet Club configuration",
+    "source_url": "https://d26s3bt6yeixto.cloudfront.net/config/assets/Avatars/avatar-2014.webp",
+    "path": "avatars/avatar-2014.webp",
+    "width": 1292,
+    "height": 1292,
+    "sha256": "0bfb8b78edc7d11f94bdc76d90a1930c506f9507b78666f3a03d9c0bd70c1d59",
+    "status": "downloaded"
+  },
+  {
+    "id": 2015,
+    "group": "3-Bet Club configuration",
+    "source_url": "https://d26s3bt6yeixto.cloudfront.net/config/assets/Avatars/avatar-2015.webp",
+    "path": "avatars/avatar-2015.webp",
+    "width": 1292,
+    "height": 1292,
+    "sha256": "2941c83ae9f5e6eb8ee862fdd0ff693dd6ddd3ea30167128e1a1b7397adc9853",
+    "status": "downloaded"
+  },
+  {
+    "id": 2016,
+    "group": "3-Bet Club configuration",
+    "source_url": "https://d26s3bt6yeixto.cloudfront.net/config/assets/Avatars/avatar-2016.webp",
+    "path": "avatars/avatar-2016.webp",
+    "width": 1292,
+    "height": 1292,
+    "sha256": "c98460ecb8f7a72c1517ae92aaad978f4898e03e9d3b7d79eab5d64ad124f54c",
+    "status": "downloaded"
+  }
+]

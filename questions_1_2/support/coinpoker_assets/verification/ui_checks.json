@@ -1,0 +1,31 @@
+{
+  "browser_url": "http://127.0.0.1:8766/",
+  "checked": [
+    "avatar group filtering",
+    "avatar preview",
+    "animation playback and seeking",
+    "chat open and close",
+    "whitespace message blocked",
+    "local message send",
+    "reply message",
+    "quick phrase send"
+  ],
+  "viewport_checks": [
+    {
+      "width": 1280,
+      "height": 720,
+      "screenshot": "avatars_desktop.jpg"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "document_scroll_width": 390,
+      "screenshot": "avatars_mobile.jpg"
+    }
+  ],
+  "limitations": [
+    "file: navigation was blocked by the browser tool URL policy. HTTP preview verified.",
+    "No live CoinPoker messages sent.",
+    "Live entitlement and remote configuration were not verified."
+  ]
+}

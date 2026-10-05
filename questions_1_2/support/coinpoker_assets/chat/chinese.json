@@ -1,0 +1,50 @@
+{
+  "tableSettings": {
+    "tableSettingsText": "牌桌设定",
+    "tableThemesText": "牌桌主题",
+    "quickThemeSelectTitle": "为当前牌桌选择主题"
+  },
+  "dealerChat": {
+    "mainTableIconTooltip": "与荷官聊天"
+  },
+  "chatDrawer": {
+    "inputFieldPlaceHolder": "请在此处输入……",
+    "subMenu": {
+      "muteSpectatorChatOptn": "静音旁观者聊天",
+      "hideChatBubbleOptn": "隐藏聊天窗口",
+      "muteAllChatOptn": "静音所有聊天",
+      "emptyState": "开始聊天"
+    },
+    "chatBubbleMenu": {
+      "replyOptn": "回复",
+      "copy": "复制"
+    }
+  },
+  "skillScore": {
+    "campareSkillScore": "Skill Score 比较",
+    "winnings": "赢利",
+    "played": "已玩局数",
+    "cashed": "已兑现",
+    "finalTable": "决赛桌",
+    "won": "已获胜",
+    "playingSince": "开始游戏时间：",
+    "roi": "投资回报率",
+    "itm": "钱圈",
+    "tournamentPlayed": "参赛次数",
+    "rank1st": "第一名",
+    "biggestScore": "最大得分",
+    "backcardInfo": "评分是相对于其他用户的，满分为 1000<br> 分。",
+    "flipCardInfo": "点击卡片翻面",
+    "rank": "名次：",
+    "skillScoreDescription": "Skill Score 是衡量您在 CoinPoker<br> 平台上，与其他所有锦标赛玩家相比，<br> 在锦标赛中表现如何的相对指标。它基于七项关键的扑克统计数据，<br> 并考虑您参加的所有真钱锦标赛，可能的得分范围为<br> 0 到 1000 分。",
+    "roiDescription": "总利润/买入额，<br> 然后乘以平均买入额的对数值<br>。",
+    "mtiDescription": "您获得获奖名次的次数，<br> 乘以您平均买入额的对数值<br>。",
+    "winningsDescriptions": "您在锦标赛中赢得的总金额。",
+    "tournamentPlayedDescriptions": "参加的锦标赛数量<br>。技术评分将在您完成第一场锦标赛后立即生成<br>。 Skill Score",
+    "finalTableDescription": "您进入决赛桌的次数<br> 乘以每次比赛参赛人数的平方根<br>。",
+    "rank1stDescription": "您获得第一名的次数<br> 乘以每次比赛参赛人数的平方根<br>。",
+    "biggestScoreDescription": "您在单项赛事中取得的最高胜场纪录。",
+    "scoreNADescription": "至少参加 5<br> 场锦标赛以获得您的技术评分",
+    "points": "分数："
+  }
+}

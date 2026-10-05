@@ -1,0 +1,151 @@
+{
+  "ThrowablesDataList": [
+    {
+      "Id": 4001,
+      "ThrowableSprite": {
+        "m_FileID": 0,
+        "m_PathID": 1462
+      }
+    },
+    {
+      "Id": 4002,
+      "ThrowableSprite": {
+        "m_FileID": 0,
+        "m_PathID": 1122
+      }
+    },
+    {
+      "Id": 4003,
+      "ThrowableSprite": {
+        "m_FileID": 0,
+        "m_PathID": 1059
+      }
+    },
+    {
+      "Id": 4004,
+      "ThrowableSprite": {
+        "m_FileID": 0,
+        "m_PathID": 1150
+      }
+    },
+    {
+      "Id": 3000,
+      "ThrowableSprite": {
+        "m_FileID": 0,
+        "m_PathID": 1046
+      }
+    },
+    {
+      "Id": 3001,
+      "ThrowableSprite": {
+        "m_FileID": 0,
+        "m_PathID": 1599
+      }
+    },
+    {
+      "Id": 3002,
+      "ThrowableSprite": {
+        "m_FileID": 0,
+        "m_PathID": 1217
+      }
+    },
+    {
+      "Id": 3003,
+      "ThrowableSprite": {
+        "m_FileID": 0,
+        "m_PathID": 994
+      }
+    },
+    {
+      "Id": 3006,
+      "ThrowableSprite": {
+        "m_FileID": 0,
+        "m_PathID": 1636
+      }
+    },
+    {
+      "Id": 117,
+      "ThrowableSprite": {
+        "m_FileID": 0,
+        "m_PathID": 1383
+      }
+    },
+    {
+      "Id": 112,
+      "ThrowableSprite": {
+        "m_FileID": 0,
+        "m_PathID": 1566
+      }
+    },
+    {
+      "Id": 115,
+      "ThrowableSprite": {
+        "m_FileID": 0,
+        "m_PathID": 1472
+      }
+    },
+    {
+      "Id": 116,
+      "ThrowableSprite": {
+        "m_FileID": 0,
+        "m_PathID": 1087
+      }
+    },
+    {
+      "Id": 102,
+      "ThrowableSprite": {
+        "m_FileID": 0,
+        "m_PathID": 1207
+      }
+    },
+    {
+      "Id": 103,
+      "ThrowableSprite": {
+        "m_FileID": 0,
+        "m_PathID": 1397
+      }
+    },
+    {
+      "Id": 104,
+      "ThrowableSprite": {
+        "m_FileID": 0,
+        "m_PathID": 929
+      }
+    },
+    {
+      "Id": 107,
+      "ThrowableSprite": {
+        "m_FileID": 0,
+        "m_PathID": 1237
+      }
+    },
+    {
+      "Id": 108,
+      "ThrowableSprite": {
+        "m_FileID": 0,
+        "m_PathID": 943
+      }
+    },
+    {
+      "Id": 119,
+      "ThrowableSprite": {
+        "m_FileID": 0,
+        "m_PathID": 1377
+      }
+    },
+    {
+      "Id": 120,
+      "ThrowableSprite": {
+        "m_FileID": 0,
+        "m_PathID": 1430
+      }
+    },
+    {
+      "Id": 121,
+      "ThrowableSprite": {
+        "m_FileID": 0,
+        "m_PathID": 1522
+      }
+    }
+  ]
+}

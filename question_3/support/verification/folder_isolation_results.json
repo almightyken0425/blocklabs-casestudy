@@ -1,0 +1,18 @@
+{
+  "checked_at": "2026-10-05T06:04:06.268Z",
+  "browser": "Chrome via Playwright",
+  "results": [
+    {
+      "name": "Questions 1 and 2 retain avatar 2 while Question 3 retains avatar 3 after reload",
+      "passed": true
+    },
+    {
+      "name": "Neither prototype requests local assets outside its own folder",
+      "passed": true
+    },
+    {
+      "name": "No local HTTP failures or uncaught browser errors",
+      "passed": true
+    }
+  ]
+}
