@@ -1,0 +1,50 @@
+{
+  "tableSettings": {
+    "tableSettingsText": "Table Settings",
+    "tableThemesText": "Table Themes",
+    "quickThemeSelectTitle": "Select Theme for Current Table"
+  },
+  "dealerChat": {
+    "mainTableIconTooltip": "Dealer Chat"
+  },
+  "chatDrawer": {
+    "inputFieldPlaceHolder": "Type here..",
+    "subMenu": {
+      "muteSpectatorChatOptn": "Mute spectator chat",
+      "hideChatBubbleOptn": "Hide chat bubbles",
+      "muteAllChatOptn": "Mute all chats",
+      "emptyState": "Start Chatting"
+    },
+    "chatBubbleMenu": {
+      "replyOptn": "Reply",
+      "copy": "Copy"
+    }
+  },
+  "skillScore": {
+    "campareSkillScore": "Compare Skill Score",
+    "winnings": "Winnings",
+    "played": "Played",
+    "cashed": "Cashed",
+    "finalTable": "Final Table",
+    "won": "Won",
+    "playingSince": "Playing Since",
+    "roi": "ROI",
+    "itm": "ITM",
+    "tournamentPlayed": "Tournament Played",
+    "rank1st": "1st Rank",
+    "biggestScore": "Biggest Score",
+    "backcardInfo": "Scores are relative to other users, shown on a <br>scale of 1000",
+    "flipCardInfo": "Click On Card To Flip",
+    "rank": "Rank:",
+    "skillScoreDescription": "Skill Score is a relative measure of how well you do<br>in tournaments with respect to all other tournament<br>players on CoinPoker. It's based on seven key Poker<br>stats and considers your all real money tournaments<br>played, with a possible score between 0 and 1000",
+    "roiDescription": "Your total profits/your buy-ins,<br>then multiplied with log value of<br>your average buy-in.",
+    "mtiDescription": "How often you finish in a prize-winning<br>position, then multiplied with log value<br>of your average buy-in.",
+    "winningsDescriptions": "The total amount you've won in tournaments.",
+    "tournamentPlayedDescriptions": "Number of tournaments played.<br>Skill Score will be generated as soon<br> you finish your first tournament",
+    "finalTableDescription": "Number of times you made it to the<br>final table, multiplied by the square<br>root of the number of participants<br>in each of those tournaments.",
+    "rank1stDescription": "Number of times you secured a first-place<br>finish, multiplied by the square root of the<br>number of participants in each of those<br>tournaments.",
+    "biggestScoreDescription": "Your highest win from a single tournament.",
+    "scoreNADescription": "Play at least 5 tournaments to get your skill<br>score",
+    "points": "Points:"
+  }
+}

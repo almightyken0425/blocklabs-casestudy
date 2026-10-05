@@ -1,0 +1,39 @@
+{
+  "app": "CoinPoker",
+  "app_version": "1.27.0",
+  "unity_version": "2022.3.62f1",
+  "source_files": [
+    {
+      "path": "CoinPoker.app/Contents/Resources/unity-resources-arm64/CoinPoker Game.app/Contents/Resources/Data/data.unity3d",
+      "sha256": "ac0c7da9aeddf602f73206fbf2d7f028c33519aad202b5e631994b79f67fa730"
+    },
+    {
+      "path": "CoinPoker.app/Contents/Resources/unity-resources-arm64/CoinPoker Game.app/Contents/Resources/Data/resources.resource",
+      "sha256": "5eab1078ad37ad53ef177f43a3c72b5f11359fd65c24dd9a2650b9988b889e97"
+    },
+    {
+      "path": "CoinPoker.app/Contents/Resources/unity-resources-arm64/CoinPoker Game.app/Contents/Resources/Data/Managed/Assembly-CSharp.dll",
+      "sha256": "872af2bf92a2ceb1f22e0a61c844a739c826673e8a5dbfaedb250e239d5e3811"
+    },
+    {
+      "path": "CoinPoker.app/Contents/Resources/app.asar",
+      "sha256": "202428e7480f136b90dfedbd3f372bb7be7e9ead1e782f95ae2ff9260cf59ed1"
+    }
+  ],
+  "avatar_count": 51,
+  "animation_count": 104,
+  "emote_count": 41,
+  "throwable_count": 21,
+  "archived_animation_count": 42,
+  "ring_image_count": 26,
+  "chat_image_count": 38,
+  "audio_count": 14,
+  "missing_animations": [],
+  "notes": [
+    "Bundled configuration and packaged assets do not establish live account entitlement.",
+    "Avatar URLs are obtained from the public client configuration.",
+    "Animation IDs are mapped from EmojiMapping static initializer, not inferred from filenames.",
+    "Original vendor assets retain their original provenance.",
+    "The source client and the supplied mahjong HTML were not modified."
+  ]
+}

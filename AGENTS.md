@@ -1,57 +1,58 @@
-# Block Labs Mahjong 面試作業
+# Block Labs Mahjong Interview Assignment
 
-## 專案目的
+## Project Purpose
 
-本專案用於準備 Block Labs 的 Senior Product Manager – Mahjong 面試作業。
-目標是將 CoinPoker 的玩家身分與社交互動整合到 CoinMahjong 麻將桌。
-成果需能向管理團隊展示，並支持面試時的產品決策說明。
+This project prepares the interview assignment for the Senior Product Manager – Mahjong role at Block Labs.
+The goal is to integrate CoinPoker player identity and social interactions into the CoinMahjong table.
+The deliverables must be suitable for a management presentation and support an explanation of the product decisions during the interview.
 
-這是外部面試專案。ai-company 的產品註冊、MVC 分層及跨層 Git 配對流程不適用。
+This is an external interview project. The ai-company product registration, MVC layering, and cross-layer Git branch pairing workflows do not apply.
 
-## 交付要求
+## Deliverable Requirements
 
-### 可操作的原型
+### Interactive Prototype
 
-以提供的麻將桌 HTML 為基礎，實作可點擊、可互動的功能。
+Build clickable, interactive features on top of the supplied Mahjong table HTML.
 
-- 頭像與外框：延續玩家在 CoinPoker 的身分與辨識度。
-- 表情互動：依麻將桌的形狀、座位數與節奏調整互動。
-- 遊戲內聊天：支援開啟、捲動與傳送，維持牌局操作流暢。
+- Avatars and rings: carry over players' identity and recognizability from CoinPoker.
+- Emote interactions: adapt interactions to the Mahjong table's shape, player count, and pace.
+- In-game chat: support opening, scrolling, and sending messages while keeping table interactions fluid.
 
-原型可交付為檔案或可存取的網站。
-素材取得與行為研究也是題目的一部分。
-可使用 AI 工具、客戶端分析及錄影等方法。
-實際交付的互動必須可操作。
+The prototype can be delivered as files or an accessible website.
+Asset acquisition and behavior research are also part of the assignment.
+AI tools, client analysis, recordings, and similar methods may be used.
+The delivered interactions must work.
 
-### 決策與後續提案文件
+### Decision Log and Follow-up Proposal
 
-- 決策紀錄：記錄重要產品與商業選擇、放棄的方案及各自理由。
-- 後續提案：假設本次功能成功，提出下一個新增或修改的系統。
-- 提案價值：說明預期價值，以及是否建議 CoinPoker 採用及其理由。
+- Decision log: record significant product and business choices, rejected alternatives, and the reasons for each.
+- Follow-up proposal: assuming these features succeed, propose the next system to add or change.
+- Proposal value: explain the expected value and whether CoinPoker should adopt it, with reasons.
 
-題目預估作業時間約一週，並要求在下一次面試解釋決策。
-實際截止日期以使用者提供的資訊為準。
+The assignment estimates approximately one week of work and requires explaining the decisions in the next interview.
+Use the deadline supplied by the user as the actual deadline.
 
-## 來源與工作入口
+## Sources and Entry Points
 
-| 來源 | 用途 |
+Prototype code, research, assets, tests, and verification records are grouped under `support/`.
+
+| Source | Purpose |
 | --- | --- |
-| [面試題目](Mahjong%20-%20Case%20study%20exercise.pdf) | 作業要求、交付內容與限制的依據。 |
-| [職缺說明](Mahjong%20JD.pdf) | 職務背景與產品責任。 |
-| [麻將桌 HTML](mahjong-game-standalone.html) | 提供的桌面畫面，作為原型實作基礎。 |
-| [素材庫說明](coinpoker_assets/usage.txt) | 素材分類、使用方式、來源及已知限制。 |
-| [素材瀏覽頁](coinpoker_assets/index.html) | 本機查看頭像、外框、動畫與聊天示範。 |
-| [素材來源與行為資料](coinpoker_assets/catalog/) | 來源索引、設定、編號對照及互動查核依據。 |
+| [Interview assignment](Mahjong%20-%20Case%20study%20exercise.pdf) | Authority for assignment requirements, deliverables, and constraints. |
+| [Mahjong table HTML](mahjong-game-standalone.html) | Supplied table screen used as the implementation baseline. |
+| [Asset library guide](support/coinpoker_assets/usage.txt) | Asset categories, usage, sources, and known limitations. |
+| [Asset gallery](support/coinpoker_assets/index.html) | Local previews of avatars, rings, animations, and chat. |
+| [Asset sources and behavior data](support/coinpoker_assets/catalog/) | Source indexes, configuration, ID mappings, and evidence for interaction behavior. |
 
-後續明確決定以使用者指示為準。
-作業要求以題目 PDF 為依據，職缺說明提供背景。
-本檔提供工作入口，實際進度需核對檔案與 Git 差異。
+Follow the user's explicit instructions for subsequent decisions.
+The assignment PDF defines the requirements.
+This file provides entry points. Check the actual files and Git diff to establish current progress.
 
-## 工作原則
+## Working Principles
 
-- 開始修改前，核對麻將桌 HTML 與素材庫說明。
-- 依麻將桌的空間與操作節奏調整樣式，將取捨記入決策文件。
-- 製作原型時使用素材目錄中的原始 JSON。瀏覽頁的動畫包裝只供預覽。
-- 保留素材來源及研究依據。區分已觀察行為、推論與原型中的模擬。
-- 本機聊天示範的連線範圍依素材庫說明判斷。
-- 驗證涵蓋本次互動與版面改動，交付時說明驗證方式及尚未確認的部分。
+- Review the Mahjong table HTML and asset library guide before making changes.
+- Adapt styling to the table's available space and interaction pace. Record tradeoffs in the decision log.
+- Use the original JSON files in the asset directories when building the prototype. Gallery animation wrappers are for preview only.
+- Preserve asset provenance and research evidence. Distinguish observed behavior, inferences, and prototype simulations.
+- Refer to the asset library guide for the connectivity scope of the local chat demo.
+- Verify the interactions and layout changes made in the current task. Report the verification method and any remaining uncertainties at delivery.

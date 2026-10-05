@@ -1,0 +1,78 @@
+{
+  "groups": [
+    {
+      "avatarIds": [
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "isAicExclusive": "false",
+      "isNew": false,
+      "key": "worldCup",
+      "title": "World Cup"
+    },
+    {
+      "avatarIds": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "key": "animal",
+      "title": "ANIMAL"
+    },
+    {
+      "avatarIds": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "key": "anime",
+      "title": "ANIME"
+    },
+    {
+      "avatarIds": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "key": "halloween",
+      "title": "HALLOWEEN"
+    },
+    {
+      "avatarIds": [
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "key": "noble",
+      "title": "NOBLE"
+    },
+    {
+      "avatarIds": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "key": "royal",
+      "title": "ROYAL"
+    }
+  ],
+  "url": "https://d26s3bt6yeixto.cloudfront.net/config/assets/Avatars/avatar-"
+}

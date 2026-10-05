@@ -1,0 +1,6509 @@
+[
+  {
+    "path": "/ChatPanel",
+    "path_id": 2300,
+    "active": false,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 14998,
+        "properties": {
+          "m_Color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 0.4901960790157318
+          },
+          "m_Sprite": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "m_Type": 0,
+          "m_PreserveAspect": 0
+        }
+      },
+      {
+        "type": "ChatPanelComponent",
+        "path_id": 13532,
+        "properties": {
+          "chatBGRectTransform": {
+            "m_FileID": 0,
+            "m_PathID": 8482
+          },
+          "messageEnterButton": {
+            "m_FileID": 0,
+            "m_PathID": 12735
+          },
+          "messageInputField": {
+            "m_FileID": 0,
+            "m_PathID": 12333
+          },
+          "chatHistoryScroll": {
+            "m_FileID": 0,
+            "m_PathID": 15977
+          },
+          "chatContentPrefab": {
+            "m_FileID": 0,
+            "m_PathID": 155
+          },
+          "othersChatContentPrefab": {
+            "m_FileID": 0,
+            "m_PathID": 3820
+          },
+          "errorContentPrefab": {
+            "m_FileID": 0,
+            "m_PathID": 3416
+          },
+          "chatContentParent": {
+            "m_FileID": 0,
+            "m_PathID": 8695
+          },
+          "copiedMsgPanel": {
+            "m_FileID": 0,
+            "m_PathID": 7618
+          },
+          "copiedMsgPanelUser": {
+            "m_FileID": 0,
+            "m_PathID": 11329
+          },
+          "copiedMsgPanelMsg": {
+            "m_FileID": 0,
+            "m_PathID": 11339
+          },
+          "copiedPanelCloseButton": {
+            "m_FileID": 0,
+            "m_PathID": 16210
+          },
+          "predefinedMsgComponent": {
+            "m_FileID": 0,
+            "m_PathID": 15037
+          },
+          "otherOptionsComponent": {
+            "m_FileID": 0,
+            "m_PathID": 15871
+          },
+          "userNamesComponent": {
+            "m_FileID": 0,
+            "m_PathID": 14619
+          },
+          "closePanelPosition": -300.0,
+          "openPanelPosition": 0.0,
+          "emptyStatePanel": {
+            "m_FileID": 0,
+            "m_PathID": 1791
+          },
+          "isError": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_AnchorMax": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 0.0,
+        "y": -1.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG",
+    "path_id": 518,
+    "active": true,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 12672,
+        "properties": {
+          "m_Color": {
+            "r": 0.05098039284348488,
+            "g": 0.054901961237192154,
+            "b": 0.07058823853731155,
+            "a": 0.3333333432674408
+          },
+          "m_Sprite": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "m_Type": 0,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_AnchorMax": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": -135.01174926757812,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 295.0,
+        "y": 0.0
+      },
+      "m_Pivot": {
+        "x": 0.0,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/BgImage",
+    "path_id": 409,
+    "active": false,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 13163,
+        "properties": {
+          "m_Color": {
+            "r": 0.05098039284348488,
+            "g": 0.054901961237192154,
+            "b": 0.07058823853731155,
+            "a": 0.3333333432674408
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 1633
+          },
+          "m_Type": 0,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_AnchorMax": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": -4.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 360.1000061035156,
+        "y": 0.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/TypeParentPanel",
+    "path_id": 2098,
+    "active": true,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 14595,
+        "properties": {
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 940
+          },
+          "m_Type": 1,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_AnchorMax": {
+        "x": 1.0,
+        "y": 0.0
+      },
+      "m_AnchoredPosition": {
+        "x": 8.0,
+        "y": 8.0
+      },
+      "m_SizeDelta": {
+        "x": -16.0,
+        "y": 32.0
+      },
+      "m_Pivot": {
+        "x": 0.0,
+        "y": 0.0
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/TypeParentPanel/TypePanel",
+    "path_id": 430,
+    "active": true,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 13285,
+        "properties": {
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 1494
+          },
+          "m_Type": 0,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 1.0,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": -20.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": -40.0,
+        "y": 32.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/TypeParentPanel/TypePanel/ImageBorder",
+    "path_id": 3725,
+    "active": true,
+    "components": [],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_AnchorMax": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/TypeParentPanel/TypePanel/ImageBorder/Base Image",
+    "path_id": 3626,
+    "active": true,
+    "components": [],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_AnchorMax": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": -1.0,
+        "y": -1.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/TypeParentPanel/TypePanel/SendButton",
+    "path_id": 1046,
+    "active": true,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 12408,
+        "properties": {
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 972
+          },
+          "m_Type": 0,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 1.0,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 1.0,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": -8.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 16.0,
+        "y": 16.0
+      },
+      "m_Pivot": {
+        "x": 1.0,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/TypeParentPanel/TypePanel/SendButton/Text (TMP)",
+    "path_id": 33,
+    "active": false,
+    "components": [
+      {
+        "type": "TextMeshProUGUI",
+        "path_id": 11218,
+        "properties": {
+          "m_text": "S",
+          "m_fontColor": {
+            "r": 0.19607843458652496,
+            "g": 0.19607843458652496,
+            "b": 0.19607843458652496,
+            "a": 1.0
+          },
+          "m_fontSize": 24.0,
+          "m_enableWordWrapping": 1
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_AnchorMax": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/TypeParentPanel/TypePanel/InputField (TMP)",
+    "path_id": 3125,
+    "active": true,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 15979,
+        "properties": {
+          "m_Color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 0.003921568859368563
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 889
+          },
+          "m_Type": 1,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_AnchorMax": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": -4.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": -56.0,
+        "y": 0.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/TypeParentPanel/TypePanel/InputField (TMP)/Text Area",
+    "path_id": 2431,
+    "active": true,
+    "components": [],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_AnchorMax": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/TypeParentPanel/TypePanel/InputField (TMP)/Text Area/Placeholder",
+    "path_id": 906,
+    "active": true,
+    "components": [
+      {
+        "type": "TextMeshProUGUI",
+        "path_id": 11746,
+        "properties": {
+          "m_text": "Type here..",
+          "m_fontColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 0.3921568691730499
+          },
+          "m_fontSize": 11.399999618530273,
+          "m_enableWordWrapping": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_AnchorMax": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/TypeParentPanel/TypePanel/InputField (TMP)/Text Area/Input Field Text",
+    "path_id": 2091,
+    "active": true,
+    "components": [
+      {
+        "type": "TextMeshProUGUI",
+        "path_id": 11368,
+        "properties": {
+          "m_text": "​",
+          "m_fontColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_fontSize": 11.399999618530273,
+          "m_enableWordWrapping": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_AnchorMax": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/TypeParentPanel/TypePanel/Users@Button",
+    "path_id": 3278,
+    "active": true,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 12290,
+        "properties": {
+          "m_Color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 0.003921568859368563
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 887
+          },
+          "m_Type": 1,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.0,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 8.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 12.0,
+        "y": 12.0
+      },
+      "m_Pivot": {
+        "x": 0.0,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/TypeParentPanel/TypePanel/Users@Button/Text (TMP)",
+    "path_id": 3848,
+    "active": true,
+    "components": [
+      {
+        "type": "TextMeshProUGUI",
+        "path_id": 11372,
+        "properties": {
+          "m_text": "@",
+          "m_fontColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 0.4000000059604645
+          },
+          "m_fontSize": 12.0,
+          "m_enableWordWrapping": 1
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_AnchorMax": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/TypeParentPanel/PredefinedMsgButton",
+    "path_id": 156,
+    "active": false,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 13080,
+        "properties": {
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 942
+          },
+          "m_Type": 0,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 155.45001220703125,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 32.0,
+        "y": 32.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/TypeParentPanel/OptionsButton",
+    "path_id": 2549,
+    "active": true,
+    "components": [],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 1.0,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 1.0,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 32.0,
+        "y": 32.0
+      },
+      "m_Pivot": {
+        "x": 1.0,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/TypeParentPanel/OptionsButton/image Border",
+    "path_id": 1686,
+    "active": true,
+    "components": [],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_AnchorMax": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/TypeParentPanel/OptionsButton/image Border/image Base",
+    "path_id": 2305,
+    "active": true,
+    "components": [],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_AnchorMax": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": -1.0,
+        "y": -1.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/TypeParentPanel/OptionsButton/image Border/image Base/Image Icon",
+    "path_id": 1389,
+    "active": true,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 15577,
+        "properties": {
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 1236
+          },
+          "m_Type": 0,
+          "m_PreserveAspect": 1
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": 0.4368000030517578
+      },
+      "m_SizeDelta": {
+        "x": 5.0,
+        "y": 15.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/ChatHistoryPanel",
+    "path_id": 1454,
+    "active": true,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 14379,
+        "properties": {
+          "m_Color": {
+            "r": 0.2551174759864807,
+            "g": 0.33050021529197693,
+            "b": 0.5943396091461182,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "m_Type": 0,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_AnchorMax": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": 54.5
+      },
+      "m_SizeDelta": {
+        "x": 0.0,
+        "y": -108.99998474121094
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/ChatHistoryPanel/Scroll View",
+    "path_id": 2615,
+    "active": true,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 13515,
+        "properties": {
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 0.003921568859368563
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 888
+          },
+          "m_Type": 1,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_AnchorMax": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/ChatHistoryPanel/Scroll View/Viewport",
+    "path_id": 807,
+    "active": true,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 14506,
+        "properties": {
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 891
+          },
+          "m_Type": 1,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_AnchorMax": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_Pivot": {
+        "x": 0.0,
+        "y": 1.0
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/ChatHistoryPanel/Scroll View/Viewport/Content",
+    "path_id": 3237,
+    "active": true,
+    "components": [],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 0.0,
+        "y": 60.0
+      },
+      "m_Pivot": {
+        "x": 0.0,
+        "y": 1.0
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/ChatHistoryPanel/Scroll View/Viewport/Content/ChatContent",
+    "path_id": 155,
+    "active": false,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 14447,
+        "properties": {
+          "m_Color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 0.003921568859368563
+          },
+          "m_Sprite": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "m_Type": 0,
+          "m_PreserveAspect": 0
+        }
+      },
+      {
+        "type": "ChatContent",
+        "path_id": 14346,
+        "properties": {
+          "userAvatarImage": {
+            "m_FileID": 0,
+            "m_PathID": 14386
+          },
+          "userNameText": {
+            "m_FileID": 0,
+            "m_PathID": 11391
+          },
+          "userChatText": {
+            "m_FileID": 0,
+            "m_PathID": 10842
+          },
+          "userChatTime": {
+            "m_FileID": 0,
+            "m_PathID": 11228
+          },
+          "hoverButton": {
+            "m_FileID": 0,
+            "m_PathID": 15296
+          },
+          "copyReplyPanel": {
+            "m_FileID": 0,
+            "m_PathID": 478
+          },
+          "chatPanelComponent": {
+            "m_FileID": 0,
+            "m_PathID": 13532
+          },
+          "copyButton": {
+            "m_FileID": 0,
+            "m_PathID": 15886
+          },
+          "replyButton": {
+            "m_FileID": 0,
+            "m_PathID": 14149
+          },
+          "copiedChat": {
+            "m_FileID": 0,
+            "m_PathID": 7831
+          }
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 147.5,
+        "y": -62.31999969482422
+      },
+      "m_SizeDelta": {
+        "x": 295.0,
+        "y": 64.63999938964844
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/ChatHistoryPanel/Scroll View/Viewport/Content/ChatContent/UserChatTextPanel",
+    "path_id": 2377,
+    "active": true,
+    "components": [],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 170.1999969482422,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 165.0,
+        "y": 64.63999938964844
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 1.0
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/ChatHistoryPanel/Scroll View/Viewport/Content/ChatContent/UserChatTextPanel/ChatTextBG",
+    "path_id": 3383,
+    "active": true,
+    "components": [],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 82.5,
+        "y": -32.31999969482422
+      },
+      "m_SizeDelta": {
+        "x": 147.2021026611328,
+        "y": 64.63999938964844
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/ChatHistoryPanel/Scroll View/Viewport/Content/ChatContent/UserChatTextPanel/ChatTextBG/UsenameText",
+    "path_id": 2226,
+    "active": true,
+    "components": [
+      {
+        "type": "TextMeshProUGUI",
+        "path_id": 11391,
+        "properties": {
+          "m_text": "You",
+          "m_fontColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 0.6000000238418579
+          },
+          "m_fontSize": 10.0,
+          "m_enableWordWrapping": 1
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 73.6010513305664,
+        "y": -14.055000305175781
+      },
+      "m_SizeDelta": {
+        "x": 130.0,
+        "y": 12.109999656677246
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/ChatHistoryPanel/Scroll View/Viewport/Content/ChatContent/UserChatTextPanel/ChatTextBG/CopiedChat",
+    "path_id": 484,
+    "active": false,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 12823,
+        "properties": {
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 1017
+          },
+          "m_Type": 1,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 73.5,
+        "y": -38.11000061035156
+      },
+      "m_SizeDelta": {
+        "x": 135.0,
+        "y": 30.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/ChatHistoryPanel/Scroll View/Viewport/Content/ChatContent/UserChatTextPanel/ChatTextBG/CopiedChat/user",
+    "path_id": 359,
+    "active": true,
+    "components": [
+      {
+        "type": "TextMeshProUGUI",
+        "path_id": 11714,
+        "properties": {
+          "m_text": "user",
+          "m_fontColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 0.6039215922355652
+          },
+          "m_fontSize": 8.0,
+          "m_enableWordWrapping": 1
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 66.75473022460938,
+        "y": -7.5
+      },
+      "m_SizeDelta": {
+        "x": 129.50950622558594,
+        "y": 15.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/ChatHistoryPanel/Scroll View/Viewport/Content/ChatContent/UserChatTextPanel/ChatTextBG/CopiedChat/msg",
+    "path_id": 2383,
+    "active": true,
+    "components": [
+      {
+        "type": "TextMeshProUGUI",
+        "path_id": 10811,
+        "properties": {
+          "m_text": "msg",
+          "m_fontColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_fontSize": 10.0,
+          "m_enableWordWrapping": 1
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 66.75499725341797,
+        "y": -22.5
+      },
+      "m_SizeDelta": {
+        "x": 129.50999450683594,
+        "y": 15.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/ChatHistoryPanel/Scroll View/Viewport/Content/ChatContent/UserChatTextPanel/ChatTextBG/ChatText",
+    "path_id": 1761,
+    "active": true,
+    "components": [
+      {
+        "type": "TextMeshProUGUI",
+        "path_id": 10842,
+        "properties": {
+          "m_text": "This is my message\n",
+          "m_fontColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_fontSize": 12.0,
+          "m_enableWordWrapping": 1
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 73.6010513305664,
+        "y": -30.375
+      },
+      "m_SizeDelta": {
+        "x": 130.0,
+        "y": 14.529999732971191
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/ChatHistoryPanel/Scroll View/Viewport/Content/ChatContent/UserChatTextPanel/ChatTextBG/Time",
+    "path_id": 3845,
+    "active": true,
+    "components": [
+      {
+        "type": "TextMeshProUGUI",
+        "path_id": 11228,
+        "properties": {
+          "m_text": "11:11 AM",
+          "m_fontColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 0.6000000238418579
+          },
+          "m_fontSize": 8.0,
+          "m_enableWordWrapping": 1
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 73.6010513305664,
+        "y": -50.63999938964844
+      },
+      "m_SizeDelta": {
+        "x": 95.69999694824219,
+        "y": 20.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/ChatHistoryPanel/Scroll View/Viewport/Content/ChatContent/UserChatTextPanel/ChatTextBG/Button",
+    "path_id": 2394,
+    "active": false,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 14705,
+        "properties": {
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 1362
+          },
+          "m_Type": 0,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 135.0,
+        "y": -12.5
+      },
+      "m_SizeDelta": {
+        "x": 8.0,
+        "y": 8.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/ChatHistoryPanel/Scroll View/Viewport/Content/ChatContent/UserChatTextPanel/ChatTextBG/Button/Text (TMP)",
+    "path_id": 1209,
+    "active": false,
+    "components": [
+      {
+        "type": "TextMeshProUGUI",
+        "path_id": 11735,
+        "properties": {
+          "m_text": "Button",
+          "m_fontColor": {
+            "r": 0.19607843458652496,
+            "g": 0.19607843458652496,
+            "b": 0.19607843458652496,
+            "a": 1.0
+          },
+          "m_fontSize": 24.0,
+          "m_enableWordWrapping": 1
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_AnchorMax": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/ChatHistoryPanel/Scroll View/Viewport/Content/ChatContent/UserChatTextPanel/ChatTextBG/CopyReplyPanel",
+    "path_id": 478,
+    "active": false,
+    "components": [],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 108.0,
+        "y": -50.0
+      },
+      "m_SizeDelta": {
+        "x": 62.0,
+        "y": 56.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/ChatHistoryPanel/Scroll View/Viewport/Content/ChatContent/UserChatTextPanel/ChatTextBG/CopyReplyPanel/Bg",
+    "path_id": 2153,
+    "active": true,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 16351,
+        "properties": {
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 1506
+          },
+          "m_Type": 0,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": -7.62939453125e-06,
+        "y": 14.5
+      },
+      "m_SizeDelta": {
+        "x": 62.0,
+        "y": 28.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/ChatHistoryPanel/Scroll View/Viewport/Content/ChatContent/UserChatTextPanel/ChatTextBG/CopyReplyPanel/Bg/ReplyButton",
+    "path_id": 2687,
+    "active": true,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 14604,
+        "properties": {
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 1252
+          },
+          "m_Type": 0,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 62.0,
+        "y": 20.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/ChatHistoryPanel/Scroll View/Viewport/Content/ChatContent/UserChatTextPanel/ChatTextBG/CopyReplyPanel/Bg/ReplyButton/Image (2)",
+    "path_id": 237,
+    "active": true,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 13068,
+        "properties": {
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 987
+          },
+          "m_Type": 0,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": -18.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 16.0,
+        "y": 16.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/ChatHistoryPanel/Scroll View/Viewport/Content/ChatContent/UserChatTextPanel/ChatTextBG/CopyReplyPanel/Bg/ReplyButton/Text (TMP)",
+    "path_id": 3288,
+    "active": true,
+    "components": [
+      {
+        "type": "TextMeshProUGUI",
+        "path_id": 11504,
+        "properties": {
+          "m_text": "Reply",
+          "m_fontColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_fontSize": 9.600000381469727,
+          "m_enableWordWrapping": 1
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_AnchorMax": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 12.5,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": -25.0,
+        "y": 0.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/ChatHistoryPanel/Scroll View/Viewport/Content/ChatContent/UserChatTextPanel/ChatTextBG/CopyReplyPanel/Bg/CopyButton",
+    "path_id": 2929,
+    "active": false,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 12137,
+        "properties": {
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 1252
+          },
+          "m_Type": 0,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": -24.0
+      },
+      "m_SizeDelta": {
+        "x": 62.0,
+        "y": 20.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/ChatHistoryPanel/Scroll View/Viewport/Content/ChatContent/UserChatTextPanel/ChatTextBG/CopyReplyPanel/Bg/CopyButton/Image (2)",
+    "path_id": 2435,
+    "active": true,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 16321,
+        "properties": {
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 1447
+          },
+          "m_Type": 0,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": -18.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 16.0,
+        "y": 16.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/ChatHistoryPanel/Scroll View/Viewport/Content/ChatContent/UserChatTextPanel/ChatTextBG/CopyReplyPanel/Bg/CopyButton/Text (TMP)",
+    "path_id": 990,
+    "active": true,
+    "components": [
+      {
+        "type": "TextMeshProUGUI",
+        "path_id": 10912,
+        "properties": {
+          "m_text": "Copy",
+          "m_fontColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_fontSize": 9.600000381469727,
+          "m_enableWordWrapping": 1
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_AnchorMax": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 12.5,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": -25.0,
+        "y": 0.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/ChatHistoryPanel/Scroll View/Viewport/Content/ChatContent/UserAvatar",
+    "path_id": 3096,
+    "active": true,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 14237,
+        "properties": {
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "m_Type": 0,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 271.0,
+        "y": -32.31999969482422
+      },
+      "m_SizeDelta": {
+        "x": 32.0,
+        "y": 32.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/ChatHistoryPanel/Scroll View/Viewport/Content/ChatContent/UserAvatar/Avtar",
+    "path_id": 3823,
+    "active": true,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 14386,
+        "properties": {
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 1101
+          },
+          "m_Type": 0,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 16.0,
+        "y": -16.0
+      },
+      "m_SizeDelta": {
+        "x": 32.0,
+        "y": 32.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/ChatHistoryPanel/Scroll View/Viewport/Content/OtherChatContent",
+    "path_id": 3820,
+    "active": false,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 15224,
+        "properties": {
+          "m_Color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 0.003921568859368563
+          },
+          "m_Sprite": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "m_Type": 0,
+          "m_PreserveAspect": 0
+        }
+      },
+      {
+        "type": "ChatContent",
+        "path_id": 12266,
+        "properties": {
+          "userAvatarImage": {
+            "m_FileID": 0,
+            "m_PathID": 14961
+          },
+          "userNameText": {
+            "m_FileID": 0,
+            "m_PathID": 10872
+          },
+          "userChatText": {
+            "m_FileID": 0,
+            "m_PathID": 11394
+          },
+          "userChatTime": {
+            "m_FileID": 0,
+            "m_PathID": 11675
+          },
+          "hoverButton": {
+            "m_FileID": 0,
+            "m_PathID": 16264
+          },
+          "copyReplyPanel": {
+            "m_FileID": 0,
+            "m_PathID": 1935
+          },
+          "chatPanelComponent": {
+            "m_FileID": 0,
+            "m_PathID": 13532
+          },
+          "copyButton": {
+            "m_FileID": 0,
+            "m_PathID": 14106
+          },
+          "replyButton": {
+            "m_FileID": 0,
+            "m_PathID": 15841
+          },
+          "copiedChat": {
+            "m_FileID": 0,
+            "m_PathID": 9637
+          }
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 147.5,
+        "y": -62.31999969482422
+      },
+      "m_SizeDelta": {
+        "x": 295.0,
+        "y": 64.63999938964844
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/ChatHistoryPanel/Scroll View/Viewport/Content/OtherChatContent/UserAvatar",
+    "path_id": 3324,
+    "active": true,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 12449,
+        "properties": {
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "m_Type": 0,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 24.0,
+        "y": -32.31999969482422
+      },
+      "m_SizeDelta": {
+        "x": 32.0,
+        "y": 32.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/ChatHistoryPanel/Scroll View/Viewport/Content/OtherChatContent/UserAvatar/Avtar",
+    "path_id": 350,
+    "active": true,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 14961,
+        "properties": {
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 1101
+          },
+          "m_Type": 0,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 16.0,
+        "y": -16.0
+      },
+      "m_SizeDelta": {
+        "x": 32.0,
+        "y": 32.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/ChatHistoryPanel/Scroll View/Viewport/Content/OtherChatContent/UserChatTextPanel",
+    "path_id": 2837,
+    "active": true,
+    "components": [],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 122.5,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 165.0,
+        "y": 64.63999938964844
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 1.0
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/ChatHistoryPanel/Scroll View/Viewport/Content/OtherChatContent/UserChatTextPanel/ChatTextBG",
+    "path_id": 3189,
+    "active": true,
+    "components": [],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 82.5,
+        "y": -32.31999969482422
+      },
+      "m_SizeDelta": {
+        "x": 147.0,
+        "y": 64.63999938964844
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/ChatHistoryPanel/Scroll View/Viewport/Content/OtherChatContent/UserChatTextPanel/ChatTextBG/UsenameText",
+    "path_id": 2465,
+    "active": true,
+    "components": [
+      {
+        "type": "TextMeshProUGUI",
+        "path_id": 10872,
+        "properties": {
+          "m_text": "You",
+          "m_fontColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 0.6000000238418579
+          },
+          "m_fontSize": 10.0,
+          "m_enableWordWrapping": 1
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 73.5,
+        "y": -14.055000305175781
+      },
+      "m_SizeDelta": {
+        "x": 130.0,
+        "y": 12.109999656677246
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/ChatHistoryPanel/Scroll View/Viewport/Content/OtherChatContent/UserChatTextPanel/ChatTextBG/CopiedChat",
+    "path_id": 2937,
+    "active": false,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 15147,
+        "properties": {
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 1017
+          },
+          "m_Type": 1,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 73.5,
+        "y": -38.11000061035156
+      },
+      "m_SizeDelta": {
+        "x": 135.0,
+        "y": 30.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/ChatHistoryPanel/Scroll View/Viewport/Content/OtherChatContent/UserChatTextPanel/ChatTextBG/CopiedChat/user",
+    "path_id": 259,
+    "active": true,
+    "components": [
+      {
+        "type": "TextMeshProUGUI",
+        "path_id": 11589,
+        "properties": {
+          "m_text": "user",
+          "m_fontColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 0.6039215922355652
+          },
+          "m_fontSize": 8.0,
+          "m_enableWordWrapping": 1
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 66.75475311279297,
+        "y": -7.5
+      },
+      "m_SizeDelta": {
+        "x": 129.50950622558594,
+        "y": 15.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/ChatHistoryPanel/Scroll View/Viewport/Content/OtherChatContent/UserChatTextPanel/ChatTextBG/CopiedChat/msg",
+    "path_id": 914,
+    "active": true,
+    "components": [
+      {
+        "type": "TextMeshProUGUI",
+        "path_id": 11346,
+        "properties": {
+          "m_text": "msg",
+          "m_fontColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_fontSize": 10.0,
+          "m_enableWordWrapping": 1
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 66.75499725341797,
+        "y": -22.5
+      },
+      "m_SizeDelta": {
+        "x": 129.50999450683594,
+        "y": 15.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/ChatHistoryPanel/Scroll View/Viewport/Content/OtherChatContent/UserChatTextPanel/ChatTextBG/ChatText",
+    "path_id": 3382,
+    "active": true,
+    "components": [
+      {
+        "type": "TextMeshProUGUI",
+        "path_id": 11394,
+        "properties": {
+          "m_text": "This is my message",
+          "m_fontColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_fontSize": 12.0,
+          "m_enableWordWrapping": 1
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 73.5,
+        "y": -30.375
+      },
+      "m_SizeDelta": {
+        "x": 130.0,
+        "y": 14.529999732971191
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/ChatHistoryPanel/Scroll View/Viewport/Content/OtherChatContent/UserChatTextPanel/ChatTextBG/Time",
+    "path_id": 2983,
+    "active": true,
+    "components": [
+      {
+        "type": "TextMeshProUGUI",
+        "path_id": 11675,
+        "properties": {
+          "m_text": "11:11 AM",
+          "m_fontColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 0.6000000238418579
+          },
+          "m_fontSize": 8.0,
+          "m_enableWordWrapping": 1
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 73.5,
+        "y": -50.63999938964844
+      },
+      "m_SizeDelta": {
+        "x": 95.69999694824219,
+        "y": 20.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/ChatHistoryPanel/Scroll View/Viewport/Content/OtherChatContent/UserChatTextPanel/ChatTextBG/Button",
+    "path_id": 287,
+    "active": false,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 15607,
+        "properties": {
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 1362
+          },
+          "m_Type": 0,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 135.0,
+        "y": -12.5
+      },
+      "m_SizeDelta": {
+        "x": 8.0,
+        "y": 8.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/ChatHistoryPanel/Scroll View/Viewport/Content/OtherChatContent/UserChatTextPanel/ChatTextBG/Button/Text (TMP)",
+    "path_id": 3216,
+    "active": false,
+    "components": [
+      {
+        "type": "TextMeshProUGUI",
+        "path_id": 10981,
+        "properties": {
+          "m_text": "Button",
+          "m_fontColor": {
+            "r": 0.19607843458652496,
+            "g": 0.19607843458652496,
+            "b": 0.19607843458652496,
+            "a": 1.0
+          },
+          "m_fontSize": 24.0,
+          "m_enableWordWrapping": 1
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_AnchorMax": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/ChatHistoryPanel/Scroll View/Viewport/Content/OtherChatContent/UserChatTextPanel/ChatTextBG/CopyReplyPanel",
+    "path_id": 1935,
+    "active": false,
+    "components": [],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 108.0,
+        "y": -50.0
+      },
+      "m_SizeDelta": {
+        "x": 62.0,
+        "y": 56.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/ChatHistoryPanel/Scroll View/Viewport/Content/OtherChatContent/UserChatTextPanel/ChatTextBG/CopyReplyPanel/Bg",
+    "path_id": 135,
+    "active": true,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 14533,
+        "properties": {
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 1506
+          },
+          "m_Type": 0,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": 14.000030517578125
+      },
+      "m_SizeDelta": {
+        "x": 62.0,
+        "y": 28.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/ChatHistoryPanel/Scroll View/Viewport/Content/OtherChatContent/UserChatTextPanel/ChatTextBG/CopyReplyPanel/Bg/CopyButton",
+    "path_id": 66,
+    "active": false,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 15842,
+        "properties": {
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 1252
+          },
+          "m_Type": 0,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": -24.0
+      },
+      "m_SizeDelta": {
+        "x": 62.0,
+        "y": 20.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/ChatHistoryPanel/Scroll View/Viewport/Content/OtherChatContent/UserChatTextPanel/ChatTextBG/CopyReplyPanel/Bg/CopyButton/Image (2)",
+    "path_id": 2409,
+    "active": true,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 15223,
+        "properties": {
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 1447
+          },
+          "m_Type": 0,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": -18.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 16.0,
+        "y": 16.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/ChatHistoryPanel/Scroll View/Viewport/Content/OtherChatContent/UserChatTextPanel/ChatTextBG/CopyReplyPanel/Bg/CopyButton/Text (TMP)",
+    "path_id": 1987,
+    "active": true,
+    "components": [
+      {
+        "type": "TextMeshProUGUI",
+        "path_id": 11480,
+        "properties": {
+          "m_text": "Copy",
+          "m_fontColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_fontSize": 9.600000381469727,
+          "m_enableWordWrapping": 1
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_AnchorMax": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 12.5,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": -25.0,
+        "y": 0.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/ChatHistoryPanel/Scroll View/Viewport/Content/OtherChatContent/UserChatTextPanel/ChatTextBG/CopyReplyPanel/Bg/ReplyButton",
+    "path_id": 833,
+    "active": true,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 14693,
+        "properties": {
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 1252
+          },
+          "m_Type": 0,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 62.0,
+        "y": 20.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/ChatHistoryPanel/Scroll View/Viewport/Content/OtherChatContent/UserChatTextPanel/ChatTextBG/CopyReplyPanel/Bg/ReplyButton/Image (2)",
+    "path_id": 472,
+    "active": true,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 12614,
+        "properties": {
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 987
+          },
+          "m_Type": 0,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": -18.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 16.0,
+        "y": 16.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/ChatHistoryPanel/Scroll View/Viewport/Content/OtherChatContent/UserChatTextPanel/ChatTextBG/CopyReplyPanel/Bg/ReplyButton/Text (TMP)",
+    "path_id": 3406,
+    "active": true,
+    "components": [
+      {
+        "type": "TextMeshProUGUI",
+        "path_id": 11168,
+        "properties": {
+          "m_text": "Reply",
+          "m_fontColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_fontSize": 9.600000381469727,
+          "m_enableWordWrapping": 1
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_AnchorMax": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 12.5,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": -25.0,
+        "y": 0.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/ChatHistoryPanel/Scroll View/Viewport/Content/ErrorContent",
+    "path_id": 3416,
+    "active": false,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 14275,
+        "properties": {
+          "m_Color": {
+            "r": 0.1921568661928177,
+            "g": 0.062745101749897,
+            "b": 0.06666667014360428,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 1339
+          },
+          "m_Type": 0,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 147.5,
+        "y": -52.525001525878906
+      },
+      "m_SizeDelta": {
+        "x": 295.0,
+        "y": 45.04999923706055
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/ChatHistoryPanel/Scroll View/Viewport/Content/ErrorContent/InfoIcon",
+    "path_id": 1751,
+    "active": true,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 12830,
+        "properties": {
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 1382
+          },
+          "m_Type": 0,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 16.0,
+        "y": -22.524999618530273
+      },
+      "m_SizeDelta": {
+        "x": 16.0,
+        "y": 16.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/ChatHistoryPanel/Scroll View/Viewport/Content/ErrorContent/ErrorText",
+    "path_id": 677,
+    "active": true,
+    "components": [
+      {
+        "type": "TextMeshProUGUI",
+        "path_id": 11434,
+        "properties": {
+          "m_text": "Chat is disabled as one or more players have gone all in.",
+          "m_fontColor": {
+            "r": 0.9921568632125854,
+            "g": 0.9058823585510254,
+            "b": 0.9137254953384399,
+            "a": 1.0
+          },
+          "m_fontSize": 12.0,
+          "m_enableWordWrapping": 1
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 160.5,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 253.0,
+        "y": 29.049999237060547
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/ChatHistoryPanel/Scroll View/Viewport/EmptyState",
+    "path_id": 1791,
+    "active": true,
+    "components": [],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": -70.0
+      },
+      "m_SizeDelta": {
+        "x": 185.0,
+        "y": 190.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/ChatHistoryPanel/Scroll View/Viewport/EmptyState/Icon",
+    "path_id": 450,
+    "active": true,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 14443,
+        "properties": {
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 1434
+          },
+          "m_Type": 0,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": 13.5
+      },
+      "m_SizeDelta": {
+        "x": 140.0,
+        "y": 140.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/ChatHistoryPanel/Scroll View/Viewport/EmptyState/chatEmptyState_InfoTxt",
+    "path_id": 1562,
+    "active": true,
+    "components": [
+      {
+        "type": "TextMeshProUGUI",
+        "path_id": 10834,
+        "properties": {
+          "m_text": "Start Chating",
+          "m_fontColor": {
+            "r": 0.48627451062202454,
+            "g": 0.48627451062202454,
+            "b": 0.48627451062202454,
+            "a": 1.0
+          },
+          "m_fontSize": 15.0,
+          "m_enableWordWrapping": 1
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_AnchorMax": {
+        "x": 1.0,
+        "y": 0.0
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": 20.0
+      },
+      "m_SizeDelta": {
+        "x": 0.0,
+        "y": 25.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/CopiedMsgPanel",
+    "path_id": 2161,
+    "active": false,
+    "components": [],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": 7.860000133514404
+      },
+      "m_SizeDelta": {
+        "x": 270.0,
+        "y": 100.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/CopiedMsgPanel/Bg",
+    "path_id": 158,
+    "active": true,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 13186,
+        "properties": {
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 1017
+          },
+          "m_Type": 0,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": -2.869999885559082,
+        "y": -223.3000030517578
+      },
+      "m_SizeDelta": {
+        "x": 295.0,
+        "y": 43.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/CopiedMsgPanel/Bg/CopiedChatMsgBG",
+    "path_id": 419,
+    "active": false,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 15481,
+        "properties": {
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 1067
+          },
+          "m_Type": 1,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": -11.341197967529297,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 204.9176025390625,
+        "y": 46.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/CopiedMsgPanel/Bg/user",
+    "path_id": 48,
+    "active": true,
+    "components": [
+      {
+        "type": "TextMeshProUGUI",
+        "path_id": 11329,
+        "properties": {
+          "m_text": "Username",
+          "m_fontColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 0.6078431606292725
+          },
+          "m_fontSize": 10.0,
+          "m_enableWordWrapping": 1
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 10.0,
+        "y": 8.899999618530273
+      },
+      "m_SizeDelta": {
+        "x": 295.0,
+        "y": 15.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/CopiedMsgPanel/Bg/msg",
+    "path_id": 131,
+    "active": true,
+    "components": [
+      {
+        "type": "TextMeshProUGUI",
+        "path_id": 11339,
+        "properties": {
+          "m_text": "This is my message",
+          "m_fontColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 0.8039215803146362
+          },
+          "m_fontSize": 12.0,
+          "m_enableWordWrapping": 1
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 10.0,
+        "y": -7.400000095367432
+      },
+      "m_SizeDelta": {
+        "x": 295.0,
+        "y": 15.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/CopiedMsgPanel/Bg/CloseButton",
+    "path_id": 2075,
+    "active": true,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 16075,
+        "properties": {
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 1095
+          },
+          "m_Type": 0,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 125.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 24.0,
+        "y": 24.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/CopiedMsgPanel/Bg/CloseButton/Text (TMP)",
+    "path_id": 3224,
+    "active": false,
+    "components": [
+      {
+        "type": "TextMeshProUGUI",
+        "path_id": 10992,
+        "properties": {
+          "m_text": "x",
+          "m_fontColor": {
+            "r": 0.47058823704719543,
+            "g": 0.529411792755127,
+            "b": 0.43921568989753723,
+            "a": 1.0
+          },
+          "m_fontSize": 18.0,
+          "m_enableWordWrapping": 1
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_AnchorMax": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/PredefinedMsgHorizontalPanel",
+    "path_id": 1142,
+    "active": true,
+    "components": [
+      {
+        "type": "PredefinedMsgComponent",
+        "path_id": 15037,
+        "properties": {
+          "msgButtonPrefab": {
+            "m_FileID": 0,
+            "m_PathID": 2964
+          },
+          "verticalMsgButtonPrefab": {
+            "m_FileID": 0,
+            "m_PathID": 1698
+          },
+          "msgButtonsContainer": {
+            "m_FileID": 0,
+            "m_PathID": 9716
+          },
+          "panelContainer": {
+            "m_FileID": 0,
+            "m_PathID": 10340
+          },
+          "panel": {
+            "m_FileID": 0,
+            "m_PathID": 7929
+          },
+          "chat": {
+            "m_FileID": 0,
+            "m_PathID": 13532
+          },
+          "users": {
+            "m_FileID": 0,
+            "m_PathID": 14619
+          },
+          "options": {
+            "m_FileID": 0,
+            "m_PathID": 15871
+          }
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_AnchorMax": {
+        "x": 1.0,
+        "y": 0.0
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": 52.0
+      },
+      "m_SizeDelta": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.0
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/PredefinedMsgHorizontalPanel/PredefinedMsg Button for horizontal/vertical",
+    "path_id": 579,
+    "active": true,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 15923,
+        "properties": {
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 1213
+          },
+          "m_Type": 0,
+          "m_PreserveAspect": 1
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_AnchorMax": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/PredefinedMsgHorizontalPanel/PredefinedMsg Button for horizontal/vertical/image Border",
+    "path_id": 1799,
+    "active": true,
+    "components": [],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_AnchorMax": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/PredefinedMsgHorizontalPanel/PredefinedMsg Button for horizontal/vertical/image Border/image Base",
+    "path_id": 251,
+    "active": true,
+    "components": [],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_AnchorMax": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": -1.0,
+        "y": -1.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/PredefinedMsgHorizontalPanel/PredefinedMsg Button for horizontal/vertical/image Border/image Base/Image Icon",
+    "path_id": 2955,
+    "active": true,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 15817,
+        "properties": {
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 946
+          },
+          "m_Type": 0,
+          "m_PreserveAspect": 1
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 0.699999988079071,
+        "y": 5.900000095367432
+      },
+      "m_SizeDelta": {
+        "x": 13.0,
+        "y": 13.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/PredefinedMsgHorizontalPanel/MsgsPanelScrollView",
+    "path_id": 2016,
+    "active": true,
+    "components": [],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_AnchorMax": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.0
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/PredefinedMsgHorizontalPanel/MsgsPanelScrollView/Viewport",
+    "path_id": 2881,
+    "active": true,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 12431,
+        "properties": {
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 891
+          },
+          "m_Type": 1,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_AnchorMax": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_Pivot": {
+        "x": 0.0,
+        "y": 1.0
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/PredefinedMsgHorizontalPanel/MsgsPanelScrollView/Viewport/Content",
+    "path_id": 1331,
+    "active": true,
+    "components": [],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 0.0,
+        "y": 52.0
+      },
+      "m_Pivot": {
+        "x": 0.0,
+        "y": 1.0
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/PredefinedMsgHorizontalPanel/MsgsPanelScrollView/Viewport/Content/MessageButton",
+    "path_id": 2964,
+    "active": false,
+    "components": [],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 60.46500015258789,
+        "y": -26.0
+      },
+      "m_SizeDelta": {
+        "x": 96.93000030517578,
+        "y": 26.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/PredefinedMsgHorizontalPanel/MsgsPanelScrollView/Viewport/Content/MessageButton/Text (TMP)",
+    "path_id": 2162,
+    "active": true,
+    "components": [
+      {
+        "type": "TextMeshProUGUI",
+        "path_id": 11622,
+        "properties": {
+          "m_text": "FF I'm out FF",
+          "m_fontColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 0.7843137383460999
+          },
+          "m_fontSize": 12.0,
+          "m_enableWordWrapping": 1
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 48.46500015258789,
+        "y": -13.0
+      },
+      "m_SizeDelta": {
+        "x": 72.93000030517578,
+        "y": 14.529999732971191
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/PredefinedMsgHorizontalPanel/MsgsPanelScrollView/Line",
+    "path_id": 2796,
+    "active": true,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 12723,
+        "properties": {
+          "m_Color": {
+            "r": 0.16862745583057404,
+            "g": 0.1725490242242813,
+            "b": 0.1882352977991104,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "m_Type": 1,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_AnchorMax": {
+        "x": 1.0,
+        "y": 0.0
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.0
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/PredefinedMsgVerticalPanel",
+    "path_id": 2342,
+    "active": false,
+    "components": [
+      {
+        "type": "PredefinedMsgVerticalPanel",
+        "path_id": 15002,
+        "properties": {
+          "predefinedMsgComponent": {
+            "m_FileID": 0,
+            "m_PathID": 15037
+          },
+          "panelRectTransform": {
+            "m_FileID": 0,
+            "m_PathID": 10076
+          }
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_AnchorMax": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": 55.0
+      },
+      "m_SizeDelta": {
+        "x": 0.0,
+        "y": -110.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.0
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/PredefinedMsgVerticalPanel/MsgsPanelScrollView",
+    "path_id": 3719,
+    "active": true,
+    "components": [],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.0
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.0
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 295.0,
+        "y": 331.239990234375
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.0
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/PredefinedMsgVerticalPanel/MsgsPanelScrollView/ButtonMask",
+    "path_id": 1334,
+    "active": true,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 12541,
+        "properties": {
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "m_Type": 0,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 1.25,
+        "y": -1.22998046875
+      },
+      "m_SizeDelta": {
+        "x": 34.0,
+        "y": 34.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/PredefinedMsgVerticalPanel/MsgsPanelScrollView/ButtonMask/Button",
+    "path_id": 2352,
+    "active": true,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 15256,
+        "properties": {
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 1071
+          },
+          "m_Type": 0,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 17.0,
+        "y": -17.0
+      },
+      "m_SizeDelta": {
+        "x": 34.0,
+        "y": 34.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/PredefinedMsgVerticalPanel/MsgsPanelScrollView/ButtonMask/Button/image Border",
+    "path_id": 951,
+    "active": true,
+    "components": [],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_AnchorMax": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/PredefinedMsgVerticalPanel/MsgsPanelScrollView/ButtonMask/Button/image Border/image Base",
+    "path_id": 1523,
+    "active": true,
+    "components": [],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_AnchorMax": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": -1.0,
+        "y": -1.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/PredefinedMsgVerticalPanel/MsgsPanelScrollView/ButtonMask/Button/image Border/image Base/Image Icon",
+    "path_id": 1696,
+    "active": true,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 11964,
+        "properties": {
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 946
+          },
+          "m_Type": 0,
+          "m_PreserveAspect": 1
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 0.699999988079071,
+        "y": 5.900000095367432
+      },
+      "m_SizeDelta": {
+        "x": 13.0,
+        "y": 13.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/PredefinedMsgVerticalPanel/MsgsPanelScrollView/Viewport",
+    "path_id": 1207,
+    "active": true,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 15220,
+        "properties": {
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 891
+          },
+          "m_Type": 1,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_AnchorMax": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_Pivot": {
+        "x": 0.0,
+        "y": 1.0
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/PredefinedMsgVerticalPanel/MsgsPanelScrollView/Viewport/Content",
+    "path_id": 3430,
+    "active": true,
+    "components": [],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 0.0,
+        "y": 27.0
+      },
+      "m_Pivot": {
+        "x": 0.0,
+        "y": 1.0
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/PredefinedMsgVerticalPanel/MsgsPanelScrollView/Viewport/Content/MessageButton",
+    "path_id": 1698,
+    "active": false,
+    "components": [],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 60.46500015258789,
+        "y": -25.0
+      },
+      "m_SizeDelta": {
+        "x": 96.93000030517578,
+        "y": 26.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/PredefinedMsgVerticalPanel/MsgsPanelScrollView/Viewport/Content/MessageButton/Text (TMP)",
+    "path_id": 3607,
+    "active": true,
+    "components": [
+      {
+        "type": "TextMeshProUGUI",
+        "path_id": 11433,
+        "properties": {
+          "m_text": "FF I'm out FF",
+          "m_fontColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 0.7843137383460999
+          },
+          "m_fontSize": 12.0,
+          "m_enableWordWrapping": 1
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 48.46500015258789,
+        "y": -13.0
+      },
+      "m_SizeDelta": {
+        "x": 72.93000030517578,
+        "y": 14.529999732971191
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/OtherOptionsPanel",
+    "path_id": 3721,
+    "active": false,
+    "components": [
+      {
+        "type": "OtherOptionsComponent",
+        "path_id": 15871,
+        "properties": {
+          "MuteSpectator": {
+            "m_FileID": 0,
+            "m_PathID": 14059
+          },
+          "HideChatBubbles": {
+            "m_FileID": 0,
+            "m_PathID": 13424
+          },
+          "MuteAllChats": {
+            "m_FileID": 0,
+            "m_PathID": 12489
+          },
+          "predefinedMsgComponent": {
+            "m_FileID": 0,
+            "m_PathID": 15037
+          },
+          "panelRectTransform": {
+            "m_FileID": 0,
+            "m_PathID": 9319
+          }
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_AnchorMax": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 0.0,
+        "y": 20.0
+      },
+      "m_SizeDelta": {
+        "x": 0.0,
+        "y": -40.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/OtherOptionsPanel/OptionsPanel",
+    "path_id": 3349,
+    "active": true,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 14360,
+        "properties": {
+          "m_Color": {
+            "r": 0.15294118225574493,
+            "g": 0.15294118225574493,
+            "b": 0.1725490242242813,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 1167
+          },
+          "m_Type": 1,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 1.0,
+        "y": 0.0
+      },
+      "m_AnchorMax": {
+        "x": 1.0,
+        "y": 0.0
+      },
+      "m_AnchoredPosition": {
+        "x": -95.5999984741211,
+        "y": 10.0
+      },
+      "m_SizeDelta": {
+        "x": 176.0,
+        "y": 87.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.0
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/OtherOptionsPanel/OptionsPanel/OptionButton",
+    "path_id": 877,
+    "active": false,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 12125,
+        "properties": {
+          "m_Color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 0.003921568859368563
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 887
+          },
+          "m_Type": 1,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 128.0,
+        "y": -22.500244140625
+      },
+      "m_SizeDelta": {
+        "x": 240.0,
+        "y": 35.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/OtherOptionsPanel/OptionsPanel/OptionButton/Text (TMP)",
+    "path_id": 3752,
+    "active": true,
+    "components": [
+      {
+        "type": "TextMeshProUGUI",
+        "path_id": 11164,
+        "properties": {
+          "m_text": "Test option",
+          "m_fontColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_fontSize": 15.0,
+          "m_enableWordWrapping": 1
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": -13.100000381469727,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 200.0,
+        "y": 30.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/OtherOptionsPanel/OptionsPanel/OptionButton/Image",
+    "path_id": 2335,
+    "active": true,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 12432,
+        "properties": {
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 1510
+          },
+          "m_Type": 0,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 105.5,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 24.0,
+        "y": 24.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/OtherOptionsPanel/OptionsPanel/OptionButton/Selected",
+    "path_id": 1617,
+    "active": true,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 14330,
+        "properties": {
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 1358
+          },
+          "m_Type": 0,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 105.5,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 16.0,
+        "y": 16.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/OtherOptionsPanel/OptionsPanel/MuteSpectator",
+    "path_id": 2155,
+    "active": false,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 14966,
+        "properties": {
+          "m_Color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 0.003921568859368563
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 887
+          },
+          "m_Type": 1,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 88.0,
+        "y": -22.500244140625
+      },
+      "m_SizeDelta": {
+        "x": 160.0,
+        "y": 16.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/OtherOptionsPanel/OptionsPanel/MuteSpectator/Text (TMP)",
+    "path_id": 2877,
+    "active": true,
+    "components": [
+      {
+        "type": "TextMeshProUGUI",
+        "path_id": 11452,
+        "properties": {
+          "m_text": "Mute Spectator chat",
+          "m_fontColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_fontSize": 9.600000381469727,
+          "m_enableWordWrapping": 1
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": -9.5,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 140.0,
+        "y": 16.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/OtherOptionsPanel/OptionsPanel/MuteSpectator/Image",
+    "path_id": 2074,
+    "active": true,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 12153,
+        "properties": {
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 1112
+          },
+          "m_Type": 0,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 72.69999694824219,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 16.0,
+        "y": 16.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/OtherOptionsPanel/OptionsPanel/MuteSpectator/Selected",
+    "path_id": 1660,
+    "active": true,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 12536,
+        "properties": {
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 915
+          },
+          "m_Type": 0,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 72.69998168945312,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 16.0,
+        "y": 16.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/OtherOptionsPanel/OptionsPanel/HideChatBubbles",
+    "path_id": 942,
+    "active": true,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 13332,
+        "properties": {
+          "m_Color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 0.003921568859368563
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 887
+          },
+          "m_Type": 1,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 88.0,
+        "y": -40.0
+      },
+      "m_SizeDelta": {
+        "x": 160.0,
+        "y": 16.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/OtherOptionsPanel/OptionsPanel/HideChatBubbles/Text (TMP)",
+    "path_id": 2353,
+    "active": true,
+    "components": [
+      {
+        "type": "TextMeshProUGUI",
+        "path_id": 11489,
+        "properties": {
+          "m_text": "Hide chat bubbles",
+          "m_fontColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_fontSize": 9.600000381469727,
+          "m_enableWordWrapping": 1
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": -9.499994277954102,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 140.0,
+        "y": 16.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/OtherOptionsPanel/OptionsPanel/HideChatBubbles/Image",
+    "path_id": 919,
+    "active": true,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 15392,
+        "properties": {
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 1112
+          },
+          "m_Type": 0,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 72.69998168945312,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 16.0,
+        "y": 16.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/OtherOptionsPanel/OptionsPanel/HideChatBubbles/Selected",
+    "path_id": 175,
+    "active": true,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 16021,
+        "properties": {
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 915
+          },
+          "m_Type": 0,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 72.69998168945312,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 16.0,
+        "y": 16.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/OtherOptionsPanel/OptionsPanel/MuteAllChats",
+    "path_id": 791,
+    "active": false,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 14212,
+        "properties": {
+          "m_Color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 0.003921568859368563
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 887
+          },
+          "m_Type": 1,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 88.0,
+        "y": -64.0
+      },
+      "m_SizeDelta": {
+        "x": 160.0,
+        "y": 16.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/OtherOptionsPanel/OptionsPanel/MuteAllChats/Text (TMP)",
+    "path_id": 1263,
+    "active": true,
+    "components": [
+      {
+        "type": "TextMeshProUGUI",
+        "path_id": 11738,
+        "properties": {
+          "m_text": "Mute all chats",
+          "m_fontColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_fontSize": 9.600000381469727,
+          "m_enableWordWrapping": 1
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": -9.499994277954102,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 140.0,
+        "y": 16.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/OtherOptionsPanel/OptionsPanel/MuteAllChats/Image",
+    "path_id": 1726,
+    "active": true,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 13016,
+        "properties": {
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 1112
+          },
+          "m_Type": 0,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 72.69998168945312,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 16.0,
+        "y": 16.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/OtherOptionsPanel/OptionsPanel/MuteAllChats/Selected",
+    "path_id": 2671,
+    "active": true,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 13584,
+        "properties": {
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 915
+          },
+          "m_Type": 0,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 72.69998168945312,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 16.0,
+        "y": 16.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/OtherOptionsPanel/OptionsPanel/Arrow (1)",
+    "path_id": 234,
+    "active": true,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 15414,
+        "properties": {
+          "m_Color": {
+            "r": 0.15294118225574493,
+            "g": 0.15294118225574493,
+            "b": 0.1725490242242813,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 1161
+          },
+          "m_Type": 0,
+          "m_PreserveAspect": 1
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 1.0,
+        "y": 0.0
+      },
+      "m_AnchorMax": {
+        "x": 1.0,
+        "y": 0.0
+      },
+      "m_AnchoredPosition": {
+        "x": -10.0,
+        "y": 1.600000023841858
+      },
+      "m_SizeDelta": {
+        "x": 8.0,
+        "y": 16.0
+      },
+      "m_Pivot": {
+        "x": 1.0,
+        "y": 0.0
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/UsersnamesPanel",
+    "path_id": 141,
+    "active": false,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 16342,
+        "properties": {
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 940
+          },
+          "m_Type": 1,
+          "m_PreserveAspect": 0
+        }
+      },
+      {
+        "type": "UserNamesComponent",
+        "path_id": 14619,
+        "properties": {
+          "usersContainer": {
+            "m_FileID": 0,
+            "m_PathID": 8831
+          },
+          "predefinedMsgComponent": {
+            "m_FileID": 0,
+            "m_PathID": 15037
+          },
+          "activeUsers": [
+            {
+              "m_FileID": 0,
+              "m_PathID": 13649
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": 13847
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": 14865
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": 12409
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": 12105
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": 14446
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": 14351
+            },
+            {
+              "m_FileID": 0,
+              "m_PathID": 16162
+            }
+          ]
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.0,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 8.0,
+        "y": -244.0
+      },
+      "m_SizeDelta": {
+        "x": 134.0,
+        "y": 13.0
+      },
+      "m_Pivot": {
+        "x": 0.0,
+        "y": 0.0
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/UsersnamesPanel/UserButton",
+    "path_id": 1540,
+    "active": false,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 13021,
+        "properties": {
+          "m_Color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 0.003921568859368563
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 887
+          },
+          "m_Type": 1,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 67.25,
+        "y": -22.5
+      },
+      "m_SizeDelta": {
+        "x": 134.5,
+        "y": 35.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/UsersnamesPanel/UserButton/Text (TMP)",
+    "path_id": 2209,
+    "active": true,
+    "components": [
+      {
+        "type": "TextMeshProUGUI",
+        "path_id": 10891,
+        "properties": {
+          "m_text": "User 1",
+          "m_fontColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_fontSize": 12.0,
+          "m_enableWordWrapping": 1
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 25.176000595092773,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 84.14800262451172,
+        "y": 20.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/UsersnamesPanel/UserButton/Avatar",
+    "path_id": 3669,
+    "active": true,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 13377,
+        "properties": {
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 1101
+          },
+          "m_Type": 0,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": -40.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 32.0,
+        "y": 32.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/UsersnamesPanel/UserButton (1)",
+    "path_id": 979,
+    "active": false,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 13343,
+        "properties": {
+          "m_Color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 0.003921568859368563
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 887
+          },
+          "m_Type": 1,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 67.25,
+        "y": -69.5
+      },
+      "m_SizeDelta": {
+        "x": 134.5,
+        "y": 35.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/UsersnamesPanel/UserButton (1)/Text (TMP)",
+    "path_id": 376,
+    "active": true,
+    "components": [
+      {
+        "type": "TextMeshProUGUI",
+        "path_id": 11045,
+        "properties": {
+          "m_text": "User 1",
+          "m_fontColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_fontSize": 12.0,
+          "m_enableWordWrapping": 1
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 25.176000595092773,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 84.14800262451172,
+        "y": 20.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/UsersnamesPanel/UserButton (1)/Avatar",
+    "path_id": 3689,
+    "active": true,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 14344,
+        "properties": {
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 1101
+          },
+          "m_Type": 0,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": -40.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 32.0,
+        "y": 32.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/UsersnamesPanel/UserButton (2)",
+    "path_id": 2851,
+    "active": false,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 12676,
+        "properties": {
+          "m_Color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 0.003921568859368563
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 887
+          },
+          "m_Type": 1,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 67.25,
+        "y": -116.5
+      },
+      "m_SizeDelta": {
+        "x": 134.5,
+        "y": 35.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/UsersnamesPanel/UserButton (2)/Text (TMP)",
+    "path_id": 1554,
+    "active": true,
+    "components": [
+      {
+        "type": "TextMeshProUGUI",
+        "path_id": 11115,
+        "properties": {
+          "m_text": "User 1",
+          "m_fontColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_fontSize": 12.0,
+          "m_enableWordWrapping": 1
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 25.176000595092773,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 84.14800262451172,
+        "y": 20.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/UsersnamesPanel/UserButton (2)/Avatar",
+    "path_id": 2587,
+    "active": true,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 13753,
+        "properties": {
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 1101
+          },
+          "m_Type": 0,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": -40.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 32.0,
+        "y": 32.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/UsersnamesPanel/UserButton (3)",
+    "path_id": 81,
+    "active": false,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 13903,
+        "properties": {
+          "m_Color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 0.003921568859368563
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 887
+          },
+          "m_Type": 1,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 67.25,
+        "y": -163.5
+      },
+      "m_SizeDelta": {
+        "x": 134.5,
+        "y": 35.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/UsersnamesPanel/UserButton (3)/Text (TMP)",
+    "path_id": 3182,
+    "active": true,
+    "components": [
+      {
+        "type": "TextMeshProUGUI",
+        "path_id": 11175,
+        "properties": {
+          "m_text": "User 1",
+          "m_fontColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_fontSize": 12.0,
+          "m_enableWordWrapping": 1
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 25.176000595092773,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 84.14800262451172,
+        "y": 20.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/UsersnamesPanel/UserButton (3)/Avatar",
+    "path_id": 2589,
+    "active": true,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 14142,
+        "properties": {
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 1101
+          },
+          "m_Type": 0,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": -40.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 32.0,
+        "y": 32.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/UsersnamesPanel/UserButton (4)",
+    "path_id": 3340,
+    "active": false,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 12119,
+        "properties": {
+          "m_Color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 0.003921568859368563
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 887
+          },
+          "m_Type": 1,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 67.25,
+        "y": -210.5
+      },
+      "m_SizeDelta": {
+        "x": 134.5,
+        "y": 35.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/UsersnamesPanel/UserButton (4)/Text (TMP)",
+    "path_id": 3819,
+    "active": true,
+    "components": [
+      {
+        "type": "TextMeshProUGUI",
+        "path_id": 11752,
+        "properties": {
+          "m_text": "User 1",
+          "m_fontColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_fontSize": 12.0,
+          "m_enableWordWrapping": 1
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 25.176000595092773,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 84.14800262451172,
+        "y": 20.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/UsersnamesPanel/UserButton (4)/Avatar",
+    "path_id": 3389,
+    "active": true,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 12101,
+        "properties": {
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 1101
+          },
+          "m_Type": 0,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": -40.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 32.0,
+        "y": 32.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/UsersnamesPanel/UserButton (5)",
+    "path_id": 3575,
+    "active": false,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 12590,
+        "properties": {
+          "m_Color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 0.003921568859368563
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 887
+          },
+          "m_Type": 1,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 67.25,
+        "y": -257.5
+      },
+      "m_SizeDelta": {
+        "x": 134.5,
+        "y": 35.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/UsersnamesPanel/UserButton (5)/Text (TMP)",
+    "path_id": 3567,
+    "active": true,
+    "components": [
+      {
+        "type": "TextMeshProUGUI",
+        "path_id": 10896,
+        "properties": {
+          "m_text": "User 1",
+          "m_fontColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_fontSize": 12.0,
+          "m_enableWordWrapping": 1
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 25.176000595092773,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 84.14800262451172,
+        "y": 20.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/UsersnamesPanel/UserButton (5)/Avatar",
+    "path_id": 57,
+    "active": true,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 14131,
+        "properties": {
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 1101
+          },
+          "m_Type": 0,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": -40.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 32.0,
+        "y": 32.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/UsersnamesPanel/UserButton (6)",
+    "path_id": 1988,
+    "active": false,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 13478,
+        "properties": {
+          "m_Color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 0.003921568859368563
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 887
+          },
+          "m_Type": 1,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 67.25,
+        "y": -304.5
+      },
+      "m_SizeDelta": {
+        "x": 134.5,
+        "y": 35.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/UsersnamesPanel/UserButton (6)/Text (TMP)",
+    "path_id": 2985,
+    "active": true,
+    "components": [
+      {
+        "type": "TextMeshProUGUI",
+        "path_id": 10909,
+        "properties": {
+          "m_text": "User 1",
+          "m_fontColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_fontSize": 12.0,
+          "m_enableWordWrapping": 1
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 25.176000595092773,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 84.14800262451172,
+        "y": 20.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/UsersnamesPanel/UserButton (6)/Avatar",
+    "path_id": 1146,
+    "active": true,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 16310,
+        "properties": {
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 1101
+          },
+          "m_Type": 0,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": -40.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 32.0,
+        "y": 32.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/UsersnamesPanel/UserButton (7)",
+    "path_id": 3073,
+    "active": false,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 15386,
+        "properties": {
+          "m_Color": {
+            "r": 0.0,
+            "g": 0.0,
+            "b": 0.0,
+            "a": 0.003921568859368563
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 887
+          },
+          "m_Type": 1,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchorMax": {
+        "x": 0.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 67.25,
+        "y": -351.5
+      },
+      "m_SizeDelta": {
+        "x": 134.5,
+        "y": 35.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/UsersnamesPanel/UserButton (7)/Text (TMP)",
+    "path_id": 1136,
+    "active": true,
+    "components": [
+      {
+        "type": "TextMeshProUGUI",
+        "path_id": 11062,
+        "properties": {
+          "m_text": "User 1",
+          "m_fontColor": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_fontSize": 12.0,
+          "m_enableWordWrapping": 1
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": 25.176000595092773,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 84.14800262451172,
+        "y": 20.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/LeftBG/UsersnamesPanel/UserButton (7)/Avatar",
+    "path_id": 1172,
+    "active": true,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 13168,
+        "properties": {
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          },
+          "m_Sprite": {
+            "m_FileID": 2,
+            "m_PathID": 1101
+          },
+          "m_Type": 0,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchorMax": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "m_AnchoredPosition": {
+        "x": -40.0,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": 32.0,
+        "y": 32.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  },
+  {
+    "path": "/ChatPanel/BlankArea",
+    "path_id": 812,
+    "active": true,
+    "components": [
+      {
+        "type": "Image",
+        "path_id": 13507,
+        "properties": {
+          "m_Color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 0.003921568859368563
+          },
+          "m_Sprite": {
+            "m_FileID": 0,
+            "m_PathID": 0
+          },
+          "m_Type": 0,
+          "m_PreserveAspect": 0
+        }
+      }
+    ],
+    "transform": {
+      "m_AnchorMin": {
+        "x": 0.0,
+        "y": 0.0
+      },
+      "m_AnchorMax": {
+        "x": 1.0,
+        "y": 1.0
+      },
+      "m_AnchoredPosition": {
+        "x": 150.5,
+        "y": 0.0
+      },
+      "m_SizeDelta": {
+        "x": -289.0,
+        "y": 1.0
+      },
+      "m_Pivot": {
+        "x": 0.5,
+        "y": 0.5
+      }
+    }
+  }
+]
