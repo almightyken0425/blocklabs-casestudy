@@ -21,6 +21,11 @@ Players can write their own quick messages and choose which emote accompanies ea
 The same character can express different personalities through the combinations players create.
 The opportunity is to give players room for their own jokes and reactions, with controls fast enough to use during play.
 
+Future avatar customization could let players shape their character's face, choose hairstyles, and adjust colors.
+The same custom character would perform emotes, use throwables, and express player-written messages, connecting appearance with personality.
+An initial version could offer preset feature combinations that remain expressive during animation, with freeform face sculpting explored later.
+This is a future concept beyond the current prototype.
+
 ## Let the Receiving Avatar Participate
 
 A future extension is to animate the avatar receiving a throwable.
