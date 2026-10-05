@@ -1,0 +1,22 @@
+{
+  "checked_at": "2026-10-05T08:24:51.332Z",
+  "browser": "Chrome via Playwright",
+  "base": "http://127.0.0.1:8767/question_3/mahjong-game-standalone.html",
+  "prototype_folder": "question_3",
+  "source_sha256": {
+    "support/prototype/input.js": "e7725afbb01bdc5c18bbc975642fde7add387880bf9f496ed05188ec38ef75f2",
+    "support/prototype/character.js": "56d4d61ad59b78ebcb5c5ba304207034f2a56897160d4b68cc701872e72836cc",
+    "support/prototype/character.css": "01688a6ca5b07bf7c27a224164b839426ab9729a2a9924fe5471bcc73a33c25e",
+    "support/prototype/assets/momo.svg": "77b3d24084c2b84c16df52bbe6a2ad315ecadd20f89834a780663df6a3f0e5af",
+    "support/prototype/social.js": "bb90b30a7dd4ae9660526ccbc25c4c81e948757a9906ceae30b195137c51a188",
+    "support/prototype/social.css": "e6d67b5fd686e1c7572e128b7d3d2d5967d8d595617ea49cbdaf7266983b5ff1",
+    "mahjong-game-standalone.html": "9079c7e924bec0d09acf48e2da42a4688bb0aa790c32edc82189746fabe89bb6"
+  },
+  "results": [
+    {
+      "name": "Character emotes perform outside the circle in normal and reduced motion",
+      "passed": false,
+      "error": "The frame keeps its original size"
+    }
+  ]
+}

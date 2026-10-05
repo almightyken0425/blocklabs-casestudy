@@ -1,0 +1,18 @@
+{
+  "checked_at": "2026-10-05T07:04:40.684Z",
+  "browser": "Chrome via Playwright",
+  "base": "http://127.0.0.1:8767/question_3/mahjong-game-standalone.html",
+  "prototype_folder": "question_3",
+  "source_sha256": {
+    "support/prototype/social.js": "093dec16ad205b8376229d61b66f33cf8a5e8fc40b621bf5a271e3665d90bd57",
+    "support/prototype/social.css": "00b7d45aba6c8cbb8c27d5aebf0b2a86b012545bd325880e36b8408ed48013ea",
+    "mahjong-game-standalone.html": "c65ecdca5c5305227557eabc6fb80fc99f5eb9285a055dec2cded253e27c2518"
+  },
+  "results": [
+    {
+      "name": "Typing opens chat with the first uppercase character and resumes an escaped draft",
+      "passed": false,
+      "error": "Expected values to be strictly equal:\n\n'' !== 'H'\n"
+    }
+  ]
+}

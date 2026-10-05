@@ -1,0 +1,21 @@
+{
+  "checked_at": "2026-10-05T08:41:26.608Z",
+  "browser": "Chrome via Playwright",
+  "base": "http://127.0.0.1:8767/question_3/mahjong-game-standalone.html",
+  "prototype_folder": "question_3",
+  "source_sha256": {
+    "support/prototype/input.js": "e7725afbb01bdc5c18bbc975642fde7add387880bf9f496ed05188ec38ef75f2",
+    "support/prototype/character.js": "96bc9c18e29d10726ca53ed0e1a9cd514d871f13a4a9ac997af40586a3279e78",
+    "support/prototype/character.css": "2c350c166ce8bdd3fc1e87006ef71d9f5884e7246c9742b5a17fd0ec920bfbd9",
+    "support/prototype/assets/momo.svg": "77b3d24084c2b84c16df52bbe6a2ad315ecadd20f89834a780663df6a3f0e5af",
+    "support/prototype/social.js": "bf72fbd9caa57be47acd4cc4a019d1a237b87347b91497a798dcc15c48ff2703",
+    "support/prototype/social.css": "e6d67b5fd686e1c7572e128b7d3d2d5967d8d595617ea49cbdaf7266983b5ff1",
+    "mahjong-game-standalone.html": "9079c7e924bec0d09acf48e2da42a4688bb0aa790c32edc82189746fabe89bb6"
+  },
+  "results": [
+    {
+      "name": "Social shortcuts take priority and preserve normal text and settings editing",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "checked_at": "2026-10-05T09:20:47.379Z",
+  "browser": "Chrome via Playwright",
+  "base": "http://127.0.0.1:8767/question_3/mahjong-game-standalone.html",
+  "prototype_folder": "question_3",
+  "source_sha256": {
+    "support/prototype/input.js": "a8215bd401cd23eb0a46ac1cf60c5aa011353222761b1a7d9f74592b71b80719",
+    "support/prototype/character.js": "8872991aa401ac9e043849c8f40634f344238f7756590f77d9b6a85f2d056389",
+    "support/prototype/character.css": "2c350c166ce8bdd3fc1e87006ef71d9f5884e7246c9742b5a17fd0ec920bfbd9",
+    "support/prototype/assets/momo.svg": "77b3d24084c2b84c16df52bbe6a2ad315ecadd20f89834a780663df6a3f0e5af",
+    "support/prototype/social.js": "b50ccc34a31e0d5ac56862d03964e506dc8836290f6b781c56b78425f4033926",
+    "support/prototype/social.css": "a3db5f28accbc326da87afe335bd600cbf6e60d1b815a833196dc705d6828fa6",
+    "mahjong-game-standalone.html": "9079c7e924bec0d09acf48e2da42a4688bb0aa790c32edc82189746fabe89bb6"
+  },
+  "results": [
+    {
+      "name": "Quick slots send three bound emotes without opening chat or replacing a draft",
+      "passed": true
+    },
+    {
+      "name": "Quick slots save six editable bindings and preview without sending",
+      "passed": true
+    },
+    {
+      "name": "Quick slots append text-only messages without replacing saved choices",
+      "passed": true
+    },
+    {
+      "name": "Quick slots expose all six messages in narrow menus and the chat footer",
+      "passed": true
+    },
+    {
+      "name": "Quick slots keep queued messages paired with emotes and cancel pending work",
+      "passed": true
+    },
+    {
+      "name": "Quick slots offer retry on failure and play only after success",
+      "passed": true
+    },
+    {
+      "name": "Quick slots cancel an in-flight send before it can publish",
+      "passed": true
+    },
+    {
+      "name": "Quick slots work by touch on narrow screens and retain text with a static avatar",
+      "passed": true
+    },
+    {
+      "name": "Quick slots keep long custom messages readable inside the table",
+      "passed": true
+    }
+  ]
+}

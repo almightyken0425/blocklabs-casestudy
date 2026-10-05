@@ -1,0 +1,138 @@
+{
+  "checked_at": "2026-10-05T08:41:00.581Z",
+  "browser": "Chrome via Playwright",
+  "base": "http://127.0.0.1:8767/question_3/mahjong-game-standalone.html",
+  "prototype_folder": "question_3",
+  "source_sha256": {
+    "support/prototype/input.js": "e7725afbb01bdc5c18bbc975642fde7add387880bf9f496ed05188ec38ef75f2",
+    "support/prototype/character.js": "96bc9c18e29d10726ca53ed0e1a9cd514d871f13a4a9ac997af40586a3279e78",
+    "support/prototype/character.css": "2c350c166ce8bdd3fc1e87006ef71d9f5884e7246c9742b5a17fd0ec920bfbd9",
+    "support/prototype/assets/momo.svg": "77b3d24084c2b84c16df52bbe6a2ad315ecadd20f89834a780663df6a3f0e5af",
+    "support/prototype/social.js": "bf72fbd9caa57be47acd4cc4a019d1a237b87347b91497a798dcc15c48ff2703",
+    "support/prototype/social.css": "e6d67b5fd686e1c7572e128b7d3d2d5967d8d595617ea49cbdaf7266983b5ff1",
+    "mahjong-game-standalone.html": "9079c7e924bec0d09acf48e2da42a4688bb0aa790c32edc82189746fabe89bb6"
+  },
+  "results": [
+    {
+      "name": "Character throwable leaves the window, enters from each opponent side, acts and returns",
+      "passed": true
+    },
+    {
+      "name": "Character throwable supports reduced motion and cancels travel on departure or settings",
+      "passed": true
+    },
+    {
+      "name": "Character menu presents the selected avatar and its three expressions",
+      "passed": true
+    },
+    {
+      "name": "Character emotes perform outside the circle in normal and reduced motion",
+      "passed": true
+    },
+    {
+      "name": "Character plays Happy outside its frame and returns to the same idle avatar",
+      "passed": true
+    },
+    {
+      "name": "Character expressions share mouse and keyboard controls with one queued action",
+      "passed": true
+    },
+    {
+      "name": "Character climbs fully out, returns through the frame, and leaves chat usable",
+      "passed": true
+    },
+    {
+      "name": "Character interruption restores idle and changing avatars persists",
+      "passed": true
+    },
+    {
+      "name": "Character respects reduced motion and remains visible on narrow screens",
+      "passed": true
+    },
+    {
+      "name": "Character asset failure preserves static avatars and chat",
+      "passed": true
+    },
+    {
+      "name": "Typing opens chat with the first uppercase character and resumes an escaped draft",
+      "passed": true
+    },
+    {
+      "name": "IME composition opens chat, keeps composed text once and never sends the candidate Enter",
+      "passed": true
+    },
+    {
+      "name": "Social shortcuts take priority and preserve normal text and settings editing",
+      "passed": false,
+      "error": "page.goto: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:8767/question_3/mahjong-game-standalone.html\", waiting until \"load\"\u001b[22m\n"
+    },
+    {
+      "name": "Throwable sequences use stable opponents and cancel on release, Escape, blur, repeats and departure",
+      "passed": true
+    },
+    {
+      "name": "Configurable target modifier persists only for Question 3",
+      "passed": true
+    },
+    {
+      "name": "Avatar selection applies immediately and locked avatars preserve selection",
+      "passed": true
+    },
+    {
+      "name": "Emotes update unique recents and throwables travel to the selected seat",
+      "passed": true
+    },
+    {
+      "name": "Chat rejects blank input, sends, replies, tags and respects bubble settings",
+      "passed": true
+    },
+    {
+      "name": "Membership changes unlock assets and synchronize every own avatar",
+      "passed": true
+    },
+    {
+      "name": "Recents keep ten unique emotes in last-used order",
+      "passed": true
+    },
+    {
+      "name": "Chat mute options filter incoming events but preserve own messages",
+      "passed": true
+    },
+    {
+      "name": "Quick messages send directly, copy works, errors preserve the draft",
+      "passed": true
+    },
+    {
+      "name": "Four-seat scope rejects old three-player URLs and keeps waiting seats stable",
+      "passed": true
+    },
+    {
+      "name": "Throwables reach the selected seat and stop when a participant leaves",
+      "passed": true
+    },
+    {
+      "name": "Reduced motion and failed animation loads retain a usable preview",
+      "passed": true
+    },
+    {
+      "name": "Mobile controls stay inside the table and keep chat operable",
+      "passed": true
+    },
+    {
+      "name": "Avatar hover cancels on exit and disabled throwables do not open or play",
+      "passed": true
+    },
+    {
+      "name": "Both avatar areas open the matching picker and list profile buttons preserve winds",
+      "passed": true
+    },
+    {
+      "name": "Hover menus remain usable across the gap and support keyboard and touch entry",
+      "passed": true
+    },
+    {
+      "name": "Emoji sound loads its mapped clip and stops requesting clips when muted",
+      "passed": true
+    }
+  ]
+}

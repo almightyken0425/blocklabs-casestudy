@@ -1,0 +1,58 @@
+{
+  "checked_at": "2026-10-05T08:29:42.493Z",
+  "browser": "Chrome via Playwright",
+  "base": "http://127.0.0.1:8767/question_3/mahjong-game-standalone.html",
+  "prototype_folder": "question_3",
+  "source_sha256": {
+    "support/prototype/input.js": "e7725afbb01bdc5c18bbc975642fde7add387880bf9f496ed05188ec38ef75f2",
+    "support/prototype/character.js": "5e168cc2c9613dc89f8d1f111cbc5879a5a4583bb24d70220d3ccfb7e6bdb60f",
+    "support/prototype/character.css": "c836c3297615e19e9ee956555d4635a1491aabe7ab092914ccac68407830493c",
+    "support/prototype/assets/momo.svg": "77b3d24084c2b84c16df52bbe6a2ad315ecadd20f89834a780663df6a3f0e5af",
+    "support/prototype/social.js": "bf72fbd9caa57be47acd4cc4a019d1a237b87347b91497a798dcc15c48ff2703",
+    "support/prototype/social.css": "e6d67b5fd686e1c7572e128b7d3d2d5967d8d595617ea49cbdaf7266983b5ff1",
+    "mahjong-game-standalone.html": "9079c7e924bec0d09acf48e2da42a4688bb0aa790c32edc82189746fabe89bb6"
+  },
+  "results": [
+    {
+      "name": "Character throwable leaves the window, enters from each opponent side, acts and returns",
+      "passed": true
+    },
+    {
+      "name": "Character throwable supports reduced motion and cancels travel on departure or settings",
+      "passed": false,
+      "error": "locator.boundingBox: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#cms-character-scene [data-character-motion]')\u001b[22m\n"
+    },
+    {
+      "name": "Character menu presents the selected avatar and its three expressions",
+      "passed": true
+    },
+    {
+      "name": "Character emotes perform outside the circle in normal and reduced motion",
+      "passed": true
+    },
+    {
+      "name": "Character plays Happy outside its frame and returns to the same idle avatar",
+      "passed": true
+    },
+    {
+      "name": "Character expressions share mouse and keyboard controls with one queued action",
+      "passed": true
+    },
+    {
+      "name": "Character climbs fully out, returns through the frame, and leaves chat usable",
+      "passed": true
+    },
+    {
+      "name": "Character interruption restores idle and changing avatars persists",
+      "passed": true
+    },
+    {
+      "name": "Character respects reduced motion and remains visible on narrow screens",
+      "passed": true
+    },
+    {
+      "name": "Character asset failure preserves static avatars and chat",
+      "passed": true
+    }
+  ]
+}

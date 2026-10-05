@@ -2705,6 +2705,7 @@ body[data-state="waiting"] .cm-rank-bar {
 <!-- Local social prototype: avatars, emotes, throwables and table chat.
      The original table remains a static gameplay snapshot. -->
 <link rel="stylesheet" href="support/prototype/social.css">
+<link rel="stylesheet" href="support/prototype/character.css">
 </head>
 <body>
 
@@ -3456,12 +3457,8 @@ window.Mahjong = {
       casino review caught the first cut showing a full mid-hand
       table behind a dialog that had just said "1 of 3 seated".
 
-   A Kansai table seats three, so the west seat is not painted at
-   all (body[data-cap="3"] hides every [data-seat="3"]) and the
-   scores are the three-player 35,000 start. Four chairs at a
-   three-chair ruleset would contradict the lobby card that opened
-   this tab. Babei badges ride the same attribute the other way:
-   kita is a Sanma-only mechanic, so only cap-3 tables show them.
+   Question 3 accepts four-player rulesets only. Old three-player
+   links fall back to Japanese Full. Empty chairs retain their numbers.
    ============================================================ */
 
 (() => {
@@ -3479,7 +3476,7 @@ window.Mahjong = {
   /* ---- 2. the table's name ---- */
   const M = window.Mahjong;
   const id = new URLSearchParams(location.search).get('table');
-  const t = (M.TABLES.find((x) => x.id === id))
+  const t = (M.TABLES.find((x) => x.id === id && M.RULES[x.rule].cap === 4))
     || M.TABLES.find((x) => x.rule === 'japanese' && x.len === 'full')
     || M.TABLES[0];
   const r = M.RULES[t.rule];
@@ -3494,18 +3491,8 @@ window.Mahjong = {
     `${M.money(t.bet)}/${M.money(reserved)}`;
   document.getElementById('rules').textContent = `${r.name} · ${L.name}`;
 
-  if (r.cap === 3) {
-    document.body.dataset.cap = '3';
-    /* three players start from 35,000, not 25,000 — and East 1 mid-hand
-       they are all still exactly there (see the centre-piece note in the
-       markup: riichi scores cannot diverge inside a hand) */
-    for (const el of document.querySelectorAll(
-      '.cm-player-row__score, .cm-center-indicator__plate-score')) {
-      el.textContent = '35,000';
-    }
-    /* a Sanma wall is shorter, so the same eighth turn leaves fewer */
-    document.querySelector('.cm-center-indicator__round-number').textContent = '31';
-  }
+  // Question 3 always has four stable seats, including while waiting.
+  document.body.dataset.cap = '4';
 
   /* ---- 3. the seats ---- */
   /* seats counts who is there NOW; you take one on the way in */
@@ -3540,6 +3527,8 @@ window.Mahjong = {
 
 </script>
 <script src="support/coinpoker_assets/viewer/vendor/lottie.min.js"></script>
+<script src="support/prototype/input.js"></script>
+<script src="support/prototype/character.js"></script>
 <script src="support/prototype/social.js"></script>
 </body>
 </html>

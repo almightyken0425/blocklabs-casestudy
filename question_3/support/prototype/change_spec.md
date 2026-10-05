@@ -48,7 +48,7 @@ The prototype preserves these capabilities and adds player identity and social i
 At all four seats, avatars sit to the left of the tile area and hands align to the right from the player's perspective.
 The East avatar at the bottom of the screen is left of the hand. The West avatar at the top is to its right.
 The South avatar on the right side of the screen is below the hand. The North avatar on the left is above it.
-See the [tile layout decision](../../baseline_decision_log.md#decision-2-place-avatars-on-the-left-and-align-hands-to-the-right) for the rationale.
+See the [tile layout decision](../../../questions_1_2/decision_log.md#decision-2-place-avatars-on-the-left-and-align-hands-to-the-right) for the rationale.
 
 Avatar settings provide a large preview, category rows, and a current-selection indicator.
 Category rows scroll horizontally, and settings content scrolls vertically.

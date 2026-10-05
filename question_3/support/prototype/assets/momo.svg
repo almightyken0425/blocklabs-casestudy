@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 220" data-expression="idle">
+  <title>Momo, the Mahjong fox</title>
+  <desc>Original Question 3 demonstration artwork. Separate head, face, ears, torso, arms, legs and tail.</desc>
+  <view id="portrait" viewBox="20 3 140 140"/>
+  <style>
+    .momo-face{display:none}
+    svg[data-expression="idle"] .momo-idle,svg[data-expression="happy"] .momo-happy,svg[data-expression="sad"] .momo-sad,svg[data-expression="angry"] .momo-angry{display:inline}
+  </style>
+  <g data-part="character" stroke="#422823" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round">
+    <g data-part="tail"><path d="M120 162Q169 170 156 119Q139 131 116 137Z" fill="#df743b"/><path d="M156 119Q141 128 140 139L160 146Q162 132 156 119Z" fill="#fff0c9" stroke="none"/></g>
+    <g data-part="legs">
+      <g transform="translate(67 167)"><g data-joint="leg-left"><path d="M-10-5H10L8 33Q-17 41-23 29L-10 23Z" fill="#6a493a"/><path d="M-23 29Q-14 35 8 30" fill="none" stroke="#fff0c9"/></g></g>
+      <g transform="translate(113 167)"><g data-joint="leg-right"><path d="M-10-5H10L10 23Q27 32 18 36H-8Z" fill="#6a493a"/><path d="M-8 30Q8 34 21 30" fill="none" stroke="#fff0c9"/></g></g>
+    </g>
+    <g data-part="torso"><path d="M61 103Q90 94 119 103L128 159Q94 177 52 159Z" fill="#287f77"/><path d="M70 109V156M110 109V156" stroke="#53a897"/><path d="M77 144H103V167H77Z" fill="#fff0c9"/><path d="M84 151H96M84 157H96M90 149V162" stroke="#b8792f" stroke-width="2.5"/><path d="M63 103Q90 129 118 103" fill="#f2b34d"/></g>
+    <g data-part="arms">
+      <g transform="translate(55 116)"><g data-joint="arm-left"><path d="M4-9Q-9-15-15-3L-23 27Q-23 39-10 37L6 9Z" fill="#de773d"/><path d="M-22 24Q-30 25-24 37Q-13 44-9 33L-11 26Z" fill="#fff0c9"/></g></g>
+      <g transform="translate(125 116)"><g data-joint="arm-right"><path d="M-4-9Q9-15 15-3L23 27Q23 39 10 37L-6 9Z" fill="#de773d"/><path d="M22 24Q30 25 24 37Q13 44 9 33L11 26Z" fill="#fff0c9"/></g></g>
+    </g>
+    <g data-part="head">
+      <g data-part="ears"><path d="M39 48L30 8Q57 8 70 34M110 34Q126 8 150 8L141 49" fill="#de773d"/><path d="M41 33L38 19L57 33M123 33L142 19L139 35" fill="#593b39" stroke="none"/></g>
+      <path d="M46 29Q90 8 135 31L149 65L139 77L147 78Q137 109 91 112Q45 110 33 80L43 76L31 65Z" fill="#ef9d50"/>
+      <path d="M37 71Q59 61 88 86Q119 62 144 71Q136 105 91 108Q50 106 37 71Z" fill="#fff0c9" stroke="none"/>
+      <path d="M75 24L91 36L105 24" fill="#fff0c9" stroke="none"/>
+      <ellipse cx="51" cy="78" rx="10" ry="5" fill="#e87557" stroke="none" opacity=".6"/><ellipse cx="129" cy="78" rx="10" ry="5" fill="#e87557" stroke="none" opacity=".6"/>
+      <g data-part="face" fill="none">
+        <g data-face="idle" class="momo-face momo-idle"><ellipse cx="63" cy="60" rx="5" ry="8" fill="#422823" stroke="none"/><ellipse cx="117" cy="60" rx="5" ry="8" fill="#422823" stroke="none"/><path d="M77 91Q90 101 103 91"/></g>
+        <g data-face="happy" class="momo-face momo-happy"><path d="M52 62Q62 43 74 62M105 62Q117 43 128 62" stroke-width="5"/><path d="M74 86Q90 91 106 86Q104 107 90 106Q76 106 74 86Z" fill="#603138"/><path d="M82 101Q90 94 99 101" stroke="#f38e91" stroke-width="6"/></g>
+        <g data-face="sad" class="momo-face momo-sad"><path d="M50 45L73 39M107 39L130 45" stroke-width="5"/><path d="M55 61Q64 72 73 61M107 61Q117 72 126 61M79 98Q90 86 102 98"/><path d="M55 74Q43 90 56 94Q68 91 55 74Z" fill="#79d3ed" stroke="#377d99" stroke-width="2"/></g>
+        <g data-face="angry" class="momo-face momo-angry"><path d="M50 44L76 54M105 54L131 44" stroke-width="6"/><ellipse cx="65" cy="63" rx="5" ry="7" fill="#422823" stroke="none"/><ellipse cx="115" cy="63" rx="5" ry="7" fill="#422823" stroke="none"/><path d="M77 98L83 88L91 93L99 88L105 98Z" fill="white"/><path d="M134 29V39M129 34H139" stroke="#b74332" stroke-width="3"/></g>
+        <path d="M83 78Q90 74 97 78L90 84Z" fill="#422823"/>
+      </g>
+    </g>
+  </g>
+</svg>
