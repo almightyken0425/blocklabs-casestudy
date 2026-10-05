@@ -1,0 +1,42 @@
+{
+  "checked_at": "2026-10-05T08:58:47.870Z",
+  "browser": "Chrome via Playwright",
+  "base": "http://127.0.0.1:8767/question_3/mahjong-game-standalone.html",
+  "prototype_folder": "question_3",
+  "source_sha256": {
+    "support/prototype/input.js": "b973a2036d82d9ced454619b453cdbb6b70a65219c7d9d269e98286a5a848e91",
+    "support/prototype/character.js": "96bc9c18e29d10726ca53ed0e1a9cd514d871f13a4a9ac997af40586a3279e78",
+    "support/prototype/character.css": "2c350c166ce8bdd3fc1e87006ef71d9f5884e7246c9742b5a17fd0ec920bfbd9",
+    "support/prototype/assets/momo.svg": "77b3d24084c2b84c16df52bbe6a2ad315ecadd20f89834a780663df6a3f0e5af",
+    "support/prototype/social.js": "1fe48bef3cbf6ab29c86c91ca4d4c9f1953bc6de60b7b9ef0fef2ac6a1e6b516",
+    "support/prototype/social.css": "e6d67b5fd686e1c7572e128b7d3d2d5967d8d595617ea49cbdaf7266983b5ff1",
+    "mahjong-game-standalone.html": "9079c7e924bec0d09acf48e2da42a4688bb0aa790c32edc82189746fabe89bb6"
+  },
+  "results": [
+    {
+      "name": "Quick slots send three bound emotes without opening chat or replacing a draft",
+      "passed": false,
+      "error": "page.waitForSelector: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#cms-character-scene[data-expression=\"happy\"]') to be visible\u001b[22m\n"
+    },
+    {
+      "name": "Quick slots save three editable bindings and preview without sending",
+      "passed": false,
+      "error": "locator.click: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('tab', { name: 'Quick messages', exact: true })\u001b[22m\n"
+    },
+    {
+      "name": "Quick slots keep queued messages paired with emotes and cancel pending work",
+      "passed": false,
+      "error": "The input did not match the regular expression /already queued/. Input:\n\n'Quick message 3 is not connected yet. No message was sent.'\n"
+    },
+    {
+      "name": "Quick slots offer retry on failure and play only after success",
+      "passed": false,
+      "error": "page.waitForSelector: Timeout 3000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#cms-quick-error:not([hidden])') to be visible\u001b[22m\n"
+    },
+    {
+      "name": "Quick slots work by touch on narrow screens and retain text with a static avatar",
+      "passed": false,
+      "error": "page.waitForFunction: Timeout 3000ms exceeded."
+    }
+  ]
+}

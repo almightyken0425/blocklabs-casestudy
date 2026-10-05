@@ -1,0 +1,22 @@
+{
+  "checked_at": "2026-10-05T08:10:51.154Z",
+  "browser": "Chrome via Playwright",
+  "base": "http://127.0.0.1:8767/question_3/mahjong-game-standalone.html",
+  "prototype_folder": "question_3",
+  "source_sha256": {
+    "support/prototype/input.js": "e7725afbb01bdc5c18bbc975642fde7add387880bf9f496ed05188ec38ef75f2",
+    "support/prototype/character.js": "c3afd1f8445d514ba5bff06f70034fb846508020e834f3befc209e8b8c5eb8a9",
+    "support/prototype/character.css": "f671a38eec15294fa11d25d7ca5b96ccb43ff68d2c40db576b0d709c071e6c8c",
+    "support/prototype/assets/momo.svg": "77b3d24084c2b84c16df52bbe6a2ad315ecadd20f89834a780663df6a3f0e5af",
+    "support/prototype/social.js": "d8b59fbd10bf7bfbfb26cc99fc3d2555342d5355165e6f0c8ddb46843599ca9a",
+    "support/prototype/social.css": "e6d67b5fd686e1c7572e128b7d3d2d5967d8d595617ea49cbdaf7266983b5ff1",
+    "mahjong-game-standalone.html": "9079c7e924bec0d09acf48e2da42a4688bb0aa790c32edc82189746fabe89bb6"
+  },
+  "results": [
+    {
+      "name": "Character emotes perform outside the circle in normal and reduced motion",
+      "passed": false,
+      "error": "The circular portrait mask must not crop an emote\n\nfalse !== true\n"
+    }
+  ]
+}

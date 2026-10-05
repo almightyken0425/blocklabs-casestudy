@@ -1,0 +1,22 @@
+{
+  "checked_at": "2026-10-05T07:53:34.136Z",
+  "browser": "Chrome via Playwright",
+  "base": "http://127.0.0.1:8767/question_3/mahjong-game-standalone.html",
+  "prototype_folder": "question_3",
+  "source_sha256": {
+    "support/prototype/input.js": "e7725afbb01bdc5c18bbc975642fde7add387880bf9f496ed05188ec38ef75f2",
+    "support/prototype/character.js": "1e5ad99771e07c1f3f394de9e1aed362719f8e6bcfc9967ab09b63a95c6d8ba4",
+    "support/prototype/character.css": "7ecdf9a28421a4e029285290a41536ea088b56ba099febbca486406734e29b3d",
+    "support/prototype/assets/momo.svg": "77b3d24084c2b84c16df52bbe6a2ad315ecadd20f89834a780663df6a3f0e5af",
+    "support/prototype/social.js": "05dd44e4dd8b8dd5169df81f198613a81cf55b5a83619679b0e9f082db983cf5",
+    "support/prototype/social.css": "e6d67b5fd686e1c7572e128b7d3d2d5967d8d595617ea49cbdaf7266983b5ff1",
+    "mahjong-game-standalone.html": "9079c7e924bec0d09acf48e2da42a4688bb0aa790c32edc82189746fabe89bb6"
+  },
+  "results": [
+    {
+      "name": "Character menu presents the selected avatar and its three expressions",
+      "passed": false,
+      "error": "Expected values to be strictly equal:\n\n'Dogs' !== 'Emotes'\n"
+    }
+  ]
+}

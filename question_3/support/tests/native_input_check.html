@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Question 3 native input check</title>
+<style>body{margin:0;background:#17212c;color:white;font:13px system-ui}header{padding:8px}iframe{border:0;width:100%;height:75vh}pre{white-space:pre-wrap;margin:8px;max-height:18vh;overflow:auto}</style>
+<header>Native input check. Click inside the table, then use physical or native OS keys. This page only records events. Reload to clear.</header>
+<iframe src="../../mahjong-game-standalone.html" title="Question 3 table"></iframe>
+<pre id="events" aria-label="Input event record"></pre>
+<script>
+const frame=document.querySelector('iframe'), output=document.querySelector('pre');
+frame.onload=()=>{
+  const doc=frame.contentDocument;
+  for(const type of ['keydown','keyup','compositionstart','compositionupdate','compositionend','input']) {
+    frame.contentWindow.addEventListener(type,e=>{
+      // A microtask observes the resulting route after the application handler.
+      queueMicrotask(()=>{
+        const input=doc.querySelector('#cms-chat-input');
+        const record={type,key:e.key,code:e.code,data:e.data,trusted:e.isTrusted,composing:e.isComposing,prevented:e.defaultPrevented,
+          focus:doc.activeElement?.id,chat:doc.querySelector('#cms-chat-toggle')?.getAttribute('aria-expanded'),
+          draft:input?.value,target:doc.querySelector('[data-keyboard-target]')?.id||doc.querySelector('.cms-seat[data-keyboard-target]')?.dataset.player||null,
+          messages:doc.querySelectorAll('.cms-message').length};
+        output.textContent+=JSON.stringify(record)+'\n';output.scrollTop=output.scrollHeight;
+      });
+    },true);
+  }
+};
+</script>
+</html>

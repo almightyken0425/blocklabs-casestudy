@@ -37,8 +37,19 @@
   try { saved = JSON.parse(localStorage.getItem(storageKey)) || {}; } catch { /* Start with defaults if storage is unavailable or corrupt. */ }
   const defaults = { throwables:true, sound:true, muteSpectators:false, hideBubbles:false, muteAll:false };
   const prefs = Object.fromEntries(Object.entries(defaults).map(([key,value]) => [key, typeof saved.prefs?.[key] === 'boolean' ? saved.prefs[key] : value]));
-  const state = { avatars:[], assets:[], member:saved.member === true, avatar:Number(saved.avatar)||1, recents:[], players:[], prefs };
-  const save = () => { try { localStorage.setItem(storageKey, JSON.stringify({ avatar:state.avatar, member:state.member, recents:state.recents, prefs })); } catch { /* Session interaction remains available without persistence. */ } };
+  const state = { avatars:[], assets:[], member:saved.member === true, avatar:Number(saved.avatar)||1, recents:[], players:[], character:saved.character !== false, prefs };
+  const quickDefaults=[
+    {text:'GG!',emote:'happy'},{text:'Ouch...',emote:'sad'},{text:'So close!',emote:'angry'},
+    {text:'Good luck, everyone!',emote:'none'},{text:'One moment, please.',emote:'none'},{text:'Last hand for me.',emote:'none'},
+  ];
+  const emoteNames={happy:'Happy',sad:'Sad',angry:'Angry',none:'None'};
+  const quickMessages=quickDefaults.map((fallback,index)=>{
+    const item=saved.quickMessages?.[index];
+    return {text:typeof item?.text==='string'&&item.text.trim()?item.text.slice(0,120):fallback.text,emote:Object.hasOwn(emoteNames,item?.emote)?item.emote:fallback.emote};
+  });
+  const keyboard = { targetModifier:saved.keyboard?.targetModifier === 'alt-shift' ? 'alt-shift' : 'ctrl' };
+  let inputRouter, character, characterArtwork;
+  const save = () => { try { localStorage.setItem(storageKey, JSON.stringify({ avatar:state.avatar, member:state.member, recents:state.recents, prefs, keyboard, character:state.character, quickMessages })); } catch { /* Session interaction remains available without persistence. */ } };
   const ui = document.createElement('div'); ui.className='cms-ui'; ui.id='cms-ui'; document.body.append(ui);
   function syncTableBounds() {
     const rect=stage.getBoundingClientRect();
@@ -55,14 +66,16 @@
     <header class="cms-window-header cms-mobile" aria-label="Window settings"><button class="cms-toolbar-button" id="cms-mobile-settings" aria-label="Settings" title="Settings" aria-haspopup="dialog" aria-controls="cms-settings" aria-expanded="false">${settingsIcon}</button></header>
     <nav class="cms-toolbar" aria-label="Table social controls">
       <button class="cms-toolbar-button" id="cms-chat-toggle" aria-label="Open table chat" aria-expanded="false" aria-controls="cms-chat">${icon(icons.chat)}<span class="cms-toolbar-label">Chat</span><span class="cms-unread" hidden></span></button>
+      <button class="cms-toolbar-button" id="cms-table-quick" aria-label="Quick messages" aria-expanded="false" aria-controls="cms-quick-expanded">${icon(icons.quick)}<span class="cms-toolbar-label">Quick</span></button>
       <button class="cms-toolbar-button cms-mobile" id="cms-mobile-players" aria-label="Players">♙</button>
       <button class="cms-toolbar-button cms-mobile" id="cms-mobile-demo" aria-label="Prototype controls">⋯</button>
     </nav>
     <dialog class="cms-dialog" id="cms-settings" aria-labelledby="cms-settings-title">
       <header class="cms-dialog-header"><h2 class="cms-title" id="cms-settings-title">Settings</h2><button class="cms-icon-button" data-close="cms-settings" aria-label="Close settings">✕</button></header>
-      <div class="cms-tabs" role="tablist" aria-label="Settings sections"><button class="cms-tab" role="tab" id="cms-tab-avatars" aria-selected="true" aria-controls="cms-avatars-content">Avatars</button><button class="cms-tab" role="tab" id="cms-tab-interactions" aria-selected="false" aria-controls="cms-interactions-content">Interactions</button></div>
+      <div class="cms-tabs" role="tablist" aria-label="Settings sections"><button class="cms-tab" role="tab" id="cms-tab-avatars" aria-selected="true" aria-controls="cms-avatars-content">Avatars</button><button class="cms-tab" role="tab" id="cms-tab-interactions" aria-selected="false" aria-controls="cms-interactions-content">Interactions</button><button class="cms-tab" role="tab" id="cms-tab-quick" aria-selected="false" aria-controls="cms-quick-content">Quick messages</button></div>
       <section class="cms-settings-content" id="cms-avatars-content" role="tabpanel" aria-labelledby="cms-tab-avatars"></section>
       <section class="cms-settings-content" id="cms-interactions-content" role="tabpanel" aria-labelledby="cms-tab-interactions" hidden></section>
+      <section class="cms-settings-content" id="cms-quick-content" role="tabpanel" aria-labelledby="cms-tab-quick" hidden></section>
     </dialog>
     <dialog class="cms-dialog cms-member-dialog" id="cms-member-dialog" aria-labelledby="cms-member-title"><img src="${icons.club}" alt="3-Bet Club"><h2 class="cms-title" id="cms-member-title">For 3-Bet Club members</h2><p>Unlock exclusive avatars, emotes and throwables with your membership.</p><button class="cms-text-button cms-primary" data-close="cms-member-dialog">Got it</button></dialog>
     <dialog class="cms-dialog cms-profile" id="cms-profile" aria-labelledby="cms-profile-title"><header class="cms-dialog-header"><h2 class="cms-title" id="cms-profile-title">Profile</h2><button class="cms-icon-button" data-close="cms-profile" aria-label="Close player profile">✕</button></header><div class="cms-profile-main"></div></dialog>
@@ -71,14 +84,14 @@
     <div id="cms-toast" class="cms-toast" role="status" hidden></div>`;
   let toastTimer;
   function toast(message) { const el=$('#cms-toast');el.textContent=message;el.hidden=false;clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.hidden=true,2800); }
-  const showDialog = id => { closePicker(); const dialog=$('#'+id);if(!dialog.open)dialog.showModal(); };
+  const showDialog = id => { character?.reset(); inputRouter?.cancelTarget(); closeQuickMenu(); closePicker(); const dialog=$('#'+id);if(!dialog.open)dialog.showModal(); };
   function locked() { showDialog('cms-member-dialog'); }
   ui.addEventListener('click', event => { const button=event.target.closest('[data-close]');if(button)$('#'+button.dataset.close).close(); });
   $$('.cms-dialog').forEach(dialog => dialog.addEventListener('click', event => { if(event.target===dialog){const r=dialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)dialog.close();} }));
   const avatarData = id => state.avatars.find(a=>a.id===id)||state.avatars[0];
   function avatarMarkup(player, extra='') {
     const a=avatarData(player.avatar), ring=player.demoRing;
-    return `<span class="cms-avatar ${extra}" style="--cms-avatar-face-size:${ring?.faceSize||'84%'}"><img class="cms-avatar-face" src="${assetRoot+a.path}" alt=""><img class="cms-avatar-ring" src="${ring?assetRoot+ring.path:player.member?rings.member:rings.normal}" data-ring-name="${ring?ring.name:'Default'}" alt=""></span>`;
+    return `<span class="cms-avatar ${extra}" style="--cms-avatar-face-size:${ring?.faceSize||'84%'}"><img class="cms-avatar-face" ${player.character?'data-character="momo"':''} src="${player.character?window.MahjongCharacter.asset+'#portrait':assetRoot+a.path}" alt=""><img class="cms-avatar-ring" src="${ring?assetRoot+ring.path:player.member?rings.member:rings.normal}" data-ring-name="${ring?ring.name:'Default'}" alt=""></span>`;
   }
   const me = () => state.players[0];
   const activePlayers = () => state.players.filter(p=>p.active);
@@ -92,6 +105,8 @@
     return `<button type="button" class="cms-icon-button cms-profile-button" data-profile="${player.id}" aria-label="${escape(profileLabel(player))}" title="Profile" aria-haspopup="dialog" aria-controls="cms-profile">${profileIcon}</button>`;
   }
   function renderPlayers() {
+    character?.reset();
+    inputRouter?.cancelTarget();
     closePicker();
     state.players.forEach(player => {
       const row=$('#player-info-'+player.id),old=$('.cm-avatar, .cms-avatar-button',row);
@@ -100,10 +115,10 @@
       $('.cm-wind-tile',row).insertAdjacentHTML('beforebegin',profileButton(player));
       row.classList.toggle('cm-player-row--hidden',!player.active);row.inert=!player.active;
       const centerAvatar=$('.cm-center-indicator__plate--'+['bottom','right','top','left'][player.id]+' .cm-center-indicator__plate-face img');
-      if(centerAvatar)centerAvatar.src=assetRoot+avatarData(player.avatar).path;
+      if(centerAvatar)centerAvatar.src=player.character?window.MahjongCharacter.asset+'#portrait':assetRoot+avatarData(player.avatar).path;
     });
     let seats=$('#cms-seats');if(!seats){seats=document.createElement('div');seats.id='cms-seats';seats.className='cms-seats';stage.append(seats);}
-    seats.innerHTML=activePlayers().map(p=>`<div class="cms-seat" data-player="${p.id}">${socialAvatar(p)}<span class="cms-seat-name">${escape(p.name)}${p.id===0?' · You':''}</span></div>`).join('');
+    seats.innerHTML=activePlayers().map(p=>`<div class="cms-seat" data-player="${p.id}">${socialAvatar(p)}<span class="cms-seat-number" aria-label="Seat ${p.id+1}">${p.id+1}</span><span class="cms-seat-name">${escape(p.name)}${p.id===0?' · You':''}</span></div>`).join('');
     $('#cms-players-list').innerHTML=activePlayers().map(p=>`<div class="cms-player-mobile-row">${socialAvatar(p)}<span class="cms-player-mobile-name">${escape(p.name)}</span>${profileButton(p)}<span class="cm-wind-tile">${['東','南','西','北'][p.id]}</span></div>`).join('');
     $$('[data-profile]').forEach(b=>b.onclick=()=>{if($('#cms-players').open)$('#cms-players').close();profile(state.players[Number(b.dataset.profile)]);});
     $$('[data-social-player]').forEach(bindAvatarInteraction);
@@ -130,27 +145,33 @@
   function renderAvatars() {
     const content=$('#cms-avatars-content');const scroll=content.scrollTop;
     const groups=[['3-BET CLUB','3-Bet Club configuration'],['WORLD CUP','World Cup'],...['ANIMAL','ANIME','HALLOWEEN','NOBLE','ROYAL'].map(g=>[g,g])];
-    content.innerHTML=`<div class="cms-avatar-preview">${avatarMarkup(me())}<div><strong>${escape(me().name)}</strong><span class="cms-muted">${state.member?'3-Bet Club member':'Choose your table avatar'}</span><p class="cms-muted" style="font-size:12px;margin:5px 0 0">Changes apply immediately.</p></div></div>`+groups.map(([label,group],index)=>`<section class="cms-avatar-group"><div class="cms-group-heading"><h3>${label}</h3>${index<2?`<div><button class="cms-icon-button" data-scroll="${index}" data-direction="-1" aria-label="Previous ${label} avatars">‹</button><button class="cms-icon-button" data-scroll="${index}" data-direction="1" aria-label="Next ${label} avatars">›</button></div>`:''}</div><div class="cms-avatar-list" data-group="${index}">${state.avatars.filter(a=>a.group===group).map(a=>`<button class="cms-avatar-option" data-avatar="${a.id}" data-locked="${a.id>=2000&&!state.member}" aria-label="Select ${label} avatar ${a.id}" aria-pressed="${state.avatar===a.id}"><img src="${assetRoot+a.path}" alt="">${a.id>=2000&&!state.member?`<img class="cms-lock" src="${icons.lock}" alt="Members only">`:''}</button>`).join('')}</div></section>`).join('');
+    content.innerHTML=`<div class="cms-avatar-preview">${avatarMarkup(me())}<div><strong>${escape(me().name)}</strong><span class="cms-muted">${state.member?'3-Bet Club member':'Choose your table avatar'}</span><p class="cms-muted" style="font-size:12px;margin:5px 0 0">Changes apply immediately.</p></div></div>`+groups.map(([label,group],index)=>`<section class="cms-avatar-group"><div class="cms-group-heading"><h3>${label}</h3>${index<2?`<div><button class="cms-icon-button" data-scroll="${index}" data-direction="-1" aria-label="Previous ${label} avatars">‹</button><button class="cms-icon-button" data-scroll="${index}" data-direction="1" aria-label="Next ${label} avatars">›</button></div>`:''}</div><div class="cms-avatar-list" data-group="${index}">${state.avatars.filter(a=>a.group===group).map(a=>`<button class="cms-avatar-option" data-avatar="${a.id}" data-locked="${a.id>=2000&&!state.member}" aria-label="Select ${label} avatar ${a.id}" aria-pressed="${!state.character&&state.avatar===a.id}"><img src="${assetRoot+a.path}" alt="">${a.id>=2000&&!state.member?`<img class="cms-lock" src="${icons.lock}" alt="Members only">`:''}</button>`).join('')}</div></section>`).join('');
+    content.insertAdjacentHTML('afterbegin',`<button type="button" class="cms-character-choice" id="cms-use-character" aria-pressed="${state.character}" ${characterArtwork?'':'disabled'}><img src="${characterArtwork?window.MahjongCharacter.asset+'#portrait':assetRoot+avatarData(1).path}" alt=""><span><strong>Momo · animated avatar</strong><small>${characterArtwork?'Happy, Sad, Angry, Water gun and Banana. Original Question 3 character.':'Character artwork unavailable. Reload to retry.'}</small></span></button>`);
+    $('#cms-use-character').onclick=()=>{state.character=true;me().character=true;save();renderPlayers();renderAvatars();toast('Momo is your table avatar.');};
     content.scrollTop=scroll;
     $$('[data-avatar]',content).forEach(b=>b.addEventListener('click',()=>{
       const id=Number(b.dataset.avatar);if(id>=2000&&!state.member){locked();return;}
-      state.avatar=id;me().avatar=id;save();
+      state.avatar=id;me().avatar=id;state.character=false;me().character=false;$('#cms-use-character').setAttribute('aria-pressed','false');save();
       // Update in place so horizontal scroll and keyboard focus stay intact.
       $$('[data-avatar]',content).forEach(option=>option.setAttribute('aria-pressed',String(Number(option.dataset.avatar)===id)));
       $('.cms-avatar-preview .cms-avatar',content).outerHTML=avatarMarkup(me());renderPlayers();toast('Avatar updated');
     }));
     $$('[data-scroll]',content).forEach(b=>b.addEventListener('click',()=> $(`[data-group="${b.dataset.scroll}"]`,content).scrollBy({left:Number(b.dataset.direction)*240,behavior:'smooth'})));
   }
-  function openSettings(tab='avatars') { if(!me())return;renderAvatars();selectTab(tab);showDialog('cms-settings');settingsButton.setAttribute('aria-expanded','true');$('#cms-mobile-settings').setAttribute('aria-expanded','true'); }
-  function selectTab(tab) { ['avatars','interactions'].forEach(name=>{const selected=name===tab;$('#cms-tab-'+name).setAttribute('aria-selected',String(selected));$('#cms-tab-'+name).tabIndex=selected?0:-1;$('#cms-'+name+'-content').hidden=!selected;}); }
-  $('#cms-tab-avatars').onclick=()=>selectTab('avatars');$('#cms-tab-interactions').onclick=()=>selectTab('interactions');
-  $('.cms-tabs').addEventListener('keydown',e=>{if(['ArrowLeft','ArrowRight'].includes(e.key)){e.preventDefault();const next=e.target.id==='cms-tab-avatars'?'interactions':'avatars';selectTab(next);$('#cms-tab-'+next).focus();}});
+  function openSettings(tab='avatars') { if(!me())return;renderAvatars();renderQuickSettings();selectTab(tab);showDialog('cms-settings');settingsButton.setAttribute('aria-expanded','true');$('#cms-mobile-settings').setAttribute('aria-expanded','true'); }
+  function selectTab(tab) { ['avatars','interactions','quick'].forEach(name=>{const selected=name===tab;$('#cms-tab-'+name).setAttribute('aria-selected',String(selected));$('#cms-tab-'+name).tabIndex=selected?0:-1;$('#cms-'+name+'-content').hidden=!selected;}); }
+  $('#cms-tab-avatars').onclick=()=>selectTab('avatars');$('#cms-tab-interactions').onclick=()=>selectTab('interactions');$('#cms-tab-quick').onclick=()=>selectTab('quick');
+  $('.cms-tabs').addEventListener('keydown',e=>{if(['ArrowLeft','ArrowRight'].includes(e.key)){e.preventDefault();const tabs=['avatars','interactions','quick'],index=tabs.findIndex(tab=>e.target.id==='cms-tab-'+tab),next=tabs[(index+(e.key==='ArrowRight'?1:2))%3];selectTab(next);$('#cms-tab-'+next).focus();}});
   const settings=[['throwables','Enable throwables','Allow throwable effects at this table.'],['sound','Emoji Playing','Play the sound attached to an emote or throwable.']];
   function settingMarkup(key,title,detail='') { return `<label class="cms-setting-row"><span>${title}${detail?`<small>${detail}</small>`:''}</span><input type="checkbox" class="cms-switch" data-pref="${key}" ${prefs[key]?'checked':''}></label>`; }
   function syncPreferences() {$$('[data-pref]').forEach(input=>input.checked=prefs[input.dataset.pref]);save();}
-  $('#cms-interactions-content').innerHTML=settings.map(s=>settingMarkup(...s)).join('');
+  $('#cms-interactions-content').innerHTML=settings.map(s=>settingMarkup(...s)).join('')+`
+    <label class="cms-setting-row"><span>Throwable target keys<small>Hold the modifier, press seat 2–4, then Q or W. Use Alt + Shift if Ctrl switches desktops.</small></span><select id="cms-target-modifier"><option value="ctrl">Ctrl</option><option value="alt-shift">Alt + Shift</option></select></label>
+    <p class="cms-muted">Shift + 1–3: Happy, Sad, Angry. Alt + 1–6: quick-message slots. Momo performs the three expressions and visits opponents with Q: Water gun or W: Banana. Edit your six messages and emote bindings in Quick messages settings.</p>`;
+  $('#cms-target-modifier').value=keyboard.targetModifier;
+  $('#cms-target-modifier').onchange=event=>{keyboard.targetModifier=event.target.value;inputRouter?.cancelTarget();save();refreshPicker();};
   ui.addEventListener('change',event=>{const key=event.target.dataset.pref;if(!key)return;prefs[key]=event.target.checked;syncPreferences();preferencesChanged(key);});
-  function demoMarkup() { return `<p>Local demo · No real players or purchases.</p><div class="cms-demo-actions"><a href="?table=japanese-full-b1">4 players</a><a href="?table=kansai-full-b1">3 players</a><a href="?table=japanese-east-b1">Waiting</a></div><label class="cms-setting-row"><span>3-Bet Club membership</span><input class="cms-switch" type="checkbox" data-demo-member ${state.member?'checked':''}></label><div class="cms-demo-actions"><button data-demo="chat">Incoming chat</button><button data-demo="emote">Emote</button><button data-demo="throw">Throw</button></div><div class="cms-demo-actions"><button data-demo="spectator">Spectator</button><button data-demo="history">Chat history</button><button data-demo="clear">Clear chat</button><button data-demo="error">Send error</button></div>`; }
+  function demoMarkup() { return `<p>Local demo · No real players or purchases.</p><div class="cms-demo-actions"><a href="?table=japanese-full-b1">4 players</a><a href="?table=japanese-east-b1">Waiting · 4 seats</a></div><label class="cms-setting-row"><span>3-Bet Club membership</span><input class="cms-switch" type="checkbox" data-demo-member ${state.member?'checked':''}></label><div class="cms-demo-actions"><button data-demo="chat">Incoming chat</button><button data-demo="emote">Emote</button><button data-demo="throw">Throw</button></div><div class="cms-demo-actions"><button data-demo="spectator">Spectator</button><button data-demo="history">Chat history</button><button data-demo="clear">Clear chat</button><button data-demo="error">Send error</button></div>`; }
   function renderDemo() {
     let demo=$('#cms-demo');if(!demo){demo=document.createElement('details');demo.id='cms-demo';demo.className='cms-demo';stage.append(demo);}
     const isOpen=demo.open;demo.innerHTML='<summary>Prototype <span>Demo controls</span></summary><div class="cms-demo-panel">'+demoMarkup()+'</div>';demo.open=isOpen;
@@ -178,11 +199,11 @@
   }
   // Feature modules share player identity and preferences, without a server connection.
   let pickerKind=null, pickerTarget=0, pickerAnchor=null, category='Dogs';
-  let hoverOpenTimer,hoverCloseTimer,pickerByHover=false;
+  let hoverOpenTimer,hoverCloseTimer,pickerByHover=false,suppressHoverUntil=0;
   const categories=['Recents','Dogs','Penguin','Donkey','Chips','Skull','Pepe'];
   const categoryIcons={Recents:icons.recent,Dogs:assetRoot+'emotes/thumbnails/emoji_lottie_58_1115.png',Penguin:assetRoot+'emotes/thumbnails/41_emoji_image_1319.png',Donkey:assetRoot+'emotes/thumbnails/23_emoji_image_979.png',Chips:assetRoot+'emotes/thumbnails/chip4_1196.png',Skull:'support/research/ui_assets/skull_category_icon_1104.png',Pepe:assetRoot+'emotes/thumbnails/pepe_ne_5001_1365.png'};
   const picker=document.createElement('section');picker.id='cms-picker';picker.className='cms-picker';picker.hidden=true;picker.setAttribute('aria-label','Emotes and throwables');
-  picker.innerHTML=`<header class="cms-picker-header"><h2 id="cms-picker-title"></h2><button class="cms-icon-button" id="cms-picker-close" aria-label="Close emotes">✕</button></header><div class="cms-picker-grid" id="cms-picker-grid"></div><div class="cms-categories" id="cms-categories" role="tablist" aria-label="Emote categories"></div><img class="cms-picker-pointer" src="support/research/ui_assets/pointerarrow_1304.png" alt="">`;
+  picker.innerHTML=`<header class="cms-picker-header"><h2 id="cms-picker-title"></h2><button class="cms-icon-button" id="cms-picker-close" aria-label="Close emotes">✕</button></header><div class="cms-planned-actions" id="cms-planned-actions"></div><div class="cms-picker-grid" id="cms-picker-grid"></div><div class="cms-categories" id="cms-categories" role="tablist" aria-label="Emote categories"></div><img class="cms-picker-pointer" src="support/research/ui_assets/pointerarrow_1304.png" alt="">`;
   ui.append(picker);
   function clearTargets() {$$('.cms-target').forEach(el=>el.classList.remove('cms-target'));$$('[data-target="true"]').forEach(el=>delete el.dataset.target);}
   function closePicker(restoreFocus=false) {
@@ -201,8 +222,11 @@
   picker.addEventListener('focusin',()=>{pickerByHover=false;clearTimeout(hoverCloseTimer);});
   $('#cms-picker-close').onclick=()=>closePicker(true);
   function openPicker(kind,target,anchor,source='click') {
+    if(source==='hover'&&performance.now()<suppressHoverUntil)return;
+    closeQuickMenu();
     clearTimeout(hoverOpenTimer);clearTimeout(hoverCloseTimer);
     if(!me()?.active||!state.players[target]?.active)return;
+    inputRouter?.cancelTarget();
     if(kind==='throw'&&!prefs.throwables){if(source!=='hover')toast('Throwables are off. Enable them in Settings.');return;}
     if(!picker.hidden&&pickerKind===kind&&pickerTarget===target&&pickerAnchor===anchor){
       if(source==='hover')return;
@@ -240,7 +264,31 @@
   }
   function refreshPicker() {
     if(picker.hidden)return;
+    const avatarEmotes=pickerKind==='emote'&&me().character&&characterArtwork;
+    const avatarThrows=pickerKind==='throw'&&me().character&&characterArtwork;
+    picker.classList.toggle('cms-avatar-picker',!!(avatarEmotes||avatarThrows));
+    $('#cms-picker-grid').hidden=!!avatarEmotes;
+    if(avatarEmotes){
+      $('#cms-picker-title').textContent='Emotes';
+      const planned=$('#cms-planned-actions');
+      const preview=name=>`<svg viewBox="0 0 180 270" data-expression="${name.toLowerCase()}" aria-hidden="true">${characterArtwork.querySelector('style').outerHTML}${characterArtwork.querySelector('[data-part="character"]').outerHTML}</svg>`;
+      planned.innerHTML=`<p class="cms-character-caption">Momo <span>Step out. Express yourself.</span></p><div class="cms-expression-choices">${['Happy','Sad','Angry'].map((name,i)=>`<button data-planned-slot="${i+1}" aria-label="${name} Shift + ${i+1}"><span class="cms-expression-portrait">${preview(name)}</span><strong>${name}</strong><kbd>Shift + ${i+1}</kbd></button>`).join('')}</div><details class="cms-movement-preview"><summary>Movement preview</summary><p>Watch Momo climb out of the frame and return.</p><div class="cms-character-demo"><button data-character-demo="climb">Climb out</button><button data-character-demo="return">Return to frame</button><button data-character-demo="reset">Reset</button></div></details>`;
+      $$('[data-planned-slot]',planned).forEach(b=>b.onclick=()=>{closePicker(true);requestAction({kind:'emote',slot:Number(b.dataset.plannedSlot)});});
+      $$('[data-character-demo]',planned).forEach(b=>b.onclick=()=>{closePicker(true);if(b.dataset.characterDemo==='climb')character?.play('climb');else if(b.dataset.characterDemo==='return')character?.returnHome();else character?.reset();});
+      $('#cms-categories').hidden=true;
+      $('.cms-movement-preview',planned).addEventListener('toggle',positionPicker);
+      return;
+    }
     $('#cms-picker-title').textContent=pickerKind==='emote'?category:`Throw to ${state.players[pickerTarget].name}`;
+    const planned=$('#cms-planned-actions');
+    if(avatarThrows){
+      $('#cms-picker-title').textContent='Throwables';
+      $('#cms-picker-grid').hidden=true;$('#cms-categories').hidden=true;
+      planned.innerHTML=`<p class="cms-character-caption">Momo → ${escape(state.players[pickerTarget].name)}</p><p class="cms-journey-caption">Climb out · leave · arrive · play</p><div class="cms-throwable-choices">${[['A','Q','Water gun','water_gun_1462.png'],['B','W','Banana','banana_1207.png']].map(([action,key,name,thumbnail])=>`<button data-character-throw="${action}" aria-label="${name} to ${escape(state.players[pickerTarget].name)}"><img src="${assetRoot}throwables/thumbnails/${thumbnail}" alt=""><strong>${name}</strong><kbd>${key}</kbd></button>`).join('')}</div><p class="cms-journey-keys">Hold ${keyboard.targetModifier==='ctrl'?'Ctrl':'Alt + Shift'}, press ${pickerTarget+1}, then Q or W.</p>`;
+      $$('[data-character-throw]',planned).forEach(button=>button.onclick=()=>{const target=pickerTarget;closePicker(true);requestAction({kind:'throwable',action:button.dataset.characterThrow,target});});
+      positionPicker();return;
+    }
+    planned.innerHTML='';
     const items=pickerKind==='throw'?state.assets.filter(a=>a.kind==='throwable'):category==='Recents'?state.recents.map(id=>state.assets.find(a=>a.id===id)).filter(Boolean):state.assets.filter(a=>a.kind==='emote'&&a.category===category);
     $('#cms-picker-grid').innerHTML=items.length?items.map(a=>`<button class="cms-asset-button" data-asset="${a.id}" data-locked="${a.client_member_locked&&!state.member}" aria-label="Play ${escape(a.composition_name||a.source_name)}" title="${escape(a.composition_name||a.source_name)}"><img src="${a.thumbnail.path}" alt="">${a.client_member_locked&&!state.member?`<img class="cms-lock" src="${icons.lock}" alt="Members only">`:''}</button>`).join(''):'<p class="cms-picker-empty">Your recent emotes will appear here.</p>';
     const tabs=$('#cms-categories');tabs.hidden=pickerKind!=='emote';
@@ -300,20 +348,105 @@
     return true;
   }
   document.addEventListener('pointerdown',event=>{if(!picker.hidden&&!event.target.closest('#cms-picker,[data-social-player]'))closePicker();});
-  document.addEventListener('keydown',event=>{if(event.key==='Escape'&&!picker.hidden){event.preventDefault();closePicker(true);}});
+
   window.addEventListener('resize',positionPicker);
 
-  let chatOpen=false, replyTo=null, pending=false, unread=0, chatCloseTimer, bubbleTimers=new Map(), messageSequence=0, failNextSend=false;
+  let chatOpen=false, replyTo=null, pending=false, unread=0, bubbleTimers=new Map(), messageSequence=0, failNextSend=false;
   const messages=[];
   const chat=document.createElement('section');chat.id='cms-chat';chat.className='cms-chat';chat.hidden=true;chat.dataset.open='false';chat.setAttribute('aria-label','Table chat');
-  chat.innerHTML=`<header class="cms-chat-header"><div><h2>Table chat</h2><p>${escape($('#table-name').textContent)}</p></div><button id="cms-chat-options-button" class="cms-icon-button" aria-label="Chat options" aria-expanded="false">⋯</button><button id="cms-chat-close" class="cms-icon-button" aria-label="Close table chat">✕</button></header><div class="cms-messages" id="cms-messages" role="log" aria-label="Messages" aria-live="polite"></div><div id="cms-chat-options" class="cms-chat-popover cms-chat-options" hidden>${settingMarkup('muteSpectators','Mute spectator chat')}${settingMarkup('hideBubbles','Hide chat bubbles')}${settingMarkup('muteAll','Mute all chats')}</div><div class="cms-chat-popover cms-mentions" id="cms-mentions" hidden></div><div class="cms-chat-popover cms-quick-expanded" id="cms-quick-expanded" hidden><button data-quick="GG 👍">GG 👍</button><button data-quick="Fishy AF 🐠🐡">Fishy AF 🐠🐡</button></div><form class="cms-chat-footer" id="cms-chat-form"><div class="cms-reply-draft" id="cms-reply-draft" hidden><div><strong></strong><p></p></div><button type="button" class="cms-icon-button" id="cms-reply-cancel" aria-label="Cancel reply">✕</button></div><p class="cms-chat-error" id="cms-chat-error" role="alert" hidden></p><div class="cms-quick-row"><button type="button" data-quick="GG 👍">GG 👍</button><button type="button" data-quick="Fishy AF 🐠🐡">Fishy AF 🐠🐡</button><button type="button" class="cms-icon-button" id="cms-quick-toggle" aria-label="Quick messages" aria-expanded="false">${icon(icons.quick)}</button></div><div class="cms-input-row"><button type="button" class="cms-icon-button" id="cms-mention-toggle" aria-label="Mention a player" aria-expanded="false">@</button><input id="cms-chat-input" aria-label="Chat message" autocomplete="off" placeholder="Type here.."><button type="submit" class="cms-icon-button cms-send" id="cms-chat-send" aria-label="Send message" disabled>➤</button></div></form>`;
+  chat.innerHTML=`<header class="cms-chat-header"><div><h2>Table chat</h2><p>${escape($('#table-name').textContent)}</p></div><button id="cms-chat-options-button" class="cms-icon-button" aria-label="Chat options" aria-expanded="false">⋯</button><button id="cms-chat-close" class="cms-icon-button" aria-label="Close table chat">✕</button></header><div class="cms-messages" id="cms-messages" role="log" aria-label="Messages" aria-live="polite"></div><div id="cms-chat-options" class="cms-chat-popover cms-chat-options" hidden>${settingMarkup('muteSpectators','Mute spectator chat')}${settingMarkup('hideBubbles','Hide chat bubbles')}${settingMarkup('muteAll','Mute all chats')}</div><div class="cms-chat-popover cms-mentions" id="cms-mentions" hidden></div><form class="cms-chat-footer" id="cms-chat-form"><div class="cms-reply-draft" id="cms-reply-draft" hidden><div><strong></strong><p></p></div><button type="button" class="cms-icon-button" id="cms-reply-cancel" aria-label="Cancel reply">✕</button></div><p class="cms-chat-error" id="cms-chat-error" role="alert" hidden></p><div class="cms-quick-row" id="cms-quick-row"></div><div class="cms-input-row"><button type="button" class="cms-icon-button" id="cms-mention-toggle" aria-label="Mention a player" aria-expanded="false">@</button><input id="cms-chat-input" aria-label="Chat message" autocomplete="off" placeholder="Type here.."><button type="submit" class="cms-icon-button cms-send" id="cms-chat-send" aria-label="Send message" disabled>➤</button></div></form>`;
   ui.append(chat);
+  const quickMenu=document.createElement('section');quickMenu.id='cms-quick-expanded';quickMenu.className='cms-quick-menu';quickMenu.hidden=true;quickMenu.setAttribute('aria-label','Quick messages');ui.append(quickMenu);
+  const quickError=document.createElement('div');quickError.id='cms-quick-error';quickError.className='cms-quick-error';quickError.hidden=true;
+  quickError.innerHTML='<p role="alert"></p><button class="cms-text-button" id="cms-quick-retry" aria-label="Retry quick message">Retry</button><button class="cms-icon-button" id="cms-quick-dismiss" aria-label="Dismiss quick message error">✕</button>';ui.append(quickError);
+  let retryQuick=null,quickAnchor=null;
+  $('#cms-quick-dismiss').onclick=()=>{quickError.hidden=true;retryQuick=null;};
+  $('#cms-quick-retry').onclick=()=>{if(retryQuick)sendQuickMessage({...retryQuick});};
+  function closeQuickMenu(){
+    if(!quickMenu.hidden)suppressHoverUntil=performance.now()+450;
+    quickMenu.hidden=true;quickAnchor=null;
+    ['cms-table-quick','cms-quick-toggle'].forEach(id=>$('#'+id)?.setAttribute('aria-expanded','false'));
+  }
+  function positionQuickMenu(){
+    if(quickMenu.hidden||!quickAnchor)return;
+    const b=ui.getBoundingClientRect(),a=quickAnchor.getBoundingClientRect(),r=quickMenu.getBoundingClientRect();
+    quickMenu.style.left=Math.max(12,Math.min(b.width-r.width-12,a.left-b.left))+'px';
+    quickMenu.style.top=Math.max(12,Math.min(b.height-r.height-12,a.top-b.top-r.height-8))+'px';
+  }
+  function toggleQuickMenu(button){
+    const close=!quickMenu.hidden;closeChatPopovers();closePicker();inputRouter?.cancelTarget();
+    if(close)return;
+    quickAnchor=button;quickMenu.hidden=false;button.setAttribute('aria-expanded','true');positionQuickMenu();
+  }
+  window.addEventListener('resize',closeQuickMenu);
+  $('#cms-table-quick').onclick=event=>toggleQuickMenu(event.currentTarget);
+  document.addEventListener('pointerdown',event=>{if(!event.target.closest('#cms-quick-expanded,#cms-table-quick,#cms-quick-toggle'))closeQuickMenu();});
+  function quickButtons(compact=false){
+    return quickMessages.map((slot,index)=>`<button type="button" data-quick-slot="${index+1}" title="${escape(slot.text)}" aria-label="Send quick message ${index+1}: ${escape(slot.text)}">${!compact&&characterArtwork&&slot.emote!=='none'?`<svg class="cms-quick-avatar" viewBox="0 0 180 220" data-expression="${slot.emote}" aria-hidden="true">${characterArtwork.querySelector('style').outerHTML}${characterArtwork.querySelector('[data-part="character"]').outerHTML}</svg>`:''}<span class="cms-quick-label"><strong>${escape(slot.text)}</strong>${compact?'':`<small>${slot.emote==='none'?'Text only':emoteNames[slot.emote]}</small>`}</span><kbd>Alt + ${index+1}</kbd></button>`).join('');
+  }
+  function renderQuickMenus(){
+    quickMenu.innerHTML='<header class="cms-picker-header"><h2>Quick messages</h2><button class="cms-icon-button" id="cms-close-quick" aria-label="Close quick messages">✕</button></header><div class="cms-quick-choices">'+quickButtons()+'</div><button class="cms-quick-edit" id="cms-edit-quick">Edit messages & emotes</button>';
+    $('#cms-quick-row').innerHTML=quickButtons(true)+`<button type="button" class="cms-icon-button" id="cms-quick-toggle" aria-label="Quick messages" aria-expanded="false">${icon(icons.quick)}</button>`;
+    $$('[data-quick-slot]',ui).forEach(button=>button.onclick=()=>{closeQuickMenu();requestAction({kind:'quick-message',slot:Number(button.dataset.quickSlot)});});
+    $('#cms-close-quick').onclick=()=>{const origin=quickAnchor;closeQuickMenu();origin?.focus({preventScroll:true});};
+    $('#cms-edit-quick').onclick=()=>openSettings('quick');
+    $('#cms-quick-toggle').onclick=event=>toggleQuickMenu(event.currentTarget);
+  }
+  function renderQuickSettings(){
+    $('#cms-quick-content').innerHTML='<p class="cms-quick-intro">Six messages, with or without a reaction. Changes save on this device. Preview shows the message on the table without sending it.</p>'+quickMessages.map((slot,index)=>`<fieldset class="cms-quick-setting"><legend>Message ${index+1}<kbd>Alt + ${index+1}</kbd></legend><label for="cms-quick-text-${index+1}">Message ${index+1}</label><input id="cms-quick-text-${index+1}" data-quick-text="${index+1}" maxlength="120" value="${escape(slot.text)}" aria-describedby="cms-quick-validation-${index+1}"><div class="cms-quick-binding"><label for="cms-quick-emote-${index+1}">Emote ${index+1}</label><select id="cms-quick-emote-${index+1}" data-quick-emote="${index+1}">${Object.entries(emoteNames).map(([value,name])=>`<option value="${value}" ${value===slot.emote?'selected':''}>${name}</option>`).join('')}</select><button class="cms-text-button" data-preview-quick="${index+1}" aria-label="Preview quick message ${index+1}">Preview on table</button></div><p class="cms-quick-validation" id="cms-quick-validation-${index+1}" data-quick-error="${index+1}" aria-live="polite">Saved on this device · 120 characters max</p></fieldset>`).join('');
+    $$('[data-quick-text],[data-quick-emote]',$('#cms-quick-content')).forEach(field=>field.addEventListener(field.matches('input')?'input':'change',()=>{
+      const slot=Number(field.dataset.quickText||field.dataset.quickEmote),text=$('#cms-quick-text-'+slot),emote=$('#cms-quick-emote-'+slot),valid=!!text.value.trim();
+      text.setAttribute('aria-invalid',String(!valid));$(`[data-preview-quick="${slot}"]`).disabled=!valid;
+      $(`[data-quick-error="${slot}"]`).textContent=valid?'Saved on this device · 120 characters max':'Enter a message. Your last saved version is kept.';
+      if(valid){quickMessages[slot-1]={text:text.value,emote:emote.value};save();renderQuickMenus();}
+    }));
+    $$('[data-preview-quick]',$('#cms-quick-content')).forEach(button=>button.onclick=()=>{
+      const slot=quickMessages[Number(button.dataset.previewQuick)-1];$('#cms-settings').close();
+      showBubble(me(),slot.text.trim(),true);if(slot.emote!=='none'&&me().character)character?.play(slot.emote);
+      toast('Preview only. Nothing was sent.');
+    });
+  }
+  function sendQuickMessage(snapshot){
+    const action=me().character&&snapshot.emote!=='none'?snapshot.emote:null;
+    const prepare=async isCurrent=>{
+      const sent=await sendMessage(snapshot.text,{preserveDraft:true,isCurrent});
+      if(!isCurrent())return false;
+      if(!sent){retryQuick={...snapshot};$('p',quickError).textContent=`Could not send: ${snapshot.text}`;quickError.hidden=false;}
+      else if(!me().character&&snapshot.emote!=='none')toast('Message sent. Select Momo to include its emote.');
+      return sent;
+    };
+    const status=character?character.run(action,prepare):pending?'busy':'started';
+    if(status==='started'||status==='queued'){
+      quickError.hidden=true;retryQuick=null;
+      if(!character)prepare(()=>!!me()?.active);
+      if(status==='queued')toast('Quick message and emote queued.');
+    }
+    return status;
+  }
   const input=$('#cms-chat-input'), messageList=$('#cms-messages');
-  function closeChatPopovers() {$('#cms-chat-options').hidden=true;$('#cms-mentions').hidden=true;$('#cms-quick-expanded').hidden=true;['cms-chat-options-button','cms-mention-toggle','cms-quick-toggle'].forEach(id=>$('#'+id).setAttribute('aria-expanded','false'));}
+  // Keep a single native editor connected and focusable while the drawer is closed.
+  // Focus changes during the first key can lose an IME's initial input.
+  const inputSlot=document.createElement('span');inputSlot.id='cms-input-slot';
+  input.replaceWith(inputSlot);input.setAttribute('form','cms-chat-form');ui.append(input);
+  function positionInput() {
+    input.classList.toggle('cms-input-parked',!chatOpen);
+    input.tabIndex=chatOpen?0:-1;
+    if(!chatOpen)return;
+    const rect=inputSlot.getBoundingClientRect(),bounds=ui.getBoundingClientRect();
+    Object.assign(input.style,{left:rect.left-bounds.left+'px',top:rect.top-bounds.top+'px',width:rect.width+'px',height:rect.height+'px'});
+  }
+  function armTableInput() {
+    if(!chatOpen&&!$('dialog[open]')&&picker.hidden&&matchMedia('(pointer:fine)').matches)input.focus({preventScroll:true});
+  }
+  new ResizeObserver(positionInput).observe(chat);
+  new ResizeObserver(positionInput).observe(inputSlot);
+  window.addEventListener('resize',positionInput);
+  positionInput();
+  function closeChatPopovers() {$('#cms-chat-options').hidden=true;$('#cms-mentions').hidden=true;closeQuickMenu();['cms-chat-options-button','cms-mention-toggle'].forEach(id=>$('#'+id).setAttribute('aria-expanded','false'));}
   function setReply(message) {replyTo=message;const draft=$('#cms-reply-draft');draft.hidden=!message;if(message){$('strong',draft).textContent='Replying to '+message.author.name;$('p',draft).textContent=message.text;} }
   function setChatExpanded(value) {const toggle=$('#cms-chat-toggle');toggle.setAttribute('aria-expanded',String(value));toggle.setAttribute('aria-label',value?'Close table chat':'Open table chat');}
-  function openChat() {clearTimeout(chatCloseTimer);closePicker();closeChatPopovers();setReply(null);chatOpen=true;unread=0;updateUnread();chat.hidden=false;requestAnimationFrame(()=>chat.dataset.open='true');setChatExpanded(true);renderMessages();input.focus({preventScroll:true});scrollToLatest();}
-  function closeChat(restoreFocus=true) {if(!chatOpen)return;chatOpen=false;chat.dataset.open='false';setChatExpanded(false);setReply(null);closeChatPopovers();chatCloseTimer=setTimeout(()=>chat.hidden=true,100);if(restoreFocus)$('#cms-chat-toggle').focus({preventScroll:true});}
+  function openChat() {if(chatOpen){if(document.activeElement!==input)input.focus({preventScroll:true});return;}inputRouter?.cancelTarget();closePicker();closeChatPopovers();setReply(null);chatOpen=true;unread=0;updateUnread();chat.hidden=false;chat.dataset.open='true';positionInput();setChatExpanded(true);renderMessages();input.focus({preventScroll:true});scrollToLatest();}
+  function closeChat(restoreFocus=true) {if(!chatOpen)return;chatOpen=false;chat.dataset.open='false';setChatExpanded(false);setReply(null);closeChatPopovers();chat.hidden=true;positionInput();if(restoreFocus)armTableInput();}
   $('#cms-chat-toggle').onclick=()=>chatOpen?closeChat():openChat();$('#cms-chat-close').onclick=()=>closeChat();
   function updateUnread() {const badge=$('.cms-unread');badge.hidden=!unread;badge.textContent=unread>9?'9+':String(unread);}
   function scrollToLatest() {setTimeout(()=>{if(chatOpen)messageList.scrollTop=messageList.scrollHeight;},50);}
@@ -328,42 +461,91 @@
       $('[data-message-action="copy"]',el).onclick=async()=>{try{await navigator.clipboard.writeText(message.text);toast('Message copied');}catch{toast('Copy is unavailable. Select the message text to copy.');}menu.hidden=true;};
     });
   }
-  function renderChatAvatars() {$$('[data-chat-avatar]').forEach(el=>{const player=state.players[Number(el.dataset.chatAvatar)];if(player)el.innerHTML=avatarMarkup(player);});messages.forEach(m=>{if(m.author.id===0){m.author.avatar=state.avatar;m.author.member=state.member;}});}
-  function showBubble(player,text) {if(!player?.active||prefs.hideBubbles)return;const seat=$(`.cms-seat[data-player="${player.id}"]`);if(!seat)return;clearTimeout(bubbleTimers.get(player.id));$('.cms-bubble',seat)?.remove();const bubble=document.createElement('div');bubble.className='cms-bubble';bubble.textContent=text;seat.append(bubble);bubbleTimers.set(player.id,setTimeout(()=>{bubble.remove();bubbleTimers.delete(player.id);},3000));}
-  function receiveChat({from=1,text,reply=null,spectator=false,chatBubble=true}={}) {
+  function renderChatAvatars() {$$('[data-chat-avatar]').forEach(el=>{const player=state.players[Number(el.dataset.chatAvatar)];if(player)el.innerHTML=avatarMarkup(player);});messages.forEach(m=>{if(m.author.id===0){m.author.avatar=state.avatar;m.author.member=state.member;m.author.character=state.character;}});}
+  function showBubble(player,text,floating=false) {
+    if(!player?.active||prefs.hideBubbles)return;
+    const seat=$(`.cms-seat[data-player="${player.id}"]`);if(!seat)return;
+    clearTimeout(bubbleTimers.get(player.id));$('.cms-bubble',seat)?.remove();$(`[data-quick-bubble="${player.id}"]`,ui)?.remove();
+    const bubble=document.createElement('div');bubble.className='cms-bubble';bubble.textContent=text;
+    if(floating){
+      bubble.classList.add('cms-character-bubble');bubble.dataset.quickBubble=player.id;ui.append(bubble);
+      const a=$('.cms-avatar',seat).getBoundingClientRect(),b=ui.getBoundingClientRect();
+      bubble.style.left=Math.max(12,Math.min(b.width-bubble.offsetWidth-12,a.left-b.left+a.width/2+46))+'px';
+      bubble.style.top=Math.max(12,Math.min(b.height-bubble.offsetHeight-12,a.bottom-b.top-86))+'px';
+    }else seat.append(bubble);
+    bubbleTimers.set(player.id,setTimeout(()=>{bubble.remove();bubbleTimers.delete(player.id);},3000));
+  }
+  window.addEventListener('resize',()=>$$('.cms-character-bubble',ui).forEach(bubble=>bubble.remove()));
+  function receiveChat({from=1,text,reply=null,spectator=false,chatBubble=true,floatingBubble=false}={}) {
     if(typeof text!=='string'||!text.trim())return false;
     const author=spectator?{id:-1,name:'TableGuest',avatar:3,member:false}:state.players[from];
     if(!author||(!spectator&&!author.active))return false;
     if((prefs.muteAll&&author.id!==0)||(prefs.muteSpectators&&spectator))return false;
     messages.push({id:++messageSequence,author:{...author},text,spectator,reply,time:new Date().toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'})});
     renderMessages();scrollToLatest();if(!chatOpen&&author.id!==0){unread++;updateUnread();}
-    if(chatBubble&&!spectator)showBubble(author,text);
+    if(chatBubble&&!spectator)showBubble(author,text,floatingBubble);
     return true;
   }
   const updateSend=()=>$('#cms-chat-send').disabled=pending||!input.value.trim();
-  async function sendMessage(text=input.value) {
-    if(pending||!text.trim())return;
-    if(!me()?.active){$('#cms-chat-error').textContent='Take a seat before sending a message.';$('#cms-chat-error').hidden=false;return;}
-    const draft=input.value, reply=replyTo?{name:replyTo.author.name,text:replyTo.text}:null;
-    pending=true;updateSend();$('#cms-chat-error').hidden=true;closeChatPopovers();
+  async function sendMessage(text=input.value,{preserveDraft=false,isCurrent=()=>true}={}) {
+    if(pending||!text.trim())return false;
+    if(!me()?.active){if(!preserveDraft){$('#cms-chat-error').textContent='Take a seat before sending a message.';$('#cms-chat-error').hidden=false;}return false;}
+    const draft=input.value, reply=!preserveDraft&&replyTo?{name:replyTo.author.name,text:replyTo.text}:null;
+    pending=true;updateSend();if(!preserveDraft)$('#cms-chat-error').hidden=true;closeChatPopovers();
     await new Promise(resolve=>setTimeout(resolve,80));
-    if(failNextSend){failNextSend=false;$('#cms-chat-error').textContent='Message not sent. Please try again.';$('#cms-chat-error').hidden=false;}
-    else {receiveChat({from:0,text,reply});if(input.value===draft)input.value='';setReply(null);}
-    pending=false;updateSend();if(chatOpen)input.focus({preventScroll:true});
+    let sent=false;
+    if(isCurrent()&&me()?.active){
+      if(failNextSend){failNextSend=false;if(!preserveDraft){$('#cms-chat-error').textContent='Message not sent. Please try again.';$('#cms-chat-error').hidden=false;}}
+      else {sent=receiveChat({from:0,text:text.trim(),reply,floatingBubble:preserveDraft});if(sent&&!preserveDraft){if(input.value===draft)input.value='';setReply(null);}}
+    }
+    pending=false;updateSend();if(chatOpen&&!preserveDraft)input.focus({preventScroll:true});
+    return sent;
   }
-  $('#cms-chat-form').onsubmit=e=>{e.preventDefault();sendMessage();};input.addEventListener('input',updateSend);
-  input.addEventListener('keydown',e=>{if(e.key==='Enter'&&e.isComposing)e.preventDefault();});
+  $('#cms-chat-form').onsubmit=e=>{e.preventDefault();if(chatOpen&&inputRouter?.canSubmit())sendMessage();};input.addEventListener('input',updateSend);
+  const targetHint=document.createElement('div');targetHint.id='cms-target-hint';targetHint.className='cms-target-hint';targetHint.setAttribute('role','status');targetHint.hidden=true;ui.append(targetHint);
+  function requestAction(action) {
+    if(!me()?.active)return false;
+    if(action.kind==='throwable'&&(!prefs.throwables||action.target===0||!state.players[action.target]?.active))return false;
+    const label=action.kind==='emote'?['Happy','Sad','Angry'][action.slot-1]:action.kind==='quick-message'?`Quick message ${action.slot}`:`Throwable ${action.action} to ${state.players[action.target].name}`;
+    if(!label)return false;
+    if(action.kind==='emote'||action.kind==='throwable'){
+      const status=character?.play(action.kind==='emote'?label.toLowerCase():action)||'unavailable';
+      ui.dispatchEvent(new CustomEvent('cms:action-request',{bubbles:true,detail:{...action,status}}));
+      return status==='started'||status==='queued';
+    }
+    const slot=quickMessages[action.slot-1];if(!slot)return false;
+    const status=sendQuickMessage({...slot,text:slot.text.trim()});
+    ui.dispatchEvent(new CustomEvent('cms:action-request',{bubbles:true,detail:{...action,status}}));
+    return status==='started'||status==='queued';
+  }
+  inputRouter=window.createMahjongInput({
+    input, ready:()=>ui.dataset.ready==='true', isChatOpen:()=>chatOpen, openChat, closeChat,
+    closeMenu:()=>{if(!quickMenu.hidden){closeQuickMenu();return true;}if(picker.hidden)return false;closePicker(true);return true;},
+    hasModal:()=>!!$('dialog[open]'), requestAction, targetModifier:()=>keyboard.targetModifier,
+    clearTarget:()=>{targetHint.hidden=true;$$('[data-keyboard-target]').forEach(el=>delete el.dataset.keyboardTarget);},
+    selectTarget:id=>{
+      closePicker();
+      if(!prefs.throwables){toast('Throwables are off. Enable them in Settings.');return false;}
+      if(id===0){toast('Seat 1 is you. Choose seat 2, 3 or 4.');return false;}
+      if(!state.players[id]?.active){toast(`Seat ${id+1} is empty. Choose a seated opponent.`);return false;}
+      $(`.cms-seat[data-player="${id}"]`).dataset.keyboardTarget='true';
+      $('#player-info-'+id).dataset.keyboardTarget='true';
+      targetHint.textContent=`Seat ${id+1} · ${state.players[id].name} — Q / W: Water gun / Banana. Keep ${keyboard.targetModifier==='ctrl'?'Ctrl':'Alt + Shift'} held. Esc cancels.`;
+      targetHint.hidden=false;return true;
+    }
+  });
   $('#cms-reply-cancel').onclick=()=>{setReply(null);input.focus();};
-  $$('[data-quick]',chat).forEach(b=>b.onclick=()=>sendMessage(b.dataset.quick));
   function toggleChatPopover(id,button) {const wasOpen=!$('#'+id).hidden;closeChatPopovers();$('#'+id).hidden=wasOpen;button.setAttribute('aria-expanded',String(!wasOpen));}
   $('#cms-chat-options-button').onclick=e=>toggleChatPopover('cms-chat-options',e.currentTarget);
-  $('#cms-quick-toggle').onclick=e=>toggleChatPopover('cms-quick-expanded',e.currentTarget);
   $('#cms-mention-toggle').onclick=e=>{const list=$('#cms-mentions');list.innerHTML=activePlayers().filter(p=>p.id!==0).map(p=>`<button data-mention="${p.id}">${avatarMarkup(p)}@${escape(p.name)}</button>`).join('');$$('[data-mention]',list).forEach(b=>b.onclick=()=>{input.value='@'+state.players[Number(b.dataset.mention)].name+' ';updateSend();closeChatPopovers();input.focus();input.setSelectionRange(input.value.length,input.value.length);});toggleChatPopover('cms-mentions',e.currentTarget);};
   chat.addEventListener('pointerdown',event=>{if(!event.target.closest('.cms-chat-popover,#cms-chat-options-button,#cms-mention-toggle,#cms-quick-toggle'))closeChatPopovers();});
-  document.addEventListener('keydown',event=>{if(event.key==='Escape'&&chatOpen&&!$$('dialog[open]').length){event.preventDefault();closeChat();}});
+
   document.addEventListener('pointerdown',event=>{if(chatOpen&&!event.target.closest('.cms-ui,.cms-demo,.cm-table-right-column,.cms-seats'))closeChat(false);});
+  document.addEventListener('click',event=>{
+    if(!event.target.closest('button,a,input,textarea,select,summary,[contenteditable],.cms-picker,dialog,.cms-chat'))armTableInput();
+  });
   function preferencesChanged(key) {
-    if(key==='throwables'&&!prefs.throwables){closePicker();for(const key of activeEffects.keys())if(key.startsWith('throw:'))destroyEffect(key);}
+    if(key==='throwables'&&!prefs.throwables){character?.reset();inputRouter?.cancelTarget();closePicker();for(const key of activeEffects.keys())if(key.startsWith('throw:'))destroyEffect(key);}
     if(key==='sound'&&!prefs.sound)for(const effect of activeEffects.values())effect.audio?.pause();
     if(key==='hideBubbles'&&prefs.hideBubbles){$$('.cms-bubble').forEach(b=>b.remove());for(const timer of bubbleTimers.values())clearTimeout(timer);bubbleTimers.clear();}
   }
@@ -392,13 +574,16 @@
     }
   });
   $$('.cms-toolbar-button').forEach(button=>button.disabled=true);settingsButton.disabled=true;
-  Promise.all([getJSON(assetRoot+'catalog/avatars.json'),getJSON('support/research/prototype_asset_map.json')]).then(([avatars,map])=>{
+  Promise.all([getJSON(assetRoot+'catalog/avatars.json'),getJSON('support/research/prototype_asset_map.json'),window.MahjongCharacter.load().catch(()=>null)]).then(([avatars,map,artwork])=>{
+    characterArtwork=artwork;
+    if(!artwork){state.character=false;toast('Momo artwork could not load. Existing avatars are still available.');}
     state.avatars=avatars;state.assets=map.animation_assets;
     if(!avatars.some(a=>a.id===state.avatar)||(!state.member&&state.avatar>=2000))state.avatar=1;
     state.recents=[...new Set(Array.isArray(saved.recents)?saved.recents:[])].filter(id=>state.assets.some(a=>a.kind==='emote'&&a.id===id)).slice(0,10);
     const cap=Number(document.body.dataset.cap)||4;
     const ringChoices=shuffledRings();
-    state.players=[0,1,2,3].map(id=>({id,name:$('.cm-player-row__name',$('#player-info-'+id)).textContent,wind:['East','South','West','North'][id],avatar:id===0?state.avatar:[1,2002,17,7][id],demoRing:ringChoices[id],member:id===0?state.member:id===1,active:id<cap&&!$('#player-info-'+id).classList.contains('cm-player-row--hidden')}));
-    renderPlayers();renderDemo();syncPreferences();$$('.cms-toolbar-button').forEach(button=>button.disabled=false);settingsButton.disabled=false;ui.dataset.ready='true';
+    state.players=[0,1,2,3].map(id=>({id,name:$('.cm-player-row__name',$('#player-info-'+id)).textContent,wind:['East','South','West','North'][id],avatar:id===0?state.avatar:[1,2002,17,7][id],demoRing:ringChoices[id],character:id===0&&state.character,member:id===0?state.member:id===1,active:id<cap&&!$('#player-info-'+id).classList.contains('cm-player-row--hidden')}));
+    if(artwork)character=window.MahjongCharacter.create({artwork,ui,anchor:()=>$('.cms-seat[data-player="0"] .cms-avatar'),targetAnchor:id=>$(`.cms-seat[data-player="${id}"] .cms-avatar`),canThrow:id=>prefs.throwables&&id!==0&&!!state.players[id]?.active,enabled:()=>me()?.character,notify:toast});
+    renderPlayers();renderDemo();renderQuickMenus();syncPreferences();$$('.cms-toolbar-button').forEach(button=>button.disabled=false);settingsButton.disabled=false;ui.dataset.ready='true';if(document.activeElement===document.body)armTableInput();
   }).catch(error=>{console.error(error);toast(location.protocol==='file:'?'Open the prototype through the local preview server.':'Social assets could not load. Reload to try again.');});
 })();

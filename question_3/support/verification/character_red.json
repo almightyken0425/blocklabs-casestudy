@@ -1,0 +1,19 @@
+{
+  "checked_at": "2026-10-05T07:20:47.432Z",
+  "browser": "Chrome via Playwright",
+  "base": "http://127.0.0.1:8767/question_3/mahjong-game-standalone.html",
+  "prototype_folder": "question_3",
+  "source_sha256": {
+    "support/prototype/input.js": "e7725afbb01bdc5c18bbc975642fde7add387880bf9f496ed05188ec38ef75f2",
+    "support/prototype/social.js": "a63f0d7de5b2ddd4099b151be44d708d534d0802feb8e9426b319d33602a73e5",
+    "support/prototype/social.css": "e6d67b5fd686e1c7572e128b7d3d2d5967d8d595617ea49cbdaf7266983b5ff1",
+    "mahjong-game-standalone.html": "024c85f79a2b14814bd4c4703f529546e2f962d21d05daa4bab707e971767321"
+  },
+  "results": [
+    {
+      "name": "Character plays Happy from its own frame and returns to the same idle avatar",
+      "passed": false,
+      "error": "The input did not match the regular expression /momo.svg/. Input:\n\n'support/coinpoker_assets/avatars/avatar-1.webp'\n"
+    }
+  ]
+}

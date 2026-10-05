@@ -1,0 +1,37 @@
+{
+  "checked_at": "2026-10-05T09:02:12.293Z",
+  "browser": "Chrome via Playwright",
+  "base": "http://127.0.0.1:8767/question_3/mahjong-game-standalone.html",
+  "prototype_folder": "question_3",
+  "source_sha256": {
+    "support/prototype/input.js": "b973a2036d82d9ced454619b453cdbb6b70a65219c7d9d269e98286a5a848e91",
+    "support/prototype/character.js": "8872991aa401ac9e043849c8f40634f344238f7756590f77d9b6a85f2d056389",
+    "support/prototype/character.css": "2c350c166ce8bdd3fc1e87006ef71d9f5884e7246c9742b5a17fd0ec920bfbd9",
+    "support/prototype/assets/momo.svg": "77b3d24084c2b84c16df52bbe6a2ad315ecadd20f89834a780663df6a3f0e5af",
+    "support/prototype/social.js": "52a2bc1fd0bb32a1f074505eb9158f9805a266ba0153bd025c04c6d118dc7a17",
+    "support/prototype/social.css": "0fe2a0f30a88b38b64930f2b19255b756d7394e0847665e320d09e98a55d0653",
+    "mahjong-game-standalone.html": "9079c7e924bec0d09acf48e2da42a4688bb0aa790c32edc82189746fabe89bb6"
+  },
+  "results": [
+    {
+      "name": "Quick slots send three bound emotes without opening chat or replacing a draft",
+      "passed": true
+    },
+    {
+      "name": "Quick slots save three editable bindings and preview without sending",
+      "passed": true
+    },
+    {
+      "name": "Quick slots keep queued messages paired with emotes and cancel pending work",
+      "passed": true
+    },
+    {
+      "name": "Quick slots offer retry on failure and play only after success",
+      "passed": true
+    },
+    {
+      "name": "Quick slots work by touch on narrow screens and retain text with a static avatar",
+      "passed": true
+    }
+  ]
+}

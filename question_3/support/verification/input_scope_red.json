@@ -1,0 +1,18 @@
+{
+  "checked_at": "2026-10-05T07:03:55.771Z",
+  "browser": "Chrome via Playwright",
+  "base": "http://127.0.0.1:8767/question_3/mahjong-game-standalone.html",
+  "prototype_folder": "question_3",
+  "source_sha256": {
+    "support/prototype/social.js": "e990fe129aeeb5f3ad8e92d3fd9ce1d3c1014094d427e93055b3752adaf8a17a",
+    "support/prototype/social.css": "00b7d45aba6c8cbb8c27d5aebf0b2a86b012545bd325880e36b8408ed48013ea",
+    "mahjong-game-standalone.html": "5cc8c38d3ca5b6f887fa9538d4aa51f859a6e821282a7ea2dbb869f359696958"
+  },
+  "results": [
+    {
+      "name": "Four-seat scope rejects old three-player URLs and keeps waiting seats stable",
+      "passed": false,
+      "error": "Expected values to be strictly equal:\n\n3 !== 4\n"
+    }
+  ]
+}

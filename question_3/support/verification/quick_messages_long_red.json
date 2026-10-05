@@ -1,0 +1,22 @@
+{
+  "checked_at": "2026-10-05T09:09:40.992Z",
+  "browser": "Chrome via Playwright",
+  "base": "http://127.0.0.1:8767/question_3/mahjong-game-standalone.html",
+  "prototype_folder": "question_3",
+  "source_sha256": {
+    "support/prototype/input.js": "b973a2036d82d9ced454619b453cdbb6b70a65219c7d9d269e98286a5a848e91",
+    "support/prototype/character.js": "8872991aa401ac9e043849c8f40634f344238f7756590f77d9b6a85f2d056389",
+    "support/prototype/character.css": "2c350c166ce8bdd3fc1e87006ef71d9f5884e7246c9742b5a17fd0ec920bfbd9",
+    "support/prototype/assets/momo.svg": "77b3d24084c2b84c16df52bbe6a2ad315ecadd20f89834a780663df6a3f0e5af",
+    "support/prototype/social.js": "1a6303b2fc7f3c41adff5cffd636fc1c00be03f4d42a16ad18b8c36172ffc42c",
+    "support/prototype/social.css": "ff4dbafc73f59b6036c4cb0dea3fac01ed222d9330236b197acd5b3b745f48a4",
+    "mahjong-game-standalone.html": "9079c7e924bec0d09acf48e2da42a4688bb0aa790c32edc82189746fabe89bb6"
+  },
+  "results": [
+    {
+      "name": "Quick slots keep long custom messages readable inside the table",
+      "passed": false,
+      "error": "All 120 characters fit in the bubble and within the table"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "checked_at": "2026-10-05T07:27:18.737Z",
+  "browser": "Chrome via Playwright",
+  "base": "http://127.0.0.1:8767/question_3/mahjong-game-standalone.html",
+  "prototype_folder": "question_3",
+  "source_sha256": {
+    "support/prototype/input.js": "e7725afbb01bdc5c18bbc975642fde7add387880bf9f496ed05188ec38ef75f2",
+    "support/prototype/character.js": "420d0b7ae6c6e4b9578e8a744bc9baa5b350d09ceb5e2cf8c990d9bd4d44feb0",
+    "support/prototype/character.css": "ee8d7094f60c2cf339741c3ace718e593dd56a6aa763b16956202316b0b6faf5",
+    "support/prototype/assets/momo.svg": "77b3d24084c2b84c16df52bbe6a2ad315ecadd20f89834a780663df6a3f0e5af",
+    "support/prototype/social.js": "05dd44e4dd8b8dd5169df81f198613a81cf55b5a83619679b0e9f082db983cf5",
+    "support/prototype/social.css": "e6d67b5fd686e1c7572e128b7d3d2d5967d8d595617ea49cbdaf7266983b5ff1",
+    "mahjong-game-standalone.html": "9079c7e924bec0d09acf48e2da42a4688bb0aa790c32edc82189746fabe89bb6"
+  },
+  "results": [
+    {
+      "name": "Character climbs fully out, returns through the frame, and leaves chat usable",
+      "passed": false,
+      "error": "Expected values to be strictly equal:\n+ actual - expected\n\n+ null\n- 'url(#cms-momo-portal)'\n"
+    }
+  ]
+}
