@@ -48,7 +48,7 @@ The prototype preserves these capabilities and adds player identity and social i
 At all four seats, avatars sit to the left of the tile area and hands align to the right from the player's perspective.
 The East avatar at the bottom of the screen is left of the hand. The West avatar at the top is to its right.
 The South avatar on the right side of the screen is below the hand. The North avatar on the left is above it.
-See the [tile layout decision](../../../questions_1_2/decision_log.md#decision-2-place-avatars-on-the-left-and-align-hands-to-the-right) for the rationale.
+See the [tile layout decision](../../decision_log.md#decision-2-place-avatars-on-the-left-and-align-hands-to-the-right) for the rationale.
 
 Avatar settings provide a large preview, category rows, and a current-selection indicator.
 Category rows scroll horizontally, and settings content scrolls vertically.
@@ -363,7 +363,7 @@ Preserve the `prototype`, `research`, and `coinpoker_assets` directory structure
 The prototype currently uses HTTP preview and is not packaged as a single portable HTML file.
 
 See the [prototype guide](README.md) for launch instructions.
-The [four-player preview](http://127.0.0.1:8767/question_3/mahjong-game-standalone.html) supports all three interactive features.
+The [four-player preview](http://127.0.0.1:8767/feature_porting/mahjong-game-standalone.html) supports all three interactive features.
 
 The scope excludes live player connections, production membership services, and payments.
 It also excludes gameplay progression, server-side chat rules, and cross-device history.

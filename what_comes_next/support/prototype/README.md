@@ -18,8 +18,8 @@ Use HTTP to preview the prototype because it loads original animation JSON files
 python3 -m http.server 8767 --bind 127.0.0.1
 ```
 
-Open the [four-player table](http://127.0.0.1:8767/question_3/mahjong-game-standalone.html).
-The [waiting state](http://127.0.0.1:8767/question_3/mahjong-game-standalone.html?table=japanese-east-b1) retains four seat numbers. Old three-player URLs fall back to Japanese Full.
+Open the [four-player table](http://127.0.0.1:8767/what_comes_next/mahjong-game-standalone.html).
+The [waiting state](http://127.0.0.1:8767/what_comes_next/mahjong-game-standalone.html?table=japanese-east-b1) retains four seat numbers. Old three-player URLs fall back to Japanese Full.
 Preserve the `prototype`, `research`, and `coinpoker_assets` directory structure under `support/`.
 
 | Action | Result |
@@ -56,7 +56,7 @@ The original table still scales proportionally. The mobile Mahjong table has not
 At all four seats, avatars sit to the left of the tile area and hands align to the right from each player's perspective facing the table.
 The South avatar is at the lower right of the screen, the North avatar is at the upper left, and East and West avatars sit beside their hands.
 This reserves space on the right for primary actions and keeps avatars clear of growing discard areas.
-See the [tile layout decision](../../../questions_1_2/decision_log.md#decision-2-place-avatars-on-the-left-and-align-hands-to-the-right) for the rationale.
+See the [tile layout decision](../../../feature_porting/decision_log.md#decision-2-place-avatars-on-the-left-and-align-hands-to-the-right) for the rationale.
 
 Player rings use a randomized demo configuration.
 On each load, rings are assigned from five assets: Silver, Gold, 3-Bet, Live, and AIC. No ring is repeated at the same table.
@@ -218,7 +218,7 @@ The [browser tests](../tests/social_prototype.cjs) use Playwright and local Chro
 The environment must provide the `playwright` package and run the server described above.
 
 ```sh
-node question_3/support/tests/social_prototype.cjs
+node what_comes_next/support/tests/social_prototype.cjs
 ```
 
 Use `PROTOTYPE_URL` to specify another preview URL.

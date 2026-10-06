@@ -1,4 +1,4 @@
-# Question 3: What Comes Next
+# What Comes Next
 
 This folder contains the independent prototype for assignment section 1.3.
 The task is to propose a system to add or modify after the initial features succeed, explain its value, and assess whether CoinPoker should adopt it.
@@ -19,7 +19,7 @@ Static avatars retain the inherited CoinPoker emote library and send quick messa
 
 - Edit `mahjong-game-standalone.html` and `support/prototype/` in this folder for Question 3 changes.
 - This folder has its own assets, research, tests, and verification records under `support/`.
-- Saved browser preferences use a separate key, so they do not affect Questions 1 and 2.
+- Saved browser preferences use a separate key, so they do not affect [Feature Porting](../feature_porting/README.md).
 - The [operation guide](support/prototype/README.md) describes the current controls and limitations.
 - The [decision log](decision_log.md) explains the avatar-led social concept, player customization, and future character interactions.
 - The [six-slot checks](support/verification/quick_messages_six_results.json) verify the expanded shortcuts, saved settings, and narrow layout. The [earlier quick-message review](support/verification/quick_messages_review.md) records the original three-slot implementation.
@@ -28,4 +28,4 @@ Static avatars retain the inherited CoinPoker emote library and send quick messa
 - The [inherited change specification](support/prototype/change_spec.md) and earlier screenshots describe the historical baseline. Their three-player behavior does not apply to the current Question 3 prototype.
 
 Start the server from the repository root using the [shared preview instructions](../README.md#local-preview).
-Open the [Question 3 preview](http://127.0.0.1:8767/question_3/mahjong-game-standalone.html).
+Open the [What Comes Next preview](http://127.0.0.1:8767/what_comes_next/mahjong-game-standalone.html).
