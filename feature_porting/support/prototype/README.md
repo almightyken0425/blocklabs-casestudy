@@ -15,8 +15,8 @@ Use HTTP to preview the prototype because it loads original animation JSON files
 python3 -m http.server 8767 --bind 127.0.0.1
 ```
 
-Open the [four-player table](http://127.0.0.1:8767/questions_1_2/mahjong-game-standalone.html).
-You can also open the [three-player table](http://127.0.0.1:8767/questions_1_2/mahjong-game-standalone.html?table=kansai-full-b1) or [waiting state](http://127.0.0.1:8767/questions_1_2/mahjong-game-standalone.html?table=japanese-east-b1) directly.
+Open the [four-player table](http://127.0.0.1:8767/feature_porting/mahjong-game-standalone.html).
+You can also open the [three-player table](http://127.0.0.1:8767/feature_porting/mahjong-game-standalone.html?table=kansai-full-b1) or [waiting state](http://127.0.0.1:8767/feature_porting/mahjong-game-standalone.html?table=japanese-east-b1) directly.
 Preserve the `prototype`, `research`, and `coinpoker_assets` directory structure under `support/`.
 
 | Action | Result |
@@ -117,7 +117,7 @@ The [browser tests](../tests/social_prototype.cjs) use Playwright and local Chro
 The environment must provide the `playwright` package and run the server described above.
 
 ```sh
-node questions_1_2/support/tests/social_prototype.cjs
+node feature_porting/support/tests/social_prototype.cjs
 ```
 
 Use `PROTOTYPE_URL` to specify another preview URL.
